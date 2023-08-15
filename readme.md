@@ -23,7 +23,7 @@ Carga Horária:
 -   Empreendedorismo e Inovação : 8h/a 
 -   Contabilidade e Finanças    : 12h/a
 Aula Magna: 2023.08.28 
-Ciclo de Palestras: 2023.??.?? 
+Ciclo de Palestras: 2023.11.21 
 Feriados e Emendas: 2023.09.07 e 2023.09.08
                     2023.10.12 e 2023.10.13
                     2023.11.02 e 2023.11.03 e 2023.11.15
@@ -33,12 +33,12 @@ Formatura e Mostra de Talentos: 2024.02.28 - 2024.02.29
 ~~~
 ---
 ## Aulas 
-### Aula 1 - 2023.08.14 - 4h
+### Aula 1 - 2023.08.14 MON - 4h
 - Abertura do curso 
 - Tarefa de Casa: 
     - Instalar Google Chrome
     - Criar uma conta no Google 
-### Aula 2 - 2023.08.15 - 8h
+### Aula 2 - 2023.08.15 TUE - 8h
 - Off-Topic - Keepass (Organização, Documentação e Eficiência)
 - GIT - Introdução à Git e GitHub
    - O que são versionadores de Arquivos/Código 
@@ -55,7 +55,7 @@ Formatura e Mostra de Talentos: 2024.02.28 - 2024.02.29
    - Clonando um repositório com Git 
 - GIT - Organização do Curso e Materiais de aula
 
-### Aula 3 - 2023.08.16 - 12h
+### Aula 3 - 2023.08.16 WED - 12h
 - GIT - Introdução à Git e GitHub
    - Configurando algumas variáveis
    - Inicializando um repositório local 
@@ -68,45 +68,47 @@ Formatura e Mostra de Talentos: 2024.02.28 - 2024.02.29
 - GIT - Exercícios Lista 1 - Git
 
 
-### Aula 4 - 2023.08.17 - 16h
+### Aula 4 - 2023.08.17 THU - 16h
 - Off-Topic - Lightshot (Organização, Documentação e Eficiência)
 - GIT - MarkDown 
 - Projeto - Criação do Understanding Document em Markdown
 
 - Instalação e Ambientação no Visual Studio Code
+- HTML - Introdução (O que é, para que serve, um pouco da história)
 - HTML - Introdução (Elementos, Tags, Atributos)
 - HTML - Introdução (Estrutura de um arquivo HTML, Comentários, Tags de Cabeçalho)
 
-### Aula 5 - 2023.08.18 - 20h
+### Aula 5 - 2023.08.18 FRI - 20h
 - HTML - Tags semânticas (header, main, footer, section, nav, article, aside)
 - HTML - Elementos estruturais não semânticos (div, span)
 - HTML - Principais Tags do HTML ( Títulos, Parágrafos, Imagens, Links, Listas)
 - HTML - Um Pouco sobre Formatação com HTML (b, Strong, i, em, big, small, del, s, mark )
 
-### Aula 6 - 2023.08.21 - 24h 
+### Aula 6 - 2023.08.21 MON - 24h 
 - HTML - (Tabelas, Links, Vídeo, Audio, imagens em outro servidor)
 - HTML - (Layout baseado em tabelas vs. Layout livre de tabelas (Entendendo o valor semântico das tags do HTML))
+- Off-Topic - Live Server
 
-### Aula 7 - 2023.08.22 - 28h 
+### Aula 7 - 2023.08.22 TUE - 28h 
 - CSS - Sintaxe, Onde declarar, Comentários 
 - CSS - Seletores (Elemento, id, Classe, Universal)
 - CSS - Propriedades Background, Color 
 - CSS - Formatação de texto e fontes  
 
 
-### Aula 8 - 2023.08.23 - 32h     
+### Aula 8 - 2023.08.23 WED - 32h     
 - CSS - Especificidade de seletores 
 - CSS - Margens, Padding, Bordas, outline, Box Model 
 - CSS - Formatação de Formulários
 - CSS - Display, Elementos de Bloco x Elementos de linha 
 
-### Aula 9 - 2023.08.24 - 36h 
+### Aula 9 - 2023.08.24 THU - 36h 
 - CSS - Formatação para Links, Listas e Tabelas 
 - CSS - Um pouco mais sobre formatação de textos, fontes e bordas
 - CSS - CSS Reset e CSS Normalize
 - CSS - Responsividade (Media Query, viewport)
 
-### Aula 10 - 2023.08.25 - 40h 
+### Aula 10 - 2023.08.25 FRI - 40h 
 - CSS - Grid 
 - HTML - iframe 
 - Off-topic - Google Agenda 
@@ -114,10 +116,13 @@ Formatura e Mostra de Talentos: 2024.02.28 - 2024.02.29
 - Projeto - Página que fale sobre formas de diminuir emissões de carbono
 - Projeto - Página que fale sobre os benefícios da caminhada para a saúde
 
-### Aula Magna - 2023.08.28
+### Aula Magna - 2023.08.28 MON
 - Aula Magna - Participação Obrigatória
 
-### Aula 11 -  - 44h 
+### Aula ID - 2023.08.29 TUE
+- Profa. Josiani
+
+### Aula 11 - 2023.08.30 WED - 44h 
 - Off-Topic - Publicando uma página no Github Pages
 - HTML - Formularios 
    - Input type=text
@@ -127,7 +132,7 @@ Formatura e Mostra de Talentos: 2024.02.28 - 2024.02.29
 
 - Projeto - Formulário de contato
 
-### Aula 12 -  - 48h 
+### Aula 12 - 2023.08.31 THU - 48h 
 - HTML - Formularios
    - Input Types (button, submit, reset, checkbox, color, date, email, file, number, radio, range, tel, etc)
    - Input Attributes
@@ -135,7 +140,7 @@ Formatura e Mostra de Talentos: 2024.02.28 - 2024.02.29
 - Projeto - Refatorar formulário de contato 
 - Projeto - Urna eletrônica
 
-### Aula 13 -  - 52h 
+### Aula 13 - 2023.09.01 FRI - 52h 
 - HTML - Formularios
    - Select 
    - fieldset
@@ -150,14 +155,20 @@ Formatura e Mostra de Talentos: 2024.02.28 - 2024.02.29
 - Projeto - Cadastro de Aluno
 - Projeto - Tela de Login
 
-### Aula 14 -  - 56h 
+### Aula 14 - 2023.09.04 MON - 56h 
 - CSS - Bootstrap 
 
+### Aula ID - 2023.09.05 TUE
+- Profa. Josiane
 
-### Aula 15 -  - 60h 
+### Aula 15 - 2023.09.06 WED - 60h 
 - Reservado/Respiro (Dúvidas, revisão de conteúdo, exercícios, conteúdos atrasados...)
 
-### Aula 16 -  - 64h 
+### Feriado - 2023.09.07 THU 
+
+### Recesso - 2023.09.08 FRI 
+
+### Aula 16 - 2023.09.11 MON - 64h 
 - Lógica - Introdução à lógica de programação
 - Lógica - Como o computador surgiu 
 - Lógica - Entendendo como um computador funciona 
@@ -396,7 +407,9 @@ Formatura e Mostra de Talentos: 2024.02.28 - 2024.02.29
 - Planilha Entrega de Exercícios:   
     
 
-- Sala de aula no Teams: 
+- Sala de aula no Google:   
+    https://classroom.google.com/c/NjE3NjczODQ4OTE3?cjc=ve4uvji
+
 
 - Central do Aluno:  
     https://externo.proway.com.br/login-aluno
@@ -421,6 +434,7 @@ Ivan J. Borchardt
 
 
 [![Linkedin Badge](https://img.shields.io/badge/-Ivan-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/ivan-borchardt/)](https://www.linkedin.com/in/ivan-borchardt/) 
+
 [![Gmail Badge](https://img.shields.io/badge/-ivan.borchardt.cobol@gmail.com-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:ivan.borchardt.cobol@gmail.com)](mailto:ivan.borchardt.cobol@gmail.com)
 
 
@@ -428,6 +442,14 @@ Ivan J. Borchardt
 ## Coordenador
 
 
+
+### Monitoramento 
+
+Rebeca Silva
+
+[![WhatsApp](https://img.shields.io/badge/(47)99602_0064-WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://wa.me/qr/DRQRLT3OIOMQJ1)     
+
+E-mail: rebeca.silva@proway.com.br
 
 ### License
 This project is under the MIT license.
