@@ -72,10 +72,11 @@ Formatura e Mostra de Talentos: 2024.02.28 - 2024.02.29
     - Adicionando arquivos ao repositório manualmente 
     - Consolidando alterações (Commit)
 
- - Off-Topic - Keepass (Organização, Documentação e Eficiência)
+
 
 ### Aula 4 - 2023.08.17 THU - 16h
 
+- Off-Topic - Keepass (Organização, Documentação e Eficiência)
 - Off-Topic - Lightshot (Organização, Documentação e Eficiência)
 - GIT - MarkDown 
 - Projeto - Criação do Understanding Document em Markdown
