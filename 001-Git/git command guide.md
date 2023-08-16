@@ -8,7 +8,7 @@
 - git log
 - git diff
 
-15acdf
+
 
 # GIT BRANCHES
 - git branch 

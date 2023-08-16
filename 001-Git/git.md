@@ -66,4 +66,6 @@ git push origin master --force
 git clone "http://...url do rep remoto..."
 
 
+10. Trocando o nome da Branch
 
+git branch -M main
