@@ -39,7 +39,9 @@ Formatura e Mostra de Talentos: 2024.02.28 - 2024.02.29
     - Instalar Google Chrome
     - Criar uma conta no Google 
 ### Aula 2 - 2023.08.15 TUE - 8h
-- Off-Topic - Keepass (Organização, Documentação e Eficiência)
+
+- Off-Topic - Barreiras de entrada no mundo da programação
+
 - GIT - Introdução à Git e GitHub
    - O que são versionadores de Arquivos/Código 
    - Breve resumo da história 
@@ -47,15 +49,11 @@ Formatura e Mostra de Talentos: 2024.02.28 - 2024.02.29
    - Repositórios remotos compatíveis com Git 
    - Instalação do GIT
    - Criação de Conta no GitHub
-   - Tour no GitHub
-      - Ambientação 
-      - Criando um novo repositório 
-      - Adicionando arquivos ao repositório manualmente 
-      - Consolidando alterações (Commit)
    - Clonando um repositório com Git 
 - GIT - Organização do Curso e Materiais de aula
 
 ### Aula 3 - 2023.08.16 WED - 12h
+
 - GIT - Introdução à Git e GitHub
    - Configurando algumas variáveis
    - Inicializando um repositório local 
@@ -67,8 +65,17 @@ Formatura e Mostra de Talentos: 2024.02.28 - 2024.02.29
    - Primeiro fluxo de trabalho (modelo para trabalho individual)
 - GIT - Exercícios Lista 1 - Git
 
+- Criação de Conta no GitHub
+- Tour no GitHub
+    - Ambientação 
+    - Criando um novo repositório 
+    - Adicionando arquivos ao repositório manualmente 
+    - Consolidando alterações (Commit)
+
+ - Off-Topic - Keepass (Organização, Documentação e Eficiência)
 
 ### Aula 4 - 2023.08.17 THU - 16h
+
 - Off-Topic - Lightshot (Organização, Documentação e Eficiência)
 - GIT - MarkDown 
 - Projeto - Criação do Understanding Document em Markdown
