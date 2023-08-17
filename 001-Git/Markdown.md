@@ -96,9 +96,9 @@ combinar configurações **_negrito e itálico_**
 
 ### Links
 
-A [T-Systems](www.t-systems.com.br "Site da T-Systems") é uma empresa de software  
+A [Google](https://www.google.de/ "Site da T-Systems") é uma empresa de software  
 
-[T-Systems](www.t-systems.com.br "Site da T-Systems") 
+[T-Systems](https://www.t-systems.com/br/pt "Site da T-Systems") 
 
 [texto do Link](http://example.com/ "Propriedade title, opcional")
 
