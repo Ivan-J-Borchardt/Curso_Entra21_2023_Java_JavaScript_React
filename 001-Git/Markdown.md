@@ -131,6 +131,7 @@ isso é um comando javaScript `console.log('exemplo')`
 
 ### Trechos de Código 
 
+
 ```
    if var > 0 then 
         display "Valor positivo"
@@ -153,6 +154,7 @@ isso é um comando javaScript `console.log('exemplo')`
 ***
 
 
+
 ### Tabelas 
 
 Cod | Nome  | Nota | Dica 
@@ -163,6 +165,7 @@ Cod | Nome  | Nota | Dica
 
 ### Emojis (funciona no git)
 
-:smile:
+:smile:  
+:U+1F642:
 
 
