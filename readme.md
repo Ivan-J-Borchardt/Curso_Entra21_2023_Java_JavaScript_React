@@ -80,6 +80,9 @@ Formatura e Mostra de Talentos: 2024.02.28 - 2024.02.29
 - Off-Topic - Lightshot (Organização, Documentação e Eficiência)
 - Instalação e Ambientação no Visual Studio Code
 
+- GIT - 
+- GIT - .gitignore
+- GIT - readme.md
 - GIT - MarkDown 
 - Projeto - Criação do Understanding Document em Markdown
 
