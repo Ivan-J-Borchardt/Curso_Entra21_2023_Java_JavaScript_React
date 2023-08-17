@@ -4,7 +4,7 @@
 
                      
 
-## A Linguagem 
+z A Linguagem 
 ---
 
 
@@ -37,7 +37,8 @@ uma quebra de linha.
 
 ### Texto Com Ênfase
 
-*Enfatizado - itálico*   
+*Enfatizado - itálico*  
+
 _Enfatizado - itálico_  
 <em>Enfatizado - itálico</em>
 
@@ -104,6 +105,8 @@ A [T-Systems](www.t-systems.com.br "Site da T-Systems") é uma empresa de softwa
 <a href="http://example.com/" title ="Propriedade title, opcional" >Texto do link</a>
 
 ### Imagem 
+
+![EMOJI](https://github.com/Ivan-J-Borchardt/imagens/blob/master/Emoji%20Desespero.png "ASDASDAS")
 
 ![Calculadora Windows](/assets/calculadora.png "Foto da Calculadora Win...")
 
