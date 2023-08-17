@@ -14,7 +14,7 @@
 
 --- 
 ### Exercícios 
-1. Crie uma conta no GitHub. 
+1. Crie uma conta no GitHub (apenas se você ainda não tiver uma). 
 
 2. Insira o endereço da conta na planilha de entrega de atividades. 
 
@@ -24,9 +24,9 @@
 
 5. Clone o repositório para sua máquina, criando assim um repositório local. 
 
-6. No diretório raiz do projeto, crie um arquivo chamado Understanding_DEV_REACT.docx.
+6. No diretório raiz do projeto, crie um arquivo chamado Understanding_DEV_REACT.md.
 
-7. Edite o arquivo Understanding_DEV_REACT.docx, inserindo suas anotações da aula de Git e GitHub. 
+7. Edite o arquivo Understanding_DEV_REACT.md, inserindo suas anotações da aula de Git e GitHub. 
 
     **Dica:** Conside que você esteja criando um manual para outras pessoas... 
 
@@ -34,7 +34,7 @@
 
 9. Sincronize o repositório local com o repositório remoto. 
 
-10. Crie um novo arquivo Understanding_DEV_COBOL.md, com as anotações da aula e formate usando Markdown. Complemente o UD com os assuntos relativos a Markdown. 
+
 
 
 
