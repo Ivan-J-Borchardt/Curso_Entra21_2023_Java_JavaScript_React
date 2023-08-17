@@ -80,7 +80,12 @@ Formatura e Mostra de Talentos: 2024.02.28 - 2024.02.29
 - Off-Topic - Lightshot (Organização, Documentação e Eficiência)
 - Instalação e Ambientação no Visual Studio Code
 
-- GIT - 
+- GIT - Adicionando e Consolidando as alterações em um único comando (git commit -am)
+- GIT - Removendo arquivos do repositório (git rm)
+- GIT - Removendo arquivos do Staged
+- GIT - Excluído alterações no arquivo em trabalho (antes do ADD...) 
+- GIT - Verificando o Log
+- GIT - Verificando as diferenças entre Commits
 - GIT - .gitignore
 - GIT - readme.md
 - GIT - MarkDown 

@@ -49,6 +49,10 @@ git add .
 
 git commit -m "comentário"
 
+- Adicionando e Consolidando as alterações em um único comando
+
+git commit am “Criando website XPTO”
+
 
 7. Mapeando um repositório remoto
 
@@ -66,6 +70,6 @@ git push origin master --force
 git clone "http://...url do rep remoto..."
 
 
-10. Trocando o nome da Branch
+10. Renomeando a Branch
 
 git branch -M main
