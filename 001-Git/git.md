@@ -69,7 +69,10 @@ git push origin master --force
 
 git clone "http://...url do rep remoto..."
 
+10. Atualizando o Repositório Local 
 
-10. Renomeando a Branch
+git pull 
 
-git branch -M main
+11. Renomeando a Branch
+
+git branch -M main 
