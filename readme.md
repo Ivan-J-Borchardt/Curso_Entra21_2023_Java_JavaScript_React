@@ -78,10 +78,11 @@ Formatura e Mostra de Talentos: 2024.02.28 - 2024.02.29
 
 - Off-Topic - Keepass (Organização, Documentação e Eficiência)
 - Off-Topic - Lightshot (Organização, Documentação e Eficiência)
+- Instalação e Ambientação no Visual Studio Code
+
 - GIT - MarkDown 
 - Projeto - Criação do Understanding Document em Markdown
 
-- Instalação e Ambientação no Visual Studio Code
 - HTML - Introdução (O que é, para que serve, um pouco da história)
 - HTML - Introdução (Elementos, Tags, Atributos)
 - HTML - Introdução (Estrutura de um arquivo HTML, Comentários, Tags de Cabeçalho)
