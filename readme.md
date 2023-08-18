@@ -426,7 +426,7 @@ Formatura e Mostra de Talentos: 2024.02.28 - 2024.02.29
 [![WhatsApp](https://img.shields.io/badge/Grupo-WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://chat.whatsapp.com/KyimwmWav9c2Go5DhGLNjO)
 
 - Planilha Entrega de Exercícios:   
-    
+    https://forms.gle/fZZymQsHrqofwg4x8
 
 - Sala de aula no Google:   
     https://classroom.google.com/c/NjE3NjczODQ4OTE3?cjc=ve4uvji

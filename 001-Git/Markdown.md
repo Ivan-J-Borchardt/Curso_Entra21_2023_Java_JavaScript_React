@@ -1,6 +1,6 @@
 # Markdown 
 
-É uma linguagem de marcação assim como o HTML. Foi desenvolvida por John Gruber e Aaron Swartz em 2004. 
+&nbsp;&nbsp;&nbsp;&nbsp;É uma linguagem de marcação assim como o HTML. Foi desenvolvida por John Gruber e Aaron Swartz em 2004. 
 
    https://www.markdownguide.org/
                      
@@ -39,6 +39,11 @@ Dois espaços no fim de uma linha produzem
 uma quebra de linha.
 
 <p>Dois espaços no fim de uma linha produzem <br>uma quebra de linha.</p>
+
+### Cores
+
+testtwes <font color="red">This text is red!</font> sdafasdfa
+
 
 ### Notas de Rodapé 
 
@@ -179,6 +184,8 @@ isso é um comando javaScript `console.log('exemplo')`
         display "Valor Negativo"
    and-if 
 ~~~
+
+### Syntax Highlighting 
 
 ```json
    {
