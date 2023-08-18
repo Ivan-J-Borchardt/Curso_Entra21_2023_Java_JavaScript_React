@@ -76,8 +76,7 @@ Formatura e Mostra de Talentos: 2024.02.28 - 2024.02.29
 
 ### Aula 4 - 2023.08.17 THU - 16h
 
-- Off-Topic - Keepass (Organização, Documentação e Eficiência)
-- Off-Topic - Lightshot (Organização, Documentação e Eficiência)
+
 - Instalação e Ambientação no Visual Studio Code
 
 - GIT - Adicionando e Consolidando as alterações em um único comando (git commit -am)
@@ -89,13 +88,18 @@ Formatura e Mostra de Talentos: 2024.02.28 - 2024.02.29
 - GIT - .gitignore
 - GIT - readme.md
 - GIT - MarkDown 
+
+
+### Aula 5 - 2023.08.18 FRI - 20h
+
+- Off-Topic - Keepass (Organização, Documentação e Eficiência)
+- Off-Topic - Lightshot (Organização, Documentação e Eficiência)
 - Projeto - Criação do Understanding Document em Markdown
 
 - HTML - Introdução (O que é, para que serve, um pouco da história)
 - HTML - Introdução (Elementos, Tags, Atributos)
 - HTML - Introdução (Estrutura de um arquivo HTML, Comentários, Tags de Cabeçalho)
 
-### Aula 5 - 2023.08.18 FRI - 20h
 - HTML - Tags semânticas (header, main, footer, section, nav, article, aside)
 - HTML - Elementos estruturais não semânticos (div, span)
 - HTML - Principais Tags do HTML ( Títulos, Parágrafos, Imagens, Links, Listas)

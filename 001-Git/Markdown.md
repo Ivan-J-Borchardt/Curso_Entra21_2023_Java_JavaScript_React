@@ -2,11 +2,16 @@
 
 É uma linguagem de marcação assim como o HTML. Foi desenvolvida por John Gruber e Aaron Swartz em 2004. 
 
+   https://www.markdownguide.org/
                      
-
-z A Linguagem 
 ---
+### Comentários
 
+[Comment]: <> (isto é um comentário)
+
+```markdown
+   [Comment]: <> (isto é um comentário)
+```
 
 ### Cabeçalhos/Títulos 
 
@@ -35,9 +40,27 @@ uma quebra de linha.
 
 <p>Dois espaços no fim de uma linha produzem <br>uma quebra de linha.</p>
 
+### Notas de Rodapé 
+
+Here's a simple footnote,[^1] and here's a longer one.[^bignote]
+
+[^1]: This is the first footnote.
+
+[^bignote]: Here's one with multiple paragraphs and code.
+
+    Indent paragraphs to include them in the footnote.
+
+    `{ my code }`
+
+    Add as many paragraphs as you like.
+
+
 ### Texto Com Ênfase
 
 *Enfatizado - itálico*  
+
+==Texto Grifado==  
+<mark>Texto Grifado</mark>
 
 _Enfatizado - itálico_  
 <em>Enfatizado - itálico</em>
@@ -51,6 +74,16 @@ __Fortemente enfatizado - negrito__
 
 combinar configurações **_negrito e itálico_**
 
+
+### Texto Subscrito 
+
+H~2~O  
+H<sub>2</sub>O
+
+### Texto Sobreescrito 
+
+x^2^  
+X<sup>2</sup>
 
 
 ### Listas Não Ordenadas
@@ -147,6 +180,28 @@ isso é um comando javaScript `console.log('exemplo')`
    and-if 
 ~~~
 
+```json
+   {
+      "Nome": "nome",
+      "idade": "idade"
+   }
+```
+
+```html
+   <html>
+      <body>
+            <h1> Teste </h1>
+      </body> 
+   </html>
+
+```
+
+```javascript 
+   funtion incrementa(num){
+      return num + 1;
+   }
+
+```
 
 ### Linhas divisórias
 
@@ -166,6 +221,6 @@ Cod | Nome  | Nota | Dica
 ### Emojis (funciona no git)
 
 :smile:  
-:U+1F642:
+
 
 
