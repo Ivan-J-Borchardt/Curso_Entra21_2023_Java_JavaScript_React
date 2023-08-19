@@ -152,6 +152,10 @@ A [Google](https://www.google.de/ "Site da T-Systems") é uma empresa de softwar
 
 <p><img alt="Texto da propriedade alt" title="Propriedade title" src="/pasta/da/img.jpg " /></p>
 
+### Vídeo
+
+<video src="assets/VideoKai.mp4" controls title="Title"></video>
+
 ### Citações 
 
 > Esse texto será envolto pelo elemento HTML blockquote. 
