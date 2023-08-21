@@ -156,6 +156,11 @@ A [Google](https://www.google.de/ "Site da T-Systems") é uma empresa de softwar
 
 <video src="assets/VideoKai.mp4" controls title="Title"></video>
 
+[![Image alt text](https://img.youtube.com/vi/YOUTUBE-ID/0.jpg)](https://www.youtube.com/watch?v=YOUTUBE-ID)
+
+[![BREAKFAST at The GIRAFFE MANOR!! ELEPHANTS and MORE!!](https://img.youtube.com/vi/Pa5yeliQSXw/0.jpg)](https://www.youtube.com/watch?v=Pa5yeliQSXw)
+
+
 ### Citações 
 
 > Esse texto será envolto pelo elemento HTML blockquote. 
@@ -231,7 +236,31 @@ Cod | Nome  | Nota | Dica
 
 ### Emojis (funciona no git)
 
-:smile:  
+#### VSCode
+
+- Apenas dar copiar e colar emojis da Emojoipedia;
+
+   https://emojipedia.org/
+ 
+  🧐
+
+#### GitHub
+
+- Apenas usar os comandos demonstrados nesta pagina:
+
+   https://gist.github.com/rxaviers/7360908
+
+   :blush:  
+   :smirk:  
+
+
+### Markdown to PDF 
+
+- Instale a extenção "Markdown PDF"
+
+![Markdown PDF](<assets/Markdow To PDF.png>)
 
 
 
+- Abra o Arquivo MD, clique com o botão direito do mouse e escolha o formato de saída
+![Alt text](<assets/Markdown to PDF.gif>)

@@ -92,30 +92,34 @@ Formatura e Mostra de Talentos: 2024.02.28 - 2024.02.29
 
 ### Aula 5 - 2023.08.18 FRI - 20h
 
-- Off-Topic - Keepass (Organização, Documentação e Eficiência)
 - Off-Topic - Lightshot (Organização, Documentação e Eficiência)
+- GIT - Markdown - Documentação Oficial e mais alguns exemplos 
 - Projeto - Criação do Understanding Document em Markdown
 
 - HTML - Introdução (O que é, para que serve, um pouco da história)
 - HTML - Introdução (Elementos, Tags, Atributos)
 - HTML - Introdução (Estrutura de um arquivo HTML, Comentários, Tags de Cabeçalho)
 
-- HTML - Tags semânticas (header, main, footer, section, nav, article, aside)
-- HTML - Elementos estruturais não semânticos (div, span)
+### Aula 6 - 2023.08.21 MON - 24h 
+
+- HTML - Charset 
+- HTML - Comentários
 - HTML - Principais Tags do HTML ( Títulos, Parágrafos, Imagens, Links, Listas)
 - HTML - Um Pouco sobre Formatação com HTML (b, Strong, i, em, big, small, del, s, mark )
+- HTML - Tags semânticas (header, main, footer, section, nav, article, aside)
+- HTML - Elementos estruturais não semânticos (div, span)
 
-### Aula 6 - 2023.08.21 MON - 24h 
+### Aula 7 - 2023.08.22 TUE - 28h 
+
 - HTML - (Tabelas, Links, Vídeo, Audio, imagens em outro servidor)
 - HTML - (Layout baseado em tabelas vs. Layout livre de tabelas (Entendendo o valor semântico das tags do HTML))
 - Off-Topic - Live Server
+- Off-Topic - Keepass (Organização, Documentação e Eficiência)
 
-### Aula 7 - 2023.08.22 TUE - 28h 
 - CSS - Sintaxe, Onde declarar, Comentários 
 - CSS - Seletores (Elemento, id, Classe, Universal)
 - CSS - Propriedades Background, Color 
 - CSS - Formatação de texto e fontes  
-
 
 ### Aula 8 - 2023.08.23 WED - 32h     
 - CSS - Especificidade de seletores 
