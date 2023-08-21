@@ -429,6 +429,12 @@ Formatura e Mostra de Talentos: 2024.02.28 - 2024.02.29
 
 [![WhatsApp](https://img.shields.io/badge/Grupo-WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://chat.whatsapp.com/KyimwmWav9c2Go5DhGLNjO)
 
+- Planilhas Pergutas do dia:
+    - Git e GitHub
+        https://forms.gle/M9os3FjgWVAoC6Z48
+    - HTML 
+        https://forms.gle/N9rdE2pKSdv5mYSy9
+
 - Planilha Entrega de Exercícios:   
     https://forms.gle/fZZymQsHrqofwg4x8
 
