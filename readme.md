@@ -106,13 +106,20 @@ Formatura e Mostra de Talentos: 2024.02.28 - 2024.02.29
 - HTML - Comentários
 - HTML - Principais Tags do HTML ( Títulos, Parágrafos, Imagens, Links, Listas)
 - HTML - Um Pouco sobre Formatação com HTML (b, Strong, i, em, big, small, del, s, mark )
-- HTML - Tags semânticas (header, main, footer, section, nav, article, aside)
-- HTML - Elementos estruturais não semânticos (div, span)
+- HTML - Exercício 1
 
 ### Aula 7 - 2023.08.22 TUE - 28h 
 
+- HTML - Materiais complementares
+- HTML - Indentação do código HTML
+- HTML - Tipos de Link 
+- HTML - Tags semânticas (header, main, footer, section, nav, article, aside)
+- HTML - Elementos estruturais não semânticos (div, span)
+- HTML - Exercício 2 
+
 - HTML - (Tabelas, Links, Vídeo, Audio, imagens em outro servidor)
 - HTML - (Layout baseado em tabelas vs. Layout livre de tabelas (Entendendo o valor semântico das tags do HTML))
+
 - Off-Topic - Live Server
 - Off-Topic - Keepass (Organização, Documentação e Eficiência)
 
@@ -470,15 +477,14 @@ Ivan J. Borchardt
 
 
 
-## Coordenador
+## Coordenadores
 
+### Coodenadora da turma & Monitoramento 
 
+Rebeca Braatz 
 
-### Monitoramento 
+[![WhatsApp](https://img.shields.io/badge/(47)99602_0064-WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://wa.me/qr/DRQRLT3OIOMQJ1) 
 
-Rebeca Silva
-
-[![WhatsApp](https://img.shields.io/badge/(47)99602_0064-WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://wa.me/qr/DRQRLT3OIOMQJ1)     
 
 E-mail: rebeca.silva@proway.com.br
 
