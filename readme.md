@@ -113,22 +113,25 @@ Formatura e Mostra de Talentos: 2024.02.28 - 2024.02.29
 - HTML - Materiais complementares
 - HTML - Indentação do código HTML
 - HTML - Tipos de Link 
+- Off-Topic - Live Server
 - HTML - Tags semânticas (header, main, footer, section, nav, article, aside)
 - HTML - Elementos estruturais não semânticos (div, span)
 - HTML - Exercício 2 
 
-- HTML - (Tabelas, Links, Vídeo, Audio, imagens em outro servidor)
-- HTML - (Layout baseado em tabelas vs. Layout livre de tabelas (Entendendo o valor semântico das tags do HTML))
 
-- Off-Topic - Live Server
+
+### Aula 8 - 2023.08.23 WED - 32h   
+
+- HTML - (Tabelas, Vídeo, Audio, details + summary)
+- HTML - (Layout baseado em tabelas vs. Layout livre de tabelas (Entendendo o valor semântico das tags do HTML))
+- Block-level Elements vs. Inline Elements
 - Off-Topic - Keepass (Organização, Documentação e Eficiência)
 
 - CSS - Sintaxe, Onde declarar, Comentários 
 - CSS - Seletores (Elemento, id, Classe, Universal)
 - CSS - Propriedades Background, Color 
 - CSS - Formatação de texto e fontes  
-
-### Aula 8 - 2023.08.23 WED - 32h     
+---
 - CSS - Especificidade de seletores 
 - CSS - Margens, Padding, Bordas, outline, Box Model 
 - CSS - Formatação de Formulários
@@ -150,6 +153,14 @@ Formatura e Mostra de Talentos: 2024.02.28 - 2024.02.29
 
 ### Aula Magna - 2023.08.28 MON
 - Aula Magna - Participação Obrigatória
+- Local: Teatro Carlos Gomes (Blumenau)
+- Horários:
+    - Recepção dos alunos (Presencial): 09:00 às 09:30
+    - Recepção dos alunos (Online): 09:45
+- Alunos que residem em Blumenau devem comparecer presencialmente.
+- Pode levar acompanhantes.
+- O link para assistir Online estará disponível na central dos alunos a partir
+de 24/08/2023.
 
 ### Aula ID - 2023.08.29 TUE
 - Profa. Josiani
