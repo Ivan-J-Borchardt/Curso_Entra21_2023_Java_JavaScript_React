@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <!-- Estrutura mínima de uma tabela-->
+    <table border="1">
+        <tr>
+            <th>Coluna 1</th>
+            <th>Coluna 2</th>
+            <th>Coluna 3</th>
+        </tr>
+        <tr>
+            <td>Linha 1, Coluna 1</td>
+            <td>Linha 1, Coluna 2</td>
+            <td>Linha 1, Coluna 3</td>
+        </tr>
+        <tr>
+            <td>Linha 2, Coluna 1</td>
+            <td>Linha 2, Coluna 2</td>
+            <td>Linha 2, Coluna 3</td>
+        </tr>
+        <tr>
+            <td>Linha 3, Coluna 1</td>
+            <td>Linha 3, Coluna 2</td>
+            <td>Linha 3, Coluna 3</td>
+        </tr>
+    </table>
+
+    <br>
+
+    <!-- Estrutura completa de uma tabela-->
+    <table border="1" cellpadding="10" width="100%" align="center">
+        <thead>
+            <tr>
+                <th>Qtd</th>
+                <th>Descrição</th>
+                <th>Valor</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr align="center">
+                <td>1</td>
+                <td>Lápis</td>
+                <td>1,00</td>
+            </tr>
+            <tr bgcolor="red">
+                <td align="right">2</td>
+                <td>Caneta</td>
+                <td>3,00</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Caderno</td>
+                <td>10,00</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Borracha</td>
+                <td>5,00</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="2"><b>Total</b></td>
+                <td>19,00</td>
+            </tr>
+        </tfoot>
+
+    </table>
+
+    <br><br>
+    <!-- Mesclando linhas e colunas -->
+
+    <table border="1" cellspacing="0" >
+        <tr>
+            <th>coluna 1</th>
+            <th>coluna 2</th>
+            <th>coluna 3</th>
+        </tr>
+        <tr>
+            <td rowspan="2"> linha 1, coluna 1</td>
+            <td> linha 1, coluna 2</td>
+            <td> linha 1, coluna 3</td>
+        </tr>
+        <tr>
+            <td> linha 2, coluna 1</td>
+            <td> linha 2, coluna 2</td>
+        </tr>
+        <tr>
+            <td> linha 3, coluna 1</td>
+            <td> linha 3, coluna 2</td>
+            <td> linha 3, coluna 3</td>
+        </tr>
+        <tr>
+            <td> linha 4, coluna 2</td>
+            <td colspan="2"> linha 4, coluna 3</td>
+        </tr>
+    </table>
+
+
+</body>
+</html>
