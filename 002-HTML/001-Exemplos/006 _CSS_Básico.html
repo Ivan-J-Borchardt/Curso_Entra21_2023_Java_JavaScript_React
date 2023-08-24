@@ -26,6 +26,9 @@
         .clSpan1{
             background-color: brown;
         }
+        .sublinhado{
+            text-decoration: underline;
+        }
 
         /* Seletor de ID */
         #idTituloPrincipal{
@@ -38,13 +41,29 @@
             color: blueviolet;
         }
 
+        .linha {
+            border: 1px solid black;
+            display: flex;
+        }
+
+        .coluna1{
+            border: 1px solid black;
+            width: 30%;
+        }
+
+        .coluna2{
+            border: 1px solid black;
+            width: 70%;
+        }
+
+
     </style>
 </head>
 <body>
     
     <h1 id="idTituloPrincipal" name="" class="clTituloPrincial" >Titulo Teste</h1>
 
-    <h2 class="clTituloPrincial">Titulo 2</h2>
+    <h2 class="clTituloPrincial sublinhado">Titulo 2</h2>
 
     
     <div class="clDiv1">
@@ -56,6 +75,16 @@
     <div class="clDiv2">
         <p>Teste <span class="clSpan1">testes</span> Teste</p>
     </div>
+
+    <div class="linha">
+        <div class="coluna1"><p>Direita</p></div>
+        <div class="coluna2"><p>Esquerda</p></div>
+    </div>
+    <div class="linha">
+        <div class="coluna1"><p>Direita</p></div>
+        <div class="coluna2"><p>Esquerda</p></div>
+    </div>
+
 
 </body>
 </html>

@@ -118,38 +118,31 @@ Formatura e Mostra de Talentos: 2024.02.28 - 2024.02.29
 - HTML - Elementos estruturais não semânticos (div, span)
 - HTML - Exercício 2 
 
-
-
 ### Aula 8 - 2023.08.23 WED - 32h   
 
 - HTML - (Tabelas, Vídeo, Audio, details + summary)
 - HTML - (Layout baseado em tabelas vs. Layout livre de tabelas (Entendendo o valor semântico das tags do HTML))
 - Block-level Elements vs. Inline Elements
-- Off-Topic - Keepass (Organização, Documentação e Eficiência)
+
+### Aula 9 - 2023.08.24 THU - 36h 
+
+- HTML - Exercício 3
 
 - CSS - Sintaxe, Onde declarar, Comentários 
 - CSS - Seletores (Elemento, id, Classe, Universal)
 - CSS - Propriedades Background, Color 
 - CSS - Formatação de texto e fontes  
----
+
 - CSS - Especificidade de seletores 
 - CSS - Margens, Padding, Bordas, outline, Box Model 
 - CSS - Formatação de Formulários
 - CSS - Display, Elementos de Bloco x Elementos de linha 
 
-### Aula 9 - 2023.08.24 THU - 36h 
+### Aula 10 - 2023.08.25 FRI - 40h 
 - CSS - Formatação para Links, Listas e Tabelas 
 - CSS - Um pouco mais sobre formatação de textos, fontes e bordas
 - CSS - CSS Reset e CSS Normalize
 - CSS - Responsividade (Media Query, viewport)
-
-### Aula 10 - 2023.08.25 FRI - 40h 
-- CSS - Grid 
-- HTML - iframe 
-- Off-topic - Google Agenda 
-- Projeto - Landing Page
-- Projeto - Página que fale sobre formas de diminuir emissões de carbono
-- Projeto - Página que fale sobre os benefícios da caminhada para a saúde
 
 ### Aula Magna - 2023.08.28 MON
 - Aula Magna - Participação Obrigatória
@@ -166,6 +159,14 @@ de 24/08/2023.
 - Profa. Josiani
 
 ### Aula 11 - 2023.08.30 WED - 44h 
+- CSS - Grid 
+- HTML - iframe 
+- Off-topic - Google Agenda 
+- Projeto - Landing Page
+- Projeto - Página que fale sobre formas de diminuir emissões de carbono
+- Projeto - Página que fale sobre os benefícios da caminhada para a saúde
+
+### Aula 12 - 2023.08.31 THU - 48h 
 - Off-Topic - Publicando uma página no Github Pages
 - HTML - Formularios 
    - Input type=text
@@ -175,7 +176,7 @@ de 24/08/2023.
 
 - Projeto - Formulário de contato
 
-### Aula 12 - 2023.08.31 THU - 48h 
+### Aula 13 - 2023.09.01 FRI - 52h 
 - HTML - Formularios
    - Input Types (button, submit, reset, checkbox, color, date, email, file, number, radio, range, tel, etc)
    - Input Attributes
@@ -183,7 +184,7 @@ de 24/08/2023.
 - Projeto - Refatorar formulário de contato 
 - Projeto - Urna eletrônica
 
-### Aula 13 - 2023.09.01 FRI - 52h 
+### Aula 14 - 2023.09.04 MON - 56h 
 - HTML - Formularios
    - Select 
    - fieldset
@@ -198,13 +199,11 @@ de 24/08/2023.
 - Projeto - Cadastro de Aluno
 - Projeto - Tela de Login
 
-### Aula 14 - 2023.09.04 MON - 56h 
-- CSS - Bootstrap 
-
 ### Aula ID - 2023.09.05 TUE
 - Profa. Josiane
 
 ### Aula 15 - 2023.09.06 WED - 60h 
+- CSS - Bootstrap 
 - Reservado/Respiro (Dúvidas, revisão de conteúdo, exercícios, conteúdos atrasados...)
 
 ### Feriado - 2023.09.07 THU 
@@ -389,7 +388,7 @@ de 24/08/2023.
 - Off-Topic - Publicando uma página no Github Pages
 - Off-topic - Google Agenda 
 - Off-topic - Google App Script
-
+- Off-Topic - Keepass (Organização, Documentação e Eficiência)
 ---
 ## Ferramentas (Setup) 
 
