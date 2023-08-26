@@ -127,22 +127,26 @@ Formatura e Mostra de Talentos: 2024.02.28 - 2024.02.29
 ### Aula 9 - 2023.08.24 THU - 36h 
 
 - HTML - Exercício 3
+- HTML - Correção Exercício 2
 
 - CSS - Sintaxe, Onde declarar, Comentários 
 - CSS - Seletores (Elemento, id, Classe, Universal)
-- CSS - Propriedades Background, Color 
-- CSS - Formatação de texto e fontes  
-
-- CSS - Especificidade de seletores 
-- CSS - Margens, Padding, Bordas, outline, Box Model 
-- CSS - Formatação de Formulários
 - CSS - Display, Elementos de Bloco x Elementos de linha 
 
 ### Aula 10 - 2023.08.25 FRI - 40h 
-- CSS - Formatação para Links, Listas e Tabelas 
-- CSS - Um pouco mais sobre formatação de textos, fontes e bordas
+
+- HTML - Correção Exercício 3
+
+- CSS - Propriedades Background, Color 
+- CSS - Formatação de texto 
+
+- CSS - Especificidade de seletores 
+
+
+
 - CSS - CSS Reset e CSS Normalize
-- CSS - Responsividade (Media Query, viewport)
+
+
 
 ### Aula Magna - 2023.08.28 MON
 - Aula Magna - Participação Obrigatória
@@ -159,6 +163,10 @@ de 24/08/2023.
 - Profa. Josiani
 
 ### Aula 11 - 2023.08.30 WED - 44h 
+- CSS - Fontes
+- CSS - Margens, Padding, Bordas, outline, Box Model 
+- CSS - Formatação para Links, Listas e Tabelas 
+- CSS - Responsividade (Media Query, viewport)
 - CSS - Grid 
 - HTML - iframe 
 - Off-topic - Google Agenda 
@@ -203,6 +211,7 @@ de 24/08/2023.
 - Profa. Josiane
 
 ### Aula 15 - 2023.09.06 WED - 60h 
+- CSS - Formatação de Formulários
 - CSS - Bootstrap 
 - Reservado/Respiro (Dúvidas, revisão de conteúdo, exercícios, conteúdos atrasados...)
 
@@ -447,10 +456,12 @@ de 24/08/2023.
 [![WhatsApp](https://img.shields.io/badge/Grupo-WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://chat.whatsapp.com/KyimwmWav9c2Go5DhGLNjO)
 
 - Planilhas Pergutas do dia:
-    - Git e GitHub
+    - Git e GitHub  
         https://forms.gle/M9os3FjgWVAoC6Z48
-    - HTML 
+    - HTML   
         https://forms.gle/N9rdE2pKSdv5mYSy9
+    - CSS  
+        https://forms.gle/F1gBELnQBA5izc9D8
 
 - Planilha Entrega de Exercícios:   
     https://forms.gle/fZZymQsHrqofwg4x8

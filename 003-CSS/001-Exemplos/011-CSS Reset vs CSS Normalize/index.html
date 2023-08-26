@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="normalize.css">
+    <!--
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="minireset.css">
+    -->
+    <style>
+        main {
+            background-color: #E0E0E0;
+        }
+
+    </style>
+</head>
+
+<body>
+    <h1>Titulo 1</h1>
+    <h2>Titulo 2</h2>
+    <h3>Titulo 3</h3>
+    <h4>Titulo 4</h4>
+    <h5>Titulo 5</h5>
+    <h6>Titulo 6</h6>
+
+    <main>
+        <article>
+            <h1>Titulo</h1>
+            <p><small>Lorem ipsum dolor s</small> it amet consectetur adipisicing elit. Quis asperiores officiis, inventore vel sequi dolore
+                voluptates enim ab laudantium iste consequuntur cum nisi est autem! Accusantium laboriosam reiciendis quam
+                dolorum.</p>
+            <p>H<sub>2</sub>O x<sup>2</sup></p>
+            <a href="#">Link Qualquer</a>
+        </article>
+    </main>
+
+    <ul>
+        <li>item 1</li>
+        <li>item 2</li>
+        <li>item 3</li>
+        <li>item 4</li>
+        <li>item 5</li>
+    </ul>
+
+    <ol>
+        <li>item 1</li>
+        <li>item 2</li>
+        <li>item 3</li>
+        <li>item 4</li>
+        <li>item 5</li>
+    </ol>
+
+
+    <!-- link para outro site -->
+    <p>Visite o site do <a href="https://www.entra21.com.br/" target="_black">Entra21</a> 2022</p>
+
+    <!-- link para um bookmark da própria página-->
+    <p>Vá até o <a href="#rodape">rodapé</a> do site</p>
+
+    <!-- link para um bookmark de outra página-->
+    <p>PROGRAMA ENTRA21 SC - <a href="https://www.entra21.com.br/#61f8475d4d729">COMO SERÃO DISTRIBUÍDAS AS VAGAS PELO
+            ESTADO?</a></p>
+
+    <!-- link para uma página do próprio site-->
+    <p>Voltar para a <a href="../index.html">Home</a> </p>
+
+    <!-- Link em uma imagem/figura -->
+    <a href="https://pt.wikipedia.org/wiki/HTML" target="_black">
+        <img src="assets/img/fundoJs.jpg" alt="fundo js">
+    </a>
+
+    <table border="1">
+        <thead>
+            <tr>
+                <th>l-0 c-1</th>
+                <th>l-0 c-2</th>
+                <th>l-0 c-3</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>l-1 c-1</td>
+                <td>l-1 c-2</td>
+                <td>l-1 c-3</td>
+            </tr>
+            <tr>
+                <td>l-2 c-1</td>
+                <td>l-2 c-2</td>
+                <td>l-2 c-3</td>
+            </tr>
+            <tr>
+                <td>l-3 c-1</td>
+                <td>l-3 c-2</td>
+                <td>l-3 c-3</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>l-4 c-1</td>
+                <td>l-4 c-2</td>
+                <td>l-4 c-3</td>
+            </tr>
+        </tfoot>
+    </table>
+    <form action="">
+
+        <!-- Exemplo 001 - Caixa de texto -->
+        <label for="idTexto">Texto</label><br>
+        <input type="text" id="idTexto" name="nmTexto" class="inputTexto">
+
+        <br>
+        <!-- Exemplo 002 - Caixa de texto - Numerico -->
+        <label for="idNumero">Numero</label><br>
+        <input type="number" id="idNumero" name="nmNumero">
+
+        <br>
+        <!-- Exemplo 003 - Caixa de texto - Data -->
+        <label for="idData">Data</label><br>
+        <input type="date" id="idData" name="nmData">
+
+        <br>
+        <!-- Exemplo 004 - Caixa de texto - Senha -->
+        <label for="idSenha">Senha</label><br>
+        <input type="password" id="idSenha" name="nmSenha">
+
+        <br><br>
+        <!-- Exemplo 005 - Checkbox -->
+        <input type="checkbox" name="nmOpcao1" id="idOpcao1">
+        <label for="idOpcao1">Opação 1</label>
+        <br>
+        <input type="checkbox" name="nmOpcao2" id="idOpcao2">
+        <label for="idOpcao2">Opação 2</label>
+        <br>
+        <input type="checkbox" name="nmOpcao3" id="idOpcao3">
+        <label for="idOpcao3">Opação 3</label>
+
+        <br><br>
+        <!-- Exemplo 006 - Radio Button -->
+        <input type="radio" name="nmGenero" id="idFeminino" checked>
+        <label for="idFeminino">Feminino</label>
+        <br>
+        <input type="radio" name="nmGenero" id="idMasculino">
+        <label for="idMasculino">Masculino</label>
+        <br>
+
+        <br><br>
+        <!-- Exemplo 007 - Select -->
+        <label for="idSelect">Select</label><br>
+        <select name="nmSelect" id="idSelect">
+            <option value="RS">Rio Grande do Sul</option>
+            <option value="SC">Santa Catarina</option>
+            <option value="PR">Paraná</option>
+            <option value="SP">São Paulo</option>
+            <option value="MG">Minas Gerais</option>
+        </select>
+
+        <br><br>
+        <!-- Exemplo 008 - Datalist -->
+        <label for="idNavegadores">Navegadores</label><br>
+        <input list="idListaNav" id="idNavegadores">
+        <datalist id="idListaNav">
+            <option value="Internet Explorer">IE</option>
+            <option value="Firefox">FI</option>
+            <option value="Chrome">CH</option>
+            <option value="Opera">OP</option>
+        </datalist>
+
+
+        <br><br>
+        <!-- Exemplo 009 - Textarea -->
+        <label for="idTextArea">Digite aqui sua pergunta:</label><br>
+        <textarea name="nmTextArea" id="idTextArea" cols="30" rows="10"></textarea>
+
+
+
+        <br><br>
+        <input type="button" value="Capturar" onclick="capturaTela()">
+    </form>
+</body>
+
+</html>
