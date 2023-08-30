@@ -2,6 +2,7 @@
 *{
     padding: 0;
 }
+
 h1{
     padding: 0;
 }
@@ -13,3 +14,21 @@ h1{
 #id1{
     padding: 0;
 }
+
+
+Cascatateamento 
+
+CSS Padrão do Navegador 
+CSS Folhas de estilo Interno e Externo 
+
+    * 
+        de cima para baixo  
+    Tag 
+        de cima para baixo  
+    classe
+        de cima para baixo 
+    id 
+        de cima para baixo 
+
+
+CSS Inline 

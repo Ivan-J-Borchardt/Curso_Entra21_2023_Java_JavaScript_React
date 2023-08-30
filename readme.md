@@ -10,6 +10,10 @@
 
 "Não se pode ensinar alguma coisa a um homem; apenas ajudá-lo a encontrá-la dentro de si mesmo" (Galileu)
 
+"O fracasso não é o oposto do sucesso. Ele é parte do sucesso!" (Ariana Huffington)
+
+"Vaca não dá leite!" (Mario Sérgio Cortela)
+
 ---
 ## Resumo
 ~~~
@@ -131,7 +135,7 @@ Formatura e Mostra de Talentos: 2024.02.28 - 2024.02.29
 
 - CSS - Sintaxe, Onde declarar, Comentários 
 - CSS - Seletores (Elemento, id, Classe, Universal)
-- CSS - Display, Elementos de Bloco x Elementos de linha 
+- CSS - Display, Elementos de Bloco x Elementos de linha
 
 ### Aula 10 - 2023.08.25 FRI - 40h 
 
@@ -139,14 +143,8 @@ Formatura e Mostra de Talentos: 2024.02.28 - 2024.02.29
 
 - CSS - Propriedades Background, Color 
 - CSS - Formatação de texto 
-
 - CSS - Especificidade de seletores 
-
-
-
 - CSS - CSS Reset e CSS Normalize
-
-
 
 ### Aula Magna - 2023.08.28 MON
 - Aula Magna - Participação Obrigatória
@@ -160,7 +158,7 @@ Formatura e Mostra de Talentos: 2024.02.28 - 2024.02.29
 de 24/08/2023.
 
 ### Aula ID - 2023.08.29 TUE
-- Profa. Josiani
+- Prof. Matheus
 
 ### Aula 11 - 2023.08.30 WED - 44h 
 - CSS - Fontes
@@ -185,6 +183,7 @@ de 24/08/2023.
 - Projeto - Formulário de contato
 
 ### Aula 13 - 2023.09.01 FRI - 52h 
+- Avaliação teórica HTML e CSS (1h)
 - HTML - Formularios
    - Input Types (button, submit, reset, checkbox, color, date, email, file, number, radio, range, tel, etc)
    - Input Attributes
