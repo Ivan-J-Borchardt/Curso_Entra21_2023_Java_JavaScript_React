@@ -158,21 +158,27 @@ Formatura e Mostra de Talentos: 2024.02.28 - 2024.02.29
 de 24/08/2023.
 
 ### Aula ID - 2023.08.29 TUE
-- Prof. Matheus
+- Prof. Mateus
 
 ### Aula 11 - 2023.08.30 WED - 44h 
 - CSS - Fontes
 - CSS - Margens, Padding, Bordas, outline, Box Model 
-- CSS - Formatação para Links, Listas e Tabelas 
-- CSS - Responsividade (Media Query, viewport)
-- CSS - Grid 
+- CSS - Formatação para Links
+- CSS - Cores
+
+### Aula 12 - 2023.08.31 THU - 48h 
+
+- CSS - Formatação para Listas e Tabelas 
 - HTML - iframe 
 - Off-topic - Google Agenda 
 - Projeto - Landing Page
 - Projeto - Página que fale sobre formas de diminuir emissões de carbono
 - Projeto - Página que fale sobre os benefícios da caminhada para a saúde
 
-### Aula 12 - 2023.08.31 THU - 48h 
+- CSS - Max-, Min- Width, Hight
+- CSS - Responsividade (Media Query, viewport)
+- CSS - Grid 
+---
 - Off-Topic - Publicando uma página no Github Pages
 - HTML - Formularios 
    - Input type=text
@@ -207,7 +213,7 @@ de 24/08/2023.
 - Projeto - Tela de Login
 
 ### Aula ID - 2023.09.05 TUE
-- Profa. Josiane
+- Prof. Mateus
 
 ### Aula 15 - 2023.09.06 WED - 60h 
 - CSS - Formatação de Formulários
