@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .linha{
+            border: 1px solid red;
+            margin: 15px;
+            display: flex;
+            height: 300px;
+
+           /* flex-direction: row; */
+            
+            /*Alinhamento Horizontal*/
+            justify-content: flex-end;
+            
+            /*Alinhamento Vertical*/
+           /* align-items: center;*/
+             align-content: space-evenly; 
+
+            /*flex-wrap: wrap;*/
+            flex-flow: row wrap;
+        }
+
+        .coluna{
+            border: 1px solid blue;
+            margin: 5px;
+            padding: 15px;
+        }
+
+        /*Esxemplo 2*/
+        .linha1{
+            border: 1px solid red;
+            margin: 15px;
+            display: flex;
+        }
+
+        .coluna1{
+            border: 1px solid blue;
+            margin: 5px;
+            padding: 15px;
+        }
+
+        #item-1{
+            order: 3;
+            flex-grow: 1;
+            flex-shrink: 2;
+        }
+
+        #item-2{
+            order: 2;
+            flex-grow: 1;
+            flex-shrink: 1;
+            flex-basis: 200px;
+        }
+
+    </style>
+
+</head>
+<body>
+    <div class="linha">
+        <div class="coluna">1</div>
+        <div class="coluna">2</div>
+        <div class="coluna">3</div>
+        <div class="coluna">4</div>
+        <div class="coluna">5</div>
+        <div class="coluna">6</div>
+        <div class="coluna">7</div>
+        <div class="coluna">8</div>
+        <div class="coluna">9</div>
+        <div class="coluna">10</div>
+    </div>
+
+    <div class="linha1">
+        <div class="coluna1" id="item-1">Static 1</div>
+        <div class="coluna1" id="item-2">Static 2</div>
+        <div class="coluna1" id="item-3">Static 3</div>
+    </div>
+
+</body>
+</html>

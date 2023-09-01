@@ -167,19 +167,22 @@ de 24/08/2023.
 - CSS - Cores
 
 ### Aula 12 - 2023.08.31 THU - 48h 
-
 - CSS - Formatação para Listas e Tabelas 
-- HTML - iframe 
-- Off-topic - Google Agenda 
 - Projeto - Landing Page
 - Projeto - Página que fale sobre formas de diminuir emissões de carbono
 - Projeto - Página que fale sobre os benefícios da caminhada para a saúde
 
+### Aula 13 - 2023.09.01 FRI - 52h 
+- HTML - iframe 
+- Off-topic - Google Agenda 
+- CSS - Grid 
+- CSS - Flexbox
 - CSS - Max-, Min- Width, Hight
 - CSS - Responsividade (Media Query, viewport)
-- CSS - Grid 
----
+
 - Off-Topic - Publicando uma página no Github Pages
+
+### Aula 14 - 2023.09.04 MON - 56h 
 - HTML - Formularios 
    - Input type=text
    - Label 
@@ -187,8 +190,6 @@ de 24/08/2023.
    - button 
 
 - Projeto - Formulário de contato
-
-### Aula 13 - 2023.09.01 FRI - 52h 
 - Avaliação teórica HTML e CSS (1h)
 - HTML - Formularios
    - Input Types (button, submit, reset, checkbox, color, date, email, file, number, radio, range, tel, etc)
@@ -197,7 +198,10 @@ de 24/08/2023.
 - Projeto - Refatorar formulário de contato 
 - Projeto - Urna eletrônica
 
-### Aula 14 - 2023.09.04 MON - 56h 
+### Aula ID - 2023.09.05 TUE
+- Prof. Mateus
+
+### Aula 15 - 2023.09.06 WED - 60h 
 - HTML - Formularios
    - Select 
    - fieldset
@@ -212,24 +216,24 @@ de 24/08/2023.
 - Projeto - Cadastro de Aluno
 - Projeto - Tela de Login
 
-### Aula ID - 2023.09.05 TUE
-- Prof. Mateus
-
-### Aula 15 - 2023.09.06 WED - 60h 
-- CSS - Formatação de Formulários
-- CSS - Bootstrap 
-- Reservado/Respiro (Dúvidas, revisão de conteúdo, exercícios, conteúdos atrasados...)
-
 ### Feriado - 2023.09.07 THU 
 
 ### Recesso - 2023.09.08 FRI 
 
 ### Aula 16 - 2023.09.11 MON - 64h 
+- CSS - Formatação de Formulários
+- CSS - Bootstrap 
+
+### Aula 17 -  - 68h 
+
+- Reservado/Respiro (Dúvidas, revisão de conteúdo, exercícios, conteúdos atrasados...)
+
+### Aula 18 -  - 72h 
 - Lógica - Introdução à lógica de programação
 - Lógica - Como o computador surgiu 
 - Lógica - Entendendo como um computador funciona 
 
-### Aula 17 -  - 68h 
+### Aula 19 -  - 76h 
 - Lógica - O que é Lógica? (noção empírica vs. Conceito Formal) 
 - Lógica - Proposições (entendendo o conceito)
 - Lógica - Raciocínio de Relacionamento
@@ -245,7 +249,8 @@ de 24/08/2023.
 
 - Exercícios - Lista 1 (Criação de um algoritmo, Sequencia Lógica)
 
-### Aula 18 -  - 72h 
+
+### Aula 20 -  - 80h 
 - Lógica - Introdução à lógica de programação
     -  Proposições  
         - Conceito formal 
@@ -260,7 +265,7 @@ de 24/08/2023.
     - Operadores Relacionais 
     - Operadores Aritméticos 
 
-### Aula 19 -  - 76h 
+### Aula 21 -  - 84h 
 - Lógica - Criando o primeiro programa em JavaScript 
     - Conhecendo o VSCode
     - Declaração de variáveis e tipos de dados (inteiro, real, booleano, caractere) 
@@ -276,8 +281,7 @@ de 24/08/2023.
 - Lógica - Precedência dos operadores aritméticos
 - Exercícios - Lista 2 (Criando os primeiros programas em JavaScript)
 
-
-### Aula 20 -  - 80h 
+### Aula 22 -  - 88h 
 - Correção lista 2 
 - Lógica - Estruturas de Seleção
 - Lógica - Operadores Lógicos e expressões lógicas 
@@ -286,51 +290,48 @@ de 24/08/2023.
 - Correção lista 3 
 - Exercícios - Lista 4 (Programas com estruturas de Seleção)
 
-### Aula 21 -  - 84h 
+### Aula 23 -  - 92h 
 - Correção lista 4 
 - Lógica - Resolvendo problemas computacionais
 - Lógica - Teste de Mesa
 - Lógica - Estruturas de repetição 
 - Exercícios - Lista 5 (Programas com estruturas de Repetição)
 
-### Aula 22 -  - 88h 
+### Aula 24 -  - 96h 
 - Correção lista 5 
 - Exercícios - Lista 6 (Programas com estruturas de Seleção e Repetição)
 
-### Aula 23 -  - 92h 
+### Aula 25 -  - 100h 
 - Correção lista 6
 - Lógica - Manipulação de Vetores 
 - Exercícios - Lista 7 (Programas com Vetores simples)
 
-### Aula 24 -  - 96h 
+### Aula 26 -  - 104h 
 - Correção lista 7
 - Lógica - Funções 
 - Lógica - Manipulação de Matrizes
 - Exercícios - Lista 8 (Programas com Matrizes e Vetores)
 
-### Aula 25 -  - 100h 
+
+### Aula 27 -  - 108h 
 - Lógica - Aula dedicada a conclusão de exercícios 
 
-### Aula 26 -  - 104h 
+### Aula 28 -  - 112h 
 - Correção Lista 8 
 - Complexidade de Tempo e Espaço
 
-
-### Aula 27 -  - 108h 
+### Aula 29 -  - 116h 
 - JavaScript - Métodos de Array 
 - JavaScript - Métodos de String
 - JavaScript - Métodos de Numbers
 
-### Aula 28 -  - 112h 
+### Aula 30 -  - 120h 
 - JavaScript - Map e Set 
 
-### Aula 29 -  - 116h 
+### Aula 31 -  - 124h 
 - JavaScript - Funções Nomeadas e Funções Anônimas
 - JavaScript - Arrow Function
 - JavaScript - Funções Auto-Invocadas 
-
-### Aula 30 -  - 120h 
-### Aula 31 -  - 124h 
 ### Aula 32 -  - 128h 
 ### Aula 33 -  - 132h 
 ### Aula 34 -  - 136h 
