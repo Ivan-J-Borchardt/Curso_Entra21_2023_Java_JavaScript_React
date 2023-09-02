@@ -11,6 +11,7 @@
 ### Icones 
 - https://www.flaticon.com/
 - https://www.favicon.cc/
+- https://iconmonstr.com/
 
 
 ## HTML 
