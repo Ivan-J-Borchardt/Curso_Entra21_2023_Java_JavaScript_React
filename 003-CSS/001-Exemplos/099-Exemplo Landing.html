@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <style>
+        /*CSS Reset e definições Globais*/
+        body,
+        h1,
+        p {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        body{
+            background-color: var(--corFundo1);
+        }
+
+        /* Palheta de Cores */
+        :root{
+            --corPrincipal : #04C4D9;
+            --corComplementar : #2E3159;
+            --corComplementar2 : #2e31597d;
+            --corContraste1 : #D94A64;
+            --corContraste2 : #A62F03; 
+            --corNeutro1: white; 
+            --corNeutro2: black;
+            --corFundo1: #26262b;
+            --corFundo2: azure;
+        }
+
+
+
+        /* Cabeçalho, Menu, Logo */
+        .cabecalho {
+            background-color: var(--corPrincipal);
+        }
+
+        .barraNav {
+            display: flex;
+        }
+
+        .logo img {
+            width: 75px;
+            margin-left: 35px;
+        }
+
+        .menu{
+            width: 100%;
+            margin-right: 100px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-end;
+        }
+
+        .menu ul {
+            list-style-type: none;
+        }
+
+        .menu ul li {
+            margin-left: 15px;
+            font-size: 1em;
+        }
+
+        .linkMenu:link,
+        .linkMenu:visited {
+            color: var(--corNeutro1);
+            text-decoration: none;
+            font-weight: 100;
+        }
+
+        .linkMenu:hover,
+        .linkMenu:active {
+            color: var(--corComplementar);
+        }
+
+        /* Primeira Dobra - #Home*/
+        .secApresentacao {
+            height: calc(85vh);
+
+            background-image: url("assets/fundo.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .bgFiltro {
+            height: 100%;
+            width: 100%;
+            backdrop-filter: blur(5px) grayscale(0.6);
+        }
+
+        #ct3{
+            margin-right: 50px;
+        }
+
+        #ct3Titulo1 {
+            color: var(--corNeutro1);
+            font-size: 2em;
+            text-shadow: 0 0 3px black;
+        }
+
+        #ct3Texto1 {
+            color: var(--corNeutro1);
+            font-size: 1em;
+            text-shadow: 0 0 3px black;
+            margin-bottom: 20px;
+        }
+
+
+        /* Segunda Dobra - #Curso*/
+        .secCurso {
+            background-color: var(--corFundo2);
+            padding-top: 70px;
+        }
+
+        .card{
+           border: 3px solid var(--corComplementar);
+           border-radius: 15px;
+           background-color: var(--corComplementar2);
+    
+           color: var(--corNeutro1);
+           width: 20%;
+           margin: 30px;
+           padding-top: 20px;
+           padding-bottom: 20px;
+           
+        }
+
+        .card img{
+            width: 70%;
+            display: flex;
+            margin: 0 auto 0 auto;
+        }
+
+        .card h3{
+            width: 100%;
+            text-align: center;
+            
+        }
+
+  
+        /* Depoimentos*/
+        .secDepoimentos{
+            background-color: var(--corFundo2);
+            padding-top: 60px;
+        }
+
+        .card2{
+           color: var(--corComplementar);
+           width: 20%;
+           margin: 30px;
+           padding-top: 20px;
+           padding-bottom: 20px;
+           
+        }
+
+        .card2 img{
+            width: 70%;
+            border-radius: 50%;
+            display: flex;
+            margin: 0 auto 0 auto;
+        }
+
+        .card2 h3{
+            width: 100%;
+            text-align: center;
+        }
+
+        /* Perguntas Frequentes - #faq*/
+        .secFaq{
+            background-color: var(--corFundo2);
+            padding-top: 60px;
+            padding-bottom: 60px;
+        }
+
+        .secFaq details{
+            width: 50%;
+            margin-left: 30px;
+            margin-bottom: 5px;
+            padding: 10px;
+            border: 1px groove var(--corComplementar);
+            border-radius: 15px;
+            background-color: var(--corComplementar2);
+            color: var(--corNeutro1);
+        }
+
+        #ctFaqDiv3{
+            margin-right: 40px;
+            background-color: var(--corComplementar2);
+            border-radius: 15px;
+            border-style: solid;
+        }
+
+        #ctFaqTitulo1{
+            color: var(--corNeutro1);
+            font-size: 2em;
+            text-shadow: 0 0 3px black;
+        }
+
+        /* Rodapé - #Contato */
+        #contato{
+            width: 100vw;
+            height: 300px;
+            background-color: var(--corComplementar2);
+            color: var(--corNeutro1);
+        }
+        
+        #ctContatoDiv1{
+            height: 100%;
+        }
+
+        #ctContatoAddress{
+            margin-left: 30px;
+            text-align: justify;
+        }
+
+        .socialIcon{
+            padding: 10px;
+            width: 45px;
+            filter: invert();
+        }
+
+        /* Estilos de uso geral */   
+        .linha {
+            display: flex;
+        }
+
+        .largura1200px{
+            width: 1200px;
+            margin: 0 auto 0 auto;
+        } 
+
+        .largura30 {
+            width: 30%;
+            height: 100%;
+        }
+
+        .largura40 {
+            width: 40%;
+            height: 100%;
+        }
+
+        .largura60 {
+            width: 60%;
+            height: 100%;
+        }
+
+        .largura70 {
+            width: 70%;
+            height: 100%;
+        }
+ 
+
+        .verticalCentro {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .tituloSessao{
+            margin-bottom: 30px;
+            margin-left: 30px;
+            color: var(--corComplementar);
+            font-size: 2em;
+            text-shadow: 0 0 1px black;
+            font-variant: small-caps;
+        }
+
+
+        /* Botões de Chamada de Ação */
+        .botao:link,
+        .botao:visited {
+            border: 1px solid var(--corComplementar);
+            border-radius: 15px;
+            padding: 8px;
+            background-color: var(--corContraste1);
+            color: var(--corNeutro1);
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .botao:hover,
+        .botao:active {
+            filter: drop-shadow(0 0 10px var(--corContraste2));
+        }
+
+
+    </style>
+</head>
+
+<body>
+    
+    <!-- Cabeçalho -->
+    <header class="cabecalho">
+        <nav id="idNav" class="barraNav largura1200px">
+            <div class="logo">
+                <img src="assets/logo3.png" alt="logo">
+            </div>
+            <div class="menu">
+                <ul class="linha">
+                    <li><a class="linkMenu" href="#">Home</a></li>
+                    <li><a class="linkMenu" href="#">Curso</a></li>
+                    <li><a class="linkMenu" href="#">Depoimentos</a></li>
+                    <li><a class="linkMenu" href="#">Contato</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!-- Principal -->
+    <main>
+        <!-- home -->
+        <section id="home" class="secApresentacao largura1200px">
+            <div id="ct1" class="bgFiltro linha">
+                <div id="ct2" class="largura60"></div>
+                <div id="ct3" class="largura40  verticalCentro">
+                    <h1 id="ct3Titulo1">Curso De Programação React</h1>
+                    <p id="ct3Texto1">Tudo o que você precisa saber em um só lugar!!!</p>
+                    <p><a id="Ct3Botão1" class="botao" href="099-Exemplo google calender.html">Agende uma Aula</a></p>
+                </div>
+            </div>
+        </section>
+
+        <!-- curso -->
+        <section id="curso" class="secCurso largura1200px">
+            <h2 class="tituloSessao">O que aprenderemos?</h2> 
+            <div class="linha">
+                <div class="card">
+                    <img class="badgeTec" src="assets/html-5.png" alt="">
+                    <h3>HTML 5</h3>
+                </div>
+                <div class="card">
+                    <img class="badgeTec" src="assets/css-3.png" alt="">
+                    <h3>CSS 3</h3>
+                </div>
+                <div class="card">
+                    <img class="badgeTec" src="assets/JavaScript.png" alt="">
+                    <h3>JavaScript</h3>
+                </div>
+                <div class="card">
+                    <img class="badgeTec" src="assets/Bootstrap2.png" alt="">
+                    <h3>Bootstrap</h3>
+                </div>
+
+            </div>
+            <div class="linha">
+                <div class="card">
+                    <img class="badgeTec" src="assets/PostgreSql.png" alt="">
+                    <h3>PostgreSql</h3>
+                </div>
+                <div class="card">
+                    <img class="badgeTec" src="assets/java.png" alt="">
+                    <h3>Java</h3>
+                </div>
+                <div class="card">
+                    <img class="badgeTec" src="assets/atom.png" alt="">
+                    <h3>React</h3>
+                </div>
+                <div class="card">
+                    <img class="badgeTec" src="assets/typescript.png" alt="">
+                    <h3>TypeScript</h3>
+                </div>
+            </div>
+
+
+        </section>
+
+        <!-- depoimentos -->
+        <section id="depoimentos" class="secDepoimentos largura1200px">
+            <h2 class="tituloSessao">O que nossos alunos estão dizendo</h2>
+            <div class="linha">
+                <div class="card2">
+                    <img class="badgeTec" src="assets/aluno1.jpg" alt="">
+                    <h3>Regina</h3>
+                    <img src="assets/star5.png" alt="">
+                </div>
+                <div class="card2">
+                    <img class="badgeTec" src="assets/aluno2.jpg" alt="">
+                    <h3>Augusto</h3>
+                    <img src="assets/star5.png" alt="">
+                </div>
+                <div class="card2">
+                    <img class="badgeTec" src="assets/aluno3.jpg" alt="">
+                    <h3>Alex</h3>
+                    <img src="assets/star5.png" alt="">
+                </div>
+                <div class="card2">
+                    <img class="badgeTec" src="assets/aluno4.jpg" alt="">
+                    <h3>Júlia</h3>
+                    <img src="assets/star5.png" alt="">
+                </div>
+            </div>
+        </section>
+
+        <!-- Faq -->
+        <section id="faq" class="secFaq largura1200px">
+            <h2 class="tituloSessao">Perguntas Frequentes</h2>
+
+            <div class="linha">
+                <div class="largura60">
+                    <details>
+                        <summary>Como posso acessar meu curso?</summary>
+                        <p>vc poderá acessar seu curso atravéws do youtubo pelo link ...</p>
+                        <table>
+                            <tr>
+                                <td>teste</td>
+                                <td>teste2</td>
+                            </tr>
+                        </table>
+                    </details>
+                    <details>
+                        <summary>Como posso acessar meu curso?</summary>
+                        <p>vc poderá acessar seu curso atravéws do youtubo pelo link ...</p>
+                        <table>
+                            <tr>
+                                <td>teste</td>
+                                <td>teste2</td>
+                            </tr>
+                        </table>
+                    </details>
+                    <details>
+                        <summary>Como posso acessar meu curso?</summary>
+                        <p>vc poderá acessar seu curso atravéws do youtubo pelo link ...</p>
+                        <table>
+                            <tr>
+                                <td>teste</td>
+                                <td>teste2</td>
+                            </tr>
+                        </table>
+                    </details>
+                    <details>
+                        <summary>Como posso acessar meu curso?</summary>
+                        <p>vc poderá acessar seu curso atravéws do youtubo pelo link ...</p>
+                        <table>
+                            <tr>
+                                <td>teste</td>
+                                <td>teste2</td>
+                            </tr>
+                        </table>
+                    </details>
+                    <details>
+                        <summary>Como posso acessar meu curso?</summary>
+                        <p>vc poderá acessar seu curso atravéws do youtubo pelo link ...</p>
+                        <table>
+                            <tr>
+                                <td>teste</td>
+                                <td>teste2</td>
+                            </tr>
+                        </table>
+                    </details>
+                    <details>
+                        <summary>Como posso acessar meu curso?</summary>
+                        <p>vc poderá acessar seu curso atravéws do youtubo pelo link ...</p>
+                        <table>
+                            <tr>
+                                <td>teste</td>
+                                <td>teste2</td>
+                            </tr>
+                        </table>
+                    </details>
+                </div>
+                <div id="ctFaqDiv3" class="largura40 verticalCentro">
+                    <h2 id="ctFaqTitulo1">Preparado para dar o próximo passo em direção ao sucesso?</h2>
+                    <p id="ctFaqTexto1"><a class="botao" href="099-Exemplo google calender.html">Agende uma Aula agora mesmo!</a></p>
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+    <!-- Rodapé -->
+    <footer id="contato" >
+        <div id="ctContatoDiv1" class="linha largura1200px">
+           <address id="ctContatoAddress" class="largura60 verticalCentro">
+                Rua das Palmeiras, 1521 <br>
+                Velha, Blumenau, SC <br>
+                CEP: 89198-090
+           </address>
+           <div class="verticalCentro">
+                <p>E-mail: contato@meudominio.com.br</p>
+                <p>Tel: +55 (47) 2543-3232</p>
+                <div class="linha">
+                    <a href="#">
+                        <img class="socialIcon" src="assets/iconmonstr-whatsapp-5-240.png">
+                    </a>
+                    <a href="#">
+                        <img class="socialIcon" src="assets/iconmonstr-facebook-6-240.png">
+                    </a>
+                    <a href="#">
+                        <img class="socialIcon" src="assets/iconmonstr-linkedin-5-240.png">
+                    </a>
+                    <a href="#">
+                        <img class="socialIcon" src="assets/iconmonstr-github-5-240.png">
+                    </a>
+                </div>
+           </div>
+        </div>
+    </footer>
+</body>
+
+</html>

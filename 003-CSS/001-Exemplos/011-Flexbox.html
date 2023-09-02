@@ -11,17 +11,24 @@
             display: flex;
             height: 300px;
 
-           /* flex-direction: row; */
+            flex-direction: row;  /*column; column-reverse; row; row-reverse;*/
+
             
             /*Alinhamento Horizontal*/
-            justify-content: flex-end;
-            
-            /*Alinhamento Vertical*/
-           /* align-items: center;*/
-             align-content: space-evenly; 
+            justify-content: flex-end;/*center; space-around; space-between; space-evenly;*/
 
-            /*flex-wrap: wrap;*/
-            flex-flow: row wrap;
+            
+            /*Alinhamento Vertical sem wrap ligado*/
+            /*align-items: center;*//*center; flex-start; flex-end; stretch; baseline;*/
+
+            /*Alinhamento Vertical com o wrap ligado*/
+            align-content: space-evenly; /*center; space-between; space-around; stretch; flex-start; flex-end;*/
+
+            /*Modo de Encapsulamento dos itens (quebra de linha...)*/
+            flex-wrap: wrap; /*wrap; wrap-reverse; nowrap;*/
+           
+            /*Propriedade abreviada para definir as propriedades flex-directione flex-wrap.*/
+           /* flex-flow: row wrap; */
         }
 
         .coluna{
