@@ -175,22 +175,18 @@ de 24/08/2023.
 ### Aula 13 - 2023.09.01 FRI - 52h 
 - HTML - iframe 
 - Off-topic - Google Agenda 
-- CSS - Grid 
 - CSS - Flexbox
-- CSS - Max-, Min- Width, Hight
-- CSS - Responsividade (Media Query, viewport)
-
 - Off-Topic - Publicando uma página no Github Pages
 
 ### Aula 14 - 2023.09.04 MON - 56h 
+- Avaliação teórica HTML e CSS (1h)
 - HTML - Formularios 
    - Input type=text
    - Label 
    - textarea
    - button 
-
 - Projeto - Formulário de contato
-- Avaliação teórica HTML e CSS (1h)
+ 
 - HTML - Formularios
    - Input Types (button, submit, reset, checkbox, color, date, email, file, number, radio, range, tel, etc)
    - Input Attributes
@@ -222,18 +218,24 @@ de 24/08/2023.
 
 ### Aula 16 - 2023.09.11 MON - 64h 
 - CSS - Formatação de Formulários
+- CSS - Grid 
+- CSS - Max-, Min- Width, Hight
+- CSS - Responsividade (Media Query, viewport)
 - CSS - Bootstrap 
 
-### Aula 17 -  - 68h 
+### Aula ID - 2023.09.12 TUE
+- Prof. Mateus
+
+### Aula 17 - 2023.09.13 WED - 68h 
 
 - Reservado/Respiro (Dúvidas, revisão de conteúdo, exercícios, conteúdos atrasados...)
 
-### Aula 18 -  - 72h 
+### Aula 18 - 2023.09.14 THU - 72h 
 - Lógica - Introdução à lógica de programação
 - Lógica - Como o computador surgiu 
 - Lógica - Entendendo como um computador funciona 
 
-### Aula 19 -  - 76h 
+### Aula 19 - 2023.09.15 FRI - 76h 
 - Lógica - O que é Lógica? (noção empírica vs. Conceito Formal) 
 - Lógica - Proposições (entendendo o conceito)
 - Lógica - Raciocínio de Relacionamento
@@ -250,7 +252,7 @@ de 24/08/2023.
 - Exercícios - Lista 1 (Criação de um algoritmo, Sequencia Lógica)
 
 
-### Aula 20 -  - 80h 
+### Aula 20 - 2023.09.18 MON - 80h 
 - Lógica - Introdução à lógica de programação
     -  Proposições  
         - Conceito formal 
@@ -265,9 +267,11 @@ de 24/08/2023.
     - Operadores Relacionais 
     - Operadores Aritméticos 
 
-### Aula 21 -  - 84h 
+### Aula ID - 2023.09.19 TUE
+- Prof. Mateus
+
+### Aula 21 - 2023.09.20 WED - 84h 
 - Lógica - Criando o primeiro programa em JavaScript 
-    - Conhecendo o VSCode
     - Declaração de variáveis e tipos de dados (inteiro, real, booleano, caractere) 
     - Comandos de saida (console.log)
     - Lendo os primeiros dados da Tela
@@ -281,7 +285,7 @@ de 24/08/2023.
 - Lógica - Precedência dos operadores aritméticos
 - Exercícios - Lista 2 (Criando os primeiros programas em JavaScript)
 
-### Aula 22 -  - 88h 
+### Aula 22 - 2023.09.21 THU - 88h 
 - Correção lista 2 
 - Lógica - Estruturas de Seleção
 - Lógica - Operadores Lógicos e expressões lógicas 
@@ -290,7 +294,7 @@ de 24/08/2023.
 - Correção lista 3 
 - Exercícios - Lista 4 (Programas com estruturas de Seleção)
 
-### Aula 23 -  - 92h 
+### Aula 23 - 2023.09.22 FRI - 92h 
 - Correção lista 4 
 - Lógica - Resolvendo problemas computacionais
 - Lógica - Teste de Mesa
