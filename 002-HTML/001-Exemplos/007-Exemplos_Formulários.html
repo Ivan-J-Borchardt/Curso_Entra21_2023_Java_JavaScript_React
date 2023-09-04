@@ -4,15 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .etiqueta{
+            display: block;
+        }
+
+
+    </style>
 </head>
 <body>
     <form action="">
+
+        <label for="idIdade" class="etiqueta">Idade</label>
+        <input type="text" name="" id="">
+
+        <div>
+            <div>
+                <label for="idCpf">CPF:</label>
+            </div>
+            <input type="text" name="" id="">
+        </div>
+
         <label for="idNome">Nome:</label><br>
-        <input type="text" id="idNome" name="nmNome" value="" placeholder="Nome">
+        <input type="text" id="idNome" name="nmNome" value="Joao" >
 
         <br><br>
-        <label for="idDescricao">Descrição</label><br>
-        <textarea name="nmDesc" id="idDesc" cols="30" rows="10"></textarea> <!-- o valor do textarea é a propriedade innerText-->
+        <label for="idDesc">Descrição</label><br>
+        <textarea name="nmDesc" id="idDesc" cols="30" rows="10">innerText</textarea> <!-- o valor do textarea é a propriedade innerText-->
  
         <br><br>
         <button type="reset">Limpar</button>
