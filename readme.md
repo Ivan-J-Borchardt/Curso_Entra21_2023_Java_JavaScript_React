@@ -186,13 +186,13 @@ de 24/08/2023.
    - textarea
    - button 
 - Projeto - Formulário de contato
- 
+
 - HTML - Formularios
    - Input Types (button, submit, reset, checkbox, color, date, email, file, number, radio, range, tel, etc)
    - Input Attributes
 
 - Projeto - Refatorar formulário de contato 
-- Projeto - Urna eletrônica
+
 
 ### Aula ID - 2023.09.05 TUE
 - Prof. Mateus
@@ -211,6 +211,13 @@ de 24/08/2023.
 
 - Projeto - Cadastro de Aluno
 - Projeto - Tela de Login
+- Projeto - Urna eletrônica
+    - Importância da comunicação 
+    - Importância da adârencia às instruções 
+        - O que isso tem haver com marketing pessoal no âmbito profissional 
+
+- Prova de recuperação HTML/CSS
+
 
 ### Feriado - 2023.09.07 THU 
 
