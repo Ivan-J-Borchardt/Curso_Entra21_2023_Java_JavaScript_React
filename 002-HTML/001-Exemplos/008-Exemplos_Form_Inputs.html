@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,26 +16,35 @@
     <form action="">
         <!--Campo de texto de um linha-->
         <label for="idNome" class="etiqueta">Nome:</label>
-        <input type="text" name="nmNome" id="idNome" value="" placeholder="Nome" required>
+        <input type="text" name="nmNome" id="idNome" value="" size="35" minlength="2" maxlength="5" placeholder="Nome" autocomplete="off" required>
+
+
+        <label for="idSobreNome" class="etiqueta">Sobrenome:</label>
+        <input type="text" name="nmSobreNome" id="idSobreNome" value="" pattern="[A-Za-z]{3}">
+
+        <!-- Compo Telefone -->
+        <label for="idTel" class="etiqueta">Telefone:</label>
+        <input type="tel" name="nmTel" id="idTel" value="" pattern="\(\d{2}\) \d{4}-\d{4}">
+
 
 
         <!--Campo Numérico-->
         <label for="idTemp" class="etiqueta">Temperatura</label>
-        <input type="number" name="nmTemp" id="idTemp" min="-5" max="100" step="0.01">
+        <input type="number" name="nmTemp" id="idTemp" min="-5" max="100" step="0.01" autofocus>
 
 
         <!-- Intervalo Numérico-->
         <label for="idInter" class="etiqueta">Intervalo</label>
-        <input type="range" name="nmInter" id="idInter" min="0" max="100" value="0">
+        <input type="range" name="nmInter" id="idInter" min="0" max="100" value="0" disabled>
 
 
         <!-- Caixas de Senha -->
         <label for="idSenha" class="etiqueta">Senha</label>
-        <input type="password" name="" id="">
+        <input type="password" name="nmSenha" id="idSenha" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Deve conter pelo menos um número e uma letra maiúscula e minúscula e pelo menos 8 ou mais caracteres" >
 
         <!-- Caixas para Email-->
         <label for="idEmail" class="etiqueta">E-mail</label>
-        <input type="email" name="nmEmail" id="idEmail">
+        <input type="email" name="nmEmail" id="idEmail" value="Ivan.Borchardt@T-Systems.com" readonly>
 
 
         <!-- Caixas para Datas-->

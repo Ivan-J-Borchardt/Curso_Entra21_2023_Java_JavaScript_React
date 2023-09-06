@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input {
+            margin-bottom: 5px;
+            padding: 5px;
+
+
+        }
+
+
+
+        input:focus {
+            color: blue;
+            
+            outline-color: aqua;
+            
+
+        }
+
+        .campoSemBorda{
+            border:0; 
+            border-bottom: 1px solid black;
+        }
+
+        .pesquisa{
+            padding-left: 25px;
+            background-image: url("assets/searchicon.png");
+            background-repeat: no-repeat;
+            background-size: 7%;
+        }
+        .numerico[type=number] {
+            padding: 15px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <form action="">
+
+        <input class="pesquisa" type="text" placeholder="Pesquisar...">
+        <input class="campoSemBorda" type="text" placeholder="Nome">
+        <input class="campoSemBorda" type="text" placeholder="Sobrenome">
+
+        <input class="numerico campoSemBorda" type="number" placeholder="Altura">
+
+
+    </form>
+
+</body>
+
+</html>

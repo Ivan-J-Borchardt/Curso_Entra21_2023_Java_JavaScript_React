@@ -12,9 +12,9 @@
 ### Instruções Adicionais
 - Este exercício será avaliado, valendo nota. Serão avaliados não apenas os formulários solicitados, mas o projeto como um todo, observando em especial os seguintes itens: 
     - Estrutura das páginas HTML (correto emprego das Tags Semânticas onde fizer sentido);
-    - Estilização mínima das páginas (não é necessário desenvolver um desing sofisticado, mas espera-se um alinhamento e dimensionamento dos elementos de forma que fique minimamente idêntico ao layout solicitado);
+    - Estilização mínima das páginas (não é necessário desenvolver um desing sofisticado, mas espera-se um alinhamento e dimensionamento dos elementos de forma que fique minimamente idêntico ao layout solicitado e a aplicação dos principais estilos específios de Formulários);
     - Correta indentação de todo o código; 
-    - Nomes coerentes e semânticos para Ids, Classes e Nomes; 
+    - Nomes coerentes e semânticos para Ids, Classes e Names; 
     - Organização do código (incluindo o uso coerente de comentários para melhorar a legibilidade do código);
     - Aderência e Observância das instruções abaixo (especialmente no que se refere à nomes de repositório, diretórios e arquivos)
     - Correto uso do versionamento de código:

@@ -1,41 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        .etiqueta{
+        .etiqueta {
             display: block;
         }
-
-
     </style>
 </head>
+
 <body>
-    <form action="">
+    <form action="" method="POST">
 
-        <label for="idIdade" class="etiqueta">Idade</label>
-        <input type="text" name="" id="">
+        <fieldset>
+            <legend>Cadastro</legend>
 
-        <div>
-            <div>
-                <label for="idCpf">CPF:</label>
-            </div>
+            <label for="idIdade" class="etiqueta">Idade</label>
             <input type="text" name="" id="">
-        </div>
 
-        <label for="idNome">Nome:</label><br>
-        <input type="text" id="idNome" name="nmNome" value="Joao" >
+            <div>
+                <div>
+                    <label for="idCpf">CPF:</label>
+                </div>
+                <input type="text" name="" id="">
+            </div>
+
+            <label for="idNome">Nome:</label><br>
+            <input type="text" id="idNome" name="nmNome" value="Joao">
+
+        </fieldset>
 
         <br><br>
         <label for="idDesc">Descrição</label><br>
-        <textarea name="nmDesc" id="idDesc" cols="30" rows="10">innerText</textarea> <!-- o valor do textarea é a propriedade innerText-->
- 
+        <!-- Campo de texto de multiplas linhas -->
+        <textarea name="nmDesc" id="idDesc" cols="30" rows="10">innerText</textarea>
+        <!-- o valor do textarea é a propriedade innerText-->
+
+        <!-- Caixa de seleção -->
+        <label for="idCarros">Escolha seu Carro:</label><br>
+        <select name="nmCarros" id="idCarros" size="3" multiple>
+            <option value="volvo">Volvo</option>
+            <option value="ford ka">Ford Ka</option>
+            <option value="fiat">Fiat</option>
+            <option value="lamburgine">Lamburgine</option>
+        </select>
+
         <br><br>
+        <select name="cars" id="cars" size="3" multiple>
+            <optgroup label="Swedish Cars">
+                <option value="volvo">Volvo</option>
+                <option value="saab">Saab</option>
+            </optgroup>
+            <optgroup label="German Cars">
+                <option value="mercedes">Mercedes</option>
+                <option value="audi">Audi</option>
+            </optgroup>
+        </select>
+
+        <br><br>
+        <!-- Lista de dados (seleção de item) -->
+        <label for="idBrowsers">Navegadores:</label><br>   
+        <input list="idBrowsers">
+        <datalist id="idBrowsers">
+            <option value="Internet Explorer">IE</option>
+            <option value="chrome">Chrome</option>
+            <option value="firefox">Firefox</option>
+            <option value="opera">Opera</option>
+            <option value="safari">Safari</option>
+            <option value="brave">Brave</option>
+            <option value="edge">Edge</option>
+            <option value="yahoo">Yahoo</option>
+        </datalist>
+
+
+        <br><br>
+        <!-- Botoes -->
         <button type="reset">Limpar</button>
         <button type="submit">Enviar</button>
         <button type="button">Testar</button>
     </form>
 </body>
+
 </html>
