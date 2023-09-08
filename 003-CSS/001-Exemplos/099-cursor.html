@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        body{
+            height: 100vh;
+        }
+
+        .alias {
+            cursor: alias;
+        }
+
+        .all-scroll {
+            cursor: all-scroll;
+        }
+
+        .auto {
+            cursor: auto;
+        }
+
+        .cell {
+            cursor: cell;
+        }
+
+        .col-resize {
+            cursor: col-resize;
+        }
+
+        .context-menu {
+            cursor: context-menu;
+        }
+
+        .copy {
+            cursor: copy;
+        }
+
+        .crosshair {
+            cursor: crosshair;
+        }
+
+        .default {
+            cursor: default;
+        }
+
+        .e-resize {
+            cursor: e-resize;
+        }
+
+        .ew-resize {
+            cursor: ew-resize;
+        }
+
+        .grab {
+            cursor: grab;
+        }
+
+        .grabbing {
+            cursor: grabbing;
+        }
+
+        .help {
+            cursor: help;
+        }
+
+        .move {
+            cursor: move;
+        }
+
+        .n-resize {
+            cursor: n-resize;
+        }
+
+        .ne-resize {
+            cursor: ne-resize;
+        }
+
+        .nesw-resize {
+            cursor: nesw-resize;
+        }
+
+        .ns-resize {
+            cursor: ns-resize;
+        }
+
+        .nw-resize {
+            cursor: nw-resize;
+        }
+
+        .nwse-resize {
+            cursor: nwse-resize;
+        }
+
+        .no-drop {
+            cursor: no-drop;
+        }
+
+        .none {
+            cursor: none;
+        }
+
+        .not-allowed {
+            cursor: not-allowed;
+        }
+
+        .pointer {
+            cursor: pointer;
+        }
+
+        .progress {
+            cursor: progress;
+        }
+
+        .row-resize {
+            cursor: row-resize;
+        }
+
+        .s-resize {
+            cursor: s-resize;
+        }
+
+        .se-resize {
+            cursor: se-resize;
+        }
+
+        .sw-resize {
+            cursor: sw-resize;
+        }
+
+        .text {
+            cursor: text;
+        }
+
+        .url {
+            cursor: url('assets/scroll.png'), auto;
+        }
+
+        .w-resize {
+            cursor: w-resize;
+        }
+
+        .wait {
+            cursor: wait;
+        }
+
+        .zoom-in {
+            cursor: zoom-in;
+        }
+
+        .zoom-out {
+            cursor: zoom-out;
+        }
+
+        body{
+            display: grid;
+            grid-template-columns: auto auto auto auto auto auto;
+            gap: 3px;
+
+            padding: 30px;
+            padding-left: 50px;
+            height: 80vh;
+
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 0.8em;
+        }
+        
+        div{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+
+            border: 1px solid black;
+            text-align: center;
+        }
+
+        div p{
+           display: none;
+        }
+
+        div:hover p{
+            display:block;
+
+            padding: 3px;
+            font-size: 0.7em;
+            font-weight: 100;
+            
+        }
+
+        div:hover{
+            
+            font-weight: 600;
+            color: aliceblue;
+            background-color: rgb(43, 43, 43);
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="alias">cursor: alias;<p>O cursor indica um alias de algo que será criado</p></div>
+    <div class="all-scroll">cursor: all-scroll;<p>O cursor indica que algo pode ser rolado em qualquer direção</p></div>
+    <div class="auto">cursor: auto;<p>Padrão. O navegador define um cursor</p></div>
+    <div class="cell">cursor: cell;<p>O cursor indica que uma célula (ou conjunto de células) pode ser selecionada</p></div>
+    <div class="col-resize">cursor: col-resize;<p>O cursor indica que a coluna pode ser redimensionada horizontalmente</p></div>
+    <div class="context-menu">cursor: context-menu;<p>O cursor indica que um menu de contexto está disponível</p></div>
+    <div class="copy">cursor: copy;<p>O cursor indica que algo deve ser copiado</p></div>
+    <div class="crosshair">cursor: crosshair;<p>O cursor é renderizado como uma cruz</p></div>
+    <div class="default">cursor: default;<p>O cursor padrão</p></div>
+    <div class="e-resize">cursor: e-resize;<p>O cursor indica que uma borda de uma caixa deve ser movida para a direita (leste)</p></div>
+    <div class="ew-resize">cursor: ew-resize;<p>Indica um cursor de redimensionamento bidirecional</p></div>
+    <div class="grab">cursor: grab;<p>O cursor indica que algo pode ser agarrado</p></div>
+    <div class="grabbing">cursor: grabbing;<p>O cursor indica que algo pode ser agarrado</p></div>
+    <div class="help">cursor: help;<p>O cursor indica que a ajuda está disponível</p></div>
+    <div class="move">cursor: move;<p>O cursor indica que algo deve ser movido</p></div>
+    <div class="n-resize">cursor: n-resize;<p>O cursor indica que uma borda de uma caixa deve ser movida para cima (norte)</p></div>
+    <div class="ne-resize">cursor: ne-resize;<p>O cursor indica que uma borda de uma caixa deve ser movida para cima e para a direita (norte/leste)</p></div>
+    <div class="nesw-resize">cursor: nesw-resize;<p>Indica um cursor de redimensionamento bidirecional</p></div>
+    <div class="ns-resize">cursor: ns-resize;<p>Indica um cursor de redimensionamento bidirecional</p></div>
+    <div class="nw-resize">cursor: nw-resize;<p>O cursor indica que uma borda de uma caixa deve ser movida para cima e para a esquerda (norte/oeste)</p></div>
+    <div class="nwse-resize">cursor: nwse-resize;<p>Indica um cursor de redimensionamento bidirecional</p></div>
+    <div class="no-drop">cursor: no-drop;<p>O cursor indica que o item arrastado não pode ser solto aqui</p></div>
+    <div class="none">cursor: none;<p>Nenhum cursor é renderizado para o elemento</p></div>
+    <div class="not-allowed">cursor: not-allowed;<p>O cursor indica que a ação solicitada não será executada</p></div>
+    <div class="pointer">cursor: pointer;<p>O cursor é um ponteiro e indica um link</p></div>
+    <div class="progress">cursor: progress;<p>O cursor indica que o programa está ocupado (em andamento)</p></div>
+    <div class="row-resize">cursor: row-resize;<p>O cursor indica que a linha pode ser redimensionada verticalmente</p></div>
+    <div class="s-resize">cursor: s-resize;<p>O cursor indica que uma borda de uma caixa deve ser movida para baixo (sul)</p></div>
+    <div class="se-resize">cursor: se-resize;<p>O cursor indica que uma borda de uma caixa deve ser movida para baixo e para a direita (sul/leste)</p></div>
+    <div class="sw-resize">cursor: sw-resize;<p>O cursor indica que uma borda de uma caixa deve ser movida para baixo e para a esquerda (sul/oeste)</p></div>
+    <div class="text">cursor: text;<p>O cursor indica o texto que pode ser selecionado</p></div>
+    <div class="url">cursor: url(scroll.png),auto;<p>Uma lista separada por vírgulas de URLs para cursores personalizados. Nota: Sempre especifique um cursor genérico no final da lista, caso nenhum dos cursores definidos pela URL possa ser usado</p></div>
+    <div class="w-resize">cursor: w-resize;<p>O cursor indica que uma borda de uma caixa deve ser movida para a esquerda (oeste)</p></div>
+    <div class="wait">cursor: wait;<p>O cursor indica que o programa está ocupado</p></div>
+    <div class="zoom-in">cursor: zoom-in;<p>O cursor indica que algo pode ser ampliado</p></div>
+    <div class="zoom-out">cursor: zoom-out;<p>O cursor indica que algo pode ser reduzido</p></div>
+
+</body>
+
+</html>

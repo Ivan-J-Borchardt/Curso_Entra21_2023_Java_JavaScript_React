@@ -15,13 +15,21 @@
 
 
 ## HTML 
+- https://developer.mozilla.org/pt-BR/docs/Web/HTML 
+- https://developer.mozilla.org/pt-BR/docs/Learn/Forms/How_to_structure_a_web_form
 - https://www.w3.org/html/ 
 - https://pt.wikipedia.org/wiki/HTML 
-- https://developer.mozilla.org/pt-BR/docs/Web/HTML 
 - https://www.w3schools.com/html/
 
 ## CSS
 - https://www.w3schools.com/css/default.asp
+
+## Bootstrap 
+- https://getbootstrap.com/docs/5.0/getting-started/introduction/
+- https://www.w3schools.com/bootstrap5/index.php
+
+- Formulários:  https://www.youtube.com/watch?v=Z7Jyzd15Wzk
+- Site       :  https://www.youtube.com/watch?v=jJUpJA1GJHw
 
 ## Lógica de Programação
 - https://www.cursoemvideo.com/
