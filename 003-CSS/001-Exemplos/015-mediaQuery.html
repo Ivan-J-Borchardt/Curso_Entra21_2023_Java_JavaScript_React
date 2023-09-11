@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        h1{
+            color: aqua;
+        }
+
+
+        @media screen and (min-width: 600px) and (orientation: portrait) {
+            h1{
+                color: red; 
+            }
+        }
+
+        @media screen and (min-width: 600px) and (orientation: landscape) {
+            h1{
+                color: red; 
+            }
+        }
+
+        @media screen and (min-width: 900px) {
+            h1{
+                color: green; 
+            }
+        }
+
+        @media screen and (min-width: 1200px) {
+            h1{
+                color: purple; 
+            }
+        }
+
+        @media  print {
+            h1{
+                color:blue;
+            }
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <h1>Titulo 1</h1>
+
+
+    
+</body>
+</html>

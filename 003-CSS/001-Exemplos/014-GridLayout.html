@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        /*Exemplo 1*/
+        .containerGrid{
+            border: 1px solid red;
+            display: grid;
+            grid-template-columns: 45px auto 30%;
+            column-gap: 5px;
+            row-gap:8px;
+            padding: 5px;
+
+        }
+
+        .gridItem{
+            border: 1px solid black;
+            height: 30px;
+        }
+
+        /*Exemplo 2*/
+        .containerGrid2{
+            margin-top:30px;
+            border: 1px solid red;
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+            column-gap: 5px;
+            row-gap:8px;
+            padding: 5px;
+
+        }
+
+        .gridItem2{
+            border: 1px solid black;
+            height: 30px;
+        }
+
+        #item-1{
+            grid-column-start: 1;
+            grid-column-end: 3;
+        }
+
+        #item-2{
+            grid-row-start: 2;
+            grid-row-end: 4;
+        
+            align-self: end;
+        }
+
+        #item-3{
+            justify-self: center ;
+        }
+
+        /*Exemplo 3*/
+        .containerGrid3{
+            margin-top:30px;
+            border: 1px solid red;
+            display: grid;
+            grid-template-areas:
+                'header header header'
+                'sidebar main main'
+                'footer footer footer';
+
+            column-gap: 5px;
+            row-gap:8px;
+            padding: 5px;
+
+        }
+
+        .grid-Item3{
+            border: 1px solid black;
+        }
+
+        #idHeader{
+            grid-area: header;
+        }
+
+        #idMain{
+            grid-area: main;
+        }
+    
+        #idAside{
+            grid-area: sidebar;
+        }
+
+        #idFooter{
+            grid-area: footer;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="containerGrid">
+        <div class="gridItem">item 1</div>
+        <div class="gridItem">item 2</div>
+        <div class="gridItem">item 3</div>
+        <div class="gridItem">item 4</div>
+        <div class="gridItem">item 5</div>
+        <div class="gridItem">item 6</div>
+        <div class="gridItem">item 7</div>
+        <div class="gridItem">item 8</div>
+        <div class="gridItem">item 9</div>
+        <div class="gridItem">item 10</div>
+        <div class="gridItem">item 11</div>
+        <div class="gridItem">item 12</div>
+    </div>
+
+
+
+    <div class="containerGrid2">
+        <div id="item-1" class="gridItem2">item 1</div>
+        <div id="item-2" class="gridItem2">item 2</div>
+        <div id="item-3" class="gridItem2">item 3</div>
+        <div id="item-4" class="gridItem2">item 4</div>
+        <div id="item-5" class="gridItem2">item 5</div>
+        <div id="item-6" class="gridItem2">item 6</div>
+        <div id="item-7" class="gridItem2">item 7</div>
+        <div id="item-8" class="gridItem2">item 8</div>
+        <div id="item-9" class="gridItem2">item 9</div>
+        <div id="item-10" class="gridItem2">item 10</div>
+        <div id="item-11" class="gridItem2">item 11</div>
+        <div id="item-12" class="gridItem2">item 12</div>
+    </div>
+
+
+    <div class="containerGrid3">
+        <header id="idHeader" class="grid-Item3">Cabeçalho</header>
+        <main id="idMain" class="grid-Item3">Principal</main>
+        <aside id="idAside" class="grid-Item3">Lado</aside>
+        <footer id="idFooter" class="grid-Item3">Rodapé</footer>
+    </div>
+    
+</body>
+</html>

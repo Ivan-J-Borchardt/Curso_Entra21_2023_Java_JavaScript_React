@@ -224,25 +224,19 @@ de 24/08/2023.
 ### Recesso - 2023.09.08 FRI 
 
 ### Aula 16 - 2023.09.11 MON - 64h 
-- CSS - Formatação de Formulários
 - CSS - Grid 
 - CSS - Max-, Min- Width, Hight
 - CSS - Responsividade (Media Query, viewport)
-- CSS - Bootstrap 
 
 ### Aula ID - 2023.09.12 TUE
 - Prof. Mateus
 
 ### Aula 17 - 2023.09.13 WED - 68h 
-
-- Reservado/Respiro (Dúvidas, revisão de conteúdo, exercícios, conteúdos atrasados...)
-
-### Aula 18 - 2023.09.14 THU - 72h 
 - Lógica - Introdução à lógica de programação
 - Lógica - Como o computador surgiu 
 - Lógica - Entendendo como um computador funciona 
 
-### Aula 19 - 2023.09.15 FRI - 76h 
+### Aula 18 - 2023.09.14 THU - 72h 
 - Lógica - O que é Lógica? (noção empírica vs. Conceito Formal) 
 - Lógica - Proposições (entendendo o conceito)
 - Lógica - Raciocínio de Relacionamento
@@ -256,10 +250,9 @@ de 24/08/2023.
             - Formas de representar um algoritmo (Descritivo, Fluxograma, pseudocódigo)
             - As fases de um algoritmo
 
-- Exercícios - Lista 1 (Criação de um algoritmo, Sequencia Lógica)
+- Exercícios - Lista 0 (Criação de um algoritmo, Sequencia Lógica)
 
-
-### Aula 20 - 2023.09.18 MON - 80h 
+### Aula 19 - 2023.09.15 FRI - 76h 
 - Lógica - Introdução à lógica de programação
     -  Proposições  
         - Conceito formal 
@@ -273,6 +266,10 @@ de 24/08/2023.
     - Proposições nas estruturas de seleção
     - Operadores Relacionais 
     - Operadores Aritméticos 
+
+
+### Aula 20 - 2023.09.18 MON - 80h 
+
 
 ### Aula ID - 2023.09.19 TUE
 - Prof. Mateus
@@ -330,7 +327,7 @@ de 24/08/2023.
 ### Aula 28 -  - 112h 
 - Correção Lista 8 
 - Complexidade de Tempo e Espaço
-
+- CSS - Bootstrap 
 ### Aula 29 -  - 116h 
 - JavaScript - Métodos de Array 
 - JavaScript - Métodos de String
