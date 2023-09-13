@@ -25,7 +25,7 @@
 5. Clone o repositório para sua máquina, criando assim um repositório local. 
 
 6. No diretório raiz do projeto, crie um arquivo chamado Understanding_DEV_REACT.md.
-
+asaasaasddssdssd
 7. Edite o arquivo Understanding_DEV_REACT.md, inserindo suas anotações da aula de Git e GitHub. 
 
     **Dica:** Conside que você esteja criando um manual para outras pessoas... 

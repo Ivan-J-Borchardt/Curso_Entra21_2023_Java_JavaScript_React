@@ -227,16 +227,14 @@ de 24/08/2023.
 - CSS - Grid 
 - CSS - Max-, Min- Width, Hight
 - CSS - Responsividade (Media Query, viewport)
+- Lógica - Introdução à lógica de programação
+- Lógica - Como o computador surgiu 
+- Lógica - Entendendo como um computador funciona 
 
 ### Aula ID - 2023.09.12 TUE
 - Prof. Mateus
 
 ### Aula 17 - 2023.09.13 WED - 68h 
-- Lógica - Introdução à lógica de programação
-- Lógica - Como o computador surgiu 
-- Lógica - Entendendo como um computador funciona 
-
-### Aula 18 - 2023.09.14 THU - 72h 
 - Lógica - O que é Lógica? (noção empírica vs. Conceito Formal) 
 - Lógica - Proposições (entendendo o conceito)
 - Lógica - Raciocínio de Relacionamento
@@ -251,8 +249,7 @@ de 24/08/2023.
             - As fases de um algoritmo
 
 - Exercícios - Lista 0 (Criação de um algoritmo, Sequencia Lógica)
-
-### Aula 19 - 2023.09.15 FRI - 76h 
+### Aula 18 - 2023.09.14 THU - 72h 
 - Lógica - Introdução à lógica de programação
     -  Proposições  
         - Conceito formal 
@@ -268,13 +265,8 @@ de 24/08/2023.
     - Operadores Aritméticos 
 
 
-### Aula 20 - 2023.09.18 MON - 80h 
 
-
-### Aula ID - 2023.09.19 TUE
-- Prof. Mateus
-
-### Aula 21 - 2023.09.20 WED - 84h 
+### Aula 19 - 2023.09.15 FRI - 76h 
 - Lógica - Criando o primeiro programa em JavaScript 
     - Declaração de variáveis e tipos de dados (inteiro, real, booleano, caractere) 
     - Comandos de saida (console.log)
@@ -287,47 +279,58 @@ de 24/08/2023.
     - Cálculo percentual, Regra de 3 
     - Montando fórmulas (usando mais de uma operação em uma única expressão)  
 - Lógica - Precedência dos operadores aritméticos
-- Exercícios - Lista 2 (Criando os primeiros programas em JavaScript)
+- Exercícios - Lista 1 (Criando os primeiros programas em JavaScript)
 
-### Aula 22 - 2023.09.21 THU - 88h 
-- Correção lista 2 
+
+### Aula 20 - 2023.09.18 MON - 80h 
+
+- Avaliação teórica - Lógica de Programação (Prova múltipla escolha)
+- Correção lista 1
 - Lógica - Estruturas de Seleção
 - Lógica - Operadores Lógicos e expressões lógicas 
 - Lógica - Precedência dos operadores lógicos  
-- Lógica - Exercícios - Lista 3 (Programas com estruturas de Seleção)
-- Correção lista 3 
-- Exercícios - Lista 4 (Programas com estruturas de Seleção)
+- Lógica - Exercícios - Lista 2 (Programas com estruturas de Seleção)
 
-### Aula 23 - 2023.09.22 FRI - 92h 
-- Correção lista 4 
+
+### Aula ID - 2023.09.19 TUE
+- Prof. Mateus
+
+### Aula 21 - 2023.09.20 WED - 84h 
+- Correção lista 2 
+- Exercícios - Lista 3 (Programas com estruturas de Seleção)
+
+### Aula 22 - 2023.09.21 THU - 88h 
+- Correção lista 3 
 - Lógica - Resolvendo problemas computacionais
 - Lógica - Teste de Mesa
 - Lógica - Estruturas de repetição 
-- Exercícios - Lista 5 (Programas com estruturas de Repetição)
+- Exercícios - Lista 4 (Programas com estruturas de Repetição)
+
+### Aula 23 - 2023.09.22 FRI - 92h 
+- Correção lista 4 
+- Exercícios - Lista 5 (Programas com estruturas de Seleção e Repetição)
 
 ### Aula 24 -  - 96h 
-- Correção lista 5 
-- Exercícios - Lista 6 (Programas com estruturas de Seleção e Repetição)
+- Correção lista 5
+- Lógica - Manipulação de Vetores 
+- Exercícios - Lista 6 (Programas com Vetores simples)
 
 ### Aula 25 -  - 100h 
-- Correção lista 6
-- Lógica - Manipulação de Vetores 
-- Exercícios - Lista 7 (Programas com Vetores simples)
-
-### Aula 26 -  - 104h 
-- Correção lista 7
-- Lógica - Funções 
-- Lógica - Manipulação de Matrizes
-- Exercícios - Lista 8 (Programas com Matrizes e Vetores)
-
-
-### Aula 27 -  - 108h 
 - Lógica - Aula dedicada a conclusão de exercícios 
 
-### Aula 28 -  - 112h 
-- Correção Lista 8 
+### Aula 26 -  - 104h 
+- Correção lista 6
+- Lógica - Funções 
+- Lógica - Manipulação de Matrizes
+- Exercícios - Lista 7 (Programas com Matrizes e Vetores)
+
+### Aula 27 -  - 108h 
+- Correção Lista 7 
 - Complexidade de Tempo e Espaço
 - CSS - Bootstrap 
+
+### Aula 28 -  - 112h 
+
 ### Aula 29 -  - 116h 
 - JavaScript - Métodos de Array 
 - JavaScript - Métodos de String
@@ -476,7 +479,10 @@ de 24/08/2023.
         https://forms.gle/N9rdE2pKSdv5mYSy9
     - CSS  
         https://forms.gle/F1gBELnQBA5izc9D8
-
+    - Lógica de Programação  
+        https://forms.gle/29nLkax75rnHrhjj8  
+          
+  
 - Planilha Entrega de Exercícios:   
     https://forms.gle/fZZymQsHrqofwg4x8
 
