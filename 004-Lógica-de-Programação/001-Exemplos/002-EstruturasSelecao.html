@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <form action="">
+        <input type="text" id="idTosse" placeholder="Tosse? V ou F"> <br><br>
+        <input type="text" id="idDorGranganta" placeholder="Dor de Garganta? V ou F"><br><br>
+        <input type="number" id="idFebre" placeholder="Febre? Graus"><br><br>
+        <input type="text" id="idFaltaAr" placeholder="Falta de Ar? V ou F"><br><br>
+        <input type="button" value="Testar" onclick="testar()">
+    </form>
+
+    <script>
+        
+        function testar() {
+            var tosse = document.getElementById("idTosse").value;
+            var dorDeGarganta = document.getElementById("idDorGranganta").value;
+            var febre = document.getElementById("idFebre").value;
+            var faltaDeAr = document.getElementById("idFaltaAr").value; 
+            
+            if ((tosse == "V" && dorDeGarganta == "V") 
+            ||  (febre >= 38 && faltaDeAr == "V")) {
+                console.log("Procurar Médico");
+            } else {
+                console.log("Fique em Casa"); 
+            }
+        }
+
+
+    </script>
+</body>
+</html>

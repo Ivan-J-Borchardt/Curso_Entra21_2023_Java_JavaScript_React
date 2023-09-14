@@ -18,8 +18,8 @@
 **R:**
 Inicio 
 - retire a roupa 
-- va pra debaixo do chuveiro
 - ligue o chuveiro
+- va pra debaixo do chuveiro
 - pegue o xampu 
 - passe o xampu na cabeça 
 - esfregue o xampu na cabeça
