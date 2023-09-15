@@ -11,7 +11,7 @@
 ---
 ### Instruções Adicionais 
 - Resolva os exercícios propostos usando HTML e JavaScript
-- Crie um repositório no GitHub chamado "Exercicios_Logica_Programacao"
+- Crie um repositório no GitHub chamado "Exercicios_Logica_Programacao-[Seu Nome]"
 - Crie uma pasta para cada lista de exercícios...  
 
 --- 

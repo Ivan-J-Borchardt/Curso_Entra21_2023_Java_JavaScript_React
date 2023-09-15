@@ -18,6 +18,11 @@
 
     <input type="button" value="Pegar Nome" onclick="pegarNome()">
 
+    <div>
+        <label for="idSaida">Saida</label>
+        <input type="text" id="idSaida" name="nmSaida"> 
+    </div>
+
     <script>
         //Declarar Variaveis de escopo global 
         variavel = 0 //prefira não usar 
@@ -43,6 +48,9 @@
 
             console.log("Nome: " + nome);
             console.log("Idade:" + idade);
+
+            document.getElementById("idSaida").value = "Nome: "+ nome + "-  Idade: " + idade
+
         }
 
         console.log("Nome 2: " + nome);
