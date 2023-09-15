@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div>
+        <label for="idNome">Nome</label>
+        <input type="text" id="idNome" name="nmNome" value="João Silva"> 
+    </div>
+    <div>
+        <label for="idIdade">Idade</label>
+        <input type="number" id="idIdade" name="nmIdade"> 
+    </div>
+
+    <input type="button" value="Pegar Nome" onclick="pegarNome()">
+
+    <script>
+        //Declarar Variaveis de escopo global 
+        variavel = 0 //prefira não usar 
+        var variavel1 //prefira usar essa declaração para var globais
+        let variavel2
+        const contantes = 3.14 
+        var nome = "Julia"
+        var idadeUsario //Dar nomes semânticos 
+        let idade = 0
+
+        idade = idade + 1 
+
+
+        /*
+           Isso é um comentário 
+           de várias
+           linhas 
+        */
+        function pegarNome() {
+            let nome  //variavel de escopo local 
+            nome = document.getElementById("idNome").value
+            idade = document.getElementById("idIdade").value
+
+            console.log("Nome: " + nome);
+            console.log("Idade:" + idade);
+        }
+
+        console.log("Nome 2: " + nome);
+
+         
+
+
+
+
+    </script>
+</body>
+</html>
