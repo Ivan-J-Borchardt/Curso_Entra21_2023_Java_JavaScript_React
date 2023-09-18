@@ -43,6 +43,73 @@
         console.log(typeof(nomeUsuario));
         console.log(isNaN(nomeUsuario));
 
+        
+        /*
+          2 - Formas de fazer conversão de tipos de dados 
+          ------------------------------------------------
+          - Conversão automática (conversão implícita)
+
+        */
+
+        console.log(5 + "2"); //Conversão para string
+        console.log(5 + null); //Conversão para number
+        console.log("5" + undefined); //Conversão para string
+        console.log("5" + null); //Conversão para string
+        console.log("5" - 2); //Conversão para number
+        console.log("5" * "2"); //Conversão para number
+
+        /*
+          - Conversão usando funções do JS (Conversão Explícita)
+          ------------------------------------------------------
+          Conversão para String
+        */
+        var variavel
+        var x = 345
+
+        variavel = String(x)
+        console.log("tipo: " + typeof(variavel) + " " + variavel);
+        variavel = String(123)
+        console.log("tipo: " + typeof(variavel) + " " + variavel);
+
+        var salBase = 1000.00;
+        console.log("salBase 1 " + typeof(salBase));
+                 
+        salBase = salBase.toString(); 
+        console.log("salBase 2 " + typeof(salBase));
+
+        //Outros métodos que retornam strings 
+        var h = 75.345675467;
+        console.log("h.tofixed(2) " + h.toFixed(2));
+        console.log("h.toExponencial(3) " + h.toExponential(3));
+        console.log("h.toPrecision(5) " + h.toPrecision(5));
+
+        /*
+         - Conversão para Number
+         -----------------------
+         - String to Number
+        */
+
+        //1. Forma 
+
+        var y = "5"
+        var j = + y 
+
+        console.log("j " + typeof(j));
+
+        //2. forma 
+        console.log("'3.14' to Number " + Number("3.14"))
+        console.log("true to Number " + Number(true))
+        console.log("false to Number " + Number(false))
+        console.log("'89 90' to Number " + Number("89 90")) //retorna NaN
+        console.log("espaço to Number " + Number(" "))
+        console.log("vazio to number " + Number(""))
+
+        //3. forma 
+        console.log("parseFloat('10.5') " + parseFloat("10.5"));
+        console.log("parseFloat('10') " + parseFloat("10"));
+
+        console.log("parseInt('10.5') " + parseInt("10.5"));
+        console.log("parseInt('10') " + parseInt("10"));
 
     </script>
 </body>

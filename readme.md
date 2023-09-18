@@ -284,7 +284,7 @@ de 24/08/2023.
 
 ### Aula 20 - 2023.09.18 MON - 80h 
 
-- Avaliação teórica - Lógica de Programação (Prova múltipla escolha)
+
 - Correção lista 1
 - Lógica - Estruturas de Seleção
 - Lógica - Operadores Lógicos e expressões lógicas 
@@ -311,6 +311,7 @@ de 24/08/2023.
 - Exercícios - Lista 5 (Programas com estruturas de Seleção e Repetição)
 
 ### Aula 24 -  - 96h 
+- Avaliação teórica - Lógica de Programação (Prova múltipla escolha)
 - Correção lista 5
 - Lógica - Manipulação de Vetores 
 - Exercícios - Lista 6 (Programas com Vetores simples)

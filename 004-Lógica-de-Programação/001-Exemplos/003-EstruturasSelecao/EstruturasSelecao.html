@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="">
+        <label for="idIdade">Idade</label><br>
+        <input type="number" name="nmIdade" id="idIdade" >
+        <br><br>
+        <label for="idAltura">Altura</label><br>
+        <input type="number" name="nmAltura" id="idAltura" step="0.01">
+        <br><br>
+        <input type="radio" name="nmGenero" id="idFem" checked>
+        <label for="idFem">Feminino</label>
+        <input type="radio" name="nmGenero" id="idMasc">
+        <label for="idMasc">Maculino</label>
+        <br><br>
+        <output id="idOut">Peso Ideal: </output>
+        <br><br>
+        <input type="Button" value="Calcular" onclick="calcular()">
+        <input type="Button" value="Testar Genero" onclick="testarGenero()">
+        <input type="Button" value="Testar Alistamento" onclick="testaServicoMilitar()">
+
+        <br><br>
+        <input type="number" id="idMenu" name="nmMenu">
+        <br>
+        <br>
+        <input type="button" value="Testar Menu" onclick="exemplosEstruturasSelecao()">
+
+    </form>
+
+    <script>
+
+
+        if (temperatura >= 38) {
+            console.log("Entrou pq a temp. está maior que 37 graus");
+            if (condition) {
+                
+            }
+        }
+
+        /*
+           && - lógica AND
+           || - lógica OR 
+           !  - Negação 
+        */
+        if (temperatura >= 38 && umidade < 25) {
+            //Verdadeiro 
+            console.log("Temperatura >= 38 e umidade < 25%");
+            calcularXYZ();
+        } else {
+            //Falso
+            console.log("Caiu aqui por que o resultado da expressão lógica deu falso");
+        }
+
+        function calcularXYZ() {
+            console.log("Passou pela Function...");
+        }
+
+        function testarGenero() {
+            let masculino = document.getElementById("idMasc").checked
+            let feminino = document.getElementById("idFem").checked
+
+            if (masculino == true) {
+                console.log("o genero masculino está selecionado");
+            } else {
+                console.log("o genero feminino está selecionado");
+            }
+        }
+
+        function calcular() {
+            let masculino = document.getElementById("idMasc").checked
+            let feminino = document.getElementById("idFem").checked
+            let altura = Number(document.getElementById("idAltura").value)
+
+            let pesoIdeal
+
+            if (masculino == true) {
+                pesoIdeal = (72.7 * altura) - 58 
+            } else {
+                pesoIdeal = (62.1 * altura) - 44.7 
+            }  
+
+            document.getElementById("idOut").value = "Peso Ideal: " + pesoIdeal.toFixed(2)
+        }
+        
+
+    </script>
+
+</body>
+
+</html>

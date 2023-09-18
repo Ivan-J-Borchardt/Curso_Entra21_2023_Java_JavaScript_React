@@ -25,7 +25,7 @@
         <label for="idIdade">Idade</label>
         <input type="number" id="idIdade" name="nmIdade"> 
     </div>
-    
+
     <div>
         <input type="button" value="Pegar Nome" onclick="pegarNome()">
     </div>
@@ -40,14 +40,14 @@
 
     <script>
         //Declarar Variaveis de escopo global 
-        variavel = 0 //prefira não usar 
-        var variavel1 //prefira usar essa declaração para var globais
+        variavel = 0 //prefira não usar esta forma de declaração
+        var variavel1 //prefira usar esta declaração para variáveis globais
         let variavel2
         const contantes = 3.14 
         var nome = "Julia"
-        var idadeUsario //Dar nomes semânticos 
+        var idadeUsario //Dê nomes semânticos para as variáveis, usando camel-case
         let idade = 0
-
+            
         idade = idade + 1 
 
 
@@ -59,10 +59,12 @@
         function pegarNome() {
             let nome  //variavel de escopo local 
             nome = document.getElementById("idNome").value
-            idade = document.getElementById("idIdade").value
+            idade = Number(document.getElementById("idIdade").value)
 
             console.log("Nome: " + nome);
-            console.log("Idade:" + idade);
+            console.log(typeof(idade));
+
+            
 
             document.getElementById("idOut").value = "Nome: "+ nome + "-  Idade: " + idade
 
@@ -70,7 +72,6 @@
 
         console.log("Nome 2: " + nome);
 
-         
 
 
 

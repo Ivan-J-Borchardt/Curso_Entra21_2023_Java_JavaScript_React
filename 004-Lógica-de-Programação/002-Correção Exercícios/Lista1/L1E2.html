@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 2</title>
+    <style>
+        div{
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <form action="">
+        <div>
+            <label for="idNome">Nome</label> <br> 
+            <input type="text" id="idNome" name="nmNome">
+        </div>
+        <div>
+            <label for="idSalario">Salário</label> <br>
+            <input type="number" id="idSalario" min="0" step="0.01">
+        </div>
+        <div>
+            <input type="button" value="Capturar" onclick="capturar()">
+        </div>
+        <div>
+            <output id="idOut"></output>
+        </div>
+    </form>
+
+
+    <script>
+
+        function capturar() {
+            let nome = document.getElementById("idNome").value
+            let salario = document.getElementById("idSalario").value
+
+            document.getElementById("idOut").innerText = "O funcionário " + nome + " tem um salário de " + salario + " em Junho."
+
+        }
+
+    </script>
+    
+</body>
+</html>

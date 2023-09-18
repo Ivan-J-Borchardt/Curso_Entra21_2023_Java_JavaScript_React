@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>L1E1</title>
+    <style>
+        .linha{
+            display: block;
+            margin: 5px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <label for="idNome" class="linha">Nome</label>
+        <input type="text" id="idNome" name="nmNome" class="linha">
+
+        <input type="text" id="idSaida" name="nmSaida" class="linha">
+
+        <input type="button" value="Executar" onclick="pegarNome()">
+
+        <output id="idOut" class="linha"></output>
+    </form>
+
+    <script>
+        
+        function pegarNome() {
+            let nome = document.getElementById("idNome").value 
+
+            document.getElementById("idSaida").value = "Olá " + nome + " seja bem vindo... "
+
+            document.getElementById("idOut").value = "Olá " + nome + " seja bem vindo"
+        }
+
+    </script>
+
+</body>
+</html>

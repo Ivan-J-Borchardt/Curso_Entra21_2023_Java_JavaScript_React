@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 3</title>
+    <style>
+        div{
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <form action="">
+        <div>
+            <label for="idNum1">Numero 1</label> <br> 
+            <input type="number" id="idNum1" name="nmNum1">
+        </div>
+        <div>
+            <label for="idNum2">Numero 2</label> <br> 
+            <input type="number" id="idNum2" name="nmNum2">
+        </div>
+        <div>
+            <input type="button" value="Calcular" onclick="calcular()">
+        </div>
+        <div>
+            <output id="idOut"></output>
+        </div>
+    </form>
+
+
+    <script>
+
+        function calcular() {
+            let num1 = document.getElementById("idNum1").value
+            let num2 = document.getElementById("idNum2").value
+
+            let resul = Number(num1) + Number(num2)
+
+            document.getElementById("idOut").innerText = "A soma entre "+ num1 +" e "+ num2 +" é igual a "+ resul +"."
+        }
+
+    </script>
+    
+</body>
+</html>
