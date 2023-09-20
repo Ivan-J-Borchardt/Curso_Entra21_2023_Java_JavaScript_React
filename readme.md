@@ -285,10 +285,11 @@ de 24/08/2023.
 ### Aula 20 - 2023.09.18 MON - 80h 
 
 
-- Correção lista 1
+- Correção lista 1 parte 1 
+- Lógica - Aprofundando Tipagem de dados 
+- Lógica - Aprofundando Operações aritméticas
 - Lógica - Estruturas de Seleção
-- Lógica - Operadores Lógicos e expressões lógicas 
-- Lógica - Precedência dos operadores lógicos  
+
 - Lógica - Exercícios - Lista 2 (Programas com estruturas de Seleção)
 
 
@@ -296,7 +297,10 @@ de 24/08/2023.
 - Prof. Mateus
 
 ### Aula 21 - 2023.09.20 WED - 84h 
+- Correção lista 1 parte 2
 - Correção lista 2 
+- Lógica - Operadores Lógicos e expressões lógicas 
+- Lógica - Precedência dos operadores lógicos  
 - Exercícios - Lista 3 (Programas com estruturas de Seleção)
 
 ### Aula 22 - 2023.09.21 THU - 88h 

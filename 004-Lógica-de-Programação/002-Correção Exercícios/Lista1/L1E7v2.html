@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+
+        <label for="idMet">Metros:</label> <br>
+        <input type="number" id="idMet" name="nmMet" step="0.01"> <br><br>
+        <input type="button" value="Calcular" onclick="calcular()"><br>
+        <output id="idOut"></output><br>
+    </form>
+
+    <script>
+ 
+        function calcular() {
+            //Capturar Entradas
+            let metros = Number(document.getElementById("idMet").value)
+            //let num = parseFloat(document.getElementById("idNum").value)
+               
+            //Processamento
+            let km = metros / 1000  
+            let hm = metros / 100 
+            let dam = metros / 10 
+            let dm = metros * 10
+            let cm = metros * 100
+            let mm = metros * 1000
+
+            //Saída
+            document.getElementById("idOut").innerText = "A distância de "+ metros +"m corresponde a:" + km + "Km \n" 
+            + "A distância de "+ metros +"m corresponde a:" + hm + "Hm \n"
+            + "A distância de "+ metros +"m corresponde a:" + dam + "Dam \n"
+            + "A distância de "+ metros +"m corresponde a:" + dm + "dm \n"
+            + "A distância de "+ metros +"m corresponde a:"  + cm + "Cm \n"
+            + "A distância de "+ metros +"m corresponde a:" + mm + "mm"
+
+        }
+
+    </script>
+
+</body>
+</html>

@@ -66,7 +66,8 @@
 ~~~
 6. Crie um algoritmo que leia um número real e mostre na tela o seu dobro e a sua terça parte.
 ~~~
-    Ex:
+    Ex:    entrada --> Processamento  --> saida 
+    
         Entrada:
             Digite um número: 3.5
         Saída:

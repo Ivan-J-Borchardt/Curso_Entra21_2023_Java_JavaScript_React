@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+
+        <label for="idNum">Número:</label> <br>
+        <input type="number" id="idNum" name="nmNum" step="0.01"> <br><br>
+        <input type="button" value="Calcular" onclick="calcular()"><br>
+        <output id="idOut1"></output><br>
+        <output id="idOut2"></output>
+
+    </form>
+
+    <script>
+ 
+        function calcular() {
+            //Capturar Entradas
+            let num = Number(document.getElementById("idNum").value)
+            //let num = parseFloat(document.getElementById("idNum").value)
+
+            //Processamento
+            let dobro = num * 2  
+            let terco = num/3
+
+            //Saída
+            document.getElementById("idOut1").value = "O dobro de "+ num +" é " + dobro
+            document.getElementById("idOut2").value = "A terça parte de "+ num +" é " + terco
+            
+        }
+
+    </script>
+
+</body>
+</html>

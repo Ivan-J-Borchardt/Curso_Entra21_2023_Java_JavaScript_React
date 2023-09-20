@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+
+        <label for="idMet">Reais:</label> <br>
+        <input type="number" id="idReal" name="nmReal" step="0.01"> <br><br>
+        <input type="button" value="Converter" onclick="converter()"><br>
+        <output id="idOut"></output><br>
+
+
+    </form>
+
+    <script>
+ 
+        function converter() {
+            //Capturar Entradas
+            let reais = Number(document.getElementById("idReal").value)
+               
+            //Processamento
+            let dolares = reais/3.45 
+             
+            //Saída                                                                        Number.toFixed(2)
+            document.getElementById("idOut").value = "Reais: "+ reais + " =  Dolares:  "+  dolares.toFixed(2)
+            //                                                                             parseInt(dolares) <-- imprime apenas a parte inteira sem arredondamento... 
+        }
+
+    </script>
+
+</body>
+</html>
