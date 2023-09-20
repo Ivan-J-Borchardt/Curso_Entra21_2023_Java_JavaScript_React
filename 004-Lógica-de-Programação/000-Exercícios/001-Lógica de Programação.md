@@ -67,7 +67,7 @@
 6. Crie um algoritmo que leia um número real e mostre na tela o seu dobro e a sua terça parte.
 ~~~
     Ex:    entrada --> Processamento  --> saida 
-    
+
         Entrada:
             Digite um número: 3.5
         Saída:
@@ -94,7 +94,42 @@
 
 9.  Faça um algoritmo que leia a largura e altura de uma parede, calcule e mostre a área a ser pintada e a quantidade de tinta necessária para o serviço, sabendo que cada litro de tinta pinta uma área de 2 metros quadrados.
 
+Entrada 
+   - largura 
+   - altura 
+
+Processamento 
+   area = largura * altura 
+   qtdTinta =  area/2  
+     
+     2      -   1l 
+    area        x 
+
+    2 * qtdTinta = area * 1l
+    qtdTinta = (area * 1l)/2 
+    qtdTinta = (4 * 1)/2
+
+        qtdTinta = 2 
+
+Saida 
+   - area
+   - qtdTinta 
+
 10. Crie um programa que leia o preço de um produto, calcule e mostre o seu PREÇO PROMOCIONAL, com 5% de desconto.
+
+
+Entrada
+  - precoProduto 
+
+processamento 
+  - precoPromocional = precoProduto 
+
+  precoProduto -  100% 
+  precoPromocional = precoProduto - ( precoProduto * 0,05)
+
+Saida
+  - precoPromocional
+
 
         desconto  = preco * 0.05 
         precoPromocional = preco - desconto

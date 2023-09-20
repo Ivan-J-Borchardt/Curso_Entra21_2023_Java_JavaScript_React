@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+
+        <label for="idLargura">Largura:</label> <br>
+        <input type="number" id="idLargura" name="nmLargura" step="0.01"> <br><br>
+        <label for="idAltura">Altura:</label> <br>
+        <input type="number" id="idAltura" name="nmAltura" step="0.01"> <br><br>
+        <input type="button" value="Calcular" onclick="calcular()"><br>
+        <output id="idOut"></output><br>
+
+
+    </form>
+
+    <script>
+ 
+        function calcular() {
+            //Capturar Entradas
+            let largura = Number(document.getElementById("idLargura").value)
+            let altura = Number(document.getElementById("idAltura").value)
+               
+            //Processamento
+            let area = largura * altura 
+            let qtdTinta =  area/2 
+             
+            //Saída 
+            document.getElementById("idOut").value = "Area: " + area + "m2 - Qtd Tinta: " + qtdTinta + "L"
+        }                                            
+
+    </script>
+
+</body>
+</html>

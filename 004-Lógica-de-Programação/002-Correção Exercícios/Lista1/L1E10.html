@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+
+        <label for="idPrecoInt">Preço Integral:</label> <br>
+        <input type="number" id="idPrecoInt" name="nmPrecoInt" step="0.01"> <br><br>
+        <input type="button" value="Calcular Desconto" onclick="calcularDesconto()"><br>
+        <output id="idOut"></output><br>
+
+    </form>
+
+    <script>
+ 
+        function calcularDesconto() {
+            //Capturar Entradas
+            let precoProduto = Number(document.getElementById("idPrecoInt").value)
+               
+            //Processamento
+            let precoPromocional = precoProduto - ( precoProduto * 0.05)
+             
+            //Saída                                                                        
+            document.getElementById("idOut").innerText = "Preço Integral do Produto: R$" + precoProduto.toFixed(2) + "\n" +
+                                                         "Preço Promocional        : R$" + precoPromocional.toFixed(2)
+            //                                                                             
+        }
+
+    </script>
+
+</body>
+</html>

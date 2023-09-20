@@ -19,6 +19,10 @@
         <label for="idFem">Feminino</label>
         <input type="radio" name="nmGenero" id="idMasc">
         <label for="idMasc">Maculino</label>
+        <input type="radio" name="nmGenero" id="idNaoBinario">
+        <label for="idNaoBinario">Nao Binario</label>
+
+
         <br><br>
         <output id="idOut">Peso Ideal: </output>
         <br><br>
@@ -65,12 +69,40 @@
         function testarGenero() {
             let masculino = document.getElementById("idMasc").checked
             let feminino = document.getElementById("idFem").checked
+            let lgbt = document.getElementById("idNaoBinario").checked
 
             if (masculino == true) {
                 console.log("o genero masculino está selecionado");
-            } else {
+            }
+
+            if (feminino  == true) {
                 console.log("o genero feminino está selecionado");
             }
+
+            if (lgbt  == true) {
+                console.log("o genero nao binário está selecionado");
+            }
+
+          
+            if (masculino == true) {
+                console.log("o genero masculino está selecionado");
+            } else {
+                if (feminino == true) {
+                    console.log("o genero feminino está selecionado");
+                } else {
+                    console.log("o genero nao binário está selecionado");
+                }
+            }
+
+
+            if(masculino == true) {
+                console.log("o genero masculino está selecionado");
+            }else if (feminino == true) {
+                console.log("o genero feminino está selecionado");
+            }else{
+                console.log("o genero nao binário está selecionado");
+            }
+          
         }
 
         function calcular() {
