@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <form action="">
+        <label for="idNum1">Numero 1</label><br>
+        <input type="number" id="idNum1" name="nmNum1"><br>
+
+        <label for="idNum2">Numero 2</label><br>
+        <input type="number" id="idNum2" name="nmNum2"><br>
+
+        <label for="idNum2">Numero 3</label><br>
+        <input type="number" id="idNum3" name="nmNum3"><br><br>
+
+        <input type="button" value="testar" onclick="testar()"><br><br>
+
+        <output id="idOut"></output>
+    </form>
+
+    <script>
+
+        function testar() {
+            //capturar elementos da tela
+            let valor1 = Number(document.getElementById("idNum1").value)
+            let valor2 = Number(document.getElementById("idNum2").value)
+            let valor3 = Number(document.getElementById("idNum3").value)
+
+            let out = document.getElementById("idOut")
+
+            let maior 
+            let meio = valor1
+            let menor
+
+            //Processamento 
+            //Descobrindo o maior numero  Jeito 1
+            maior = Math.max(valor1, valor2, valor3);
+            menor = Math.min(valor1, valor2, valor3);
+
+            if (valor2 != maior && valor2 != menor) {
+                meio = valor2
+            }
+
+            if (valor3 != maior && valor3 != menor) {
+                meio = valor3
+            }
+
+            //Saida 
+            out.value = maior + " - " + meio + " - " + menor
+
+            //Descobrindo o maior numero  Jeito 2
+            /*
+            if (valor1 >= valor2 && valor1 >= valor3) {
+                
+                maior = valor1;
+                meio = Math.max(valor2, valor3);
+                menor = Math.min(valor2, valor3);
+
+            } else if (valor2 >= valor1 && valor2 >= valor3) {
+                maior = valor2;
+                meio = Math.max(valor1, valor3);
+                menor = Math.min(valor1, valor3);
+            } else {
+                maior = valor3;
+                meio = Math.max(valor1, valor2);
+                menor = Math.min(valor1, valor2);
+            }
+
+            //Saida 
+            out.value = maior + " - " + meio + " - " + menor
+
+            */
+        }
+
+    </script>
+
+</body>
+
+</html>

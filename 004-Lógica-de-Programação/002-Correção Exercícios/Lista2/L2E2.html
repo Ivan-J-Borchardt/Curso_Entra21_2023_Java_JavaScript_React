@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <form action="">
+        <label for="idNum1">Numero 1</label><br>
+        <input type="number" id="idNum1" name="nmNum1"><br>
+
+        <label for="idNum2">Numero 2</label><br>
+        <input type="number" id="idNum2" name="nmNum2"><br>
+        
+        <label for="idNum2">Numero 3</label><br>
+        <input type="number" id="idNum3" name="nmNum3"><br><br>
+
+        <input type="button" value="testar" onclick="testar()"><br><br>
+
+        <output id="idOut"></output> 
+    </form>
+
+    <script>
+
+        function testar(){
+            //capturar elementos da tela
+            let num1 = Number(document.getElementById("idNum1").value)
+            let num2 = Number(document.getElementById("idNum2").value)
+            let num3 = Number(document.getElementById("idNum3").value)
+
+            let out = document.getElementById("idOut")
+
+            let maiorNum
+            
+            //Processamento 
+            if (num1 > num2 && num1 > num3) {
+                maiorNum = num1
+            } else {
+                if (num2 > num1 && num2 > num3) {
+                    maiorNum = num2
+                } else {
+                    maiorNum = num3
+                }
+            }
+            
+            //Saida 
+            if (num1 == num2 && num2 == num3) {
+                out.value = "Os 3 números são iguais:" + maiorNum
+            } else {
+                out.value = "O maior numero é " + maiorNum
+            }
+
+
+        }
+
+    </script>
+    
+</body>
+</html>

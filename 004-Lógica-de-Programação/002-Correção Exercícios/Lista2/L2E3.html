@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <form action="">
+        <label for="idNum1">Entre com 1 Número</label><br>
+        <input type="number" id="idNum1" name="nmNum1"><br><br>
+
+        <input type="button" value="testar" onclick="testar()"><br><br>
+
+        <output id="idOut"></output> 
+    </form>
+
+    <script>
+
+        function testar(){
+            //capturar elementos da tela
+            let num1 = Number(document.getElementById("idNum1").value)
+            let out = document.getElementById("idOut")
+             
+            //Processamento 
+            if (num1 > 20) {
+                out.value = "O numero " + num1 + " é maior que 20"
+            } else if (num1 < 20) {
+                out.value = "O numero " + num1 + " é menor que 20"
+            } else {
+                out.value = "O numero digitado é 20"
+            }
+
+            /*
+            if (num1 > 20) {
+                out.value = "O numero " + num1 + " é maior que 20"
+            }
+            
+            if (num1 < 20) {
+                out.value = "O numero " + num1 + " é menor que 20"
+            }
+
+            if (num1 == 20) {
+                out.value = "O numero digitado é 20"
+            }
+            */
+            /*
+            if (num1 > 20) {
+                out.value = "O numero " + num1 + " é maior que 20"
+            }else{
+                if (num1 < 20) {
+                    out.value = "O numero " + num1 + " é menor que 20"
+                } else {
+                    out.value = "O numero digitado é 20" 
+                }
+            }
+            */
+
+        }
+
+    </script>
+    
+</body>
+</html>

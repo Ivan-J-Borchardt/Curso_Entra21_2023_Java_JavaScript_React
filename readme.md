@@ -307,20 +307,21 @@ de 24/08/2023.
 - Correção lista 3 
 - Lógica - Resolvendo problemas computacionais
 - Lógica - Teste de Mesa
+
+### Aula 23 - 2023.09.22 FRI - 92h 
 - Lógica - Estruturas de repetição 
 - Exercícios - Lista 4 (Programas com estruturas de Repetição)
 
-### Aula 23 - 2023.09.22 FRI - 92h 
+### Aula 24 -  - 96h 
+- Avaliação teórica - Lógica de Programação (Prova múltipla escolha)
 - Correção lista 4 
 - Exercícios - Lista 5 (Programas com estruturas de Seleção e Repetição)
 
-### Aula 24 -  - 96h 
-- Avaliação teórica - Lógica de Programação (Prova múltipla escolha)
+### Aula 25 -  - 100h 
 - Correção lista 5
 - Lógica - Manipulação de Vetores 
 - Exercícios - Lista 6 (Programas com Vetores simples)
 
-### Aula 25 -  - 100h 
 - Lógica - Aula dedicada a conclusão de exercícios 
 
 ### Aula 26 -  - 104h 

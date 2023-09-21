@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <form action="">
+        <label for="idNum1">Entre com 1 Número</label><br>
+        <input type="number" id="idNum1" name="nmNum1"><br><br>
+
+        <input type="button" value="testar" onclick="testar()"><br><br>
+
+        <output id="idOut"></output> 
+    </form>
+
+    <script>
+
+        function testar(){
+            //capturar elementos da tela
+            let num1 = Number(document.getElementById("idNum1").value)
+            let out = document.getElementById("idOut")
+             
+            //Processamento 
+            if (num1 >= 30 && num1 <= 90) {
+                out.value = "O número " + num1 + " está compreendido no limite entre 30 e 90"
+            }else{
+                out.value = "O número " + num1 + " NÃO está compreendido no limite entre 30 e 90"
+            }
+
+        }
+
+    </script>
+    
+</body>
+</html>

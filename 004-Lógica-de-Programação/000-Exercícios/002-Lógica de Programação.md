@@ -17,6 +17,20 @@
 ### Exercícios 
 1. Elabore um algoritmo que permita a entrada de dois números diferentes e verifique qual deles é o maior. 
 
+entradas 
+   num1 e num2
+
+processamnto 
+   Descobrir qual o maior numero entre num1 e num2 
+   SE num1 > num2 ENTAO 
+      maior = num1 
+   SENAO
+      maior = num2
+   FIM-SE
+
+saidas 
+  o maior numero 
+
 2. Elabore um algoritmo que permita a entrada de três números e imprima o maior deles.
 
 3. Elabore um algoritmo para Entrar com um número e imprimir uma das mensagens: 

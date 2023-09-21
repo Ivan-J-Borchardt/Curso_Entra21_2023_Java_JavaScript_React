@@ -10,7 +10,7 @@
 <body>
     <form action="">
         <label for="idIdade">Idade</label><br>
-        <input type="number" name="nmIdade" id="idIdade" >
+        <input type="number" name="nmIdade" id="idIdade">
         <br><br>
         <label for="idAltura">Altura</label><br>
         <input type="number" name="nmAltura" id="idAltura" step="0.01">
@@ -26,7 +26,7 @@
         <br><br>
         <output id="idOut">Peso Ideal: </output>
         <br><br>
-        <input type="Button" value="Calcular" onclick="calcular()">
+        <input type="Button" value="Calcular Peso Ideal" onclick="calcularPesoIdeal()">
         <input type="Button" value="Testar Genero" onclick="testarGenero()">
         <input type="Button" value="Testar Alistamento" onclick="testaServicoMilitar()">
 
@@ -34,33 +34,103 @@
         <input type="number" id="idMenu" name="nmMenu">
         <br>
         <br>
-        <input type="button" value="Testar Menu" onclick="exemplosEstruturasSelecao()">
+        <input type="button" value="Testar Estruturas Seleção" onclick="exemplosEstruturasSelecao()">
 
     </form>
 
     <script>
 
+        function exemplosEstruturasSelecao() {
+            //Estrutura de seleção simples
+            var idade = 18
+            if (idade > 18) {
+                console.log("é maior de idade");
+            }
 
-        if (temperatura >= 38) {
-            console.log("Entrou pq a temp. está maior que 37 graus");
-            if (condition) {
+            //Estrutura de Seleção composta  && -> AND  || -> OR   ! -> NOT
+            var num = 25
+            if (num < 10 || (num > 23 && num < 50)) {
+                console.log("o numero é menor que 10 ou está no intervalo entre 23 e 50");
+            }
+
+            var temperatura = 40 
+            var umidade = 22
+            if (temperatura >= 38 && umidade < 25) {
+                //entra aqui se resultado da expressão = Verdadeiro 
+                console.log("Temperatura >= 38 e umidade < 25%");
+            } else {
+                //entra aqui se resultado da expressão = Falso
+                console.log("Caiu aqui por que o resultado da expressão lógica deu falso");
+            }
+
+            //Estrutura de seleção encadeada 
+            var menu = 3//document.getElementById("idMenu").value
+            if (menu == 0) {
+                console.log("Opcao 0 selecionada");
+            } else {
+                if (menu == 1) {
+                    console.log("Opcao 1 selecionada");
+                } else {
+                    if (menu == 2) {
+                        console.log("Opcao 2 selecionada");
+                    } else {
+                        if (menu == 3) {
+                            console.log("Opcao 3 selecionada");
+                        } else {
+                            console.log("Opção Inválida")
+                        }
+                    }
+                }
                 
             }
+
+            //Estrutura de seleção encadeada usando IF-ELSE-IF
+            if (menu == 0) {
+                console.log("Opcao 0 selecionada");
+            } else if (menu == 1) {
+                console.log("Opcao 1 selecionada");
+            } else if (menu == 2) {
+                console.log("Opcao 2 selecionada");
+            } else if (menu == 3) {
+                console.log("Opcao 3 selecionada");
+            } else {
+                console.log("Opção Inválida")
+            }
+    
+            //switch-case {
+            //ESCOLHA (menu)
+            switch (menu) {
+                //CASO 0: 
+                case 0:
+                    console.log(" - Opcao 0 selecionada");
+                    break;
+            
+                case 1:
+                    console.log(" - Opcao 1 selecionada");
+                    break;
+
+                case 2:
+                    console.log(" - Opcao 2 selecionada");
+                    break;
+
+                case 3:
+                    console.log(" - Opcao 3 selecionada");
+                    break;
+
+                default:
+                    console.log(" - Opção Inválida");
+                    break;
+            }
+
+            //Ternário 
+            var opcao = (menu == 0)? "ternario falso" : "ternario falso"
+            console.log(opcao);
+
+    
         }
 
-        /*
-           && - lógica AND
-           || - lógica OR 
-           !  - Negação 
-        */
-        if (temperatura >= 38 && umidade < 25) {
-            //Verdadeiro 
-            console.log("Temperatura >= 38 e umidade < 25%");
-            calcularXYZ();
-        } else {
-            //Falso
-            console.log("Caiu aqui por que o resultado da expressão lógica deu falso");
-        }
+
+
 
         function calcularXYZ() {
             console.log("Passou pela Function...");
@@ -75,15 +145,15 @@
                 console.log("o genero masculino está selecionado");
             }
 
-            if (feminino  == true) {
+            if (feminino == true) {
                 console.log("o genero feminino está selecionado");
             }
 
-            if (lgbt  == true) {
+            if (lgbt == true) {
                 console.log("o genero nao binário está selecionado");
             }
 
-          
+
             if (masculino == true) {
                 console.log("o genero masculino está selecionado");
             } else {
@@ -95,17 +165,17 @@
             }
 
 
-            if(masculino == true) {
+            if (masculino == true) {
                 console.log("o genero masculino está selecionado");
-            }else if (feminino == true) {
+            } else if (feminino == true) {
                 console.log("o genero feminino está selecionado");
-            }else{
+            } else {
                 console.log("o genero nao binário está selecionado");
             }
-          
+
         }
 
-        function calcular() {
+        function calcularPesoIdeal() {
             let masculino = document.getElementById("idMasc").checked
             let feminino = document.getElementById("idFem").checked
             let altura = Number(document.getElementById("idAltura").value)
@@ -113,14 +183,14 @@
             let pesoIdeal
 
             if (masculino == true) {
-                pesoIdeal = (72.7 * altura) - 58 
+                pesoIdeal = (72.7 * altura) - 58
             } else {
-                pesoIdeal = (62.1 * altura) - 44.7 
-            }  
+                pesoIdeal = (62.1 * altura) - 44.7
+            }
 
             document.getElementById("idOut").value = "Peso Ideal: " + pesoIdeal.toFixed(2)
         }
-        
+
 
     </script>
 
