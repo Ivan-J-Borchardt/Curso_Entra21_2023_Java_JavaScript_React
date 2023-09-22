@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <form action="">
+        <label for="idNum1">Número 1:</label><br>
+        <input type="number" name="nmNum1" id="idNum1"> <br>
+
+        <label for="idNum2">Número 2:</label><br>
+        <input type="number" name="nmNum2" id="idNum2"> <br>
+
+        <label for="idOperacao">Operacao</label><br>
+        <select name="nmOperacao" id="idOperacao">
+            <option value="+">Soma</option>
+            <option value="-">Subtração</option>
+            <option value="*">Multiplicação</option>
+            <option value="/">Divisão</option>
+        </select>
+
+        <input type="button" value="calcular" onclick="calcular()"><br><br>
+
+        <output id="idOut"></output>
+
+    </form>
+
+    <script>
+
+        function calcular() {
+            //Capturar Entradas
+            let num1 = Number(document.querySelector("#idNum1").value)
+            let num2 = Number(document.querySelector("#idNum2").value)
+            let op = document.querySelector("#idOperacao").value
+
+            let resultado 
+            //Processamento
+            if (op == "+") {
+                resultado = num1 + num2
+            }else if (op == "-") {
+                resultado = num1 - num2
+            }else if (op == "*") {
+                resultado = num1 * num2
+            }else if (op == "/") {
+                resultado = num1 / num2
+            }else {
+                console.log("Erro ao selecionar Operação");
+            }
+        
+
+            //Saida
+            document.querySelector("#idOut").value = "Resultado: " + resultado
+
+            
+        }
+
+    </script>
+
+    
+</body>
+</html>

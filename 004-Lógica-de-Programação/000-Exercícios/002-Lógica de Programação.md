@@ -42,6 +42,20 @@ saidas
 
 6. Construa uma calculadora. O programa deverá receber 2 números e o caractere equivalente a um dos operadores aritméticos. Efetuar a operação aritmética correspondente e apresentar o resultado. 
 
+Entrada 
+   num1 
+   num2 
+   operacao =  + - * /
+
+processamento
+   descobrir qual é a operação 
+   if(operacao == "+")
+   efetuar a operaçao correspondente
+
+saida 
+  resultado da operacao aritmetica
+
+
 7. Entrar com o salário de uma pessoa e imprimir o Salário Líquido, segundo a tabela a seguir:
    
 |  Salário Bruto                                   |   INSS   |

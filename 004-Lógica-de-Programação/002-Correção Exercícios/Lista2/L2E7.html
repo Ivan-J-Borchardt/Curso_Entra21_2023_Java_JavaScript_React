@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <form action="">
+        <label for="idSal">Salário</label><br>
+        <input type="number" id="idSal" name="nmSal" step="0.01"><br><br>
+
+        <input type="button" value="testar" onclick="calcularInss()"><br><br>
+
+        <output id="idOut"></output> 
+    </form>
+
+    <script>
+
+        function calcularInss(){
+            //capturar elementos da tela
+            let salarioBruto = Number(document.getElementById("idSal").value)
+            let out = document.getElementById("idOut")
+        
+            let salarioLiquido = 0 
+            let descontoInss = 0
+
+            //Processamento 
+            if (salarioBruto <= 600.00) {
+                salarioLiquido = salarioBruto
+
+            }else if(salarioBruto > 600.00 && salarioBruto <= 1200.00){
+                descontoInss = salarioBruto * 0.25
+                salarioLiquido = salarioBruto - descontoInss
+
+            }else if(salarioBruto > 1200.00 && salarioBruto <= 2000.00){
+                descontoInss = salarioBruto * 0.30
+                salarioLiquido = salarioBruto - descontoInss
+
+            }else if(salarioBruto > 2000.00){
+                descontoInss = salarioBruto * 0.35
+                salarioLiquido = salarioBruto - descontoInss
+            }
+
+            //Saida 
+            out.innerText = "salarioBrutoBruto: " + salarioBruto.toFixed(2) + "\n Salário Líquido: " + salarioLiquido.toFixed(2) + "\n Descontos: " + descontoInss.toFixed(2)
+                            
+
+
+        }
+
+    </script>
+    
+</body>
+</html>

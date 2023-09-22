@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <form action="">
+        <label for="idValProd">Valor Produto</label><br>
+        <input type="number" id="idValProd" name="nmValProd" step="0.01"><br><br>
+
+        <input type="button" value="Calcular Lucro" onclick="calcularLucro()"><br><br>
+
+        <output id="idOut"></output> 
+    </form>
+
+    <script>
+
+        function calcularLucro(){
+            //capturar elementos da tela
+            let valCompraProduto = Number(document.getElementById("idValProd").value)
+            let out = document.getElementById("idOut")
+        
+            let valVendaProduto
+
+
+            //Processamento 
+            if (valCompraProduto < 20.00) {
+                //valVendaProduto = (valCompraProduto * 0.5) + valCompraProduto
+                valVendaProduto = valCompraProduto * 1.5
+            }else{
+                valVendaProduto = (valCompraProduto * 0.35) + valCompraProduto
+            }
+
+            //Saida 
+            out.innerText = "Valor de venda: " + valVendaProduto.toFixed(2)
+
+
+        }
+
+    </script>
+    
+</body>
+</html>

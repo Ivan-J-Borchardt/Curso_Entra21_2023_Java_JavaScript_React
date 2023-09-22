@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <form action="">
+        <fieldset>
+            <legend>Área Formas Geométricas</legend>  
+
+            <label for="idMedida1">Raio</label><br>
+            <input type="number" id="idMedida1" name="nmMedida1" step="0.01"><br><br>
+
+            <label for="idMedida2"></label><br>
+            <input type="number" id="idMedida2" name="idMedida2" step="0.01" disabled><br><br>
+    
+            <input type="radio" name="nmFormaGeometrica" id="idCirculo" onclick="habilitarCirculo()" checked>
+            <label for="idCirculo">Circulo</label><br>
+
+            <input type="radio" name="nmFormaGeometrica" id="idRetanculo" onclick="habilitarRetangulo()">
+            <label for="idRetanculo">Retânculo</label><br>
+
+            <input type="radio" name="nmFormaGeometrica" id="idTrianguloRetanculo" onclick="habilitarTrianguloRetangulo()">
+            <label for="idTrianguloRetanculo">Triângulo Retânculo</label><br>
+
+            <input type="radio" name="nmFormaGeometrica" id="idTrianguloEquilatero" onclick="habilitarTrianguloEquilatero()">
+            <label for="idTrianguloEquilatero">Triângulo Equilatero</label><br><br>            
+            
+            
+
+            <input type="button" value="Calcular Area do Retângulo" onclick="calcularAreaRetangulo()"><br><br>
+            <output id="idOutRetangulo"></output> 
+
+        
+        </fieldset>
+
+
+
+    </form>
+
+    <script>
+
+        function habilitarCirculo() {
+            
+        }
+
+        function habilitarRetangulo() {
+            
+        }
+        
+        function habilitarTrianguloRetangulo() {
+            
+        }
+
+        function habilitarTrianguloEquilatero() {
+            
+        }
+
+
+
+
+
+
+
+   
+        ///------------------------
+
+        function calcularAreaCirculo(){
+            //capturar elementos da tela
+            let raio = Number(document.getElementById("idRaio").value)
+
+            //Processamento 
+            let area = Math.PI * raio * raio 
+
+            //Saida 
+            document.getElementById("idOutCirculo").value = "Area: " + area.toFixed(2) + "cm2"
+
+        }
+
+
+        function calcularAreaRetangulo(){
+            //capturar elementos da tela
+            let base = Number(document.getElementById("idBase").value)
+            let altura = Number(document.getElementById("idAltura").value)
+
+            //Processamento 
+            let area = base * altura
+
+            //Saida 
+            document.getElementById("idOutRetangulo").value = "Area: " + area.toFixed(2) + "cm2"
+
+        }
+
+        function calcularAreaTrianguloRetangulo(){
+            //capturar elementos da tela
+            let base = Number(document.getElementById("idBaseTr").value)
+            let altura = Number(document.getElementById("idAlturaTr").value)
+
+            //Processamento 
+            let area = (base * altura)/2
+
+            //Saida 
+            document.getElementById("idOutTrianguloRetangulo").value = "Area: " + area.toFixed(2) + "cm2"
+
+        }
+
+
+        function calcularAreaTrianguloEquilatero(){
+            //capturar elementos da tela
+            let lado = Number(document.getElementById("idLado").value)
+
+            //Processamento 
+            //let area = ((lado ** 2) *  (3 ** (1/2)) )/4
+            let area = ((lado ** 2) *  Math.sqrt(3) )/4
+
+            //Saida 
+            document.getElementById("idOutTrianguloEquilatero").value = "Area: " + area.toFixed(2) + "cm2"
+
+        }
+
+    </script>
+    
+</body>
+</html>

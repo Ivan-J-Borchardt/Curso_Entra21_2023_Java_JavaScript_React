@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <form action="">
+        <label for="idNum1">Número 1:</label><br>
+        <input type="number" name="nmNum1" id="idNum1"> <br>
+
+        <label for="idNum2">Número 2:</label><br>
+        <input type="number" name="nmNum2" id="idNum2"> <br><br>
+
+
+        <input type="button" value="Somar" onclick="somar()">
+        <input type="button" value="Subtrair" onclick="subtrair()">
+        <input type="button" value="Multiplicar" onclick="multiplicar()">
+        <input type="button" value="Dividir" onclick="dividir()">
+
+        <br><br>
+
+    </form>
+
+    <script>
+
+        function somar() {
+            //Capturar Entradas
+            let num1 = Number(document.querySelector("#idNum1").value)
+            let num2 = Number(document.querySelector("#idNum2").value)
+
+            let resultado 
+            //Processamento
+            resultado = num1 + num2
+
+            //Saida
+            document.querySelector("#idOut").value = "Resultado: " + resultado
+        }
+
+        function subtrair() {
+            //Capturar Entradas
+            let num1 = Number(document.querySelector("#idNum1").value)
+            let num2 = Number(document.querySelector("#idNum2").value)
+
+            let resultado 
+            //Processamento
+            resultado = num1 - num2
+
+            //Saida
+            document.querySelector("#idOut").value = "Resultado: " + resultado
+        }
+
+        function multiplicar() {
+            //Capturar Entradas
+            let num1 = Number(document.querySelector("#idNum1").value)
+            let num2 = Number(document.querySelector("#idNum2").value)
+
+            let resultado 
+            //Processamento
+            resultado = num1 * num2
+
+            //Saida
+            document.querySelector("#idOut").value = "Resultado: " + resultado
+        }
+
+        function dividir() {
+            //Capturar Entradas
+            let num1 = Number(document.querySelector("#idNum1").value)
+            let num2 = Number(document.querySelector("#idNum2").value)
+
+            let resultado 
+            //Processamento
+            resultado = num1 / num2
+
+            //Saida
+            document.querySelector("#idOut").value = "Resultado: " + resultado
+        }
+
+    </script>
+
+    
+</body>
+</html>
