@@ -300,7 +300,7 @@ de 24/08/2023.
 - Correção lista 1 parte 2
 - Correção lista 2 
 - Lógica - Operadores Lógicos e expressões lógicas 
-- Lógica - Precedência dos operadores lógicos  
+
 - Exercícios - Lista 3 (Programas com estruturas de Seleção)
 
 ### Aula 22 - 2023.09.21 THU - 88h 
