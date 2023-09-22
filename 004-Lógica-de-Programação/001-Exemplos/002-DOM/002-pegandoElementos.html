@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+
+        <!-- Exemplo 001 - Caixa de texto -->
+        <label for="idTexto">Texto</label><br>
+        <input type="text" id="idTexto" name="nmTexto" class="inputTexto">
+        <br>
+
+        <label for="idTexto">Nome</label><br>
+        <input type="text" id="idNome" name="nmNome" class="inputTexto">
+
+        <br>
+        <!-- Exemplo 002 - Caixa de texto - Numerico -->
+        <label for="idNumero">Numero</label><br>
+        <input type="number" id="idNumero" name="nmNumero">
+
+        <br>
+        <!-- Exemplo 003 - Caixa de texto - Data -->
+        <label for="idData">Data</label><br>
+        <input type="date" id="idData" name="nmData">
+
+        <br>
+        <!-- Exemplo 004 - Caixa de texto - Senha -->
+        <label for="idSenha">Senha</label><br>
+        <input type="password" id="idSenha" name="nmSenha">
+
+        <br><br>
+        <!-- Exemplo 005 - Checkbox -->
+        <input type="checkbox" name="nmOpcao1" id="idOpcao1">
+        <label for="idOpcao1">Opação 1</label>
+        <br>
+        <input type="checkbox" name="nmOpcao2" id="idOpcao2">
+        <label for="idOpcao2">Opação 2</label>
+        <br>
+        <input type="checkbox" name="nmOpcao3" id="idOpcao3">
+        <label for="idOpcao3">Opação 3</label>
+
+        <br><br>
+        <!-- Exemplo 006 - Radio Button -->
+        <input type="radio" name="nmGenero" id="idFeminino" checked>
+        <label for="idFeminino">Feminino</label>        
+        <br>
+        <input type="radio" name="nmGenero" id="idMasculino">
+        <label for="idMasculino">Masculino</label>        
+        <br>
+
+        <br><br>
+        <!-- Exemplo 007 - Select -->
+        <label for="idSelect">Select</label><br>
+        <select name="nmSelect" id="idSelect">
+            <option value="RS">Rio Grande do Sul</option>
+            <option value="SC">Santa Catarina</option>
+            <option value="PR">Paraná</option>
+            <option value="SP">São Paulo</option>
+            <option value="MG">Minas Gerais</option>
+        </select>
+
+        <br><br>
+        <!-- Exemplo 008 - Datalist -->   
+        <label for="idNavegadores">Navegadores</label><br>
+        <input list="idListaNav" id="idNavegadores">
+        <datalist id="idListaNav">
+            <option value="Internet Explorer">IE</option>
+            <option value="Firefox">FI</option>
+            <option value="FireBlabla">FI1</option>
+            <option value="Fire teste">FI2</option>
+            <option value="Chrome">CH</option>
+            <option value="Opera">OP</option>
+        </datalist>
+        
+        
+        <br><br>
+        <!-- Exemplo 009 - Textarea -->
+        <label for="idTextArea">Digite aqui sua pergunta:</label><br>
+        <textarea name="nmTextArea" id="idTextArea" cols="30" rows="10"></textarea>
+
+
+
+        <br><br>
+        <input type="button" value="Capturar" onclick="capturaTela()">    
+    </form>
+
+    <script>
+        var texto
+        var texto2
+        var texto3
+        var numero 
+        var data
+        var senha
+        var op1
+        var op2 
+        var op3
+        var feminino
+        var masculino
+        var estado
+        var uf
+        var itemSelected
+        var pergunta
+        var navegador
+
+
+        function capturaTela() {
+            //Exemplo 001 - Caixa de texto 
+            texto = document.getElementById("idTexto").value
+            console.log("Texto: " + texto);
+
+            //.class 
+            //#id  
+            texto2 = document.querySelector("#idTexto").value
+            console.log("Texto2: " + texto2);
+
+            texto3 = document.querySelectorAll(".inputTexto")
+            console.log(texto3);
+
+           
+            //Exemplo 002 - Caixa de texto - Numerico 
+            numero = Number(document.getElementById("idNumero").value)
+            console.log("Numero: " + numero)
+
+            //Exemplo 003 - Caixa de texto - Data 
+            data = document.getElementById("idData").value
+            console.log("Data: " + data)
+
+            //Exemplo 004 - Caixa de texto - Senha 
+            senha = document.getElementById("idSenha").value
+            console.log("Senha: " + senha)
+
+            //Exemplo 005 - Checkbox
+            isOp1 = document.getElementById("idOpcao1").checked
+            isOp2 = document.getElementById("idOpcao2").checked
+            isOp3 = document.getElementById("idOpcao3").checked
+            console.log("Op1: " + op1 + " Op2: " + op2 + " Op3: " + op3);
+
+            if (isOp1) {
+                console.log("Entrou no if");
+            }
+
+            //Exemplo 006 - Radio button
+            feminino = document.getElementById("idFeminino").checked
+            masculino = document.getElementById("idMasculino").checked
+            console.log("Masculino: " + masculino + " Feminino: " + feminino);
+
+            //Exemplo 007 - Select
+            itemSelected = document.getElementById("idSelect")
+            uf = itemSelected.value
+            console.log("UF: " + uf);
+            //Pegando o innerText do Elemento(Option) selecionado
+            console.log("Estado: " + itemSelected.options[itemSelected.selectedIndex].innerText);
+
+            //Exemplo 008 - Data List
+            navegador = document.getElementById("idNavegadores").value
+            console.log("Navegador: " + navegador);
+
+
+            //Exmplo 009 - Textarea
+            pergunta = document.getElementById("idTextArea").value
+            console.log("Pergunta: " +  pergunta);
+            
+        }
+
+
+    </script>
+
+</body>
+</html>
