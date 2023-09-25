@@ -4,6 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+
+        input[type=text]{
+            color: red; 
+        }
+
+        /*
+        input[name=nmGenero]:checked{
+            margin: 30px;
+        }
+        */
+
+    </style>
+
 </head>
 <body>
     <form action="">
@@ -44,10 +58,10 @@
 
         <br><br>
         <!-- Exemplo 006 - Radio Button -->
-        <input type="radio" name="nmGenero" id="idFeminino" checked>
+        <input type="radio" name="nmGenero" id="idFeminino" value="feminino" checked>
         <label for="idFeminino">Feminino</label>        
         <br>
-        <input type="radio" name="nmGenero" id="idMasculino">
+        <input type="radio" name="nmGenero" id="idMasculino" value="masculino">
         <label for="idMasculino">Masculino</label>        
         <br>
 
@@ -80,8 +94,6 @@
         <!-- Exemplo 009 - Textarea -->
         <label for="idTextArea">Digite aqui sua pergunta:</label><br>
         <textarea name="nmTextArea" id="idTextArea" cols="30" rows="10"></textarea>
-
-
 
         <br><br>
         <input type="button" value="Capturar" onclick="capturaTela()">    
@@ -146,6 +158,17 @@
             feminino = document.getElementById("idFeminino").checked
             masculino = document.getElementById("idMasculino").checked
             console.log("Masculino: " + masculino + " Feminino: " + feminino);
+
+            if (feminino) {
+                
+            } else {
+                
+            }
+
+            //pegando qual Radio está selecionado... 
+            var sexo = document.querySelector("input[name=nmGenero]:checked").value
+            console.log("Exemplo Radio 2: " + sexo);
+
 
             //Exemplo 007 - Select
             itemSelected = document.getElementById("idSelect")

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <form action="">
+        <label for="idUser">Usuário</label><br>
+        <input type="text" id="idUser"><br>
+        <label for="idSenha">Senha</label><br>
+        <input type="password" id="idSenha"><br><br>
+        <input type="checkbox"  id="idMostarSenha" onclick="mostrarSenha()">
+        <label for="idMostarSenha">Mostrar Senha</label><br><br>
+        <input type="button" value="Login" onclick="efetuarLogin()"> 
+        <br><br>
+        <output id="idOut"></output>
+    </form>
+
+    <script>
+
+        var userId1 = "Aluno1" 
+        var userId2 = "Aluno2" 
+        var userId3 = "Aluno3" 
+
+        var senha1 = "Trocar123"
+        var senha2 = "Senha@123"
+        var senha3 = "123Trocar"
+
+
+        function efetuarLogin() {
+            let userTela = document.getElementById("idUser").value
+            let senhaTela = document.getElementById("idSenha").value
+            let msn
+
+            if (userTela == userId1) {
+                if (senhaTela == senha1) {
+                    //validou Usuario1  - Acesso Permitido
+                    msn = "Acesso Permitido"
+                }else{
+                    //Senha incorreta
+                    msn = "Senha incorreta"
+                }
+            } else if (userTela == userId2) {
+                if (senhaTela == senha2) {
+                    //validou Usuario2  - Acesso Permitido
+                    msn = "Acesso Permitido"
+                }else{
+                    //Senha incorreta
+                    msn = "Senha incorreta"
+                }
+            } else if (userTela == userId3) {
+                if (senhaTela == senha3) {
+                    //validou Usuario3  - Acesso Permitido
+                    msn = "Acesso Permitido"
+                }else{
+                    //Senha incorreta
+                    msn = "Senha incorreta"
+                }
+            } else {
+                //Usuário não cadastrado 
+                msn = "Usuário não cadastrado"
+            }
+
+            document.getElementById("idOut").value = msn
+        }
+
+        function mostrarSenha(){
+            let inSenha = document.getElementById("idSenha")
+            if (inSenha.type == "password") {
+                inSenha.type = "text"
+            } else {
+                inSenha.type = "password"
+            }
+        }
+
+    </script>
+
+
+</body>
+</html>
