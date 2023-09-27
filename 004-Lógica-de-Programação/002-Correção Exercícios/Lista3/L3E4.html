@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <form action="">
+        <label for="idNum">Numero:</label><br>
+        <input type="number" id="idNum" name="nmNum"><br><br>
+        <button type="button" onclick="testarPar()">Testar</button><br>
+        <output id="idOut"></output>
+    </form>
+
+    <script>
+
+        /*
+            Testa o número informa na tela para determinar se ele é par ou impar 
+        */
+        function testarPar() {
+            let numero = document.querySelector("#idNum").value
+            let msn
+            let resto = numero % 2
+
+            if (resto == 0) {
+                msn = "O número: " + numero + " é par"
+            } else {
+                msn = "O número: " + numero + " é ímpar"
+            }
+
+  
+            document.getElementById("idOut").value = msn
+
+        }
+
+
+
+    </script>
+
+</body>
+
+</html>

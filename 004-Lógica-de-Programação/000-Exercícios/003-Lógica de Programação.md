@@ -8,7 +8,7 @@
 - Promover a construção de um ferramental lógico e algorítmico para posterior aplicação em soluções de maior complexidade.
 - Desenvolver o racíocinio lógico e a habilidade analítica. 
 #### Palavras Chave  
-- Proposições, sequência lógica, fluxo do processamento, veriáveis, operadores aritméticos, tipagem de dados, estruturas de seleção. 
+- Proposições, sequência lógica, fluxo do processamento, variáveis, operadores aritméticos, tipagem de dados, estruturas de seleção. 
 
 ---
 ### Instruções Adicionais 
@@ -22,12 +22,21 @@
 
 3. Crie um algoritmo que leia o nome e as duas notas de um aluno, calcule a sua média e mostre na tela. No final, analise a média e mostre se o aluno teve ou não um bom aproveitamento (se ficou acima da média 7.0).
 
+//Entradas 
+
+
+//Processamento
+
+//testar o numero digitado para ver se é par ou impar 
+
+//Saida 
+
 4. Desenvolva um programa que leia um número inteiro e mostre se ele é PAR ou ÍMPAR.
 
 5. Faça um algoritmo que leia um determinado ano e mostre se ele é ou não BISSEXTO. 
 
 6. Escreva um programa que leia o ano de nascimento de um rapaz e mostre a sua situação em relação ao alistamento militar.
-- Se estiver antes dos 18 anos, mostre em quantos anos faltam para o alistamento.
+- Se estiver antes dos 18 anos, mostre quantos anos faltam para o alistamento.
 - Se já tiver depois dos 18 anos, mostre quantos anos já se passaram do alistamento.
 
 7. Numa promoção exclusiva para o Dia da Mulher, uma loja quer dar descontos para todos, mas especialmente para mulheres. Faça um programa que leia nome, sexo e o valor das compras do cliente e calcule o preço com desconto. Sabendo que:

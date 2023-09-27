@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <form action="">
+        <label for="idNome">Nome:</label><br>
+        <input type="text" id="idNome" name="nmNome"><br>
+        <label for="idNota1">Nota 1:</label><br>
+        <input type="number" id="idNota1" name="nmNota1" step="0.01"><br>
+        <label for="idNota2">Nota 2:</label><br>
+        <input type="number" id="idNota2" name="nmNota2" step="0.01"><br><br>
+
+        <button type="button" onclick="testarAproveitamento()">Testar Aproveitamento</button><br>
+        <output  id="idOut"></output>
+    </form>
+
+    <script>
+
+        function testarAproveitamento() {
+            let nome = document.getElementById("idNome").value
+            let nota1 = Number(document.getElementById("idNota1").value)
+            let nota2 = Number(document.getElementById('idNota2').value)
+            let situacao 
+            let media = (nota1 + nota2)/2
+
+            if (media > 7) {
+                situacao = "aprovado"
+            }else{
+                situacao = "reprovado"
+            }
+
+            document.getElementById("idOut").innerText = "Olá " + nome + "\n" +
+                                                         " sua média foi: " + media + "\n" + 
+                                                         " Situação: " + situacao
+                                                         
+            
+        }
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <form action="">
+        <label for="idVelocidade">Velocidade:</label><br>
+        <input type="number" id="idVelocidade" name="nmVelocidade"><br><br>
+        <button type="button" onclick="testarVelocidade()">Testar Velocidade</button><br>
+        <output  id="idOut"></output>
+    </form>
+
+    <script>
+
+        function testarVelocidade(){
+            let velocidade = Number(document.querySelector("#idVelocidade").value)
+            let saida = document.querySelector("#idOut")
+            let multa
+
+            if (velocidade > 80) {
+                multa = (velocidade - 80) * 5
+                saida.value = "Você ultrapassou o limite de velocidade - Multa: R$"  + multa.toFixed(2)
+            } else {
+                saida.value = "Parabéns, você se manteve no limite de velocidade"
+            }
+        }
+
+    </script>
+    
+</body>
+</html>

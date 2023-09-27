@@ -284,14 +284,12 @@ de 24/08/2023.
 
 ### Aula 20 - 2023.09.18 MON - 80h 
 
-
 - Correção lista 1 parte 1 
 - Lógica - Aprofundando Tipagem de dados 
 - Lógica - Aprofundando Operações aritméticas
 - Lógica - Estruturas de Seleção
 
 - Lógica - Exercícios - Lista 2 (Programas com estruturas de Seleção)
-
 
 ### Aula ID - 2023.09.19 TUE
 - Prof. Mateus
@@ -313,29 +311,37 @@ de 24/08/2023.
 
 ### Aula 24 - 2023.09.25 MON  - 96h 
 - Avaliação teórica - Lógica de Programação (Prova múltipla escolha)
+- Correção da Prova o vivo comentando todas as questões
 - Correção lista 2 (Término) 
-- Lógica - Resolvendo problemas computacionais
-- Lógica - Teste de Mesa
+
 
 ### Aula ID - 2023.09.26 TUE
 - Prof. Mateus
 
 ### Aula 25 - 2023.09.27 WED - 100h 
-- Lógica - Estruturas de repetição 
-- Exercícios - Lista 4 (Programas com estruturas de Repetição)
+- Tempo para resolução da lista 3 
+- Lógica - Boas Práticas
+- Lógica - Teste de Mesa
+
 
 ### Aula 26 - 2023.09.28 THU - 104h 
 
-- Correção lista 4 
-- Exercícios - Lista 5 (Programas com estruturas de Seleção e Repetição)
+- Correção Lista 3
+- Lógica - Estruturas de repetição 
+- Exercícios - Lista 4 (Programas com estruturas de Repetição)
+
+
 
 ### Aula 27 - 2023.09.29 FRI - 108h 
+- Correção lista 4 
+- Exercícios - Lista 5 (Programas com estruturas de Seleção e Repetição)
 - Correção lista 5
-- Lógica - Manipulação de Vetores 
-- Exercícios - Lista 6 (Programas com Vetores simples)
+
 
 
 ### Aula 28 -  - 112h 
+- Lógica - Manipulação de Vetores 
+- Exercícios - Lista 6 (Programas com Vetores simples)
 - Correção lista 6
 - Lógica - Funções 
 - Lógica - Manipulação de Matrizes
