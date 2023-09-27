@@ -29,39 +29,48 @@
         var senha2 = "Senha@123"
         var senha3 = "123Trocar"
 
+        var contTentativa = 0 
+        
+
 
         function efetuarLogin() {
+            contTentativa++
             let userTela = document.getElementById("idUser").value
             let senhaTela = document.getElementById("idSenha").value
             let msn
 
-            if (userTela == userId1) {
-                if (senhaTela == senha1) {
-                    //validou Usuario1  - Acesso Permitido
-                    msn = "Acesso Permitido"
-                }else{
-                    //Senha incorreta
-                    msn = "Senha incorreta"
+            if (contTentativa <= 3) {
+                if (userTela == userId1) {
+                    if (senhaTela == senha1) {
+                        //validou Usuario1  - Acesso Permitido
+                        msn = "Acesso Permitido"
+                    }else{
+                        //Senha incorreta
+                        msn = "Senha incorreta"
+                    }
+                } else if (userTela == userId2) {
+                    if (senhaTela == senha2) {
+                        //validou Usuario2  - Acesso Permitido
+                        msn = "Acesso Permitido"
+                    }else{
+                        //Senha incorreta
+                        msn = "Senha incorreta"
+                    }
+                } else if (userTela == userId3) {
+                    if (senhaTela == senha3) {
+                        //validou Usuario3  - Acesso Permitido
+                        msn = "Acesso Permitido"
+                    }else{
+                        //Senha incorreta
+                        msn = "Senha incorreta"
+                    }
+                } else {
+                    //Usuário não cadastrado 
+                    msn = "Usuário não cadastrado"
                 }
-            } else if (userTela == userId2) {
-                if (senhaTela == senha2) {
-                    //validou Usuario2  - Acesso Permitido
-                    msn = "Acesso Permitido"
-                }else{
-                    //Senha incorreta
-                    msn = "Senha incorreta"
-                }
-            } else if (userTela == userId3) {
-                if (senhaTela == senha3) {
-                    //validou Usuario3  - Acesso Permitido
-                    msn = "Acesso Permitido"
-                }else{
-                    //Senha incorreta
-                    msn = "Senha incorreta"
-                }
-            } else {
-                //Usuário não cadastrado 
-                msn = "Usuário não cadastrado"
+                
+            }else{
+                msn = "Usuário Bloqueado"
             }
 
             document.getElementById("idOut").value = msn

@@ -298,58 +298,66 @@ de 24/08/2023.
 
 ### Aula 21 - 2023.09.20 WED - 84h 
 - Correção lista 1 parte 2
-- Correção lista 2 
+- Lógica - DOM - Capturando elementos da tela
+
+### Aula 22 - 2023.09.21 THU - 88h 
+- Correção lista 2 parte 1
+- Lógica - DOM - Capturando elementos da tela
 - Lógica - Operadores Lógicos e expressões lógicas 
 
 - Exercícios - Lista 3 (Programas com estruturas de Seleção)
 
-### Aula 22 - 2023.09.21 THU - 88h 
-- Correção lista 3 
+### Aula 23 - 2023.09.22 FRI - 92h 
+- Correção lista 2 parte 2
+- Lógica - Aprofundando conceitos de Estruturas de seleção
+
+### Aula 24 - 2023.09.25 MON  - 96h 
+- Avaliação teórica - Lógica de Programação (Prova múltipla escolha)
+- Correção lista 2 (Término) 
 - Lógica - Resolvendo problemas computacionais
 - Lógica - Teste de Mesa
 
-### Aula 23 - 2023.09.22 FRI - 92h 
+### Aula ID - 2023.09.26 TUE
+- Prof. Mateus
+
+### Aula 25 - 2023.09.27 WED - 100h 
 - Lógica - Estruturas de repetição 
 - Exercícios - Lista 4 (Programas com estruturas de Repetição)
 
-### Aula 24 -  - 96h 
-- Avaliação teórica - Lógica de Programação (Prova múltipla escolha)
+### Aula 26 - 2023.09.28 THU - 104h 
+
 - Correção lista 4 
 - Exercícios - Lista 5 (Programas com estruturas de Seleção e Repetição)
 
-### Aula 25 -  - 100h 
+### Aula 27 - 2023.09.29 FRI - 108h 
 - Correção lista 5
 - Lógica - Manipulação de Vetores 
 - Exercícios - Lista 6 (Programas com Vetores simples)
 
-- Lógica - Aula dedicada a conclusão de exercícios 
 
-### Aula 26 -  - 104h 
+### Aula 28 -  - 112h 
 - Correção lista 6
 - Lógica - Funções 
 - Lógica - Manipulação de Matrizes
 - Exercícios - Lista 7 (Programas com Matrizes e Vetores)
 
-### Aula 27 -  - 108h 
+### Aula 29 -  - 116h 
 - Correção Lista 7 
 - Complexidade de Tempo e Espaço
 - CSS - Bootstrap 
 
-### Aula 28 -  - 112h 
-
-### Aula 29 -  - 116h 
+### Aula 30 -  - 120h 
 - JavaScript - Métodos de Array 
 - JavaScript - Métodos de String
 - JavaScript - Métodos de Numbers
 
-### Aula 30 -  - 120h 
+### Aula 31 -  - 124h 
 - JavaScript - Map e Set 
 
-### Aula 31 -  - 124h 
+### Aula 32 -  - 128h 
 - JavaScript - Funções Nomeadas e Funções Anônimas
 - JavaScript - Arrow Function
 - JavaScript - Funções Auto-Invocadas 
-### Aula 32 -  - 128h 
 ### Aula 33 -  - 132h 
 ### Aula 34 -  - 136h 
 - Node
