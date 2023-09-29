@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <form action="">
+        <label for="idAno">Ano:</label><br>
+        <input type="number" id="idAno" name="nmAno"><br><br>
+        <button type="button" onclick="testarBissexto()">Testar Ano</button><br>
+        <output id="idOut"></output>
+    </form>
+
+    <script>
+
+        function testarBissexto() {
+            let ano = Number(document.querySelector("#idAno").value)
+            let msn
+            let resto4 = ano % 4
+            let resto100 = ano % 100
+            let resto400 = ano % 400 
+
+            /*
+                ano = 2000 
+                resto4 = 0 
+                resto100 = 0
+                resto400 = 0
+
+                pareto 20/80
+            */
+            if ((resto4 == 0 && resto100 != 0) || resto400 == 0) {
+          //if (((ano % 4) == 0 && (ano % 100) != 0) || (ano % 400 ) == 0) {
+                msn = "O ano é bissexto"
+            } else {
+                msn = "O ano não é bissexto"
+            }
+
+            document.getElementById("idOut").value = msn
+
+        }
+
+
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <form action="">
+        <label for="idDistancia">Distância:</label><br>
+        <input type="number" id="idDistancia" name="nmDistancia"><br><br>
+        <button type="button" onclick="calcularPrecoViagem()">Calcular Preço Viagem</button><br>
+        <output  id="idOut"></output>
+    </form>
+
+    <script>
+
+        function calcularPrecoViagem(){
+            let distancia = Number(document.querySelector("#idDistancia").value)
+            let saida = document.querySelector("#idOut")
+            let valorViagem
+
+            if (distancia > 200) {
+                let distanciaMaior200 = distancia - 200
+                valorViagem = (200 * 0.5) + (distanciaMaior200 * 0.45)
+            } else {
+                valorViagem = (200 * 0.5)
+            }
+
+            saida.value = "Valor da viagem R$" + valorViagem.toFixed(2)
+        }
+
+    </script>
+    
+</body>
+</html>

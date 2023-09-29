@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <form action="">
+        <label for="idLadoA">Lado A:</label><br>
+        <input type="number" id="idLadoA" name="nmLadoA"><br>
+        <label for="idLadoB">Lado B:</label><br>
+        <input type="number" id="idLadoB" name="nmLadoB"><br>
+        <label for="idLadoC">Lado C:</label><br>
+        <input type="number" id="idLadoC" name="nmLadoC"><br><br>
+        <button type="button" onclick="testarLados()">Testar Lados</button><br>
+        <output  id="idOut"></output>
+    </form>
+
+    <script>
+
+        function testarLados(){
+            let ladoA = Number(document.getElementById("idLadoA").value)
+            let ladoB = Number(document.getElementById("idLadoB").value)
+            let ladoC = Number(document.getElementById("idLadoC").value)
+
+            let saida = document.getElementById("idOut")
+
+           // let somaLaLb = ladoA + ladoB
+           // let somaLbLc = ladoB + ladoC
+           // let somaLaLc = ladoA + ladoC
+
+            let isTriangulo = true 
+
+            if ((ladoA + ladoB) < ladoC) {
+                isTriangulo = false
+            }  
+
+            if ((ladoB + ladoC) < ladoA) {
+                isTriangulo = false
+            }
+
+            if ((ladoA + ladoC) < ladoB) {
+                isTriangulo = false
+            }
+
+            if (isTriangulo) {
+                saida.value = "As 3 medidas informadas formam um triângulo"
+            } else {
+                saida.value = "As 3 medidas informadas não formam um triângulo"
+            }
+
+
+        }
+
+    </script>
+    
+</body>
+</html>

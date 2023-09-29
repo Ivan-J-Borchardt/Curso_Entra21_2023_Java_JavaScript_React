@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <form action="">
+        <label for="idAnoNasc">Ano Nascimento:</label><br>
+        <input type="date" id="idAnoNasc" name="nmAnoNasc"><br><br>
+        <button type="button" onclick="testarIdade()">Testar Idade</button><br>
+        <output  id="idOut"></output>
+    </form>
+
+    <script>
+
+        function testarIdade(){
+            let dataNasc = document.querySelector("#idAnoNasc").value
+            let saida = document.querySelector("#idOut")
+            
+            let dataNascUTC = new Date(dataNasc + 'T00:00:00') //transformando a data que veio da tela em data UTC
+            let anoNasc = dataNascUTC.getFullYear() //pegando ano nascimento 
+
+            let dataAtualUTC = new Date(); //Pegando a data do sistema
+            let anoAtual = dataAtualUTC.getFullYear() //pegando ano atual 
+
+
+            let diferencaIdade
+            let idade = anoAtual - anoNasc
+  
+            if (idade >= 18) {
+                diferencaIdade = idade - 18
+                saida.value = "Você já é maior de idade, deveria ter se alistado a " +  diferencaIdade + " anos"
+            } else {
+                diferencaIdade = 18 - idade
+                saida.value = "você é menor de idade, faltam " +  diferencaIdade + " anos para o alistamento" 
+            }
+        }
+
+
+    </script>
+    
+</body>
+</html>

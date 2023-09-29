@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <form action="">
+        <label for="idValorCompra">Valor Compra:</label><br>
+        <input type="number" id="idValorCompra" name="nmValorCompra" step="0.01"><br><br>
+        <input type="radio" name="nmSexo" id="idMasc" value="masc" checked>
+        <label for="idMasc">Masculino</label><br>
+        <input type="radio" name="nmSexo" id="idFemi" value="femi">
+        <label for="idFemi">Feminino</label><br><br>
+
+        <button type="button" onclick="calcularValorCompra()">Calcular Valor Compra</button><br>
+      
+    </form>
+
+    <script>
+
+        function calcularValorCompra(){
+            let campoValor = document.getElementById("idValorCompra")
+            let valorCompraBruto = Number(campoValor.value)
+            let sexo = document.querySelector("input[name=nmSexo]:checked").value
+            let desconto 
+
+            if (sexo == "femi") {
+                desconto = 0.13
+            } else {
+                desconto = 0.05
+            }
+
+            let valorCompraLiquido = valorCompraBruto - (valorCompraBruto * desconto)
+
+            campoValor.value = valorCompraLiquido.toFixed(2)
+
+        }
+
+    </script>
+    
+</body>
+</html>

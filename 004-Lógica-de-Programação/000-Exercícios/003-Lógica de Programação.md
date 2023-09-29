@@ -22,18 +22,12 @@
 
 3. Crie um algoritmo que leia o nome e as duas notas de um aluno, calcule a sua média e mostre na tela. No final, analise a média e mostre se o aluno teve ou não um bom aproveitamento (se ficou acima da média 7.0).
 
-//Entradas 
-
-
-//Processamento
-
-//testar o numero digitado para ver se é par ou impar 
-
-//Saida 
-
 4. Desenvolva um programa que leia um número inteiro e mostre se ele é PAR ou ÍMPAR.
 
 5. Faça um algoritmo que leia um determinado ano e mostre se ele é ou não BISSEXTO. 
+
+ano precisa ser divisivel 4, mas nao divisivel por 100 
+ano divisivel por 400 
 
 6. Escreva um programa que leia o ano de nascimento de um rapaz e mostre a sua situação em relação ao alistamento militar.
 - Se estiver antes dos 18 anos, mostre quantos anos faltam para o alistamento.
@@ -45,6 +39,10 @@
 - Mulheres ganham 13% de desconto
 
 8. Faça um algoritmo que pergunte a distância que um passageiro deseja percorrer em Km. Calcule o preço da passagem, cobrando R$0.50 por Km para viagens até 200Km e R$0.45 para viagens mais longas.
+
+250 * 0,45
+
+(200 * 0,5) + (50 * 0,45) 
 
 9. Crie um programa que leia o tamanho de três segmentos de reta.
 Analise seus comprimentos e diga se é possível formar um triângulo com essas retas. Matematicamente, para três segmentos formarem um triângulo, o comprimento de cada lado deve ser menor que a soma dos outros dois.

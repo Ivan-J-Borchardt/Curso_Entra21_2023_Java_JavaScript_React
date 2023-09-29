@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <form action="">
+        <label for="idPeso">Peso:</label><br>
+        <input type="number" id="idPeso" name="nmPeso" step="0.01"><br>
+        <label for="idAltura">Altura:</label><br>
+        <input type="number" id="idAltura" name="nmAltura" step="0.01"><br><br>
+
+        <button type="button" onclick="calcularImc()">Calcular IMC</button><br>
+        <output  id="idOut"></output>
+    </form>
+
+    <script>
+
+        function calcularImc(){
+            let peso = Number(document.getElementById("idPeso").value)
+            let altura = Number(document.getElementById("idAltura").value)
+            let msn
+            let imc = peso/(altura ** 2)
+
+            /*
+            if (imc < 18.5) {
+                msn = "Abaixo do Peso"
+            } else if(imc >= 18.5 && imc < 25) {
+                msn = "Peso Normal"
+            } else if(imc >= 25 && imc < 30){
+                msn = "Sobrepeso"
+            }else if(imc >= 30 && imc < 40){
+                msn = "Obesidade"
+            }else if(imc >= 40){
+                msn = "Obesidade Mórbida"
+            }
+            */
+
+            if (imc < 18.5) {
+                msn = "Abaixo do Peso"
+            } else if(imc < 25) {
+                msn = "Peso Normal"
+            } else if(imc < 30){
+                msn = "Sobrepeso"
+            }else if(imc < 40){
+                msn = "Obesidade"
+            }else if(imc >= 40){
+                msn = "Obesidade Mórbida"
+            }
+            document.getElementById("idOut").value = "IMC: " + imc + " - " + msn
+
+        }
+
+    </script>
+    
+</body>
+</html>
