@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <output id="idOut"></output>
+
+    <script>
+
+        var msn = "Inicio "
+        var cont = 30
+
+
+        while (cont >= 1) {
+
+            let restoDivPor4 = cont % 4
+            if (restoDivPor4 == 0) {
+                msn = msn + "[" + cont + "] " 
+            }else{
+                msn = msn + cont + " " 
+            }
+            cont--
+        }
+
+        msn = msn + "Acabou!"
+
+        console.log(msn);
+        document.getElementById("idOut").value = msn
+
+
+    </script>
+</body>
+</html>

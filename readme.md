@@ -339,7 +339,7 @@ de 24/08/2023.
 
 
 
-### Aula 28 -  - 112h 
+### Aula 28 - 2023.10.02 MON  - 112h 
 - Lógica - Manipulação de Vetores 
 - Exercícios - Lista 6 (Programas com Vetores simples)
 - Correção lista 6
@@ -347,10 +347,13 @@ de 24/08/2023.
 - Lógica - Manipulação de Matrizes
 - Exercícios - Lista 7 (Programas com Matrizes e Vetores)
 
-### Aula 29 -  - 116h 
+### Aula 29 - 2023.10.03 TUE - 116h 
 - Correção Lista 7 
 - Complexidade de Tempo e Espaço
 - CSS - Bootstrap 
+
+### Aula ID - 2023.10.04 WED
+- Prof. Mateus
 
 ### Aula 30 -  - 120h 
 - JavaScript - Métodos de Array 

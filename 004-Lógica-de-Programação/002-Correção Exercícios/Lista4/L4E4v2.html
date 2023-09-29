@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <output id="idOut"></output>
+
+    <script>
+
+        var msn = "Inicio "
+
+        for (let index = 100; index >= 0; index -= 5) {
+            msn = msn + index + " "
+        }
+            
+        msn = msn + "Acabou!"
+
+        console.log(msn);
+        document.getElementById("idOut").value = msn
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <label for="idNumIni">Numero Inicial</label><br>
+    <input type="number" id="idNumIni"><br>
+    <label for="idNumFim">Numero Final</label><br>
+    <input type="number" id="idNumFim"><br>
+    <label for="idNumInc">Incremento</label><br>
+    <input type="number" id="idNumInc"><br><br>
+    <input type="button" value="Contar" onclick="contar()">
+
+    <output id="idOut"></output>
+
+    <script>
+
+        function contar() {
+            let numIni = Number(document.getElementById("idNumIni").value)
+            let numFim = Number(document.getElementById("idNumFim").value)
+            let incremento = Number(document.getElementById("idNumInc").value)
+
+            let msn = "Inicio "
+
+            /*
+                numIni = 10
+                numFim = 3
+                incremento = -2
+
+                msn = "Inicio 12 "
+
+                cont = 14
+            
+            */
+
+            if (incremento < 0) {
+                incremento *= -1
+            }
+
+            if (incremento == 0) {
+                alert("O incremento não pode ser Zero!")
+            } else {
+                if (numIni < numFim) {
+                    for (let cont = numIni; cont < numFim; cont += incremento) {
+                        msn = msn + cont + " "
+                    }
+                    msn = msn + "Acabou!"
+                } else if (numIni > numFim) {
+                    for (let cont = numIni; cont > numFim; cont -= incremento) {
+                        msn = msn + cont + " "
+                    }
+                    msn = msn + "Acabou!"
+                } else {
+                    msn = "O Número Inicial é Igual ao Número Final"
+                }
+
+                document.getElementById("idOut").value = msn
+            }
+
+
+
+        }
+
+
+    </script>
+</body>
+
+</html>

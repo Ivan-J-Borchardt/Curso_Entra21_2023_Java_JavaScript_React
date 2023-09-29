@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <output id="idOut"></output>
+
+    <script>
+
+        var msn = "Inicio "
+        var cont = 6
+        var acumulador = 0
+
+        /*
+        while (cont <= 100) {
+
+            let restoDivPor2 = cont % 2
+            if (restoDivPor2 == 0) {
+                acumulador += cont
+            }
+            cont++ 
+        }
+        */
+
+        do {
+            let restoDivPor2 = cont % 2
+            if (restoDivPor2 == 0) {
+                acumulador += cont
+            }
+            cont++
+        } while (cont <= 100);
+
+
+        msn = "Resultado: " + acumulador
+
+        console.log(msn);
+        document.getElementById("idOut").value = msn
+
+
+    </script>
+</body>
+
+</html>

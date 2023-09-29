@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <label for="idNum">Número</label><br>
+    <input type="number" name="nmNum" id="idNum"><br><br>
+    <input type="button" value="Contar" onclick="contar()">
+
+    <output id="idOut"></output>
+
+    <script>
+
+
+
+        function contar() {
+            let numFim = Number(document.getElementById("idNum").value)
+            let msn = "Inicio "
+       
+
+            for (let index = 1; index <= numFim; index++) {
+                msn = msn + index + " "
+            }
+           
+
+            msn = msn + "Acabou!"
+
+            console.log(msn);
+            document.getElementById("idOut").value = msn
+        }
+
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>
