@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <input type="button" value="Contar" onclick="contar()">
+
+    <output id="idOut"></output>
+
+    <script>
+
+        function contar() {
+
+            let msn = "Inicio "
+
+
+            for (let num = 1; num <= 100; num++) {
+                let restoDiv3 = num % 3
+                let restoDiv5 = num % 5
+                if (restoDiv3 == 0 || restoDiv5 == 0) {
+                    msn = msn + num + " "
+                }
+            }
+
+            msn = msn + "Acabou!!!"
+
+
+            document.getElementById("idOut").value = msn
+            
+
+
+
+        }
+
+
+    </script>
+</body>
+
+</html>

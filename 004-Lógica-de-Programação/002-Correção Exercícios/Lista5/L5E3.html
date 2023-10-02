@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <output id="idOut" ></output>
+
+<body>
+    <script>
+
+        var out = document.getElementById("idOut")
+        var msn = ""
+        var contNumMaiorQ5 = 0
+        var contNumDiv3 = 0
+
+        for (let index = 0; index < 20; index++) {
+            var numSorteado = parseInt(Math.random() * 11)
+            //var numSorteado = Math.round(Math.random() * 10)
+            msn = msn + numSorteado + " "
+
+            if (numSorteado > 5) {
+                contNumMaiorQ5++
+            }
+
+            if (numSorteado % 3 == 0) {
+                contNumDiv3++
+            }
+        }
+
+        out.innerText = msn + "\n Qtd Num. maiores Que 5: " + contNumMaiorQ5 + 
+                    "\n Qtd Num. Divisiveis por 3: " + contNumDiv3
+
+    </script>    
+</body>
+</html>

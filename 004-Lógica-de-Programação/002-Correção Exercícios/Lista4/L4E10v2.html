@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <label for="idNumIni">Numero Inicial</label><br>
+    <input type="number" id="idNumIni"><br>
+    <label for="idNumFim">Numero Final</label><br>
+    <input type="number" id="idNumFim"><br>
+    <input type="radio" name="nmParImp" id="idPar" value="par" checked>
+    <label for="idPar">Par</label><br>
+    <input type="radio" name="nmParImp" id="idImpar" value="impar">
+    <label for="idImpar">Impar</label><br><br>
+
+    <input type="button" value="Contar" onclick="contar()">
+
+    <output id="idOut"></output>
+
+    <script>
+
+        function contar() {
+            let numIni = Number(document.getElementById("idNumIni").value)
+            let numFim = Number(document.getElementById("idNumFim").value)
+            let parImp = document.querySelector("input[name=nmParImp]:checked").value
+            let msn = "Inicio "
+
+
+            for (let num = numIni; num <= numFim; num++) {
+                if (parImp == "par") {
+                    //Descobrindo os números pares
+                    let restoPar = num % 2
+                    if (restoPar == 0) {
+                        msn = msn + num + " "
+                    }
+                } else {
+                    //Descobrindo os números impares
+                    let restoImpar = num % 2
+                    if (restoImpar != 0) {
+                        msn = msn + num + " "
+                    }
+                }
+            }
+
+
+
+
+            
+
+
+            msn = msn + "Acabou!!!"
+
+
+            document.getElementById("idOut").value = msn
+
+
+
+
+        }
+
+
+    </script>
+</body>
+
+</html>

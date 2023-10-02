@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <label for="idNumIni">Numero Inicial</label><br>
+    <input type="number" id="idNumIni"><br>
+    <label for="idNumFim">Numero Final</label><br>
+    <input type="number" id="idNumFim"><br>
+
+    <input type="button" value="Contar" onclick="encontrarNumPrimos()">
+
+    <output id="idOut"></output>
+
+    <script>
+
+        function encontrarNumPrimos() {
+            let numIni = Number(document.getElementById("idNumIni").value)
+            let numFim = Number(document.getElementById("idNumFim").value)
+           
+            let msn = "Inicio "
+         
+            let isPrimo
+            //Plano de teste
+            //1 2 3 4 5 6 7 8 9 = num   
+            //  2 3   5   7    
+
+            /* Teste de mesa
+            numIni = 1
+            numfim = 9 
+            msn = "Inicio 1 2 3 5 "
+
+            isPrimo = true
+
+            num = 5  
+            num2 = 5
+            
+            */
+
+            for (let num = numIni; num <= numFim; num++) {
+                isPrimo = true
+                for (let num2 = 2; num2 < num; num2++) {
+                    //Se num é divisivel por num2 então não é primo
+                    if (num % num2 == 0) {
+                        isPrimo = false
+                    }
+                }
+
+                if (isPrimo) {
+                    if (num != 1) {
+                        msn = msn + num + " "
+                    }
+                }
+                
+            }
+
+
+
+            msn = msn + "Acabou!!!"
+
+
+            document.getElementById("idOut").value = msn
+            
+
+
+
+        }
+
+
+    </script>
+</body>
+
+</html>
