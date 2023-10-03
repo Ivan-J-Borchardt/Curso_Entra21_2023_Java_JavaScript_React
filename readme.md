@@ -336,54 +336,127 @@ de 24/08/2023.
 - Correção lista 4 
 - Exercícios - Lista 5 (Programas com estruturas de Seleção e Repetição)
 
-
-
-
 ### Aula 28 - 2023.10.02 MON  - 112h 
+
+- Correção L4E10
+- Correção lista 5 (E1 ao E3)
+- Tempo para resolução Lista 5 
+
+### Aula 29 - 2023.10.03 TUE - 116h 
 
 - Correção lista 5
 - Lógica - Manipulação de Vetores 
 - Exercícios - Lista 6 (Programas com Vetores simples)
-
-
-
-
-### Aula 29 - 2023.10.03 TUE - 116h 
-
 - Correção lista 6
-- Lógica - Funções 
-- Lógica - Manipulação de Matrizes
-- Exercícios - Lista 7 (Programas com Matrizes e Vetores)
-- Correção Lista 7 
-- Complexidade de Tempo e Espaço
-- CSS - Bootstrap 
+
 
 ### Aula ID - 2023.10.04 WED
 - Prof. Mateus
 
-### Aula 30 -  - 120h 
+### Aula 30 - 2023.10.05 THU - 120h 
+
+- Lógica - Funções 
+- Lógica - Manipulação de Matrizes
+- Exercícios - Lista 7 (Programas com Matrizes e Vetores)
+
+
 - JavaScript - Métodos de Array 
 - JavaScript - Métodos de String
 - JavaScript - Métodos de Numbers
 
-### Aula 31 -  - 124h 
-- JavaScript - Map e Set 
 
-### Aula 32 -  - 128h 
+### Aula 31 - 2023.10.06 FRI - 124h 
+- JavaScript - Janelas de confirmação 
 - JavaScript - Funções Nomeadas e Funções Anônimas
 - JavaScript - Arrow Function
 - JavaScript - Funções Auto-Invocadas 
-### Aula 33 -  - 132h 
-### Aula 34 -  - 136h 
-- Node
-### Aula 35 -  - 140h 
-### Aula 36 -  - 144h 
-### Aula 37 -  - 148h 
-### Aula 38 -  - 152h
-### Aula 39 -  - 156h
-### Aula 40 -  - 160h  
-### Aula 41 -  - 164h  
-### Aula 42 -  - 168h  
+- Projeto: Desafio 1 - Verificador de força de senha
+
+### Aula 32 - 2023.10.09 MON - 128h 
+- Correção Lista 7 
+- Complexidade de Tempo e Espaço
+- CSS - Bootstrap 
+- Projeto: Desafio 2 - Conversor de Moedas
+
+### Aula ID - 2023.10.10 TUE
+- Prof. Mateus
+
+### Aula 33 - 2023.10.11 WED - 132h 
+- JavaScript - Tratamento de Eventos
+- Exercícios: Refatorar pelo menos 3 Exercícios, a escolha, usando os novos conhecimentos sobre tratamento de eventos
+
+- JavaScript - Locais para declarar JS
+- Exercícios: Refatorar pelo menos 3 Exercícios, a escolha, extraíndo o JS interno para um arquivo.js
+
+- JavaScript - Um pouco mais sobre o comportamento das variáveis (var x let x const)
+
+### Feriado - 2023.10.12 THU
+- Feriado?? Bom pra resolver o desafio da aula ;) 
+
+### Feriado - 2023.10.13 FRI
+- Feriado duplo??? :) - WoW - Perfeito para colocar as pendências da aula em dia, hein? ;)  
+
+
+### Aula 34 - 2023.10.16 MON - 136h 
+- ~~Node~~
+- JavaScript - Processamento Assíncrono
+- JavaScript - Consumo de API com AJAX
+- JavaScript - Consumo de API com fetch() - async/await 
+- JavaScript - Estruturas de Dados XML - JSON - JS Obj
+- Projeto: Desafio 3 - Conversor de Moedas
+
+### Aula ID - 2023.10.17 TUE
+- Prof. Mateus
+
+### Aula 35 - 2023.10.18 WED - 140h 
+- JavaScript - Processamento Assíncrono - Promises
+
+### Aula 36 - 2023.10.19 THU - 144h 
+- JavaScript - Processamento Assíncrono - Callbacks
+
+- **Node** 
+- Node - Instalação do Node
+- Node - Criando e executando aplicações Node
+- Node - Estrutura de um projeto Node
+- Node - Gerenciador de pacotes NPM e NPX
+- Node - Instalando pacotes no projeto Node 
+- Node - Modules 
+
+### Aula 37 - 2023.10.20 FRI - 148h 
+
+- Node - Criando o primeiro servidor http
+- Node - Criando uma API com o framework Express
+- Node - Roteamento 
+- Node - Trabalhando com arquivos estáticos  
+
+ 
+### Aula 38 - 2023.10.23 MON - 152h
+
+- Node - Cors 
+- Node - Middlewares 
+- Node - Autenticação com JWT 
+
+
+### Aula ID - 2023.10.24 TUE
+- Prof. Mateus
+
+### Aula 39 - 2023.10.25 WED - 156h
+- Node - Consistência em Arquivos 
+- Node - Tratamento de exceção 
+
+### Aula 40 - 2023.10.26 THU - 160h 
+- Node - Conceitos básicos de API REST 
+- Node - Métodos HTTP e suas responsabilidades 
+- Node - Status Codes 
+### Aula 41 - 2023.10.27 FRI - 164h  
+- Node - Testes automatizados 
+
+### Aula 42 - 2023.10.30 MON - 168h 
+- Node - Consumindo uma API no Backend (AXIOS)
+
+### Aula ID - 2023.10.31 TUE
+- Prof. Mateus
+
 ### Aula 43 -  - 172h  
 ### Aula 44 -  - 176h
 - TypeScript 
