@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <input type="button" value="Processar" onclick="gerarFibonacci()">
+    <br><br>
+    <output id="idOut"></output>
+
+    <script>
+
+        function gerarFibonacci(){
+            let numFibo = 0    //3
+            let eleAnt = 0    // 2
+            let eleSeq = 1    // 3
+            let eleProx      // 3 
+        
+            let msn = "0 "
+
+            //0 1 1 2 3 5 8 13 21...
+
+            while (numFibo < 100) {
+                msn = msn + eleSeq + " "
+                console.log(eleSeq);
+                eleProx = eleAnt + eleSeq
+                eleAnt = eleSeq
+                eleSeq = eleProx
+                numFibo++
+            }
+
+            document.getElementById("idOut").value = msn 
+        }
+
+    </script>
+    
+</body>
+</html>

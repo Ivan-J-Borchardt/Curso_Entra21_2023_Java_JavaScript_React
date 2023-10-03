@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <form action="">
+        <label for="idNumeroApostado">Aposte um Número:</label><br>
+        <input type="number" id="idNumeroApostado" name="nmNumeroApostadoe">
+        <br><br>
+        <input type="button" value="Enviar" onclick="enviar()">
+        <br><br>
+        <label for="idOutMensagem">Resultado: </label>
+        <output id="idOutMensagem"></output>
+        <br>
+    </form>
+
+    <script>
+
+        //Sortear um numero entre 0 e 10 
+        var numSorteado = parseInt(Math.random() * 11)
+        var contadorTentativas = 0 
+        var msn 
+
+        function enviar(){
+            //Adquirir o numero apostado (da tela)
+            let numApostado = Number(document.getElementById("idNumeroApostado").value)
+
+            //incrementar contadorTentativas
+            contadorTentativas++ 
+
+            //testar a quantidade de vezes que foi jogado , se contadorTentativas > 3, então perde o jogo
+            if (contadorTentativas <= 3) {
+                //Se contador de tentativas for menor ou igual que 3, então testa o numero apostado contra o numero sorteado 
+                if (numApostado == numSorteado) {
+                    msn = "Parabéns vc descobriu o número sorteado"
+                }else{ 
+                    if (contadorTentativas == 3) {
+                        msn = "Perdeu o Jogo após 3 tentativas!!"
+                    }else{
+                        if(numApostado < numSorteado){
+                            msn = "O número apostado é menor do que o sorteado"
+                        }else if(numApostado > numSorteado){
+                            msn = "O número apostado é maior do que o sorteado"
+                        }
+                    }
+                }
+            }else{
+                msn = "Perdeu o Jogo!!"
+            }    
+            document.getElementById("idOutMensagem").value = msn
+        }
+    </script>
+
+</body>
+</html>

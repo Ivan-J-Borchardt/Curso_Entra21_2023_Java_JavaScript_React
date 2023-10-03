@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <label for="idIdade">Idade</label><br>
+        <input type="number" id="idIdade" name="nmIdade">
+        <br><br>
+        <input type="button" value="Enviar" onclick="registrar()">
+        <br><br>
+        <label for="idOutMediaIdades">Média de Idades: </label>
+        <output id="idOutMediaIdades"></output>
+        <br>
+        <label for="idQtdPessoasMaior18">Quantidade pessoas maiores de 18: </label>
+        <output id="idQtdPessoasMaior18"></output>
+        <br>
+        <label for="idQtdPessoasMenor5">Quantidade pessoas menores de 5: </label>
+        <output id="idQtdPessoasMenor5"></output>
+        <br>
+        <label for="idMaiorIdade">Maior Idade: </label>
+        <output id="idMaiorIdade"></output>
+        <br>
+    </form>
+
+    <script>
+
+        var idadeInformada
+        var accIdade = 0 
+        var qtdIdades = 0 
+        var mediaIdades = 0 
+        var idadesMaior18 = 0
+        var idadesMenor5 = 0 
+        var maiorIdade = 0
+
+        function registrar() {
+            //Entrada: Varias idades (1 input da tela)
+
+            //Processamento: 
+            //Adquirir a idade digitada 
+            idadeInformada = Number(document.getElementById("idIdade").value)
+
+            //acumular idade (somatoria de idades)
+            accIdade += idadeInformada
+
+            //incrementar contador de idades 
+            qtdIdades++ 
+
+            //Calcular média de idades 
+            mediaIdades = accIdade/qtdIdades
+            document.getElementById("idOutMediaIdades").value = mediaIdades
+
+            //Descobrir se a idade digitada é maior que 18, 
+            //se for incrementar contador de idadesMaior18 
+            if (idadeInformada > 18) {
+                idadesMaior18++
+                document.getElementById("idQtdPessoasMaior18").value = idadesMaior18
+            }
+
+            //Descobrir se a idade digitada é menor do que 5, 
+            //se for incrementar contador de idadesMenor5
+            if (idadeInformada < 5) {
+                idadesMenor5++
+                document.getElementById("idQtdPessoasMenor5").value = idadesMenor5
+            }
+            
+            //Descobrir se a idade digitada é a maior idade já informada
+            if (idadeInformada > maiorIdade) {
+                maiorIdade = idadeInformada
+                document.getElementById("idMaiorIdade").value = maiorIdade
+            }
+
+        }
+
+
+    </script>
+
+
+</body>
+</html>

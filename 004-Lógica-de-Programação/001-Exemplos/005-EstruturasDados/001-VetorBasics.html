@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        //Array vazio 
+        var carro = []
+
+        //Array pré inicializado (vetor, coleção, pilha, fila, lista)
+        const fruta = ['laranja', 'morango', 'abacate']
+        console.log(fruta);
+
+        //Declarando um array usando o construtor da classe Array 
+        let legumes = new Array('brócolis', 'cenoura', 'alface')
+
+
+        //Acessando posições especificas do array
+        var frutaCitrica = fruta[2]
+        console.log("fruta Citrica: " + frutaCitrica);
+
+        fruta[3] = "limao"
+        fruta[4] = "fisalis"
+        fruta[6] = "melancia"
+        console.log(fruta);
+        console.log(fruta[0]);
+        console.log(fruta[1]);
+        console.log(fruta[2]);
+        console.log(fruta[3]);
+        console.log(fruta[4]);
+
+        //Tamanho do Array 
+        console.log("Tamanho do Array: " + fruta.length);
+
+
+        //Inserindo um novo elemento no final do array
+        fruta[fruta.length] = "melão"
+        fruta.push("Amora")
+
+
+        //Inserindo um novo elemento no inicio do array
+        fruta.unshift("Banana")
+        
+        //Tirar Elementos do começo do array 
+        var fruta3 = fruta.shift()
+        console.log("fruta 3 --> " + fruta3);
+
+
+        //Tirar Elementos do Final do array 
+        var fruta4 = fruta.pop()
+        console.log("fruta 4 --> " + fruta4);
+
+        console.log("---------------------------");
+        console.log(fruta);
+
+        //Construindo Fila vs Pilha  (pop, shift, unshift, push)
+        //Fila - o primeiro elemento que entra é primeiro a sair 
+        //Pilha - O último elemento a entrar é primeiro a sair 
+
+        //Iterando um Array 
+        for (let index = 0; index < fruta.length; index++) {
+            let element = fruta[index];
+            console.log(fruta[index]);
+            console.log("Fruta[" + index + "] -> " + element);
+        }
+
+        //Exibindo o array inteiro no console 
+        console.log(fruta);
+        console.log(fruta.toString());
+        console.table(fruta);
+
+
+
+        //Passando a referencia de fruta para fruta2
+        var fruta2 = fruta
+
+        fruta[2] = "Limão"
+        console.log(fruta);
+        console.log(fruta2);
+
+        var texto = "123"
+        //Passando o valor de texto para texto2 
+        var texto2 = texto
+
+
+
+
+
+    </script>
+</body>
+
+</html>

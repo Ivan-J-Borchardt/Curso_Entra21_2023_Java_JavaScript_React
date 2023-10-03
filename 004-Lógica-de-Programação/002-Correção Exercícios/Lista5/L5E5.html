@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <label for="idPreco">Preço</label><br>
+        <input type="number" id="idPreco" name="nmPreco" step="0.01">
+        <br><br>
+        
+
+        <input type="button" value="Registrar" onclick="registrar()">
+        <input type="button" value="Relatorio" onclick="relatorio()">
+        <br><br>
+        <output id="idOut"></output>
+
+    </form>
+
+    <script>
+
+        var menorPreco = 99999999999
+        var maiorPreco = 0 
+
+        function registrar() {
+            let preco = Number(document.getElementById("idPreco").value)
+
+            if (preco > maiorPreco) {
+                maiorPreco = preco 
+            }
+
+            if (preco < menorPreco) {
+                menorPreco = preco 
+            }
+            
+            console.log("menor: " + menorPreco);
+            console.log("maior: " + maiorPreco);
+        }
+
+        function relatorio() {
+            document.getElementById("idOut").value = "Menor Preco: " + menorPreco + " Maior Preco " + maiorPreco            
+        }
+
+    </script>
+
+
+</body>
+</html>

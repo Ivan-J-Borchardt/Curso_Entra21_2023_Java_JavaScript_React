@@ -393,7 +393,7 @@ de 24/08/2023.
 ### Feriado - 2023.10.12 THU
 - Feriado?? Bom pra resolver o desafio da aula ;) 
 
-### Feriado - 2023.10.13 FRI
+### Recesso - 2023.10.13 FRI
 - Feriado duplo??? :) - WoW - Perfeito para colocar as pendências da aula em dia, hein? ;)  
 
 
