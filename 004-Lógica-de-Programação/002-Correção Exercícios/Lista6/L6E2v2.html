@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+        <script>
+
+            var numero = [] //length = 0 
+       
+            /*
+            numero[numero.length] = 9
+            numero[numero.length] = 8
+            numero[numero.length] = 7
+            numero[numero.length] = 6
+            numero[numero.length] = 5
+            numero[numero.length] = 4
+            numero[numero.length] = 3
+            numero[numero.length] = 2
+            numero[numero.length] = 1
+            numero[numero.length] = 0
+            numero[numero.length] =  -1
+            numero[numero.length] =  -2
+            */
+           
+           /*
+           for (let index = 0; index < 10; index++) {
+               numero[index] = num-- 
+           }
+           */
+            var num = 9 
+            var index = 0
+            while (index < 10) {
+                numero[index] = num-- 
+                index++
+            }
+
+            console.table(numero)
+            console.log(numero)
+            console.log(numero.toString())
+
+            var msn = ""
+            for (let index = 0; index < numero.length; index++) {
+                msn = msn  + numero[index] + " "
+            }
+            console.log(msn);
+
+
+        </script>
+</body>
+</html>

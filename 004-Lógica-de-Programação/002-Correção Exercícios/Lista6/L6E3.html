@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+        <script>
+
+            var numero = [] 
+            var flag = true
+            for (let index = 0; index < 10; index++) {
+                //atribuindo "5" para as pósiçoes pares e "3" 
+                //para as impares
+                //if (index % 2 == 0) {
+                if (flag) {
+                    numero[index] =  5
+                    //flag = true
+                } else {
+                    numero[index] =  3
+                    //flag = false
+                }
+                flag = !flag
+                
+            }
+
+            console.table(numero)
+            console.log(numero)
+            console.log(numero.toString())
+
+
+        </script>
+</body>
+</html>

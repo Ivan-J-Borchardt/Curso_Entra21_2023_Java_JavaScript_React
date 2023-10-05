@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+        <script>
+
+            let numFibo = 0    //3
+            let eleAnt = 0    // 2
+            let eleSeq = 1    // 3
+            let eleProx      // 3 
+        
+      
+
+            //0 1 1 2 3 5 8 13 21...
+            var sequenciaFibinacci = []
+            //var index = 0 
+            while (numFibo < 100) {
+                //sequenciaFibinacci[index] = eleAnt
+                //index++
+                sequenciaFibinacci.push(eleAnt)
+                
+                eleProx = eleAnt + eleSeq
+                eleAnt = eleSeq
+                eleSeq = eleProx
+                numFibo++
+            }
+
+
+            console.table(sequenciaFibinacci)
+     
+
+
+        </script>
+</body>
+</html>
