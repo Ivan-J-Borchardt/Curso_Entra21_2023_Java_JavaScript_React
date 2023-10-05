@@ -1,12 +1,13 @@
 # Lógica de Programação 
 ## Lista de Exercícios 7 
 ### Objetivos
+- Compreender na prática a aplicabilidade e funcionamento das funções
 - Compreender na prática a aplicabilidade e funcionamento das estruturas de dados. 
 - Reforçar a fixação dos conteúdos anteriores. 
 - Promover a construção de um ferramental lógico e algorítmico para posterior aplicação em soluções de maior complexidade.
 - Desenvolver o racíocinio lógico e a habilidade analítica.
 #### Palavras Chave  
-- Estruturas de dados, arrays, estruturas de repetição, estruturas de seleção
+- Estruturas de dados, arrays, estruturas de repetição, estruturas de seleção, funções
 ---
 ### Instruções Adicionais 
 - Resolva os exercícios propostos usando HTML e JavaScript.

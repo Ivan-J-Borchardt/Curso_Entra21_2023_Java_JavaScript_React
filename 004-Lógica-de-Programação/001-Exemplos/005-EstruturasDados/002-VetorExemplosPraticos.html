@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <p>Como você escreve “Hello World” em uma caixa de alerta?</p><br>
+    <input type="checkbox" name="nmQuestao1" id="idQ1OpcaoA">
+    <label for="idQ1OpcaoA">alert("“Hello World")</label><br>
+    <input type="checkbox" name="nmQuestao1" id="idQ1OpcaoB">
+    <label for="idQ1OpcaoA">msg("“Hello World")</label><br>
+    <input type="checkbox" name="nmQuestao1" id="idQ1OpcaoC">
+    <label for="idQ1OpcaoA">alertBox("“Hello World")</label><br>
+    <input type="checkbox" name="nmQuestao1" id="idQ1OpcaoD">
+    <label for="idQ1OpcaoA">msgBox("“Hello World")</label><br><br>
+
+    <input type="button" value="enviar" onclick="enviar()">
+
+    <br><br>
+    <output id="idOut"></output>
+
+    <script>
+
+        var gabaritoQ1 = [false, true, false, true]
+
+        function enviar() {
+
+            //let opcoes = document.getElementsByName("nmQuestao1")
+            let opcoes = document.querySelectorAll("input[name=nmQuestao1]")
+            let respostas = []
+
+            console.log(opcoes);
+
+            for (let index = 0; index < opcoes.length; index++) {
+                //const element = opcoes[index];
+                console.log(opcoes[index].id + " " + opcoes[index].checked);
+            }
+
+            for (let index = 0; index < opcoes.length; index++) {
+                respostas.push(opcoes[index].checked);
+            }
+
+            console.log(gabaritoQ1);
+            console.log(respostas);
+
+            if (gabaritoQ1.toString() == respostas.toString()) {
+                console.log("Acertou!!!");
+            }
+
+
+            if (2 === 2) {
+                console.log("----> entrou!!!!");     
+            }
+
+        }
+
+    </script>
+    
+</body>
+</html>

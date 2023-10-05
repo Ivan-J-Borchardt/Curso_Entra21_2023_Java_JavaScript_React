@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <script>
+
+        //linha 1
+        //linha 2
+        //var genero = document.getElementById()
+
+        var pesoIdealF = calcularPesoIdeal("f", 1.60)
+        console.log(pesoIdealF);
+
+        pesoIdealM = calcularPesoIdeal("m", 1.60)
+        console.log(pesoIdealM);
+
+        /*
+                Funções são "Tarefas"/"Ações" executadas assim que são chamadas ou em 
+                decorrencia de algum evento.
+                Uma função pode receber parâmetros e retornar um resultado. Veja um exemplo 
+                completo abaixo. 
+
+                Paradigma: "Programação Estruturada"
+        */
+        function calcularPesoIdeal(genero, altura) {
+
+            let pesoIdeal = 0
+            if (genero == "f") {
+                pesoIdeal = (62.1 * altura) - 44.7
+            } else {
+                pesoIdeal = (72.7 * altura) - 58
+            }
+
+            return pesoIdeal
+        }
+
+
+        /*
+        
+        
+        
+        */
+        var pesoIdeal2 = function(genero, altura) {
+
+            let pesoIdeal = 0
+            if (genero == "f") {
+                pesoIdeal = (62.1 * altura) - 44.7
+            } else {
+                pesoIdeal = (72.7 * altura) - 58
+            }
+
+            return pesoIdeal
+        }
+
+        console.log("peso Ideal 2 : " + pesoIdeal2("f", 1.57));
+
+
+    </script>
+</body>
+
+</html>
