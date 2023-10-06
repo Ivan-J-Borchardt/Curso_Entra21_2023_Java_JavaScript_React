@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <label for="idNumero">Numero:</label><br>
+    <input type="number" id="idNumero" name="nmNumero"><br><br>
+
+
+    <input type="button" value="Buscar Chave" onclick="buscarChave()">
+
+    <br><br>
+    <output id="idOut"></output>
+
+    <script>
+
+        var numero = []
+
+
+        for (let index = 0; index < 30; index++) {
+            numero.push(parseInt(Math.random() * 15))
+        }
+
+        console.log(numero);
+
+
+        function buscarChave() {
+            let msn = ""
+            let contChave = 0 
+            let chave = Number(document.getElementById("idNumero").value)
+            for (let index = 0; index < numero.length; index++) {
+                const num = numero[index];
+                if (num == chave) {
+                    msn = msn + index + " "
+                    contChave++
+                }
+            }
+
+            if (msn == "") {
+                msn = "A chave não aparece em nem uma posição!"
+            }
+            
+            document.getElementById("idOut").innerText = "Posições em que a chave aparece: " + msn + "\n a chave aparece " + contChave + " vezes..."
+
+            
+        }
+
+
+    </script>
+
+</body>
+
+</html>

@@ -24,6 +24,16 @@ d) Em que posições a maior nota aparece
 
 3. Faça um algoritmo que leia o nome, o sexo e o salário de 5 funcionários e guarde esses dados em três vetores. No final, mostre uma listagem contendo apenas os dados das funcionárias mulheres que ganham mais de R$5 mil.
 
+nome["Joao", "Maria"]
+       0       1
+
+sexo["m", "f"]
+      0    1
+
+salario["1000", "2000"] 
+           0      1  
+
+
 4. Crie um programa para armazenar informações meteorológicas. 
     - Crie um vetor para armazenar 30 temperaturas. (pre-inicializado)
     - Calcular a média das temperaturas. 
@@ -33,7 +43,7 @@ d) Em que posições a maior nota aparece
     - Ler 10 números.
     - Permitir ao usuário que escolha entre:
         -   Ordenar em ordem crescente                
-        -   Ordenar em ordem decrescente 
+        -   Ordenar em ordem decrescente   não usar: numero.sort()
 
 
 6. Crie um programa para gerenciar as notas dos alunos de uma escola. 

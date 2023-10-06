@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <label for="idNumero">Numero:</label><br>
+    <input type="number" id="idNumero" name="nmNumero"><br><br>
+
+    <input type="button" value="salvar" onclick="salvar()">
+    <input type="button" value="exibir" onclick="exibir()">
+
+    <br><br>
+    <output id="idOut"></output>
+
+    <script>
+
+        var numero = []
+
+        function salvar(){
+            numero.push(Number(document.getElementById("idNumero").value))
+            document.getElementById("idNumero").value = ""
+        }
+
+        function exibir() {
+            let msn = numero.toString() + "\n Posições dos múltiplos de 10: "
+            for (let index = 0; index < numero.length; index++) {
+                const num = numero[index];
+                if (num % 10 == 0) {
+                    msn = msn + index + ";"
+                }
+            }
+            document.getElementById("idOut").innerText = msn
+
+            console.log(numero);
+            
+        }
+
+
+    </script>
+    
+</body>
+</html>
