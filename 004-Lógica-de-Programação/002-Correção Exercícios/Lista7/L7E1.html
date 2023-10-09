@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="">
+        <input type="number" id="idNota" placeholder="Nota" step="0.01">
+        <br><br>
+        <input type="button" value="Incluir" onclick="incluirNota()">
+        <input type="button" value="Questao A" onclick="questaoA()">
+        <input type="button" value="Questao B" onclick="questaoB2()">
+        <input type="button" value="Questao C" onclick="questaoC()">
+        <input type="button" value="Questao D" onclick="questaoD()">
+
+        <input type="button" value="Excluir" onclick="excluirNota()">
+        <br><br>
+        <output id="idOutA"></output><br>
+        <output id="idOutB"></output><br>
+        <output id="idOutC"></output><br>
+        <output id="idOutD"></output>
+    </form>
+
+    <script>
+        var notas = []
+        
+        
+        
+        function incluirNota() {
+            notas.push(Number(document.getElementById("idNota").value))
+            document.getElementById("idNota").value = ""
+        }
+
+
+        function excluirNota() {
+            notas.pop()
+            console.log(notas)
+        }
+
+
+        //Calcular a média da turma
+        function questaoA() {
+            let saida = document.getElementById("idOutA")
+            let somaNotas = 0
+            let media = 0
+
+            /*
+            for (let index = 0; index < notas.length; index++) {
+                somaNotas = somaNotas + notas[index];
+                
+            }
+            */
+
+            notas.forEach(function(nota, index){
+                console.log(nota + " " + index);
+                somaNotas = somaNotas + nota
+            });
+     
+            media = somaNotas / notas.length
+
+            saida.value = "Média da turma: " + media
+
+        }
+
+        function questaoA2() {
+            console.log(notas);
+            let saida = document.getElementById("idOutA")
+
+            let media = (notas.reduce(function (acumulador, elemento, index, array) {
+
+                return acumulador = acumulador + elemento
+
+            }, 0)) / notas.length
+
+            saida.value = "Média da turma: " + media
+
+        }
+
+        function questaoA3() {
+            console.log(notas);
+            let saida = document.getElementById("idOutA")
+
+            let media = notas.reduce(function (acumulador, elemento, index, array) {
+
+                if (index == (notas.length - 1)) {
+                    acumulador = acumulador + elemento
+                    return acumulador = acumulador / notas.length
+                } else {
+                    return acumulador = acumulador + elemento
+                }
+
+                //return acumulador = acumulador + elemento
+            }, 0)
+
+
+            saida.value = "Média da turma: " + media
+
+        }
+
+        //Alunos acima da média
+        function questaoB1(params) {
+            let saida = document.getElementById("idOutB")
+            let peso = 1/notas.length
+            let media = 0
+            let alunosAcimaMedia = []
+            /*
+            peso = 1/5 = 0.2 
+            5 * 0.2 = 1
+            8 * 0.2 = 1,6
+            7 * 0.2 = 1,4 
+            6 * 0.2 = 1,2 
+            3 * 0.2 = 0,6
+
+            29 /5 = 5,8 
+            */ 
+            notas.forEach(function(element){
+                media = media + (element * peso)
+            });
+
+            notas.forEach(function(element, index){
+                if (element > media ) {
+                    alunosAcimaMedia.push(index)
+                }
+            });
+
+            saida.value = "Alunos acima da média: " + alunosAcimaMedia.toString()
+
+        }
+
+        function questaoB2() {
+            let saida = document.getElementById("idOutB")
+            let taxa = 1/notas.length
+            console.log("QB taxa: " + taxa);
+           // 2 2 4 2  
+           // 2.5
+            let media = notas.reduce(function(acc, valAtual, index, array){
+                return (acc + (valAtual * taxa))
+            }, 0)
+
+            console.log("QB Média: " + media);
+            //und  und  2 und 
+            let alunosAcimaMedia = notas.map(function(value, index, array) {
+                if (value > media) {
+                    return index
+                } 
+            })
+            console.log(alunosAcimaMedia);
+            //2 
+            alunosAcimaMedia = alunosAcimaMedia.filter(function(value, index, array) {
+                return value != undefined
+            })
+            
+            saida.value = "Alunos acima da média: " + alunosAcimaMedia.toString()
+        }
+
+        //A maior nota 
+        function questaoC() {
+            let saida = document.getElementById("idOutC")
+            let maior = -Infinity
+
+            //Array.forEach(function(element, index, arr))
+            notas.forEach(function(element){
+                if (element > maior) {
+                    maior = element
+                }
+            });
+
+            saida.value = "A Maior nota é: " + maior
+
+            return maior
+        }
+
+
+        function questaoD() {
+            let saida = document.getElementById("idOutD")
+            let maiorNota = questaoC()
+            let posicoesMaiorNota = []
+
+            notas.forEach(function(nota, index){
+                if (nota == maiorNota) {
+                    posicoesMaiorNota.push(index)
+                }
+            })
+
+            saida.value = "A maior nota aparece nas posições: " + posicoesMaiorNota.toString()
+        }
+
+
+        //Em que posições a maior nota aparece  
+        function questaoD2() {
+            let saida = document.getElementById("idOutD")
+  
+            let maxNota = notas.reduce(function (acc, value) {
+                return Math.max(acc, value)
+            }, -Infinity)
+
+            console.log("Maior Nota: " + maxNota)
+        
+            let indMaiorNota = notas.map(function (elemento, index) {
+                if (elemento == maxNota) {
+                    return index
+                }
+            })
+
+            indMaiorNota = indMaiorNota.filter(function(value) {
+                return value != undefined
+            })
+
+            console.log(indMaiorNota)
+            saida.value = "A maior nota aparece nas posições: " + indMaiorNota.toString()
+
+        }
+            //---------------------------------
+    </script>
+</body>
+
+</html>
