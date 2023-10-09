@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <label for="idTemp">Temperatura</label><br>
+        <input type="number" id="idTemp" name="nmTemp" step="0.01">
+        <br><br>
+        
+
+        <input type="button" value="Registrar" onclick="converter()">
+        <br><br>
+        <output id="idOut"></output>
+
+    </form>
+    <script>
+
+        function converter() {
+            const celsius = Number(document.getElementById("idTemp").value)
+            const fahrenheit = (9 * celsius + 160)/5
+            document.getElementById("idOut").value =  celsius + "ºC = " + fahrenheit + "ºF" 
+        }
+
+    </script>
+
+
+
+</body>
+</html>

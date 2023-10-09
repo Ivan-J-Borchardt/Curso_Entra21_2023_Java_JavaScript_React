@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" method="get">
+        <input type="email"  name="nmEmail" id="idEmail">
+        <input type="button" id="idBotao" value="CLique Me" onclick="testarClique()">
+
+        <input type="button" id="idBotao2" value="CLique Me 2">
+        <input type="button" id="idBotao3" value="CLique Me 3">
+        <input type="submit" id="idBotao4">
+    </form>
+
+    <script>
+
+        //função chamada em Event Handler Inline (má Prática)
+        function testarClique() {
+            console.log("Clicou em clique me!!!");
+        }
+
+        //Event Handler Nível 1 
+        var botao = document.getElementById("idBotao2")
+
+        console.log(botao);
+
+        botao.onclick = tratamentoBotao2
+
+        function tratamentoBotao2() {
+            console.log("Clicou Botão 2");  
+        }
+
+        //usando função anonima... 
+        botao.ondblclick = function() {
+            console.log("Clique duplo em Botao 2");
+        }
+
+        botao.onmouseover = function(){
+            console.log("Passou o mause por cima do botão 2");
+        }
+
+        //Event Handler Nível 2
+        var botao3 = document.getElementById("idBotao3")
+
+        botao3.addEventListener("click", tratamentoBota3) //função de callback 
+
+        function tratamentoBota3() {
+            console.log("Clicou Botão 3");  
+        }
+
+        botao3.addEventListener("mouseover", function(){
+            console.log("Clique duplo no botao 3");
+        })
+
+        const botao4 = document.getElementById("idBotao4")
+
+        botao4.addEventListener("click", function(event){
+            event.preventDefault() //previne o comportamento padrao do formulario 
+            console.log(event);
+
+            let email = document.getElementById("idEmail").value
+            console.log("Email: " + email);
+        })
+
+
+    </script>
+    
+</body>
+</html>

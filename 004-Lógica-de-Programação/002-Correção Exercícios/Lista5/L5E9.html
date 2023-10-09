@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <label for="idTemp">Temperatura</label><br>
+        <input type="number" id="idTemp" name="nmTemp" step="0.01"><br>
+        <input type="radio" name="nmEscala" id="idC" onclick="converter()">
+        <label for="idCelsius">ºC</label>
+        <input type="radio" name="nmEscala" id="idF" onclick="converter()">
+        <label for="idCelsius">ºF</label>
+        <input type="radio" name="nmEscala" id="idK" onclick="converter()">
+        <label for="idKelvin">ºK</label>
+        <br><br>
+        <output id="idOut"></output>
+        
+
+    </form>
+    <script>
+
+        function converter() {
+            const temp = Number(document.getElementById("idTemp").value)
+            const escala = document.querySelector("input[name=nmEscala]:checked").id
+            let celsius = 0 
+            let fahrenheit = 0 
+            let kelvin = 0 
+            switch (escala) {
+                case "idC": 
+                    celsius = temp 
+                    fahrenheit = (9 * celsius + 160)/5
+                    kelvin = celsius + 273
+                    break;
+
+                case "idF": 
+                    fahrenheit = temp 
+                    celsius = (fahrenheit - 32) * 5/9 
+                    kelvin = celsius + 273
+                    break;
+
+                case "idK": 
+                    kelvin = temp 
+                    celsius = kelvin - 273
+                    fahrenheit = (9 * celsius + 160)/5
+                    break;
+            }
+         
+            document.getElementById("idOut").innerText =  celsius + "ºC \n" +
+                                                          fahrenheit + "ºF \n" + 
+                                                          kelvin + "ºK" 
+        }
+
+    </script>
+
+
+
+</body>
+</html>

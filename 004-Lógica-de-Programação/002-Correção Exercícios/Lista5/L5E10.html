@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Qwitcher+Grypen:wght@700&display=swap" rel="stylesheet">
+
+    <style>
+        *{
+            font-family: 'Roboto', sans-serif;
+            font-size: 0.8rem;
+        }
+        .linha{
+            display : flex; 
+        }
+
+        .coluna{
+            margin: 5px;
+        }
+
+        #idCurrencies label{
+            display: block;
+        }
+
+        #idConversao div{
+            margin-bottom: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="linha">
+        <fieldset id="idCurrencies">
+            <legend>currencies</legend>
+            <div>
+                <label for="idCurrReal">Real x Dolar</label>
+                <input type="number" id="idCurrReal" step="0.001">
+            </div>
+            <div>
+                <label for="idCurrEuro">Euro x Dolar</label>
+                <input type="number" id="idCurrEuro" step="0.001">
+            </div>
+
+            <div>
+                <label for="idCurrDolarCa">Dolar Canadense x Dolar</label>
+                <input type="number" id="idCurrDolarCa" step="0.001">
+            </div>
+        
+            <div>
+                <label for="idCurrLibraEst">Libra Esterlina x Dolar</label>
+                <input type="number" id="idCurrLibraEst" step="0.001">
+            </div>
+        </fieldset>
+        <fieldset class="linha">
+            <legend>correlação</legend>
+            <div class="coluna">
+                <p>De</p>
+                <div>
+                    <input type="radio" name="nmDe" id="idDeDolar" checked>
+                    <label for="idDeDolar">Dolar</label>
+                </div>
+                <div>
+                    <input type="radio" name="nmDe" id="idDeEuro">
+                    <label for="idDeEuro">Euro</label>
+                </div>
+                <div>
+                    <input type="radio" name="nmDe" id="idDeReal">
+                    <label for="idDeReal">Real</label>
+                </div>
+                <div>
+                    <input type="radio" name="nmDe" id="idDeDolarCan">
+                    <label for="idDeDolarCan">Dolar Canadense</label>
+                </div>
+                <div>
+                    <input type="radio" name="nmDe" id="idDeLibraEst">
+                    <label for="idDeLibraEst">Libra Esterlina</label>
+                </div>
+            </div>
+            <div class="coluna">
+                <p>Para</p>
+                <div>
+                    <input type="radio" name="nmPara" id="idParaDolar" checked>
+                    <label for="idParaDolar">Dolar</label>
+                </div>
+                <div>
+                    <input type="radio" name="nmPara" id="idParaEuro">
+                    <label for="idParaEuro">Euro</label>
+                </div>
+                <div>
+                    <input type="radio" name="nmPara" id="idParaReal">
+                    <label for="idParaReal">Real</label>
+                </div>
+                <div>
+                    <input type="radio" name="nmPara" id="idParaDolarCan">
+                    <label for="idParaDolarCan">Dolar Canadense</label>
+                </div>
+                <div>
+                    <input type="radio" name="nmPara" id="idParaLibraEst">
+                    <label for="idParaLibraEst">Libra Esterlina</label>
+                </div>
+            </div>
+        </fieldset>
+        <fieldset id="idConversao">
+            <legend>conversão</legend>   
+            <div>
+                <input type="number" id="idValorEntrada" step="0.01" placeholder="0,00">
+            </div>
+            <div>
+                <input type="button" value="cotar" onclick="cotar()">
+            </div>
+            <div>
+                <output id="idOut"></output>
+            </div>
+        </fieldset>
+    </div>
+
+    <script>
+
+        function cotar(){
+            const currReal = Number(document.getElementById("idCurrReal").value)
+            const currEuro = Number(document.getElementById("idCurrEuro").value)
+            const currDolarCan = Number(document.getElementById("idCurrDolarCa").value)
+            const currLibraEst = Number(document.getElementById("idCurrLibraEst").value)
+            const currDolar = 1
+
+            const de = document.querySelector("input[name=nmDe]:checked").id 
+            const para = document.querySelector("input[name=nmPara]:checked").id 
+
+            const valorEntrada = Number(document.getElementById("idValorEntrada").value) 
+
+            const output = document.getElementById("idOut")
+
+            let valorDolar
+            let valorSaida
+
+
+            switch (de) {
+                case "idDeDolar":
+                    valorDolar = valorEntrada * currDolar
+                    break;
+
+                case "idDeDolarCan":
+                    valorDolar = valorEntrada * currDolarCan
+                    break;
+
+                case "idDeEuro":
+                    valorDolar = valorEntrada * currEuro
+                    break;
+
+                case "idDeLibraEst":
+                    valorDolar = valorEntrada * currLibraEst
+                    break;
+
+                case "idDeReal":
+                    valorDolar = valorEntrada * currReal
+                    break;
+                /*
+                case "idDeE21":
+                    valorDolar = valorEntrada * currE21
+                    break;
+                */
+            }
+
+
+            switch (para) {
+                case "idParaDolar":
+                    valorSaida = valorDolar / currDolar
+                    break;
+
+                case "idParaDolarCan":
+                    valorSaida = valorDolar / currDolarCan
+                    break;
+
+                case "idParaEuro":
+                    valorSaida = valorDolar / currEuro
+                    break;
+
+                case "idParaLibraEst":
+                    valorSaida = valorDolar / currLibraEst
+                    break;
+
+                case "idParaReal":
+                        valorSaida = valorDolar / currReal    
+                    break;
+                /*
+                case "idParaE21":
+                        valorSaida = valorDolar / currE21    
+                    break;
+                */
+            }
+
+
+        }
+
+
+    </script>
+
+</body>
+</html>

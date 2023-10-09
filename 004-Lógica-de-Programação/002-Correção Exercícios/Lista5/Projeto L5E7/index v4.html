@@ -1,0 +1,132 @@
+<!--
+    Programa: Jogo de adivinhação 
+    Descrição:
+    O programa sorteia um número aleatório entre 1 e 10, o usuário tem então até 
+    3 chanches para tentar descobrir o número, caso erre nas 3 tentativas o jogo
+    se encerra e o usuário perde o jogo. A cada tentativa o programa dá uma dica
+    se o número apostado é menor ou maior do que o número oculto.  
+    Autor: Ivan J. Borchardt
+    Data: 05.06.2022
+
+    Histórico de Alterações: 
+     V |   Data   | Autor/Descrição 
+    ----------------------------------------------------------------------------
+     0 | 05.10.23 | Ivan J. Borchardt    
+       |          | Criação do Programa 
+    ----------------------------------------------------------------------------
+     1 | 05.10.23 | Ivan J. Borchardt
+       |          | Correção de Bug. Na versão 0 o programa permitia uma jogada 
+       |          | adicional após as 3 tentativas. 
+    ----------------------------------------------------------------------------
+     2 | 05.10.23 | Ivan J. Borchardt
+       |          | Correção de Bug. Na versão 1, se, após vencer, o jogador  
+       |          | continuar clicando no botão o programa exibe a menssagem de
+       |          | derrota após a variável "tentativas" atingir valor igual 4 
+    ----------------------------------------------------------------------------
+     3 | 05.10.23 | Ivan J. Borchardt
+       |          | Inclusão da rotina finalizarJogo() para desativar  os campos
+       |          | campos e botões da tela 
+    ----------------------------------------------------------------------------
+     4 | 05.10.23 | Ivan J. Borchardt
+       |          | Inclusão de tratamento de excessão para o campo  de entrada
+       |          | "idNumeroApostado", caso o usuário clique em enviar sem 
+       |          | informar um número ou se informar um número fora do intervalo 
+       |          | válido, uma critica é exibida em vermelho no campo mensagem
+    ----------------------------------------------------------------------------   
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .alerta{
+            color:red;
+        }
+
+    </style>
+</head>
+
+<body>
+    <form action="">
+        <label for="idNumeroApostado">Aposte um Número:</label><br>
+        <input type="number" id="idNumeroApostado" name="nmNumeroApostadoe" autofocus>
+        <br><br>
+        <input type="button" id="idBtEnviar" value="Enviar" onclick="enviar()">
+        <br><br>
+        <label for="idOutMensagem">Resultado: </label>
+        <output id="idOutMensagem"></output>
+        <br>
+    </form>
+
+    <script>
+        var numeroSorteado = parseInt(Math.random() * 11)
+        if (numeroSorteado == 0) {
+            numeroSorteado = 1
+        }
+        console.log(numeroSorteado);
+
+        var tentativa = 0
+        var msnSaida = document.getElementById("idOutMensagem")
+
+
+
+        function enviar() {
+            
+            msnSaida.classList.remove("alerta") //V04
+
+            let numeroApostado = Number(document.getElementById("idNumeroApostado").value)
+            let isApostaValida = validarEntradas(numeroApostado)
+
+            if (isApostaValida) { //V04
+             
+                tentativa++
+    
+                if (numeroApostado == numeroSorteado) {
+                    msnSaida.value = "Parabéns vc acertou!"
+                    finalizarJogo()
+                } else {
+                    if (tentativa >= 3) {
+                        msnSaida.value = "Jogo encerrado, você perdeu, mais sorte da próxima vez!"
+                        finalizarJogo()
+                    } else {
+                        if (numeroApostado > numeroSorteado) {
+                            msnSaida.value = "O número apostado é maior que sorteado"
+                        } else if (numeroApostado < numeroSorteado) {
+                            msnSaida.value = "O número apostado é menor que sorteado"
+                        }
+                    }
+                }
+            }
+
+        }
+
+        //V04
+        function validarEntradas(numeroApostado){
+            if (numeroApostado < 1
+            || numeroApostado > 10) {
+                msnSaida.value = "Informe um número entre 1 e 10"
+                msnSaida.classList.add("alerta")
+                document.getElementById("idNumeroApostado").value = ""
+                document.getElementById("idNumeroApostado").focus()
+                return false
+            }
+            return true 
+        }
+
+        function finalizarJogo() {
+            document.getElementById("idNumeroApostado").disabled = true
+            document.getElementById("idBtEnviar").disabled = true
+        }
+
+    </script>
+
+
+</body>
+
+</html>

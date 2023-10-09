@@ -64,3 +64,41 @@ d) Qual foi a maior idade lida
 
 --------> entra -- Dolar -- Destino 
 
+
+
+
+if (entrada == Dolar){
+    if(saida == Real )
+
+    if(saida == dolarCa)
+
+    if(saida == Euro)
+     
+}
+
+if (entrada == Real){
+    if(saida == Dolar )
+
+    if(saida == dolarCa)
+
+    if(saida == Euro)
+     
+}
+
+if (entrada == dolarCa){
+    if(saida == Dolar )
+
+    if(saida == Real)
+
+    if(saida == Euro)
+     
+}
+
+if (entrada == Euro){
+    if(saida == Dolar )
+
+    if(saida == Real)
+
+    if(saida == dolarCa)
+     
+}
