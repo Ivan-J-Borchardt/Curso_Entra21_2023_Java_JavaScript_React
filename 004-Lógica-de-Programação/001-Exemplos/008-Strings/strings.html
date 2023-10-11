@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+
+        const string1 = "A string primitive"; //String literals 
+        const string2 = 'Also a string primitive';
+        const string3 = `Yet another string primitive`;
+
+        const string4 = String(1); 
+        const string5 = String(true);
+        const string6 = String("Teste");
+
+        const string7 = new String("A String object"); //String Object 
+
+        console.log(typeof string1); // "string"
+        console.log(typeof string2); // "string"
+        console.log(typeof string3); // "string"
+        console.log(typeof string4); // "string"
+        console.log(typeof string5); // "string"
+        console.log(typeof string6); // "string"
+        console.log(typeof string7); // "object"
+
+        console.log(string6.valueOf()); // "Teste"
+        console.log(string7.valueOf()); // "A String object"
+
+        //String vs. Array 
+        var gato = "cat"
+        console.log(gato[2]);
+        console.log("cat"[1]);
+        console.log("catwerr".length);
+        console.log("cat".charAt(2));
+
+        //Comparando Strings
+        const a = "a";
+        const b = "b";
+ 
+        // A  B  c d
+        // 65 66 
+        if (a < b) {
+            // true
+            console.log(`${a} is less than ${b}`);
+        } else if (a > b) {
+            console.log(`${a} is greater than ${b}`);
+        } else {
+            console.log(`${a} and ${b} are equal.`);
+        }
+
+
+        const upperA = "A"
+        console.log(a == upperA); //false
+        console.log(a.toLowerCase() == upperA.toLowerCase()); //true
+        console.log(a.toUpperCase() == upperA.toUpperCase()); //true
+        console.log(areEqualCaseInsensitive(a, upperA));
+
+        if (areEqualCaseInsensitive(a, upperA)) {
+            console.log("a é igual A");
+        } else {
+            console.log("a é diferente A");
+        }
+
+        function areEqualCaseInsensitive(str1, str2) {
+            return str1.toLowerCase() === str2.toLowerCase()
+        }
+
+
+        const numUm = 1
+        const charUm = "1" 
+        if (numUm == charUm){
+            console.log("numUm é igual charUm");
+        }else{
+            console.log("numUm é diferente de charUm");
+        }
+
+        if (numUm === charUm){
+            console.log("numUm é igual charUm");
+        }else{
+            console.log("numUm é diferente de charUm");
+        }
+
+        //Strig Template / Template literal
+        const total = 12.4
+        const totalComDesconto = 10.00
+        //console.log("o total da conta é: " + total + ", com desconto fica: " + totalComDesconto)
+        console.log(`o total da conta é: ${total} , com desconto fica: ${totalComDesconto}`);
+
+        var nome = "Joao"
+        //Métodos estáticos de String 
+        console.log(String.fromCharCode(67, 65)); //Retorna o caractere correspondente ao valor ascii informado
+
+        //
+        const texto = "linha 1\nlinha 2"
+        const filePath = String.raw`C:\Development\profile\aboutme.html`
+
+        console.log(`The file was uploaded from: ${filePath}`);
+
+        const filePath2 = "C:\\Development\\profile\\aboutme.html"
+
+        console.log(filePath2);
+
+        //Métodos de instância
+        const texto1 = "texto"
+        const text2 = " 123"
+        console.log(texto1.charAt(2));
+        console.log(texto1.charCodeAt(2));
+        console.log(texto1.concat(text2, " ad", " 12"));
+
+        const str1 = 'Cats are the best!';
+        console.log(str1.endsWith('best!'));
+
+        console.log(str1.endsWith('best', 17));
+
+        const str2 = 'Is this a question?';
+
+        console.log(str2.endsWith('question'));
+
+
+        const sentence = 'The quick brown fox jumps over the lazy dog.';
+        const word = 'fox';
+
+        console.log(sentence.includes(word)); 
+
+        console.log(`The word "${word}" ${sentence.includes(word) ? 'is' : 'is not'} in the sentence`);
+    
+        let text = "Apple, Banana, Kiwi";
+        let part = text.slice(7, 13);
+        console.log(part);
+
+        console.log(text.substring(7, 13));
+        console.log(text.substr(7, 6));
+        
+        let text3 = "Please visit Microsoft!";
+        let newText = text3.replace("Microsoft", "W3Schools");
+
+        console.log(newText);
+
+        let text4 = "Please visit Microsoft!";
+        let newText2 = text4.replace(/MICROSOFT/i, "W3Schools");
+
+        console.log(newText2);
+
+        let text5 = "Please visit Microsoft and Microsoft!";
+        let newText5 = text5.replace(/Microsoft/g, "W3Schools");
+
+        console.log(newText5);
+
+        let text6 = "5";
+        let padded = text6.padStart(4,"1");
+
+        console.log(padded);
+
+        let text7 = "Please, visit, Microsoft, and, Microsoft!";
+        let array7 = text7.split(",")
+
+        console.log(array7);
+
+
+
+
+
+    </script>
+</body>
+</html>

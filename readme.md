@@ -360,29 +360,41 @@ de 24/08/2023.
 - Exercícios - Lista 7 (Programas com Matrizes e Vetores)
 
 
-- JavaScript - Métodos de Array 
-- JavaScript - Métodos de String
-- JavaScript - Métodos de Numbers
-
-
 ### Aula 31 - 2023.10.06 FRI - 124h 
-- JavaScript - Janelas de confirmação 
+
+- Correção Lista 5
 - JavaScript - Funções Nomeadas e Funções Anônimas
-- JavaScript - Arrow Function
-- JavaScript - Funções Auto-Invocadas 
-- Projeto: Desafio 1 - Verificador de força de senha
+- Tempo para resolução da lista 7 
 
 ### Aula 32 - 2023.10.09 MON - 128h 
+- Finalização Correção Lista 5
+- JavaScript - Tratamento de Eventos
 - Correção Lista 7 
-- Complexidade de Tempo e Espaço
-- CSS - Bootstrap 
-- Projeto: Desafio 2 - Conversor de Moedas
+
 
 ### Aula ID - 2023.10.10 TUE
 - Prof. Mateus
 
 ### Aula 33 - 2023.10.11 WED - 132h 
-- JavaScript - Tratamento de Eventos
+- Rápida revisão (tipos de dados)
+
+- Template String 
+- String vs. Array 
+- JavaScript - Métodos de String
+- 
+
+- JavaScript - Métodos de Array 
+- JavaScript - Métodos de Numbers
+
+- JavaScript - Janelas de confirmação 
+
+- Projeto: Desafio 1 - Verificador de força de senha
+
+- Complexidade de Tempo e Espaço
+- CSS - Bootstrap 
+- Projeto: Desafio 2 - Conversor de Moedas
+
+- JavaScript - Mais sobre Tratamento de Eventos
 - Exercícios: Refatorar pelo menos 3 Exercícios, a escolha, usando os novos conhecimentos sobre tratamento de eventos
 
 - JavaScript - Locais para declarar JS
@@ -399,6 +411,9 @@ de 24/08/2023.
 
 ### Aula 34 - 2023.10.16 MON - 136h 
 - ~~Node~~
+- JavaScript - Arrow Function
+- JavaScript - Funções Auto-Invocadas 
+
 - JavaScript - Processamento Assíncrono
 - JavaScript - Consumo de API com AJAX
 - JavaScript - Consumo de API com fetch() - async/await 
