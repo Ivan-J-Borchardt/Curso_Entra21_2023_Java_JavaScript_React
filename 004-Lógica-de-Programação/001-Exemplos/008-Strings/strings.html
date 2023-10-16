@@ -7,6 +7,8 @@
 </head>
 <body>
     
+    <input type="text" id="idTexto" placeholder="Digite sua Expressão">
+    <input type="button" id="idbtTeste" value="executar Eval" onclick="testarEval()">
 
     <script>
 
@@ -161,8 +163,16 @@
 
         console.log(array7);
 
+        //Eval ...
+        let resultado = eval("2 + 2 * 3")
+        console.log(resultado);
 
 
+        function testarEval(){
+            let texto = document.getElementById("idTexto").value
+            let resultado = eval(texto)
+            console.log(`Resul: ${resultado}`);
+        }
 
 
     </script>

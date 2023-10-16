@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+
+            .borda{
+                border: 1px solid black;
+                height: 100px;
+                width: 100px;
+            }
+
+        </style>
+    </head>
+    <body>
+        
+        <div id="idDiv"></div>
+
+        <script>
+            var div1 = document.getElementById("idDiv")
+
+            var variavel = document.createElement("div")
+            variavel.classList.add("borda")
+
+            div1.appendChild(variavel)
+
+        </script>
+
+    </body>
+</html>

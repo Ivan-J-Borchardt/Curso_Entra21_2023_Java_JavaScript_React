@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="idDiv"></div>
+    <div id="idDiv2"></div>
+
+    <script>
+        var texto = "Teste teste teste"
+
+        var elementoDiv = document.getElementById("idDiv")
+        
+        elementoDiv.innerHTML = "<p id='idTexto'>texto incluso na div</p>" + 
+                                 " <input type='submit'> "
+        
+        var elementoDiv2 = document.getElementById("idDiv2")
+        elementoDiv2.innerHTML = `
+                                    <p>${texto}</p>
+                                    <input type='submit'> 
+                                 `
+
+
+    </script>
+</body>
+</html>

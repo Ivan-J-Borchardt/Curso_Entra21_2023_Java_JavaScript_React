@@ -11,7 +11,6 @@
 
 
     <script>
-
         //linha 1
         //linha 2
         //var genero = document.getElementById()
@@ -29,7 +28,27 @@
                 completo abaixo. 
 
                 Paradigma: "Programação Estruturada"
+
         */
+
+        //Escopo da Função... 
+        var x1 = 2 //Assinatura da váriavel  nome=referencia, endereço, tipo, conteúdo
+        var x2 = 3
+        function teste(x1) {
+            let x2 = 6
+            return x1 + x2
+        }
+
+        console.log(teste(5));
+        /*
+        Toda função pode ter: 
+        * Uma chamada (chamada para executar a função)
+        * Parametros (opcional) - No Exemplo acima, genero e altura são os parâmetros
+        * Ação (O processamento no interior da função) - No exemplo, o cálculo do peso ideal... 
+        * Retorno (opcional) - (O valor resultante do Processamento) - No exemplo, o pesoIdeal está sendo retornado
+        */
+
+        //Função Nomeada
         function calcularPesoIdeal(genero, altura) {
 
             let pesoIdeal = 0
@@ -43,12 +62,19 @@
         }
 
 
+
+
         /*
-        
-        
-        
+           Funções Anônimas ou Funções de expressão (Functions expression)
+           ----------------
+            Como o próprio nome diz, são funções sem nome. 
+            O JavaScript é uma linguagem Funcional. Uma das caracteristicas do paradigma funcional 
+            é poder atribuir funções a variáveis.   
         */
-        var pesoIdeal2 = function(genero, altura) {
+
+
+
+        var pesoIdeal2 = function (genero, altura) {
 
             let pesoIdeal = 0
             if (genero == "f") {
@@ -61,6 +87,59 @@
         }
 
         console.log("peso Ideal 2 : " + pesoIdeal2("f", 1.57));
+
+        //------------------------------------------------------------------------------------------------------------
+        /* 
+           Funções Seta (Arrow Function) 
+           ----------------
+        */
+        var pesoIdeal3 = (genero, altura) => { //arrow 
+
+            let pesoIdeal = 0
+            if (genero == "f") {
+                pesoIdeal = (62.1 * altura) - 44.7
+            } else {
+                pesoIdeal = (72.7 * altura) - 58
+            }
+
+            return pesoIdeal
+        }
+
+        /*
+            Arrow Function - Forma abreviada
+            -------------------------------
+            Se houver apenas um parâmetro, pode-se suprimir os parênteses
+            Se houver apenas uma linha de instrução, pode-se suprimir as 
+            chaves e o return será implícito
+        */
+        var dobro = num => num * 2
+        console.log(dobro(5));
+
+
+        /* Exemplo exagerado de más práticas...
+        var num1 = 3
+        var resultado = ((num1 % 2) == 0) ? num1 => num1 * 2 : (num1 < 0) ? num1 => num1 * -1 : num1 => num1 * 3
+        console.log("aqui " + resultado(-3));
+        */
+
+
+        /*
+        var vetor = [1,2,3]
+        vetor.forEach(element => {
+            
+        });
+        */
+        //------------------------------------------------------------------------------------------------------------
+        /* 
+           Funções Auto-Executável/Auto-Invocável
+           ----------------
+        */
+
+        (function(){
+            console.log("Executou...");
+        })()
+
+        //teste()
 
 
     </script>

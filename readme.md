@@ -381,26 +381,14 @@ de 24/08/2023.
 - Template String 
 - String vs. Array 
 - JavaScript - Métodos de String
-- 
 
-- JavaScript - Métodos de Array 
-- JavaScript - Métodos de Numbers
-
-- JavaScript - Janelas de confirmação 
-
-- Projeto: Desafio 1 - Verificador de força de senha
-
-- Complexidade de Tempo e Espaço
-- CSS - Bootstrap 
-- Projeto: Desafio 2 - Conversor de Moedas
+- Projeto: Desafio 1 - Verificador de força de senha 
+- Projeto: Desafio 2 - Precificação de Pizzas
+- Projeto: Desafio 3 - Cifra de César 
 
 - JavaScript - Mais sobre Tratamento de Eventos
 - Exercícios: Refatorar pelo menos 3 Exercícios, a escolha, usando os novos conhecimentos sobre tratamento de eventos
 
-- JavaScript - Locais para declarar JS
-- Exercícios: Refatorar pelo menos 3 Exercícios, a escolha, extraíndo o JS interno para um arquivo.js
-
-- JavaScript - Um pouco mais sobre o comportamento das variáveis (var x let x const)
 
 ### Feriado - 2023.10.12 THU
 - Feriado?? Bom pra resolver o desafio da aula ;) 
@@ -411,24 +399,51 @@ de 24/08/2023.
 
 ### Aula 34 - 2023.10.16 MON - 136h 
 - ~~Node~~
+- JavaScript - Strings (function eval("2 + 2"))
+
 - JavaScript - Arrow Function
 - JavaScript - Funções Auto-Invocadas 
 
-- JavaScript - Processamento Assíncrono
-- JavaScript - Consumo de API com AJAX
-- JavaScript - Consumo de API com fetch() - async/await 
-- JavaScript - Estruturas de Dados XML - JSON - JS Obj
-- Projeto: Desafio 3 - Conversor de Moedas
+- JavaScript - DOM - Como usar CSS com JavaScript 
+- JavaScript - DOM - Criando elementos dinâmicamente via JS
+- JavaScript - DOM - Janelas de confirmação
 
 ### Aula ID - 2023.10.17 TUE
 - Prof. Mateus
 
 ### Aula 35 - 2023.10.18 WED - 140h 
-- JavaScript - Processamento Assíncrono - Promises
+- JavaScript - Métodos de Array 
+- JavaScript - Métodos de Numbers
 
-### Aula 36 - 2023.10.19 THU - 144h 
+- JavaScript - Locais para declarar JS
+- Exercícios: Refatorar pelo menos 3 Exercícios, a escolha, extraíndo o JS interno para um arquivo.js
+
+- JavaScript - Um pouco mais sobre o comportamento das variáveis (var x let x const)
+
+
+### Aula CF - 2023.10.19 THU 
+- Prof. Oscar
+
+### Aula 37 - 2023.10.20 FRI - 148h 
+- Complexidade de Tempo e Espaço
+- CSS - Bootstrap
+
+
+- JavaScript - Processamento Assíncrono
+- JavaScript - Consumo de API com AJAX
+- Projeto: Desafio 4 - Conversor de Moedas
+
+### Aula 38 - 2023.10.23 MON - 152h
+- JavaScript - Consumo de API com fetch() - async/await 
+- JavaScript - Estruturas de Dados XML - JSON - JS Obj
+
+- JavaScript - Processamento Assíncrono - Promises
 - JavaScript - Processamento Assíncrono - Callbacks
 
+### Aula ID - 2023.10.24 TUE
+- Prof. Mateus
+
+### Aula 39 - 2023.10.25 WED - 156h
 - **Node** 
 - Node - Instalação do Node
 - Node - Criando e executando aplicações Node
@@ -437,44 +452,34 @@ de 24/08/2023.
 - Node - Instalando pacotes no projeto Node 
 - Node - Modules 
 
-### Aula 37 - 2023.10.20 FRI - 148h 
-
+### Aula 40 - 2023.10.26 THU - 160h 
 - Node - Criando o primeiro servidor http
 - Node - Criando uma API com o framework Express
 - Node - Roteamento 
-- Node - Trabalhando com arquivos estáticos  
+- Node - Trabalhando com arquivos estáticos 
 
- 
-### Aula 38 - 2023.10.23 MON - 152h
-
+### Aula 41 - 2023.10.27 FRI - 164h  
 - Node - Cors 
 - Node - Middlewares 
 - Node - Autenticação com JWT 
 
-
-### Aula ID - 2023.10.24 TUE
-- Prof. Mateus
-
-### Aula 39 - 2023.10.25 WED - 156h
+### Aula 42 - 2023.10.30 MON - 168h 
 - Node - Consistência em Arquivos 
 - Node - Tratamento de exceção 
-
-### Aula 40 - 2023.10.26 THU - 160h 
-- Node - Conceitos básicos de API REST 
-- Node - Métodos HTTP e suas responsabilidades 
-- Node - Status Codes 
-### Aula 41 - 2023.10.27 FRI - 164h  
-- Node - Testes automatizados 
-
-### Aula 42 - 2023.10.30 MON - 168h 
-- Node - Consumindo uma API no Backend (AXIOS)
 
 ### Aula ID - 2023.10.31 TUE
 - Prof. Mateus
 
-### Aula 43 -  - 172h  
+### Aula 43 -  - 172h 
+- Node - Conceitos básicos de API REST 
+- Node - Métodos HTTP e suas responsabilidades 
+- Node - Status Codes 
+
 ### Aula 44 -  - 176h
-- TypeScript 
+- Node - Testes automatizados 
+- Node - Consumindo uma API no Backend (AXIOS)
+
+- **TypeScript** 
 ### Aula 45 -  - 180h  
 ### Aula 46 -  - 184h  
 ### Aula 47 -  - 188h  

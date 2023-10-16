@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .verde{
+            color: green;
+        }
+
+        .violeta{
+            color: violet;
+        }
+
+    </style>
+
+</head>
+<body>
+    <h1 id="idTitulo1" >Titulo Teste</h1>
+
+    <script>
+
+        var titulo1 = document.getElementById("idTitulo1")
+
+        titulo1.onclick = function(){
+            titulo1.style.color = "#ff2211"
+        }
+
+        titulo1.onmouseenter = function(){
+            titulo1.classList.add("verde")
+            titulo1.classList.remove("violeta")
+        }
+
+        titulo1.onmouseout = function() {
+            titulo1.classList.add("violeta")
+            titulo1.classList.remove("verde")
+        }
+
+    </script>
+    
+</body>
+</html>
