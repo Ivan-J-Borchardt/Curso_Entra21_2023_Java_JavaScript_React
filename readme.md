@@ -412,20 +412,29 @@ de 24/08/2023.
 - Prof. Mateus
 
 ### Aula 35 - 2023.10.18 WED - 140h 
-- JavaScript - Métodos de Array 
-- JavaScript - Métodos de Numbers
+- JavaScript - DOM - Criando elementos dinâmicamente via JS (parte 2)
+- Acessando Variaveis CSS pelo JavaScript*
+
+
 
 - JavaScript - Locais para declarar JS
 - Exercícios: Refatorar pelo menos 3 Exercícios, a escolha, extraíndo o JS interno para um arquivo.js
 
-- JavaScript - Um pouco mais sobre o comportamento das variáveis (var x let x const)
+
+- JavaScript - Métodos de Array 
 
 
 ### Aula CF - 2023.10.19 THU 
 - Prof. Oscar
 
 ### Aula 37 - 2023.10.20 FRI - 148h 
-- Complexidade de Tempo e Espaço
+- ~~Complexidade de Tempo e Espaço~~
+- JavaScript - Um pouco mais sobre o comportamento das variáveis (var x let x const)
+- JavaScript - Métodos de Numbers
+- Precedência de operadores aritméticos
+- Precedência de operadores lógicos
+
+
 - CSS - Bootstrap
 
 
@@ -439,7 +448,7 @@ de 24/08/2023.
 
 - JavaScript - Processamento Assíncrono - Promises
 - JavaScript - Processamento Assíncrono - Callbacks
-
+- JavaScript - Toasts 
 ### Aula ID - 2023.10.24 TUE
 - Prof. Mateus
 

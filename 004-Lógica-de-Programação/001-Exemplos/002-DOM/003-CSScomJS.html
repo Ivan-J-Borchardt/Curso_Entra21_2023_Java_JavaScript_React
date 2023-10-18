@@ -1,12 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>Document</title>
     <style>
+        body{
+            --cor : pink;
+        }
+        :root {
+            --tituloPrincipal: #ffff00; 
+        }
+
         .verde{
-            color: green;
+            color: var(--cor);
         }
 
         .violeta{
@@ -14,18 +21,30 @@
         }
 
     </style>
-
+<style type="text/css" id="operaUserStyle"></style>
 </head>
 <body>
     <h1 id="idTitulo1" >Titulo Teste</h1>
 
+    <input type="text" id="idCor" placeholder="Cor HEX">
+    <input type="button" value="Pegar Cor" id="idBtCor">
+
     <script>
 
-        var titulo1 = document.getElementById("idTitulo1")
+        var btCor = document.getElementById("idBtCor")
 
+        btCor.onclick = function(){
+            let cor = document.getElementById("idCor").value
+            document.body.style.setProperty('--tituloPrincipal', cor);
+        }
+
+
+        var titulo1 = document.getElementById("idTitulo1")
+        /*
         titulo1.onclick = function(){
             titulo1.style.color = "#ff2211"
         }
+        */
 
         titulo1.onmouseenter = function(){
             titulo1.classList.add("verde")

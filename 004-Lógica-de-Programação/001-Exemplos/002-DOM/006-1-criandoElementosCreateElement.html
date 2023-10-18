@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <form id="frmIdAdiciona" action="" method="GET">
+            <label for="inIdUserId">User Id:</label><br>
+            <input type="text" id="inIdUserId" name="inNmUserId" required>
+            <br><br>
+
+            <label for="inIdPass">Senha:</label><br>
+            <input type="text" id="inIdPass" name="inNmPass">
+            <br><br>
+
+            <label for="inIdNome">Nome:</label><br>
+            <input type="text" id="inIdNome" name="inNmNome">
+            <br><br>
+
+            <label for="inIdCpf">CPF: </label><br>
+            <input type="text" id="inIdCpf" name="inNmCpf">
+            <br><br>
+
+            <input type="radio" id="inIdTpDes" name="inNmTipoUser" checked value="Desenvolvedor">
+            <label for="inIdTpDes">Desenvolvedor</label>
+            <br>
+            <input type="radio" id="inIdTpAna" name="inNmTipoUser" value="Analista">
+            <label for="inIdTpAna">Analista</label>
+            <br>
+            <input type="radio" id="inIdTpAdm" name="inNmTipoUser" value="Administrador">
+            <label for="inIdTpAdm">Administrador</label>
+            <br><br>
+
+            <input type="submit" value="Incluir" id="btIdIncluir">
+            <input type="reset" value="Limpar">
+            <input type="button" value="Validar" id="btIdValidar">
+        </form>
+    </div>
+    <div>
+
+        <table border="1" class="tbClUsuarios" id="tbIdUsuarios">
+            <thead id="thIdUsuarios">
+                <tr class="trClUsuario">
+                    <th class="thClInfoUserId">UserId</th>
+                    <th class="thClInfoSenha">Senha</th>
+                    <th class="thClInfoNome">Nome</th>
+                    <th class="thClInfoCpf">CPF</th>
+                    <th class="thClInfoTipoUser">Tipo Usuario</th>
+                </tr>
+            </thead>
+            <tbody id="tboIdLinha">
+                <tr class="trClUsuarioData">
+                    <!--Linha 1-->
+                    <td class="tdClInfoUserId">IvanJB</td>
+                    <td class="tdClInfoSenha">Teste123</td>
+                    <td class="tdClInfoNome">Ivan J. Borchardt</td>
+                    <td class="tdClInfoCpf">004.742.879-12</td>
+                    <td class="tdClInfoTipoUser">Desenvolvedor</td>
+                </tr>
+                <tr class="trClUsuarioData">
+                    <!--Linha 2-->
+                    <td class="tdClInfoUserId">JoaoTB</td>
+                    <td class="tdClInfoSenha">Teste123</td>
+                    <td class="tdClInfoNome">Joao Alberto</td>
+                    <td class="tdClInfoCpf">004.742.879-15</td>
+                    <td class="tdClInfoTipoUser">Desenvolvedor</td>
+                </tr>
+                <tr class="trClUsuarioData">
+                    <!--Linha 3-->
+                    <td class="tdClInfoUserId">MarianaS</td>
+                    <td class="tdClInfoSenha">Teste123</td>
+                    <td class="tdClInfoNome">Mariana Silveira</td>
+                    <td class="tdClInfoCpf">004.742.879-16</td>
+                    <td class="tdClInfoTipoUser">Administrador</td>
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+    <script>
+
+
+        var btInclui = document.getElementById("btIdIncluir")
+
+        btInclui.addEventListener("click", function(event) {
+            event.preventDefault()
+
+            //capturar o formulario completo 
+            let formulario = document.getElementById("frmIdAdiciona")
+
+            //Extrair dados do formulario 
+            let usuario = obtemUsuario(formulario)
+
+            //Criar nova linha para a tabela 
+            let usuarioTr = montaTr(usuario)
+
+            //Adicionar a linha na tabela 
+            let tBody = document.getElementById("tboIdLinha") 
+            tBody.appendChild(usuarioTr)
+
+            //resetar o formulario 
+            formulario.reset()
+        })
+
+
+        function obtemUsuario(formulario) {
+            let usuario = {
+                userId   : formulario.inNmUserId.value,
+                password : formulario.inNmPass.value,
+                name     : formulario.inNmNome.value,
+                cpf      : formulario.inNmCpf.value,
+                tipo     : formulario.inNmTipoUser.value
+            }
+
+            return usuario
+        }
+
+        //Cria uma linha (um Tr) 
+        function montaTr(usuario) {
+            let usuarioTr = document.createElement("tr")
+
+            usuarioTr.classList.add("trClUsuarioData")
+            
+            usuarioTr.appendChild(montaTd(usuario.userId, "tdClInfoUserId"))
+            usuarioTr.appendChild(montaTd(usuario.password, "tdClInfoSenha"))
+            usuarioTr.appendChild(montaTd(usuario.name, "tdClInfoNome"))
+            usuarioTr.appendChild(montaTd(usuario.cpf, "tdClInfoCpf"))
+            usuarioTr.appendChild(montaTd(usuario.tipo, "tdClInfoTipoUser"))
+
+            return usuarioTr
+        }
+
+        //Cria uma coluna (um td)
+        function montaTd(dado, classe){
+            let usuarioTd = document.createElement("td")
+
+            usuarioTd.textContent = dado
+            usuarioTd.classList.add(classe)
+
+            return usuarioTd
+        }
+
+
+    </script>
+
+
+</body>
+
+</html>

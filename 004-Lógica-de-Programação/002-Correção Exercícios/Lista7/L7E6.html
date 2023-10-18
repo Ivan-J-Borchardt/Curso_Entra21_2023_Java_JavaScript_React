@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form{
+            display: flex;
+            justify-content: center;
+        }
+
+        .tela{
+            width: 40vw;
+            border: 1px solid black;
+            padding: 20px;
+
+        }
+
+        .dadoEntrada label{
+            display: block;
+        }
+
+        .dadoEntrada input{
+            margin-bottom: 10px;
+            width: 100%;
+        }
+
+        .botoes{
+            display: flex;
+            justify-content: end;
+            column-gap: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="idMenu">
+        <input type="radio" id="idRdCadAluno" name="nmTela" checked>
+        <label for="idTela">Cadastro de Aluno</label>
+        <input type="radio" id="idRdCadNota" name="nmTela">
+        <label for="idTela">Cadastro de Notas</label>
+        <input type="radio" id="idRdConsulta" name="nmTela">
+        <label for="idTela">Consultar Situação</label>
+    </div>
+    <form action="" id="idForm">
+        <div id="idTelaCad" class="tela">
+            <div class="dadoEntrada">
+                <label for="idNomeAluno">Nome Aluno</label>
+                <input type="text" id="idNomeAluno" name="nmNomeAluno" placeholder="Nome do Aluno">
+            </div>
+            <div class="dadoEntrada">
+                <label for="idEndereco">Endereco</label>
+                <input type="text" id="idEndereco" name="nmEndereco" placeholder="Endereço">
+            </div>
+            <div class="dadoEntrada">
+                <label for="idNomeMae">Nome Mãe</label>
+                <input type="text" id="idNomeMae" name="nmNomeMae" placeholder="Nome da Mãe">
+            </div>
+            <div class="dadoEntrada">
+                <label for="idNomePai">Nome Pai</label>
+                <input type="text" id="idNomePai" name="nmNomePai" placeholder="Nome do Pai">
+            </div>
+            <div class="dadoEntrada">
+                <label for="idNomeTelefone">Telefone</label>
+                <input type="text" id="idTelefone" name="nmTelefone" placeholder="Telefone">
+            </div>
+            <div class="botoes">
+                <input type="button" value="Salvar" id="idBtSalvarCad">
+                <input type="reset" value="Cancelar" id="idBtCancelar">
+            </div>
+        </div>
+
+        <div id="idTelaNotas" class="tela" hidden>
+            <div class="dadoEntrada">
+                <label for="idAlunoNotas">Nome Aluno</label>
+                <input list="idAlunoNotas">
+                <datalist id="idAlunoNotas">
+                </datalist>
+            </div>
+
+            <div class="dadoEntrada">
+                <label for="idNota">Nota</label>
+              
+                <input type="number" id="idNota" step="0.01">
+       
+            </div>
+
+            <div class="botoes">
+                <input type="button" value="Salvar" id="idBtSalvarCad">
+                <input type="reset" value="Cancelar" id="idBtCancelar">
+            </div>
+        </div>
+
+        <div id="idTelaConsulta" class="tela" hidden>
+ 
+
+            <div class="botoes">
+                <input type="button" value="Salvar" id="idBtSalvarCad">
+                <input type="reset" value="Cancelar" id="idBtCancelar">
+            </div>
+        </div>
+
+    </form>
+
+
+    <script>
+        //----------------------> Inicialização <-------------------------//
+        var nomeAluno = []
+        var endereco = []
+        var nomeMae = []
+        var nomePai = []
+        var telefone = []
+        var nota1 = []
+        var nota2 = []
+        var nota3 = []
+        var nota4 = []
+
+        const formulario = document.getElementById("idForm")
+        //-------------------> Tratamento de Eventos <---------------------//
+        /*
+            Menu Principal 
+        */
+        var menu = document.getElementById("idMenu")
+
+        menu.onclick = function(){
+            const opcao = document.querySelector("input[name=nmTela]:checked")
+            switch (opcao.id) {
+                case "idRdCadAluno":
+                    document.getElementById("idTelaCad").hidden = false
+                    document.getElementById("idTelaNotas").hidden = true
+                    document.getElementById("idTelaConsulta").hidden = true
+                    break;
+
+                case "idRdCadNota":
+                    document.getElementById("idTelaCad").hidden = true
+                    document.getElementById("idTelaNotas").hidden = false
+                    document.getElementById("idTelaConsulta").hidden = true
+                    carregarDataList(document.getElementById("idAlunoNotas"), nomeAluno)  
+                    break;
+
+                case "idRdConsulta":
+                    document.getElementById("idTelaCad").hidden = true
+                    document.getElementById("idTelaNotas").hidden = true
+                    document.getElementById("idTelaConsulta").hidden = false
+                    break;
+
+            }
+
+        }
+
+
+        /*
+            Salva Dados do Aluno
+        */
+        var btSalvarCad = document.getElementById("idBtSalvarCad")
+
+        btSalvarCad.onclick = function(){
+            const aluno = validaCampoString(document.getElementById("idNomeAluno"))
+            if (!aluno) {
+                return 
+            }
+
+            const end  = validaCampoString(document.getElementById("idEndereco")) 
+            if (!end) {
+                return 
+            }
+
+            const mae   = validaCampoString(document.getElementById("idNomeMae"))
+            if (!mae) {
+                return
+            }
+
+            const pai   = validaCampoString(document.getElementById("idNomePai"))
+            if (!pai) {
+                return
+            }
+
+            const tel   = validaCampoString(document.getElementById("idTelefone"))
+            if (!tel) {
+                return
+            }
+
+            nomeAluno.push(aluno)
+            endereco.push(end)
+            nomeMae.push(mae)
+            nomePai.push(pai)
+            telefone.push(tel)
+
+            formulario.reset()
+
+        }
+
+        /*
+            Consistência dos campos da tela
+            Parâmetros: elemento input
+            return: Se Elemento válido: Element.value
+                    Se Elemento inválido: null 
+        */
+        function validaCampoString(campo) {
+            console.log(campo.placeholder);
+            if (campo.value != "" && campo.value != " ") {
+                return campo.value
+            } else {
+                alert(`O campo "${campo.placeholder}" é de preenchimento obrigatório!`)
+                campo.focus() 
+                return null
+            }
+        }
+
+        /*
+            Carregamento/Load do campo "Alunos" (Datalist da tela) 
+            Parâmetros: elemento datalist (capturado da tela)
+                        Array com elementos a serem carregados no Datalist
+        */
+        function carregarDataList(campoDataList, lista){
+            lista.forEach((element, index) => {
+                let option = document.createElement("option")
+                option.value = element
+                option.id = index
+                campoDataList.appendChild(option)
+            });
+        }
+
+
+
+    </script>
+    
+</body>
+</html>

@@ -15,18 +15,28 @@
 
     <script>
 
+        //Array com 30 temperaturas pre inicializadas 
         var temperatura = [12, 15.5, 13, 22, 21, 28, 12, 14, 14, 15, 26.4, 23.2, 17, 19, 31, 32, 26, 25.3, 18, 15, 26.4, 23.2, 17, 19, 31, 32, 26, 25.3, 18, 19.6]
+        
+        //Calculo da média das temperaturas
         var tempMedia = temperatura.reduce(function(media, value, index, array){
             let peso = 1/temperatura.length
              media += value * peso
              return media
         }, 0)
 
+        //Capturando o elemento de tela para informar a mensagem de saída
         var output = document.getElementById("idOut")
 
+        //Capturando o Botão "Testar Dia"
         var btTestarDia = document.getElementById("idBtTestarDia")
+
+        //Escutando o Evento Onclick do botão "Testar Dia"
         btTestarDia.onclick = function(){
+            //capturando o dia cuja temmperatura deve ser comparadaa com a temperatura média
             let dia = Number(document.getElementById("idDia").value)
+
+            //Comparando a temperatura do dia selecionado com a temp. média
             if (temperatura[dia] > tempMedia) {
                 output.value = `A temperatura (${temperatura[dia]}) do dia ${dia} está acima da média ${tempMedia}`         
             } else if(temperatura[dia] < tempMedia) {

@@ -20,7 +20,7 @@
 
 </head>
 <body>
-    <form action="">
+    <form action="" id="idForm" method="GET">
 
         <!-- Exemplo 001 - Caixa de texto -->
         <label for="idTexto">Texto</label><br>
@@ -96,7 +96,8 @@
         <textarea name="nmTextArea" id="idTextArea" cols="30" rows="10"></textarea>
 
         <br><br>
-        <input type="button" value="Capturar" onclick="capturaTela()">    
+        <input type="button" value="Capturar" onclick="capturaTela()">   
+        <input type="submit"> 
     </form>
 
     <script>
@@ -185,6 +186,12 @@
             //Exmplo 009 - Textarea
             pergunta = document.getElementById("idTextArea").value
             console.log("Pergunta: " +  pergunta);
+
+
+            //Exemplo 010 - capturando os elementos pelo formulario 
+            let formulario = document.getElementById("idForm")
+            let texto123 = formulario.nmGenero.value
+            console.log("texto123 " + texto123);
             
         }
 
