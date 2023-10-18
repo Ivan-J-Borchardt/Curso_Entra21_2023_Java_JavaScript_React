@@ -5,11 +5,8 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>Document</title>
     <style>
-        body{
-            --cor : pink;
-        }
         :root {
-            --tituloPrincipal: #ffff00; 
+            --cor: #ffff00; 
         }
 
         .verde{
@@ -35,7 +32,7 @@
 
         btCor.onclick = function(){
             let cor = document.getElementById("idCor").value
-            document.body.style.setProperty('--tituloPrincipal', cor);
+            document.body.style.setProperty('--cor', cor);
         }
 
 
