@@ -4,8 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        :root{
+            --cor: red;
+        }
+
+        h1{
+            color: var(--cor);
+        }
+    </style>
 </head>
 <body>
-    
+    <h1>teste</h1>
+    <script>
+        let cor = "#452334"
+        document.documentElement.style.setProperty('--cor', cor)
+
+    </script>
 </body>
 </html>

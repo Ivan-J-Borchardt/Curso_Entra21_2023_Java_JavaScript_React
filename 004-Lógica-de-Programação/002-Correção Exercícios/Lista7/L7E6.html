@@ -1,39 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        form{
+        form {
             display: flex;
             justify-content: center;
         }
 
-        .tela{
+        .tela {
             width: 40vw;
             border: 1px solid black;
             padding: 20px;
 
         }
 
-        .dadoEntrada label{
+        .dadoEntrada label {
             display: block;
         }
 
-        .dadoEntrada input{
+        .dadoEntrada input {
             margin-bottom: 10px;
             width: 100%;
         }
 
-        .botoes{
+        .botoes {
             display: flex;
             justify-content: end;
             column-gap: 10px;
         }
-
     </style>
 </head>
+
 <body>
     <div id="idMenu">
         <input type="radio" id="idRdCadAluno" name="nmTela" checked>
@@ -43,6 +44,7 @@
         <input type="radio" id="idRdConsulta" name="nmTela">
         <label for="idTela">Consultar Situação</label>
     </div>
+
     <form action="" id="idForm">
         <div id="idTelaCad" class="tela">
             <div class="dadoEntrada">
@@ -67,7 +69,7 @@
             </div>
             <div class="botoes">
                 <input type="button" value="Salvar" id="idBtSalvarCad">
-                <input type="reset" value="Cancelar" id="idBtCancelar">
+                <input type="reset" value="Cancelar">
             </div>
         </div>
 
@@ -81,23 +83,23 @@
 
             <div class="dadoEntrada">
                 <label for="idNota">Nota</label>
-              
+
                 <input type="number" id="idNota" step="0.01">
-       
+
             </div>
 
             <div class="botoes">
-                <input type="button" value="Salvar" id="idBtSalvarCad">
-                <input type="reset" value="Cancelar" id="idBtCancelar">
+                <input type="button" value="Salvar" id="idBtSalvarNota">
+                <input type="reset" value="Cancelar">
             </div>
         </div>
 
         <div id="idTelaConsulta" class="tela" hidden>
- 
+
 
             <div class="botoes">
                 <input type="button" value="Salvar" id="idBtSalvarCad">
-                <input type="reset" value="Cancelar" id="idBtCancelar">
+                <input type="reset" value="Cancelar">
             </div>
         </div>
 
@@ -123,7 +125,7 @@
         */
         var menu = document.getElementById("idMenu")
 
-        menu.onclick = function(){
+        menu.onclick = function () {
             const opcao = document.querySelector("input[name=nmTela]:checked")
             switch (opcao.id) {
                 case "idRdCadAluno":
@@ -136,7 +138,7 @@
                     document.getElementById("idTelaCad").hidden = true
                     document.getElementById("idTelaNotas").hidden = false
                     document.getElementById("idTelaConsulta").hidden = true
-                    carregarDataList(document.getElementById("idAlunoNotas"), nomeAluno)  
+                    carregarDataList(document.getElementById("idAlunoNotas"), nomeAluno)
                     break;
 
                 case "idRdConsulta":
@@ -155,28 +157,28 @@
         */
         var btSalvarCad = document.getElementById("idBtSalvarCad")
 
-        btSalvarCad.onclick = function(){
+        btSalvarCad.onclick = function () {
             const aluno = validaCampoString(document.getElementById("idNomeAluno"))
             if (!aluno) {
-                return 
+                return
             }
 
-            const end  = validaCampoString(document.getElementById("idEndereco")) 
+            const end = validaCampoString(document.getElementById("idEndereco"))
             if (!end) {
-                return 
+                return
             }
 
-            const mae   = validaCampoString(document.getElementById("idNomeMae"))
+            const mae = validaCampoString(document.getElementById("idNomeMae"))
             if (!mae) {
                 return
             }
 
-            const pai   = validaCampoString(document.getElementById("idNomePai"))
+            const pai = validaCampoString(document.getElementById("idNomePai"))
             if (!pai) {
                 return
             }
 
-            const tel   = validaCampoString(document.getElementById("idTelefone"))
+            const tel = validaCampoString(document.getElementById("idTelefone"))
             if (!tel) {
                 return
             }
@@ -203,7 +205,7 @@
                 return campo.value
             } else {
                 alert(`O campo "${campo.placeholder}" é de preenchimento obrigatório!`)
-                campo.focus() 
+                campo.focus()
                 return null
             }
         }
@@ -213,7 +215,7 @@
             Parâmetros: elemento datalist (capturado da tela)
                         Array com elementos a serem carregados no Datalist
         */
-        function carregarDataList(campoDataList, lista){
+        function carregarDataList(campoDataList, lista) {
             lista.forEach((element, index) => {
                 let option = document.createElement("option")
                 option.value = element
@@ -222,9 +224,19 @@
             });
         }
 
+        /*
+            Salva Nota do aluno 
+        */
+        var idBtSalvarNota = document.getElementById("idBtSalvarNota")
+
+        idBtSalvarNota.onclick = function() {
+            let aluno = document.getElementById("idAlunoNotas")
+            console.log(aluno.options);
+        }
 
 
     </script>
-    
+
 </body>
+
 </html>
