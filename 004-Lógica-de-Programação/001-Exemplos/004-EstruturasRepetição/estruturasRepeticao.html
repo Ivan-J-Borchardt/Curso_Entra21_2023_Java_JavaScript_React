@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
 
     <script>
-        var contador = 10 
+        var contador = 10
         //Enquanto  - usado quando não sabemos a qtd de vezes
         console.log("Antes do While");
         while (contador < 10) {
@@ -31,17 +33,68 @@
 
         //Para - usado quando sabemos exatamente quantas vezes
         console.log("Antes do For");
-        for (let i = 0; i> 10; i++) {
+        for (let i = 0; i > 10; i++) {
             console.log("For: " + i);
         }
 
 
-         
 
-        
+        var vetor = ["item1", "item2", "item3", "item4", "item5"]
+
+        var pessoa = {
+            nome : "Joao", 
+            sobrenome : "Silva", 
+            idade : 25, 
+            sexo : "m"
+        }
+
+        pessoa.nome = "Johan"
+        pessoa["nome"] = "Joana"
+        pessoa["idade"] = 26
+
+        console.log(pessoa);
+
+        //forEach Array 
+        vetor.forEach((element, index, array) => {
+            console.log(element);
+            console.log(index);
+            console.log(array);
+        });
+
+        //for in
+        for (const key in vetor) {
+            console.log("for in 1:" + key);
+        }
+        /*
+        for (let key = 0; key < vetor.length; key++) {
+            console.log(key);
+        }
+        */
+        for (const key in pessoa) {
+            console.log("for in 2:" + pessoa[key]);
+        }
+
+        //for of (objetos iteraveis - alguma coisa parecida com um array...)
+        for (const iterator of vetor) {
+            console.log(iterator);
+        }
+
+        var texto = "Olá mundo"
+        for (const iterator of texto) {
+            console.log(iterator);
+        }
+
+        /*
+        for (let index = 0; index < texto.length; index++) {
+            const iterator = texto[index];
+            console.log(iterator);
+        }
+        */
+
 
 
     </script>
-    
+
 </body>
+
 </html>

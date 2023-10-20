@@ -23,7 +23,7 @@
 <body>
     <h1 id="idTitulo1" >Titulo Teste</h1>
 
-    <input type="text" id="idCor" placeholder="Cor HEX">
+    <input type="color" id="idCor" placeholder="Cor HEX">
     <input type="button" value="Pegar Cor" id="idBtCor">
 
     <script>
@@ -32,6 +32,7 @@
 
         btCor.onclick = function(){
             let cor = document.getElementById("idCor").value
+            console.log(cor);
             document.documentElement.style.setProperty('--cor', cor);
         }
 

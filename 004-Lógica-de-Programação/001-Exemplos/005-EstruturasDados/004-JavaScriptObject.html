@@ -19,7 +19,47 @@
         usuario.userId = "XPTO"
         console.log(usuario.userId); 
 
-        //JSON
+        
+        var pessoa = {
+            nome : "Joao", 
+            sobrenome : "Silva", 
+            idade : 25, 
+            sexo : "m"
+        }
+        
+        //Acessando os atributos do JSObject 
+        pessoa.nome = "Johan"
+        pessoa["nome"] = "Joana"
+        pessoa["idade"] = 26
+
+
+
+        //"iterando" um JSObject 
+        //Veja exemplo em Estruras de repetição (For in)
+
+        //Estrutura completa de um JSObject 
+        const user = {
+            id : "XPTO123", 
+            funcao: "Administrador", 
+            bloqueado: true, 
+            instancias: 2, 
+            navegadores : ["IE", "chrome", "edge"], 
+            pessoa1: {
+                nome : "Joao", 
+                sobrenome : "Silva", 
+                idade : 25, 
+                sexo : "m",
+                nomeCompleto : function(){
+                    return this.nome + " " + this.sobrenome
+                }
+            } 
+        }
+
+        console.log(user.pessoa1.nomeCompleto());
+
+        console.log(user.pessoa1.nome + " " + user.pessoa1.sobrenome);
+        console.log(user.navegadores[1]);
+
     </script>
 
 </body>

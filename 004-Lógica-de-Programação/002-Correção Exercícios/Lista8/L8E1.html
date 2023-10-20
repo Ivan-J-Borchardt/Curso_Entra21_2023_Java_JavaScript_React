@@ -12,8 +12,6 @@
     <label for="idFrutas">Frutas:</label><br>
     <input list="idFrutas">
     <datalist id="idFrutas">
-        <option id="0" >tomate</option>
-        <option id="1" >morango</option>
     </datalist>
 
     <script>
@@ -24,6 +22,16 @@
             O elemento deve constar na propriedade innerText e sua respectiva posição 
             deve ser posta no id do Option, conforme exemplo acima (veja no HTML)
         */
+       let datalist = document.getElementById("idFrutas")
+        frutas.forEach(function(element, index){
+            let option = document.createElement("option")
+            option.innerText = element
+            option.id = index
+            datalist.appendChild(option)
+        })
+
+
+
 
     </script>
 </body>

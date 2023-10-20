@@ -426,6 +426,7 @@ de 24/08/2023.
 ### Aula 37 - 2023.10.20 FRI - 148h 
 - ~~Complexidade de Tempo e Espaço~~
 - Acessando Variaveis CSS pelo JavaScript *Correção do bug da última aula 
+- Correção L8E1
 - Correção L7E5 (ordenação de vetores)
 - JavaScript - Métodos de Array
 - JavaScript - Arrays multidimensionais
