@@ -420,15 +420,15 @@ de 24/08/2023.
 - JavaScript - Locais para declarar JS
 - Exercícios: Refatorar pelo menos 3 Exercícios, a escolha, extraíndo o JS interno para um arquivo.js
 
-
-- JavaScript - Métodos de Array 
-
-
 ### Aula CF - 2023.10.19 THU 
 - Prof. Oscar
 
 ### Aula 37 - 2023.10.20 FRI - 148h 
 - ~~Complexidade de Tempo e Espaço~~
+- Acessando Variaveis CSS pelo JavaScript *Correção do bug da última aula 
+- Correção L7E5 (ordenação de vetores)
+- JavaScript - Métodos de Array
+- JavaScript - Arrays multidimensionais
 - JavaScript - Um pouco mais sobre o comportamento das variáveis (var x let x const)
 - JavaScript - Métodos de Numbers
 - Precedência de operadores aritméticos
@@ -438,17 +438,20 @@ de 24/08/2023.
 - CSS - Bootstrap
 
 
+
+
+### Aula 38 - 2023.10.23 MON - 152h
 - JavaScript - Processamento Assíncrono
 - JavaScript - Consumo de API com AJAX
 - Projeto: Desafio 4 - Conversor de Moedas
 
-### Aula 38 - 2023.10.23 MON - 152h
 - JavaScript - Consumo de API com fetch() - async/await 
 - JavaScript - Estruturas de Dados XML - JSON - JS Obj
 
 - JavaScript - Processamento Assíncrono - Promises
 - JavaScript - Processamento Assíncrono - Callbacks
 - JavaScript - Toasts 
+
 ### Aula ID - 2023.10.24 TUE
 - Prof. Mateus
 
@@ -461,18 +464,21 @@ de 24/08/2023.
 - Node - Instalando pacotes no projeto Node 
 - Node - Modules 
 
-### Aula 40 - 2023.10.26 THU - 160h 
+
+### Aula CF - 2023.10.26 THU 
+- Prof. Oscar
+
+### Aula 41 - 2023.10.27 FRI - 164h  
 - Node - Criando o primeiro servidor http
 - Node - Criando uma API com o framework Express
 - Node - Roteamento 
 - Node - Trabalhando com arquivos estáticos 
 
-### Aula 41 - 2023.10.27 FRI - 164h  
+### Aula 42 - 2023.10.30 MON - 168h 
 - Node - Cors 
 - Node - Middlewares 
 - Node - Autenticação com JWT 
 
-### Aula 42 - 2023.10.30 MON - 168h 
 - Node - Consistência em Arquivos 
 - Node - Tratamento de exceção 
 
@@ -602,6 +608,9 @@ de 24/08/2023.
 ### Comunicação & Organização do Curso 
 
 [![WhatsApp](https://img.shields.io/badge/Grupo-WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://chat.whatsapp.com/KyimwmWav9c2Go5DhGLNjO)
+
+- Formulário para registrar o Status das Atividades: 
+    https://forms.gle/yf7X8LRsMbaPRCt78
 
 - Planilhas Pergutas do dia:
     - Git e GitHub  

@@ -17,7 +17,7 @@ Assim sendo, para cifrar um caractere:
 - converter o caractere para valor ASCII
 
     ```javascript 
-        str.charCodeAt(index)
+        let valorASCII = str.charCodeAt(index)
     ```
 
 - Adicionar a cifra 
