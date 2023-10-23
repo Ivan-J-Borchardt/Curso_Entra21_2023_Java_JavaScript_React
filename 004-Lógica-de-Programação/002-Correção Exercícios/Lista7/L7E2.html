@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .alerta{
+            color : red;
+        }
+
+    </style>
+</head>
+
+<body>
+    <form action="">
+        <div>
+            <input type="text" id="idNome" placeholder="Nome...">
+        </div>
+        <div>
+            <input type="number" id="idIdade" placeholder="Idade">
+        </div>
+        <div>
+            <input type="button" value="Cadastrar" id="idBtCadastrar">
+            <input type="button" value="Relatorio" id="idBtRelatorio">
+        </div>
+        <div>
+            <output id="idOut"></output>
+        </div>
+
+    </form>
+
+    <script>
+        //Declaração de variáveis globais 
+        var nomes = []
+        var idades = []
+        var menoresDeIdade = []
+        var nomesMenorDeIdade = []
+        var btCadastrar = document.getElementById("idBtCadastrar")
+        var btRelatorio = document.getElementById("idBtRelatorio")
+        var saida = document.getElementById("idOut")
+
+        /**
+         *  procedimentos para cadastrar 
+         */
+        btCadastrar.onclick = function () {
+            
+            adquirirDadosTela()
+            document.getElementById("idNome").value = ""
+            document.getElementById("idIdade").value = ""
+
+            console.log(nomes);
+            console.log(idades);
+        }
+
+
+        /**
+         * Procedimentos para descobrir os menores de idade 
+         */
+        btRelatorio.onclick = function () {
+            //  1. Iterar o array de idades buscando os 
+            //     indices das posições que contém valor < 18 
+            idades.forEach((idade, index) => {
+                if (idade < 18) {
+                    menoresDeIdade.push(index)
+                }
+            });
+
+            //2. Acessar o array de nomes através dos indices 
+            //   encontrados no passo 1 e salvar os 
+            //   respectivos conteúdos em um array secundário 
+
+           // nomesMenorDeIdade.push(nomes[0])
+           // nomesMenorDeIdade.push(nomes[2])
+
+            menoresDeIdade.forEach(indMenorIdade => {
+                nomesMenorDeIdade.push(nomes[indMenorIdade])
+            })
+
+            //3. saída do relatório 
+            saida.value = "Menores de Idade: " + nomesMenorDeIdade.toString()
+        }
+
+
+        /**
+        * 
+        */
+        function adquirirDadosTela() {
+            let nome = document.getElementById("idNome").value
+            let isNomeValido = consistirNome(nome)
+            if (isNomeValido) {
+                saida.value = ""
+                saida.classList.remove("alerta")
+
+                let idade = document.getElementById("idIdade").value
+                let isIdadeValida = consistirIdade(idade)
+                if (isIdadeValida) {
+                    idades.push(idade)
+                    nomes.push(nome)
+                    saida.value = ""
+                    saida.classList.remove("alerta")
+                }
+            }
+
+        }
+
+
+        function consistirNome(nome) {
+            if (nome == "" || nome == " ") {
+                saida.value = "Preenchimento obrigatório: Campo Nome"
+                saida.classList.add("alerta")
+                document.getElementById("idNome").focus()
+                return false
+            }
+            return true 
+        }
+
+
+        function consistirIdade(idade) {
+            if (idade < 0 || idade > 130 || idade == "") {
+                saida.value = "Idade inválida"
+                saida.classList.add("alerta")
+                document.getElementById("idNome").focus()
+                return false
+            } 
+            return true 
+        }
+
+    </script>
+
+    <!--
+        Entradas: 
+        nomes: 'joao', 'maria', 'Louise'
+                  0       1        2 
+        
+        idades:  15,     20,       5
+                  0       1        2
+        
+        Processamento: 
+             1. Iterar o array de idades buscando os indices das posições que contém valor < 18 
+             2. Acessar o array de nomes através dos indices encontrados no passo 1 e salvar os 
+                respectivos conteúdos em um array secundário 
+             3. Exibir o array secundário na saída 
+        
+        
+        
+        saída: 
+        menoresDeIdade: 'joao', 'Louise'
+        -->
+
+</body>
+
+</html>

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        //vetor, matrizes
+
+        var array = [2, 3, 4, 5, 6, 7]
+        var array2 = [2, 3, 4, 5, 6, 7]
+        /*
+        array.length
+        array.toString()
+        array.push()
+        array.pop()
+        array.shift()
+        array.unshift()
+        */
+
+        //inserir separadores entre os elementos e retornar como String (arquivos .csv)
+        const fruits = ["Banana", "Orange", "Apple", "Mango"];
+        console.log(fruits.join(";"));
+
+        //Deletar o conteúdo de uma posição (deixa undefined no lugar)
+        delete fruits[1];
+        console.log(fruits);
+
+        //Concatenar 2 ou mais arrays para formar um novo array
+        const myGirls = ["Cecilie", "Lone"];
+        const myBoys = ["Emil", "Tobias", "Linus"];
+        const arr3 = ["Robin", "Morgan"];
+
+        const myChildren = myGirls.concat(myBoys, arr3);
+        console.log(myChildren);
+
+        //Transformando um Array de Arrays em um Array só
+        //Em outras palavras, transformando uma Matriz em um Vetor
+        const myArr = [[1, 2], [3, 4], [5, 6]];
+        const newArr = myArr.flat();
+        console.log(newArr);
+
+
+        //Inserindo 2 novos elementos no vetora partir da posição 2, sem 
+        //eliminar nem um elemento já existente
+        const fruits2 = ["Banana", "Orange", "Apple", "Mango"];
+        fruits2.splice(2, 0, "Lemon", "Kiwi");
+        console.log(fruits2);
+
+        //Apagando um ou vários elementos de uma posição especifica
+        fruits2.splice(3, 1)
+        console.log(fruits2);
+
+        //Criando uma cópia de parte do array 
+        const fruits3 = ["Banana", "Orange", "Apple", "Mango"];
+        const fruits4 = fruits3.slice(1);
+        console.log(fruits4);
+
+        const fruits5 = fruits3.slice(1, 3);
+        console.log(fruits5);
+
+        //Encontrando o indice de uma posição
+        const fruits6 = ["Apple", "Orange", "Apple", "Mango"];
+        let position = fruits6.indexOf("Apple", 1);
+
+        console.log(position);
+
+        position = fruits6.lastIndexOf("Apple")
+        console.log(position);
+
+        //filter 
+        var idades = [45, 3, 5, 12, 32, 1, 26]
+
+        function filtrar(vetor) {
+            let over18 = []
+            for (let i = 0; i < vetor.length; i++) {
+                if (vetor[i] > 18) {
+                    over18.push(vetor[i])
+                }
+            }
+            return over18
+        }
+
+        console.log(filtrar(idades));
+
+        //-------------------------------------------------
+        console.log("====================Filter=================");
+        //Passando uma função nomeada como parametro
+        let over18 = idades.filter(buscarMaior18)
+
+        console.log(over18);
+
+
+        function buscarMaior18(value, index, array) {
+            return value > 18
+        }
+
+        //Passando uma função anônima como parametro
+        let over18_2 = idades.filter(function(value, index, array){
+            return value > 18
+        })
+
+        console.log(over18_2);
+
+        //Passando uma função arrow como parametro
+        let over18_3 = idades.filter(value => value > 18)
+
+        console.log(over18_3);
+
+        //Map - Transformar cada valor do array em um novo valor
+        console.log("============Equivalente ao MAP=============");
+        var numbers1 = [45, 4, 9, 16, 25];
+        numbers2 = []
+        for (let index = 0; index < numbers1.length; index++) {
+            numbers2[index] = numbers1[index] * 2
+        }
+        
+        console.log(numbers2);
+        
+        console.log("============MAP=============");
+        var numbers3 = numbers1.map(function(value, index, array){
+            return value * 2
+        })
+        console.log(numbers3);
+
+
+        //Reduce - Reduz todos os valores do array a um único valor, com base em uma regra...
+        console.log("==========Reduce============");
+        var numbers4 = [4, 3, 4, 1, 4]
+        //Passando uma Funcao Nomeada como parametro
+        var soma = numbers4.reduce(somarValores, 0)
+        console.log(soma);
+
+        function somarValores(total, value, index, array) {
+            return total = total + value 
+        }
+
+        /*
+        var number = 0 
+        for (let i = 0; i < numbers4.length; i++) {
+            number = number + numbers4[i]
+        }
+        */
+
+        //Passando uma Funcao Anônima como parametro
+        var somaPares = numbers4.reduce(function(total, value, index, array) {
+            if(value % 2 == 0){
+                total = total + value
+            }
+            return total 
+        }, 0)
+
+        console.log(soma);
+
+
+
+
+    </script>
+
+</body>
+
+</html>

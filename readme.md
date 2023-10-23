@@ -427,10 +427,17 @@ de 24/08/2023.
 - ~~Complexidade de Tempo e Espaço~~
 - Acessando Variaveis CSS pelo JavaScript *Correção do bug da última aula 
 - Correção L8E1
+- JavaScript - Um pouco mais sobre o comportamento das variáveis (var x let x const)
+
+
+
+
+
+### Aula 38 - 2023.10.23 MON - 152h
+
 - Correção L7E5 (ordenação de vetores)
 - JavaScript - Métodos de Array
 - JavaScript - Arrays multidimensionais
-- JavaScript - Um pouco mais sobre o comportamento das variáveis (var x let x const)
 - JavaScript - Métodos de Numbers
 - Precedência de operadores aritméticos
 - Precedência de operadores lógicos
@@ -438,10 +445,7 @@ de 24/08/2023.
 
 - CSS - Bootstrap
 
-
-
-
-### Aula 38 - 2023.10.23 MON - 152h
+---
 - JavaScript - Processamento Assíncrono
 - JavaScript - Consumo de API com AJAX
 - Projeto: Desafio 4 - Conversor de Moedas

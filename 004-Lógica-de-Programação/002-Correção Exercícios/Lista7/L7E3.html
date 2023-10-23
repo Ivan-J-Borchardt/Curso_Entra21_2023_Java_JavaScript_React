@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .margens {
+            margin-top: 5px;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+
+        .line {
+            display: inline;
+        }
+
+        .entrada {
+            width: 90%;
+        }
+
+        .row {
+            display: flex;
+        }
+
+        .col40 {
+            width: 40vw;
+        }
+
+        .col20 {
+            width: 20vw;
+        }
+
+        .col100 {
+            width: 100%;
+        }
+
+        .alerta {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="row">
+        <div class="col40">
+
+        </div>
+        <div class="col20">
+            <fieldset>
+                <legend>Cadastro de Funcionários</legend>
+                <div>
+                    <input type="text" id="idNome" placeholder="Nome" class="entrada margens">
+                </div>
+                <div>
+                    <input type="number" id="idSalario" placeholder="Salario" class="entrada margens">
+                </div>
+                <div>
+                    <div class="line margens">
+                        <input type="radio" name="nmGenero" id="idFem" value="F" checked>
+                        <label for="idFem">Feminino</label>
+                    </div>
+                    <div class="line">
+                        <input type="radio" name="nmGenero"  id="idMasc" value="M">
+                        <label for="idMasc">Masculino</label>
+                    </div>
+                </div>
+                <div class="col100">
+                    <button id="idBtCadastrar" class="margens">Cadastrar</button>
+                    <button id="idBtRelatorio" class="margens">Relatório</button>
+                </div>
+                <div>
+                    <output id="idOut"></output>
+                </div>
+            </fieldset>
+        </div>
+        <div class="col40">
+
+        </div>
+    </div>
+
+    <script>
+        //Declaração de variáveis globais 
+        const salarioMinimo = 1212.00
+        var nomes = []
+        var sexos = []
+        var salarios = []
+        var btCadastrar
+        var btRelatorio
+        var saida
+
+
+        inicializar()
+
+        /**
+         * Tratamento de Eventos
+         */ 
+        btCadastrar.onclick = function(){
+            let isTelaValida = consistirTela()
+            if (isTelaValida) {
+                cadastrar()
+                limparTela()
+            }
+
+        }
+
+        btRelatorio.onclick = function(){
+            //Buscar lista com todos os salarios maiores que 5000
+            let indSalariosFiltrados = filtrarSalariosMaiorQue(5000)
+
+            //Verificar se o dono do salário é feminino, se for, adiciona na saída 
+            saida.value = "Mulheres com salários acima de R$5K: "
+            indSalariosFiltrados.forEach(element => {
+                if (sexos[element] == "F") {
+                    saida.value = saida.value + "("+ nomes[element] + "; "+ sexos[element] + "; "+ salarios[element] +")"
+                }
+            });
+        }
+
+
+        /**
+         * Rotina de Inicialização
+         * Descrição: Inicializa variáveis globais e tela 
+         * Parâmetros: none
+         * Retorno: none
+         */
+        function inicializar() {
+            btCadastrar = document.getElementById("idBtCadastrar")
+            btRelatorio = document.getElementById("idBtRelatorio")
+            saida = document.getElementById("idOut")
+            limparTela()
+        }
+
+        /**
+         * Rotina de Consistência dos campos de entrada 
+         * Descrição: 
+         *     - Testa os valores dos campos de entrada e valida de 
+         *       acordo com as regras de negócio.
+         *     - Caso algum campo conténha valores inválidos uma mensagem
+         *       é exibida ao usuário  
+         * Parâmetros: none
+         * Retorno: boolean
+         *          true - todos os campos contém conteúdos válidos 
+         *          false - um ou mais campos contém valores inválidos
+         */
+         function consistirTela() {
+            let nome = document.getElementById("idNome").value
+            let salario = document.getElementById("idSalario").value
+
+            //Consistencia campo Nome
+            if (nome == "" || nome == " ") {
+                saida.value = "Campo Nome, preenchimento obrigatório"
+                saida.classList.add("alerta")
+                document.getElementById("idNome").focus()
+                return false
+            } 
+
+            //Consistencia campo Salario 
+            if (salario == "" || salario == " ") {
+                saida.value = "Campo Salario, preenchimento obrigatório"
+                saida.classList.add("alerta")
+                document.getElementById("idSalario").focus()
+                return false
+            }
+
+            if (Number(salario) < salarioMinimo) {
+                saida.value = "Salario abaixo do salário mínimo"
+                saida.classList.add("alerta")
+                document.getElementById("idSalario").focus()
+                return false
+            }
+
+            saida.classList.remove("alerta")
+            return true 
+         }
+
+        /**
+         * Rotina Limpar Tela
+         * Descrição: 
+         *     - limpa os campos da tela
+         * Parâmetros: none
+         * Retorno: none
+         */
+        function limparTela() {
+            document.getElementById("idNome").value = ""
+            document.getElementById("idSalario").value = ""
+            document.getElementById("idFem").checked = true
+        }
+         //-------- Rotinas de processamento Geral ------------------
+        /**
+         * Rotina de Cadastro
+         * Descrição: 
+         *     - recebe dados da tela e armazena dos respectivos vetores
+         * Parâmetros: none
+         * Retorno: none
+         */
+         function cadastrar() {
+             nomes.push(document.getElementById("idNome").value)
+             salarios.push(Number(document.getElementById("idSalario").value))
+             sexos.push(document.querySelector('input[name="nmGenero"]:checked').value)
+             saida.value = "Cadastro Realizado com sucesso!"
+             console.log(nomes);
+             console.log(salarios);
+             console.log(sexos);
+             /*
+             let masc = document.getElementById("idMasc").checked
+             let fem = document.getElementById("idFem").checked
+
+             if (masc) {
+                 sexos.push('M')
+                 console.log(nomes);
+                 console.log(salarios);
+                 console.log(sexos);
+             } else {
+                sexos.push('F')
+             }
+             */
+         }
+
+        /**
+         * Rotina Filtrar salarios > salarioCorte 
+         * Descrição: 
+         *     - Filtra os salários que estao acima do salarioCorte 
+         * Parâmetros: salarioCorte 
+         * Retorno: array de indices dos salários > salarioCorte 
+         */
+         function filtrarSalariosMaiorQue(salarioCorte) {
+            let indSalariosFiltrados = []
+            
+            salarios.forEach(function(element, index){
+                if (element > salarioCorte) {
+                    indSalariosFiltrados.push(index)
+                }
+            })
+
+            return indSalariosFiltrados
+             
+         }
+
+    </script>
+
+
+</body>
+
+</html>

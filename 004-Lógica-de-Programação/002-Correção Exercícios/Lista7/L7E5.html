@@ -32,7 +32,7 @@
     </form>
     <script>
         //--------------> Inicialização <----------------//
-        var numeros = []
+        var num = []
 
         var btIncluir = document.getElementById("idIncluir")
         var btOrdemCres = document.getElementById("idOrdemCres")
@@ -48,7 +48,8 @@
             Captura numero digitado na tela e inclui no Array
         */
         btIncluir.onclick = function () {
-
+            num.push(Number(document.getElementById("idNum").value))
+            console.table(num)
         }
 
         /*
@@ -57,6 +58,28 @@
         */
         btOrdemCres.onclick = function () {
 
+            //num    = [2, 3, 20, 35]
+            //index     0  1   2  3   
+            //aux    = 20
+            //i      = 3
+            //i + 1  = 4 
+            //num.length = 4
+            //trocou = false
+            var trocou = true
+            while (trocou) {
+                trocou = false
+                for (let i = 0; i < (num.length - 1); i++) {
+                    if(num[i] > num[i + 1]){
+                        let aux = num[i]
+                        num[i] = num[i + 1]
+                        num[i + 1] = aux
+                        trocou = true 
+                    }                 
+                }
+            }
+
+           saida.value = num.toString()
+
         }
 
         /*
@@ -64,21 +87,39 @@
             usando lógica discreta 
         */
         btOrdemDecres.onclick = function () {
+            var trocou = true
+            while (trocou) {
+                trocou = false
+                for (let i = 0; i < (num.length - 1); i++) {
+                    if(num[i] < num[i + 1]){
+                        let aux = num[i]
+                        num[i] = num[i + 1]
+                        num[i + 1] = aux
+                        trocou = true 
+                    }                 
+                }
+            }
 
+           saida.value = num.toString()
         }
 
         /*
             Ordena em ordem crescente usando o médoto Array.sort() 
         */
         btOrdemCresSort.onclick = function () {
-
+            //num = num.sort()
+            //console.log(num);
+            saida.value = num.sort().toString()
         }
 
         /*
             Ordena em ordem decrescente usando o médoto Array.sort() 
         */
         btOrdemDecresSort.onclick = function () {
-
+            //num = num.reverse()
+            //console.log(num);
+            num = num.sort()
+            saida.value = num.reverse().toString()
         }
 
 

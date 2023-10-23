@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        //Não só de log é feito o console...
+
+        //Log Padrão
+        console.log("Isso é um log...")
+
+        //Para registrar erros: 
+        console.error("Isso é uma mensagem de erro!")
+
+        //Para registrar avisos (warnings): 
+        console.warn("Isso é uma mensagem de aviso!")
+        
+        //Mensagem para o console com debug em nível de log, 
+        //que fica escondido do usuário
+        console.debug("Isso é um registro para debug")
+        
+        //Mensagem informativa (não são necessáriamente de debug)
+        console.info("Isso é uma informação")
+        
+        //Exibir o conteúdo de um array/object em formato de tabela
+        var vetor = [25, 20, 45, 50]
+        console.table(vetor)
+        
+        var obj = {
+            nome: "Eu mesmo",
+            idade: 35,
+            cpf: "004.742.879.12",
+            cargo: "Tecnico"
+        }
+        console.table(obj)
+        
+        var matriz = [[1, 34, 45, 5],
+        [4, 25, 11, 5],
+        [6, 2, 35, 6],
+        [7, 4, 7, 8]]
+        console.table(matriz)
+        
+        var vetorObj = [{ nome: "Joao", idade: 23, cpf: "004.472.879-12", cargo: "Tecnico" },
+        { nome: "Josefina", idade: 21, cpf: "004.472.879-14", cargo: "Tecnico" },
+        { nome: "Maria", idade: 25, cpf: "004.472.879-13", cargo: "Tecnico" }]
+        
+        console.table(vetorObj)
+        
+        //Cria um contador que mede o tempo que uma determinada tarefa levou
+        console.time("label")
+        var teste = 0
+        for (let index = 0; index < 10000; index++) {
+            teste++
+            if (index == 5000) {
+                console.timeLog("label")   
+            } 
+        }
+        console.timeEnd("label")
+        
+        
+        //Mostra uma lista de propriedades do objeto
+        var obj = {
+            nome: "Eu mesmo",
+            idade: 35,
+            cpf: "004.742.879.12",
+            cargo: "Tecnico"
+        }
+        console.dir(obj)
+        
+        console.dirxml(obj)
+        
+        //Grava uma mensagem de erro no console se a afirmação for falsa. 
+        //Se a afirmação for verdadeira, nada acontece.
+        const msn = "# é ímpar!"
+        for (let index = 0; index < 10; index++) {
+            console.assert(index % 2 == 0, { index, msn })
+        }
+        
+        //O console.count() registra o número de vezes que essa chamada específica count() foi chamada.
+        let user = "";
+        
+        function greet() {
+            console.count("gree");
+           return `hi ${user}`;
+        }
+        
+        user = "bob";
+        greet();
+        user = "alice";
+        greet();
+        greet();
+        
+        //O console.countReset() redefine(zera) o contador usado com console.count().
+        console.countReset("gree")
+        greet(); //começará em 1 novamente...
+        
+        //O console.group()método cria um novo grupo embutido no log do console Web , 
+        //fazendo com que quaisquer mensagens subsequentes do console sejam recuadas 
+        //por um nível adicional, até que console.groupEnd()seja chamado.
+        console.log("Este é o nível externo");
+        console.group();
+        console.log("Nível 2");
+        console.group();
+        console.log("Nível3");
+        console.warn("Mais uma mensagem no nível 3");
+        console.groupEnd();
+        console.log("Devolta ao nível 2");
+        console.groupEnd();
+        console.log("Devolta ao nível externo");
+        
+        //Experimente usar console.groupCollapsed() no lugar de console.group() e veja o resultado... 
+        
+        
+        //O console.trace() gera um rastreamento de pilha 
+        function funcao1() {
+            funcao2();
+        }
+
+        function funcao2() {
+            funcao3();
+        }
+        
+        function funcao3() {
+            console.trace();
+        }
+
+        funcao1();
+
+        
+        
+        //Limpa o console
+        console.clear()
+        
+
+    </script>
+
+</body>
+
+</html>
