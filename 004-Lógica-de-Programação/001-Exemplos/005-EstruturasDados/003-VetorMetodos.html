@@ -15,12 +15,12 @@
         var array = [2, 3, 4, 5, 6, 7]
         var array2 = [2, 3, 4, 5, 6, 7]
         /*
-        array.length
-        array.toString()
-        array.push()
-        array.pop()
-        array.shift()
-        array.unshift()
+        array.length     //Tamanho do array
+        array.toString() //Retorna o conteúdo do array em formato String
+        array.push()     //Inserindo um novo elemento no final do array
+        array.pop()      //Tirar Elementos do Final do array 
+        array.shift()    //Tira Elementos do começo do array 
+        array.unshift()  //Insere um novo elemento no inicio do array
         */
 
         //inserir separadores entre os elementos e retornar como String (arquivos .csv)
@@ -154,8 +154,40 @@
             }
             return total 
         }, 0)
-
+        
         console.log(soma);
+        
+        
+        //Sort Ordenar em ordem Crescente 
+        var num = [2, 30, 10, 1, 0, 23, 12, 21, 100]
+        //Inverter o array
+        num.reverse()
+        console.log(num);
+
+
+
+        num.sort(function(a, b){
+            if (a > b) {
+                return 1
+            }
+            if (a < b) {
+                return -1
+            }
+            return 0 
+        })
+        console.log(num);
+        
+        //Sort Ordenar em ordem Decrescente 
+        num.sort(function(a, b){
+            if (a < b) {
+                return 1
+            }
+            if (a > b) {
+                return -1
+            }
+            return 0 
+        })
+        console.log(num);
 
 
 

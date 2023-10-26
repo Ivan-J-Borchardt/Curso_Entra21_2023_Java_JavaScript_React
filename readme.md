@@ -430,9 +430,6 @@ de 24/08/2023.
 - JavaScript - Um pouco mais sobre o comportamento das variáveis (var x let x const)
 
 
-
-
-
 ### Aula 38 - 2023.10.23 MON - 152h
 
 - Correção L7E5 (ordenação de vetores)

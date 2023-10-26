@@ -1,14 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <script>
-            
+
+        //No JS, uma matriz nada mais é do que um Vetor de vetores...        
+        var matriz = [
+            ["linha0 - col0", "linha0 - col1", "linha0 - col2"],
+            ["linha1 - col0", "linha1 - col1", "linha1 - col2"],
+            ["linha2 - col0", "linha2 - col1", "linha2 - col2"]
+        ]
+
+        console.log(matriz[0][1]);
+
+        //j=           0   1   2   3      i
+        var matriz = [[1, 34, 45, 5],//  0
+                      [4, 25, 11, 5],//  1 
+                      [6,  2, 35, 6],//  2
+                      [7,  4,  7, 8]]//  3
+
+        //Acessando uma posição especifica
+        let i = 3
+        let j = 2
+        var x = matriz[i][j]
+        console.log(x);
+        console.log("------------------------")
+        
+        //Iterando um Array 2D - Acessando cada posição do Array
+        console.log(matriz.length);
+        console.log(matriz[1].length)
+        
+        console.log("------------------------")
+        //i = 1
+        //j = 2
+        for (let i = 0; i < matriz.length; i++) {
+            for (let j = 0; j < matriz[i].length; j++) {
+                console.log(matriz[i][j]);
+            }
+        }
+
+        //Exemplo de um array 3D
+        var matriz3D = [[[1,   2], [3,   4], [5,   6]], 
+                        [[7,   8], [9,  10], [11, 12]], 
+                        [[13, 14], [15, 16], [17, 18]]]
+
+        console.log(matriz3D[0][0][1]);
+
+        //Um exemplo prático - 
+        var pizzas = []
+
+
+        
+        var pizza1 = []
+        pizza1[0] = "Grande" //dados que vem da tela....
+        pizza1[1] = 35
+        pizza1[2] = 35.00
+        pizzas.push(pizza1)
+        
+        var pizza3 = []
+        pizza3[0] = "pequena" //dados que vem da tela....
+        pizza3[1] = 15
+        pizza3[2] = 15.00
+        pizzas.push(pizza3)
+
+        var pizza = []
+        pizza[0] = "Gigante" //dados que vem da tela....
+        pizza[1] = 50        //diâmetro    
+        pizza[2] = 50.00     //preço 
+        pizzas.push(pizza)
+        
+        var pizza2 = []
+        pizza2[0] = "media" //dados que vem da tela....
+        pizza2[1] = 25
+        pizza2[2] = 25.00
+        pizzas.push(pizza2)
+        
+
+        console.table(pizzas)
+
+        //calculando a area da pizza
+        pizzas.forEach(pizza => {
+            let raio = pizza[1] / 2;
+            let area = Math.PI * (raio * raio)
+            console.log(area);
+            pizza.push(area)
+
+            let precoCm2 = pizza[2] / area
+            pizza.push(precoCm2)
+        })
+        console.table(pizzas);
+        /*
+        for (let i = 0; i < pizzas.length; i++) {
+            console.log(pizzas[i]);    
+        }
+        */
+
+        //Ordenando o array pelo "preço por cm2" 
+        pizzas.sort(function(a, b){
+            if (a[3] > b[3]) {
+                return 1
+            }
+            if (a[3] < b[3]) {
+                return -1
+            }
+            return 0 
+        })
+
+        console.table(pizzas)
 
     </script>
 </body>
+
 </html>

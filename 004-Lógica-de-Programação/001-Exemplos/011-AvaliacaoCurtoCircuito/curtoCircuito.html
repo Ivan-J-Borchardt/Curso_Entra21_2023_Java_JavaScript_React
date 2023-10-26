@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <input type="button" value="testar" onclick="testar()">
+    <script>
+
+        function testar() {
+            //Operador lógico "E": basta uma das condições ser FALSA para que 
+            //a expressão inteira seja falsa. 
+
+            //Faz avaliação de curto circuito,ou seja, a segunda expressão 
+            //não é executada se a primeira expressão retornar false
+            if (retornaFalse() && retornaTrue()) {
+                console.log("Entrou no IF (&&) - bloco True");
+            } else {
+                console.log("Entrou no IF (&&) - bloco False");
+            }
+
+
+            //Faz avaliação de circuito completo, independente do resultado 
+            //da segunda expressão, a segunda também será executada! 
+            if (retornaFalse() & retornaTrue()) {
+                console.log("Entrou no IF (&) - bloco True");
+            } else {
+                console.log("Entrou no IF (&) - bloco False");
+            }
+
+            //Operador lógico "OU": basta uma das condições ser VERDADEIRA para que 
+            //a expressão inteira seja VERDADEIRA. 
+            
+            //Faz avaliação de curto circuito,ou seja, a segunda expressão 
+            //não é executada se a primeira expressão retornar true
+            if (retornaTrue() || retornaFalse()) {
+                console.log("Entrou no IF (||) - bloco True");
+            } else {
+                console.log("Entrou no IF (||) - bloco False");
+            }
+
+            //Faz avaliação de circuito completo, independente do resultado 
+            //da segunda expressão, a segunda também será executada! 
+            if (retornaTrue() | retornaFalse()) {
+                console.log("Entrou no IF (|) - bloco True");
+            } else {
+                console.log("Entrou no IF (|) - bloco False");
+            }
+
+
+            console.log("------------------------------------------------");
+            var num = 9 & 3 
+            console.log(num);
+
+            var num = 9 | 3 
+            console.log(num);
+
+            var numBinario = 0b11
+            console.log(numBinario);
+
+            var numOctal = 0o11 
+            console.log(numOctal);
+            
+            var numHexadecimal = 0xff;
+            console.log(numHexadecimal);
+
+            var numExponencial = 2e3;
+            console.log(numExponencial);
+/*
+                       1001 9
+                       0011 3
+                       1011 
+
+*/
+        }
+
+
+        function retornaFalse() {
+            console.log("passou False");
+            return false
+        }
+        function retornaTrue() {
+            console.log("Passou True");
+            return true
+        }
+
+    </script>
+</body>
+
+</html>
