@@ -18,8 +18,8 @@
 
         const resulConst = num1 + num2
         console.log("resulConst " + resulConst);
+        
         //----- Adição 
-
         resultado = num1 + num2
         //resultado = num1 + 55
         console.log("Adição: " + resultado);
@@ -104,7 +104,8 @@
 
         */
 
-        //Biblioteca Math
+        /* Biblioteca Math
+        --------------------*/
         var pi = Math.PI; 
         console.log("PI " + pi);
 
@@ -122,14 +123,44 @@
         console.log("Num Randomico " + numRand);
 
 
-        /*Base numérica*/
-        //Números  hexadecimais = 0x14
-        console.log(0xf - 6);
+        /* Bases Numéricas
+        ---------------------*/
+        //Números binários 
+        var numBinario = 0b11
+        console.log(numBinario);
 
-        //Número octal = 0o12 
+        //Números octais 
+        var numOctal = 0o11 
+        console.log(numOctal);
+
         console.log(0o12 - 6);
+            
+        //Números hexadecimais 
+        var numHexadecimal = 0xff;
+        onsole.log(numHexadecimal);
+
+        //Notação exponencial
+        var numExponencial = 2e3;
+        console.log(numExponencial);
 
 
+        /* Operações lógicas bit-a-bit
+        -------------------------------*/
+        var num = 9 & 3 
+        console.log(num);
+        /* 9 E 3
+            0b1001 = 9
+            0b0011 = 3
+            0b0001 = 1
+        */
+
+        var num = 9 | 3 
+        console.log(num);
+        /* 9 OU 3
+            0b1001 = 9
+            0b0011 = 3
+            0b1011 = 11
+        */
     </script>
 </body>
 
