@@ -35,6 +35,26 @@ Recesso/Férias: 2023.12.22 - 2024.01.12
 Formatura e Mostra de Talentos: 2024.02.28 - 2024.02.29
 Último dia de Aula: 2024.03.01 
 ~~~
+## Backlog - Cronograma de entregas 
+
+#### Deadline: 2023.10.26 - postergado para 2023.10.29 4:00am (SUN)
+- [ ] Projeto Cifra de César (tempo estimado 4h)
+
+#### Deadline: 2023.10.30 4:00am (MON)
+- [ ] Projeto Verificador de Força de Senha (tempo estimado 6h)
+- [ ] Formulário Auto-Avaliação (tempo estimado 40min)
+
+#### Deadline: 2023.10.30 1:30pm (MON)
+- [ ] Lista de Exercícios 8 (tempo estimado 2h)
+
+#### Deadline: 2023.11.05 4:00am (SUN)
+- [ ] Projeto Precificação Pizzas (tempo estimado 8h)
+- [ ] Prova multipla escolha, logica e JavaScript - Recuperação (Opcional - tempo estimado 2h) 
+
+#### Deadline: 2023.11.13 4:00am (MON)
+- [ ] Projeto Conversor de Moedas usando API (tempo estimado 8h)
+
+
 ---
 ## Aulas 
 ### Aula 1 - 2023.08.14 MON - 4h
@@ -414,9 +434,6 @@ de 24/08/2023.
 ### Aula 35 - 2023.10.18 WED - 140h 
 - JavaScript - DOM - Criando elementos dinâmicamente via JS (parte 2)
 - Acessando Variaveis CSS pelo JavaScript*
-
-
-
 - JavaScript - Locais para declarar JS
 - Exercícios: Refatorar pelo menos 3 Exercícios, a escolha, extraíndo o JS interno para um arquivo.js
 
@@ -434,30 +451,52 @@ de 24/08/2023.
 
 - Correção L7E5 (ordenação de vetores)
 - JavaScript - Métodos de Array
-- JavaScript - Arrays multidimensionais
-- JavaScript - Métodos de Numbers
-- Precedência de operadores aritméticos
-- Precedência de operadores lógicos
-
-
-- CSS - Bootstrap
-
----
-- JavaScript - Processamento Assíncrono
-- JavaScript - Consumo de API com AJAX
-- Projeto: Desafio 4 - Conversor de Moedas
-
-- JavaScript - Consumo de API com fetch() - async/await 
-- JavaScript - Estruturas de Dados XML - JSON - JS Obj
-
-- JavaScript - Processamento Assíncrono - Promises
-- JavaScript - Processamento Assíncrono - Callbacks
-- JavaScript - Toasts 
+- JavaScript - Métodos map, reduce, filter
 
 ### Aula ID - 2023.10.24 TUE
 - Prof. Mateus
 
 ### Aula 39 - 2023.10.25 WED - 156h
+- JavaScript - Arrays multidimensionais
+- JavaScript - Métodos de Numbers
+- Precedência de operadores aritméticos
+- Precedência de operadores lógicos
+- JavaScript - Avaliação de curto-circuito 
+- JavaScript - Operações lógicas bit a bit 
+
+### Aula CF - 2023.10.26 THU 
+- Prof. Oscar
+
+### Aula 41 - 2023.10.27 FRI - 164h  
+- Preencher formulário Autoavaliação dossiê 2
+    https://forms.gle/RwH7E4Uaerfn7sCcA
+ 
+- Dúvidas Cifra de César
+
+- CSS - Bootstrap (O que é, como funciona, instalação, Layout, estilizando formulários)
+- Exercícios - Lista 8 
+---
+
+- JavaScript - Processamento Assíncrono
+- JavaScript - Consumo de API com AJAX
+- JavaScript - JSON, XML, etc
+- Projeto: Desafio 4 - Conversor de Moedas
+
+### Aula 42 - 2023.10.30 MON - 168h 
+- CSS - Bootstrap (Components)
+- JavaScript - Consumo de API com fetch() - async/await 
+- JavaScript - Estruturas de Dados XML - JSON - JS Obj
+
+### Aula ID - 2023.10.31 TUE
+- Prof. Mateus
+
+### Aula 43 -  - 172h 
+- CSS - Bootstrap (???)
+- JavaScript - Processamento Assíncrono - Promises
+- JavaScript - Processamento Assíncrono - Callbacks
+- JavaScript - Toasts 
+
+### Aula 44 -  - 176h
 - **Node** 
 - Node - Instalação do Node
 - Node - Criando e executando aplicações Node
@@ -466,17 +505,13 @@ de 24/08/2023.
 - Node - Instalando pacotes no projeto Node 
 - Node - Modules 
 
-
-### Aula CF - 2023.10.26 THU 
-- Prof. Oscar
-
-### Aula 41 - 2023.10.27 FRI - 164h  
+### Aula 45 -  - 180h  
 - Node - Criando o primeiro servidor http
 - Node - Criando uma API com o framework Express
 - Node - Roteamento 
 - Node - Trabalhando com arquivos estáticos 
 
-### Aula 42 - 2023.10.30 MON - 168h 
+### Aula 46 -  - 184h  
 - Node - Cors 
 - Node - Middlewares 
 - Node - Autenticação com JWT 
@@ -484,38 +519,31 @@ de 24/08/2023.
 - Node - Consistência em Arquivos 
 - Node - Tratamento de exceção 
 
-### Aula ID - 2023.10.31 TUE
-- Prof. Mateus
-
-### Aula 43 -  - 172h 
+### Aula 47 -  - 188h  
 - Node - Conceitos básicos de API REST 
 - Node - Métodos HTTP e suas responsabilidades 
 - Node - Status Codes 
 
-### Aula 44 -  - 176h
+### Aula 48 -  - 192h  
 - Node - Testes automatizados 
 - Node - Consumindo uma API no Backend (AXIOS)
 
-- **TypeScript** 
-### Aula 45 -  - 180h  
-### Aula 46 -  - 184h  
-### Aula 47 -  - 188h  
-### Aula 48 -  - 192h  
-- POO
 ### Aula 49 -  - 196h  
+- **TypeScript** 
 ### Aula 50 -  - 200h  
 ### Aula 51 -  - 204h  
 ### Aula 52 -  - 208h  
 ### Aula 53 -  - 212h  
 ### Aula 54 -  - 216h  
+- POO
 ### Aula 55 -  - 220h  
 ### Aula 56 -  - 224h  
 ### Aula 57 -  - 228h  
 ### Aula 58 -  - 232h  
-- DB
 ### Aula 59 -  - 236h  
 ### Aula 60 -  - 240h  
 ### Aula 61 -  - 244h  
+- DB
 ### Aula 62 -  - 248h 
 ### Aula 63 -  - 252h 
 ### Aula 64 -  - 256h 
@@ -610,6 +638,9 @@ de 24/08/2023.
 ### Comunicação & Organização do Curso 
 
 [![WhatsApp](https://img.shields.io/badge/Grupo-WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://chat.whatsapp.com/KyimwmWav9c2Go5DhGLNjO)
+
+- Formulário Autoavaliação Dossiê 2
+    https://forms.gle/RwH7E4Uaerfn7sCcA
 
 - Formulário para registrar o Status das Atividades: 
     https://forms.gle/yf7X8LRsMbaPRCt78
