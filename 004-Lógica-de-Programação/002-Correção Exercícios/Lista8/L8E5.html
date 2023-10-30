@@ -69,16 +69,16 @@
             while (trocou) {
                 trocou = false
                 for (let i = 0; i < (num.length - 1); i++) {
-                    if(num[i] > num[i + 1]){
+                    if (num[i] > num[i + 1]) {
                         let aux = num[i]
                         num[i] = num[i + 1]
                         num[i + 1] = aux
-                        trocou = true 
-                    }                 
+                        trocou = true
+                    }
                 }
             }
 
-           saida.value = num.toString()
+            saida.value = num.toString()
 
         }
 
@@ -91,16 +91,16 @@
             while (trocou) {
                 trocou = false
                 for (let i = 0; i < (num.length - 1); i++) {
-                    if(num[i] < num[i + 1]){
+                    if (num[i] < num[i + 1]) {
                         let aux = num[i]
                         num[i] = num[i + 1]
                         num[i + 1] = aux
-                        trocou = true 
-                    }                 
+                        trocou = true
+                    }
                 }
             }
 
-           saida.value = num.toString()
+            saida.value = num.toString()
         }
 
         /*
@@ -109,9 +109,15 @@
         btOrdemCresSort.onclick = function () {
             //num = num.sort()
             //console.log(num);
-            saida.value = num.sort().toString()
-
-       
+            saida.value = num.sort(function (a, b) {
+                if (a > b) {
+                    return 1
+                }
+                if (a < b) {
+                    return -1
+                }
+                return 0
+            }).toString()
         }
 
         /*
@@ -120,8 +126,17 @@
         btOrdemDecresSort.onclick = function () {
             //num = num.reverse()
             //console.log(num);
-            num = num.sort()
-            saida.value = num.reverse().toString()
+            // num = num.sort()
+            // saida.value = num.reverse().toString()
+            saida.value = num.sort(function (a, b) {
+                if (a < b) {
+                    return 1
+                }
+                if (a > b) {
+                    return -1
+                }
+                return 0
+            }).toString()
         }
 
 

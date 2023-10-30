@@ -37,7 +37,6 @@
         //Declaração de variáveis globais 
         var nomes = []
         var idades = []
-        var menoresDeIdade = []
         var nomesMenorDeIdade = []
         var btCadastrar = document.getElementById("idBtCadastrar")
         var btRelatorio = document.getElementById("idBtRelatorio")
@@ -49,6 +48,8 @@
         btCadastrar.onclick = function () {
             
             adquirirDadosTela()
+            
+            //Limpa Tela 
             document.getElementById("idNome").value = ""
             document.getElementById("idIdade").value = ""
 
@@ -61,26 +62,16 @@
          * Procedimentos para descobrir os menores de idade 
          */
         btRelatorio.onclick = function () {
-            //  1. Iterar o array de idades buscando os 
-            //     indices das posições que contém valor < 18 
-            idades.forEach((idade, index) => {
-                if (idade < 18) {
-                    menoresDeIdade.push(index)
-                }
-            });
-
-            //2. Acessar o array de nomes através dos indices 
-            //   encontrados no passo 1 e salvar os 
-            //   respectivos conteúdos em um array secundário 
-
-           // nomesMenorDeIdade.push(nomes[0])
-           // nomesMenorDeIdade.push(nomes[2])
-
-            menoresDeIdade.forEach(indMenorIdade => {
-                nomesMenorDeIdade.push(nomes[indMenorIdade])
+            //1. Filtrar o array de nomes buscando os nomes cuja idade 
+            //é menor que 18. Repare que estamos filtrando/iterando o array 
+            //nomes e estamos usando o indice de cada nome para acessar a idade 
+            //no array de idades.  
+            nomesMenorDeIdade = nomes.filter((nome, index)=>{
+                return  idades[index] < 18 
             })
 
-            //3. saída do relatório 
+        
+            //2. saída do relatório 
             saida.value = "Menores de Idade: " + nomesMenorDeIdade.toString()
         }
 
@@ -123,7 +114,7 @@
             if (idade < 0 || idade > 130 || idade == "") {
                 saida.value = "Idade inválida"
                 saida.classList.add("alerta")
-                document.getElementById("idIdade").focus()
+                document.getElementById("idNome").focus()
                 return false
             } 
             return true 

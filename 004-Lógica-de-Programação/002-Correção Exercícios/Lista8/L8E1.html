@@ -5,16 +5,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 </head>
 
 <body>
-    <!-- Lista de dados (seleção de item) -->
-    <label for="idFrutas">Frutas:</label><br>
-    <input list="idFrutas">
-    <datalist id="idFrutas">
-        <option value="0">tomate</option>
-        <option value="1">morango</option>
-    </datalist>
+
+    <section class="container my-5">
+        <div class="row">
+            <div class="col"></div>
+            <div class="col">
+                <!-- Lista de dados (seleção de item) -->
+                <label for="idFrutas" class="form-label">Frutas:</label><br>
+                <input class="form-control" list="idFrutas" placeholder="pesquise frutas...">
+                <datalist id="idFrutas">
+                </datalist>
+            </div>
+            <div class="col"></div>
+        </div>
+    </section>
 
     <script>
 
@@ -24,8 +33,8 @@
             O elemento deve constar na propriedade innerText e sua respectiva posição 
             deve ser posta no id do Option, conforme exemplo acima (veja no HTML)
         */
-       let datalist = document.getElementById("idFrutas")
-        frutas.forEach(function(element, index){
+        let datalist = document.getElementById("idFrutas")
+        frutas.forEach(function (element, index) {
             let option = document.createElement("option")
             option.innerText = element
             option.id = index
