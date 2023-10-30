@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //Assíncrono 
+        //Single Thread 
+        //IO Não Bloqueante 
+
+        console.log("Primeira Ação");
+
+        setTimeout(function () {
+            console.log("Segunda Ação");
+        }, 2000)
+
+
+        console.log("Terceira Ação");
+
+        setTimeout(function () {
+            console.log("Quarta Ação");
+        }, 2000)
+
+        console.log("Quinta Ação");
+
+    </script>
+</body>
+
+</html>
