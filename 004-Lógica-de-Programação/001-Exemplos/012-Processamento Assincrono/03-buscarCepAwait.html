@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <input type="text" id="idCep" placeholder="CEP...">
+        <input type="button" value="Buscar CEP" id="idBtBuscarCep">
+    </div>
+
+    <script>
+        //Assíncrono 
+        //Single Thread 
+        //IO Não Bloqueante 
+        
+        var btBuscarCep = document.getElementById("idBtBuscarCep")
+        
+        btBuscarCep.onclick =  async function () {
+            let endereco = await buscarCEP(document.getElementById("idCep").value)
+            console.log(endereco);
+        }
+        
+        async function buscarCEP(cep){
+            
+                var resposta = await fetch("https://viacep.com.br/ws/" + cep + "/json/")
+                //console.log(resposta);
+            return resposta.json()
+           
+        }
+        
+   
+
+    </script>
+    
+</body>
+</html>

@@ -32,7 +32,7 @@
             var xhr = new XMLHttpRequest()
 
             xhr.open("GET", "https://viacep.com.br/ws/" + cep + "/json/" )
-            
+           
             
             xhr.addEventListener("load", function(){
                 let resposta = xhr.responseText
@@ -47,11 +47,15 @@
         function imprimirEndereco(enderecoJSON){
             console.log(enderecoJSON)
 
-            let enderecoOBJ = JSON.parse(enderecoJSON)
+            let enderecoOBJ = JSON.parse(enderecoJSON) //Convertendo um JSON para JSObject
 
             console.log(enderecoOBJ);
 
             console.log("Logradouro " + enderecoOBJ.logradouro);
+
+            let endJSON =  JSON.stringify(enderecoOBJ) //Convertendo um JSObject para JSON
+
+            console.log(endJSON);
       
         }
 

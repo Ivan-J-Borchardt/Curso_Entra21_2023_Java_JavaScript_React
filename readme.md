@@ -477,21 +477,28 @@ de 24/08/2023.
 - Exercícios - Lista 8 
 ---
 
+
+
+### Aula 42 - 2023.10.30 MON - 168h 
+- CSS - Bootstrap (Gerenciamento de Layout)
+- Correção Lista 8
+
 - JavaScript - Processamento Assíncrono
 - JavaScript - Consumo de API com AJAX
 - JavaScript - JSON, XML, etc
 - Projeto: Desafio 4 - Conversor de Moedas
 
-### Aula 42 - 2023.10.30 MON - 168h 
-- CSS - Bootstrap (Components)
-- JavaScript - Consumo de API com fetch() - async/await 
-- JavaScript - Estruturas de Dados XML - JSON - JS Obj
+
 
 ### Aula ID - 2023.10.31 TUE
 - Prof. Mateus
 
 ### Aula 43 -  - 172h 
-- CSS - Bootstrap (???)
+- CSS - Bootstrap (Utilities)
+
+- JavaScript - Consumo de API com fetch() - async/await 
+- JavaScript - Estruturas de Dados XML - JSON - JS Obj
+
 - JavaScript - Processamento Assíncrono - Promises
 - JavaScript - Processamento Assíncrono - Callbacks
 - JavaScript - Toasts 
