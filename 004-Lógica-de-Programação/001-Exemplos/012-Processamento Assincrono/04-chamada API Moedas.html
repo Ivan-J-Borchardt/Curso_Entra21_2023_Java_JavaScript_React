@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <select name="" id="idMoedas">
+        <option value="BRL">Real</option>
+    </select>
+
+    <script>
+
+
+
+        //AJAX
+        function buscarMoedasAJAX() {
+            //AJAX - Fazer uma requisição HTTPs / Consumo de API
+            var xhr = new XMLHttpRequest()
+
+            xhr.open("GET", "https://olinda.bcb.gov.br/olinda/servico/PTAX/versao/v1/odata/Moedas?$top=100&$format=json&$select=simbolo,nomeFormatado,tipoMoeda")
+
+
+            xhr.addEventListener("load", function () {
+                let resposta = xhr.responseText
+                let moedas = JSON.parse(resposta)
+                //console.log(lMoedas);
+                carregarSelectMoedas(moedas)
+
+            })
+
+            xhr.send()
+
+        }
+
+        //Fetch
+        (async function () {
+            let moedas = await buscarMoedasFETCH()
+            console.log(moedas);
+            carregarSelectMoedas(moedas)
+        })()
+
+        
+        async function buscarMoedasFETCH() {
+
+            var resposta = await fetch("https://olinda.bcb.gov.br/olinda/servico/PTAX/versao/v1/odata/Moedas?$top=100&$format=json&$select=simbolo,nomeFormatado,tipoMoeda")
+
+            return resposta.json();
+
+        }
+
+
+
+        function carregarSelectMoedas(moedas) {
+            //carregando as moedas no select da tela... 
+            let listaMoedas = document.getElementById("idMoedas")
+            for (let i = 0; i < moedas.value.length; i++) {
+                console.log(moedas.value[i].simbolo)
+
+                let optionMoeda = document.createElement("option")
+                optionMoeda.value = moedas.value[i].simbolo
+                optionMoeda.innerText = moedas.value[i].nomeFormatado
+
+                listaMoedas.appendChild(optionMoeda)
+            }
+        }
+
+
+    </script>
+
+</body>
+
+</html>
