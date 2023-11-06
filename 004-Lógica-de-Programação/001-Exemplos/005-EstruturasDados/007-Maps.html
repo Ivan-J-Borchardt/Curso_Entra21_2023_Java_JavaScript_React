@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        /*
+            Maps são coleções de pares chave-valor, 
+            similar a JS-Objects, porém a chave pode
+            ser de qualquer tipo de dado. 
+            Maps preservam a ordem de inserção original. 
+        */
+
+        //Criando um map 
+        let pontuacao = new Map()
+
+        //Adicionando dados a um map
+        pontuacao.set("Joao", 90)
+        pontuacao.set("Alberto", 24)
+        pontuacao.set("Joana", 15)
+
+        console.log(pontuacao);
+
+        //Acessando os valores
+        console.log(pontuacao.get("Joao"));
+
+        //Excluindo elementos
+        pontuacao.delete("Alberto")
+
+        //Iterando um map 
+        for (const [nome, pontos] of pontuacao) {
+            console.log(nome + ": " + pontos);
+            
+        }
+
+    </script>
+</body>
+</html>

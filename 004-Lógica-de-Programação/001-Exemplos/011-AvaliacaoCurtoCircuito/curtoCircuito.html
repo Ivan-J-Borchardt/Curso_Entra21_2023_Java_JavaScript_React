@@ -35,7 +35,7 @@
 
             //Operador lógico "OU": basta uma das condições ser VERDADEIRA para que 
             //a expressão inteira seja VERDADEIRA. 
-            
+
             //Faz avaliação de curto circuito,ou seja, a segunda expressão 
             //não é executada se a primeira expressão retornar true
             if (retornaTrue() || retornaFalse()) {
@@ -52,42 +52,43 @@
                 console.log("Entrou no IF (|) - bloco False");
             }
 
+            function retornaFalse() {
+                console.log("passou False");
+                return false
+            }
+            function retornaTrue() {
+                console.log("Passou True");
+                return true
+            }
 
+            //Operações bit a bit 
             console.log("------------------------------------------------");
-            var num = 9 & 3 
+            var num = 9 & 3
             console.log(num);
 
-            var num = 9 | 3 
+            var num = 9 | 3
             console.log(num);
 
             var numBinario = 0b11
             console.log(numBinario);
 
-            var numOctal = 0o11 
+            var numOctal = 0o11
             console.log(numOctal);
-            
+
             var numHexadecimal = 0xff;
             console.log(numHexadecimal);
 
             var numExponencial = 2e3;
             console.log(numExponencial);
-/*
-                       1001 9
-                       0011 3
-                       1011 
-
-*/
+            /*
+                                   1001 9
+                                   0011 3
+                                   1011 
+            
+            */
         }
 
 
-        function retornaFalse() {
-            console.log("passou False");
-            return false
-        }
-        function retornaTrue() {
-            console.log("Passou True");
-            return true
-        }
 
     </script>
 </body>

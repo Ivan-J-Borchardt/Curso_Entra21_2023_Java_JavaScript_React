@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+            SessionStorage é similar a LocalStorage com a diferença que 
+            dados Session Storage expiram ao término da sessão. Isso 
+            significa que os dados são deletados quando o browser é fechado 
+            - Limite máximo de storage: 5MB por domínio  
+        */
+
+        const inventor = {
+            nome: "Alberto Santos Dummont", 
+            inventos: ["Balão a hélio", "Dirigivel", "Avião"],
+            nacionalidade: "Brasileiro" 
+        } 
+        const inventorJSON = JSON.stringify(inventor)
+
+        //Criando um novo registro
+        sessionStorage.setItem("inventor", inventorJSON)
+
+        //Lendo um registro 
+        const engenheiro = sessionStorage.getItem("inventor")
+        const JSONToInventor = JSON.parse(engenheiro)
+
+        console.log(JSONToInventor);
+
+        JSONToInventor.inventos.push("14-Bis")
+
+        //Atualizando um registro 
+        sessionStorage.setItem("inventor", JSONToInventor)
+
+        //Excluindo um registro
+        //sessionStorage.removeItem("inventor")
+
+
+
+
+    </script>
+</body>
+</html>

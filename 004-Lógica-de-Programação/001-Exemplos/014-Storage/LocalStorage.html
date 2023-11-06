@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+      
+        */
+
+        const inventor = {
+            nome: "Alberto Santos Dummont", 
+            inventos: ["Balão a hélio", "Dirigivel", "Avião"],
+            nacionalidade: "Brasileiro" 
+        } 
+        const inventorJSON = JSON.stringify(inventor)
+
+        //Criando um novo registro
+        localStorage.setItem("inventor", inventorJSON)
+
+        //Lendo um registro 
+        const engenheiro = localStorage.getItem("inventor")
+        const JSONToInventor = JSON.parse(engenheiro)
+
+        console.log(JSONToInventor);
+
+        JSONToInventor.inventos.push("14-Bis")
+
+        //Atualizando um registro 
+        localStorage.setItem("inventor", JSONToInventor)
+
+        //Excluindo um registro
+        //localStorage.removeItem("inventor")
+
+
+
+
+    </script>
+</body>
+</html>
