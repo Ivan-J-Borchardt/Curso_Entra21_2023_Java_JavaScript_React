@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+
+        function somar(a, b, funcaoCB) {
+            var res = a + b;
+            funcaoCB(res);
+        }
+
+        function subtrair(a, b, funcaoCB) {
+            var res = a - b;
+            funcaoCB(res);
+        }
+
+        somar(2, 3, function (params) {
+           console.log("Resul: " + params);
+        });
+
+        console.log(subtrair(8, 2, exibirResultado));
+
+        
+
+        function exibirResultado(resul) {
+            console.log(resul);
+        }
+        
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //Assíncrono 
+        //Single Thread 
+        //IO Não Bloqueante 
+
+        console.log("Primeira Ação");
+
+        buscarCEP("89107000", imprimir);//latencia ???
+
+
+        console.log("Terceira Ação");
+
+        setTimeout(function () {
+            console.log("Quarta Ação");
+        }, 2000)
+
+        console.log("Quinta Ação");
+
+
+        function buscarCEP(cep, funcaoCB){
+            //AJAX - Fazer uma requisição HTTPs / Consumo de API
+           
+            var xhr = new XMLHttpRequest()
+
+            xhr.open("GET", "https://viacep.com.br/ws/" + cep + "/json/" )
+           
+            
+            xhr.addEventListener("load", function(){
+                let resp = xhr.responseText
+                funcaoCB(resp)
+            })
+            
+            xhr.send()
+        }
+
+        function imprimir(end) {
+            console.log(end);
+        }
+
+    </script>
+</body>
+
+</html>

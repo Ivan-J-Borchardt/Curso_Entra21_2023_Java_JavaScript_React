@@ -38,18 +38,18 @@ Formatura e Mostra de Talentos: 2024.02.28 - 2024.02.29
 ## Backlog - Cronograma de entregas 
 
 #### Deadline: 2023.10.26 - postergado para 2023.10.29 4:00am (SUN)
-- [ ] Projeto Cifra de César (tempo estimado 4h)
+- [x] Projeto Cifra de César (tempo estimado 4h)
 
 #### Deadline: 2023.10.30 4:00am (MON)
-- [ ] Projeto Verificador de Força de Senha (tempo estimado 6h)
-- [ ] Formulário Auto-Avaliação (tempo estimado 40min)
+- [x] Projeto Verificador de Força de Senha (tempo estimado 6h)
+- [x] Formulário Auto-Avaliação (tempo estimado 40min)
 
 #### Deadline: 2023.10.30 1:30pm (MON)
-- [ ] Lista de Exercícios 8 (tempo estimado 2h)
+- [x] Lista de Exercícios 8 (tempo estimado 2h)
 
 #### Deadline: 2023.11.05 4:00am (SUN)
-- [ ] Projeto Precificação Pizzas (tempo estimado 8h)
-- [ ] Prova multipla escolha, logica e JavaScript - Recuperação (Opcional - tempo estimado 2h) 
+- [x] Projeto Precificação Pizzas (tempo estimado 8h)
+- [x] Prova multipla escolha, logica e JavaScript - Recuperação (Opcional - tempo estimado 2h) 
 
 #### Deadline: 2023.11.13 4:00am (MON)
 - [ ] Projeto Conversor de Moedas usando API (tempo estimado 8h)
@@ -652,7 +652,7 @@ de 24/08/2023.
 - Formulário para registrar o Status das Atividades: 
     https://forms.gle/yf7X8LRsMbaPRCt78
 
-- Planilhas Pergutas do dia:
+- Planilhas Perguntas do dia:
     - Git e GitHub  
         https://forms.gle/M9os3FjgWVAoC6Z48
     - HTML   

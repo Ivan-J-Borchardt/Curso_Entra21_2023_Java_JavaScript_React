@@ -8,7 +8,6 @@
 6. Sincronizar o repositório remoto (Git push origin <nomeDaBranch>) 
 
 
-
 ## Command Guide
 1. Verificando se o git está instalado (e qual versão está...)
 

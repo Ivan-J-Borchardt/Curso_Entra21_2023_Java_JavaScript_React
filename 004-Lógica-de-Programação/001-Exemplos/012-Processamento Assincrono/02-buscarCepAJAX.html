@@ -36,6 +36,7 @@
             
             xhr.addEventListener("load", function(){
                 let resposta = xhr.responseText
+                console.log(resposta);
                 imprimirEndereco(resposta)
             })
             
@@ -51,7 +52,7 @@
 
             console.log(enderecoOBJ);
 
-            console.log("Logradouro " + enderecoOBJ.logradouro);
+            console.log("Logradouro " + enderecoOBJ.localidade);
 
             let endJSON =  JSON.stringify(enderecoOBJ) //Convertendo um JSObject para JSON
 
