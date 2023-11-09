@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //-- Consumo de Promisses 
+        //BOM --> Bowser Object Model (document, navigator, screen, location, history)  
+        //DOM --> document.
+        fetch("https://viacep.com.br/ws/89107000/json/")
+        .then(function(resposta) { 
+            return resposta.json()
+        })
+        .then(function(responseText){
+            console.log(responseText);
+        })
+        .catch(function(erro){
+            console.log("Erro no buscarCep: " + erro);
+        })
+        .finally(function(){
+            console.log("Esta tarefa sempre será executada");
+        })
+
+
+    </script>
+</body>
+</html>

@@ -12,7 +12,7 @@
 ---
 ### Instruções Adicionais 
 1.	O projeto deverá ser versionado com Git e consolidado no repositório remoto Github.  
-- Crie um repositório chamado CasaDeCambio-[seu nome]
+- Crie um repositório chamado CasaDeCambio-[seu_nome]
 - Não esqueça de commitar periodicamente. Crie Commits que façam sentido e comente os commits adequadamente.
 
 2. O projeto deverá ser estilizado usando Bootstrap (capriche no visual)

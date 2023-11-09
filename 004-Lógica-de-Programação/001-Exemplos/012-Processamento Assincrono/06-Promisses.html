@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        //As Promises tem quatro estados:
+        //--------------------------------
+        //Pendente (Pending): Quando uma requisição acaba de ser feita e ainda não trouxe o resultado
+        //Realizada (Fulfilled): Quando o resultado da requisição foi retornado com sucesso
+        //Rejeitada (Rejected): Quando o resultado da requisição foi retornada com “erro”/problema
+        //Estabelecida (Settled): é o estado final independente se foi realizada ou rejeitada.
+
+        function promiseRealizada() {
+            return Promise.resolve("Promise resolvida")
+        }
+
+        promiseRealizada().then(function (param) {
+            console.log(param);//<---
+        })
+
+
+        function promiseRejeitada() {
+            let erro = {
+                msn: "Erro Http xxx",
+                cod: 500
+            }
+            return Promise.reject(erro)
+        }
+
+        promiseRejeitada().catch(function (erro) {
+            console.log(erro);
+        })
+
+        //-----------------------------------------------------
+
+        function fetch2(url) {
+            return new Promise(function (resolve, reject) {
+                //requisição assincrona... 
+                var xhr = new XMLHttpRequest()
+
+                xhr.open("GET", url)
+
+
+                xhr.addEventListener("load", function () {
+                    let resposta = xhr.responseText
+                    if (resposta) {
+                        resolve(resposta)
+                    }else{
+                        reject("Erro da Requisição")
+                    }
+                    
+                })
+
+                xhr.send()
+
+            })
+        }
+
+        console.log("Inicio do Script");
+
+        fetch2("https://viacep.com.br/ws/89107000/json/").then(function(resolve){
+            console.log(resolve);
+        })
+
+        console.log("Fim do Script");
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>
