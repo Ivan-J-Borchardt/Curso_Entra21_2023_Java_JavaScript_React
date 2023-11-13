@@ -1,0 +1,14 @@
+{
+  "name": "004-servidorexpress",
+  "version": "0.0.1",
+  "description": "Servidor Express Didatico",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ivan Borchardt",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}

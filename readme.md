@@ -481,6 +481,7 @@ de 24/08/2023.
 
 ### Aula 42 - 2023.10.30 MON - 168h 
 - CSS - Bootstrap (Gerenciamento de Layout)
+
 - Correção Lista 8
 
 - JavaScript - Processamento Assíncrono
@@ -493,52 +494,90 @@ de 24/08/2023.
 ### Aula ID - 2023.10.31 TUE
 - Prof. Mateus
 
-### Aula 43 -  - 172h 
+### Aula 43 - 2023.11.01 WED - 172h 
+
 - CSS - Bootstrap (Utilities)
+- JavaScript - Consumo de API com fetch() - async/await 
+- JavaScript - Estruturas de Dados XML - JSON - JS Obj
+
+### Feriado - 2023.11.02 THU
+
+### Emenda  - 2023.11.03 FRI
+
+### Aula 44 - 2023.11.06 MON - 176h
 
 - JavaScript - Consumo de API com fetch() - async/await 
 - JavaScript - Estruturas de Dados XML - JSON - JS Obj
 
+### Aula ID - 2023.11.07 TUE
+- Prof. Mateus
+
+### Aula 45 - 2023.11.08 WED - 180h  
+
 - JavaScript - Processamento Assíncrono - Promises
 - JavaScript - Processamento Assíncrono - Callbacks
-- JavaScript - Toasts 
 
-### Aula 44 -  - 176h
+### Aula DH - 2023.11.09 TUE
+- Prof. Viviane
+
+### Aula 46 - 2023.11.10 FRI - 184h  
+
+- Tempo para resolução de desafios
+
 - **Node** 
 - Node - Instalação do Node
 - Node - Criando e executando aplicações Node
+- Node - Modules 
+- Node - Criando o primeiro servidor http
+- Node - Modulo http - Rotas
+
+### Aula 47 - 2023.11.13 MON - 188h 
+
 - Node - Estrutura de um projeto Node
 - Node - Gerenciador de pacotes NPM e NPX
+- Node - Criando e gerenciando Dependencias usando NPM e GitHub
+- Node - Publicando Módulos no NPM
 - Node - Instalando pacotes no projeto Node 
-- Node - Modules 
-
-### Aula 45 -  - 180h  
-- Node - Criando o primeiro servidor http
 - Node - Criando uma API com o framework Express
 - Node - Roteamento 
-- Node - Trabalhando com arquivos estáticos 
+- Node - Nodemon
 
-### Aula 46 -  - 184h  
+### Aula ID - 2023.11.14 TUE
+- Prof. Mateus
+
+### Feriado - 2023.11.15 WED
+
+### Aula DH - 2023.11.16 TUE
+- Prof. Viviane
+
+### Aula 48 - 2023.11.17 FRI - 192h  
+- Node - Trabalhando com arquivos estáticos 
 - Node - Cors 
 - Node - Middlewares 
 - Node - Autenticação com JWT 
 
+### Aula 49 - 2023.11.20 MON - 196h  
+- ~~TypeScript~~ 
+
 - Node - Consistência em Arquivos 
 - Node - Tratamento de exceção 
-
-### Aula 47 -  - 188h  
 - Node - Conceitos básicos de API REST 
 - Node - Métodos HTTP e suas responsabilidades 
 - Node - Status Codes 
-
-### Aula 48 -  - 192h  
 - Node - Testes automatizados 
 - Node - Consumindo uma API no Backend (AXIOS)
 
-### Aula 49 -  - 196h  
-- **TypeScript** 
-### Aula 50 -  - 200h  
-### Aula 51 -  - 204h  
+### Aula ID - 2023.11.21 TUE
+- Prof. Mateus
+
+### Aula 50 - 2023.11.22 WED - 200h  
+
+### Aula DH - 2023.11.23 TUE
+- Prof. Viviane
+
+### Aula 51 - 2023.11.24 FRI - 204h 
+- **TypeScript**
+
 ### Aula 52 -  - 208h  
 ### Aula 53 -  - 212h  
 ### Aula 54 -  - 216h  

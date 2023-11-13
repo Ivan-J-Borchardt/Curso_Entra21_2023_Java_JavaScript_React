@@ -1,0 +1,19 @@
+{
+  "name": "testemodulonpm",
+  "version": "0.0.1",
+  "description": "Teste Pacote NPM",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ivan-J-Borchardt/testeModuloNpm.git"
+  },
+  "author": "Ivan Borchardt",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Ivan-J-Borchardt/testeModuloNpm/issues"
+  },
+  "homepage": "https://github.com/Ivan-J-Borchardt/testeModuloNpm#readme"
+}

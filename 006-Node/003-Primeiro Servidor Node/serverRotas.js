@@ -4,6 +4,7 @@ const servidor = http.createServer(function(req, resp){
     var resposta = 20
 
     let html 
+    //Rotas = Endpoint
     if (req.url == "/") {
         html = 
         `
@@ -31,7 +32,7 @@ const servidor = http.createServer(function(req, resp){
         ` 
     }
             
-    //Rotas = Endpoint
+   
     resp.end(html)
 })
 
