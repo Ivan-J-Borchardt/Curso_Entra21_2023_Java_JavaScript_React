@@ -551,6 +551,11 @@ de 24/08/2023.
 - Prof. Viviane
 
 ### Aula 48 - 2023.11.17 FRI - 192h  
+- Node - Express: Respondendo arquivos HTML
+- Node - Express: Rotas dinâmicas
+- Node - Express: Recebendo dados de Formulários por requisições GET
+- Node - Express: Recebendo dados de Formulários por requisições POST
+- JavaScript: Fazendo uma requisição POST com fetch() 
 - Node - Trabalhando com arquivos estáticos 
 - Node - Cors 
 - Node - Middlewares 

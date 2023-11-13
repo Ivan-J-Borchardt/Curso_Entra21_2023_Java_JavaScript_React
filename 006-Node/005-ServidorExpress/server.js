@@ -1,7 +1,6 @@
 const express = require("express") //O módulo express retorna uma função que instancia o express
 
 const app = express() //A função express cria uma instância de todo o framework express em app
-
 //Cria o Servidor com o express
 const porta = 3001
 app.listen(porta, function(){
@@ -26,6 +25,7 @@ app.get("/", function (req, resp) {
 })
 
 app.get("/livros", function(req, resp){
+
     resp.send(
         `<html>
             <head>
@@ -39,13 +39,22 @@ app.get("/livros", function(req, resp){
     )
 })
 
+//Retornando Um JSON
 app.get("/livro", function(req, resp){
 
     const livro = {
-        titulo : "Silencio dos inocentes", 
-        autor : "Thomas Harris" 
+        "titulo" : "Silencio dos inocentes", 
+        "autor" : "Thomas Harris" 
     }
 
     resp.json(livro)
 
 })
+
+//Rotas Dinâmicas
+app.get("/ola/:nome/:cargo", function(req, resp){
+    console.log(req.params.nome);
+    console.log(req.params.cargo);
+
+    resp.send("<h1> Ola " + req.params.nome + "</h1>")
+} )
