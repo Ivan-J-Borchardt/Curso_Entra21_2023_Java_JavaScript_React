@@ -533,13 +533,14 @@ de 24/08/2023.
 
 ### Aula 47 - 2023.11.13 MON - 188h 
 
-- Node - Estrutura de um projeto Node
-- Node - Gerenciador de pacotes NPM e NPX
-- Node - Criando e gerenciando Dependencias usando NPM e GitHub
-- Node - Publicando Módulos no NPM
-- Node - Instalando pacotes no projeto Node 
-- Node - Criando uma API com o framework Express
-- Node - Roteamento 
+- Node - NPM: Estrutura de um projeto Node
+- Node - NPM: Gerenciador de pacotes NPM e NPX
+- Node - NPM: Criando e gerenciando Dependencias usando NPM e GitHub
+- Node - NPM: Publicando Módulos no NPM
+- Node - NPM: Instalando pacotes no projeto Node 
+- Node - Express: Criando uma API com o framework Express
+- Node - Express: Roteamento 
+- Node - Express: Rotas dinâmicas
 - Node - Nodemon
 
 ### Aula ID - 2023.11.14 TUE
@@ -551,19 +552,29 @@ de 24/08/2023.
 - Prof. Viviane
 
 ### Aula 48 - 2023.11.17 FRI - 192h  
+- Git  - ignorando a pasta node_modules
+- Node - package.json - script - start/dev
 - Node - Express: Respondendo arquivos HTML
-- Node - Express: Rotas dinâmicas
+- Node - Path: __dirname, normalizando o path  
+
 - Node - Express: Recebendo dados de Formulários por requisições GET
 - Node - Express: Recebendo dados de Formulários por requisições POST
-- JavaScript: Fazendo uma requisição POST com fetch() 
+- JavaScript - Fazendo uma requisição POST com fetch() 
+
+
+### Aula 49 - 2023.11.20 MON - 196h  
+- ~~TypeScript~~ 
 - Node - Trabalhando com arquivos estáticos 
 - Node - Cors 
 - Node - Middlewares 
 - Node - Autenticação com JWT 
 
-### Aula 49 - 2023.11.20 MON - 196h  
-- ~~TypeScript~~ 
 
+
+### Aula ID - 2023.11.21 TUE
+- Prof. Mateus
+
+### Aula 50 - 2023.11.22 WED - 200h  
 - Node - Consistência em Arquivos 
 - Node - Tratamento de exceção 
 - Node - Conceitos básicos de API REST 
@@ -571,11 +582,8 @@ de 24/08/2023.
 - Node - Status Codes 
 - Node - Testes automatizados 
 - Node - Consumindo uma API no Backend (AXIOS)
+- Node - CommonJS Modules vs. ES6 Modules
 
-### Aula ID - 2023.11.21 TUE
-- Prof. Mateus
-
-### Aula 50 - 2023.11.22 WED - 200h  
 
 ### Aula DH - 2023.11.23 TUE
 - Prof. Viviane

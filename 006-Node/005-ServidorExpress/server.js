@@ -52,9 +52,11 @@ app.get("/livro", function(req, resp){
 })
 
 //Rotas Dinâmicas
+/*
 app.get("/ola/:nome/:cargo", function(req, resp){
     console.log(req.params.nome);
     console.log(req.params.cargo);
 
     resp.send("<h1> Ola " + req.params.nome + "</h1>")
 } )
+*/
