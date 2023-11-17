@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" method="">
+        <label for="idNome">Nome:</label><br>
+        <input type="text" name="nmNome" id="idNome"><br>
+        <label for="idCpf">CPF:</label><br>
+        <input type="text" name="nmCpf" id="idCpf"><br><br>
+        <input type="button" value="enviarGet" onclick="requisicaoGet()">
+        <input type="button" value="enviarPost" onclick="requisicaoPost()">
+    </form> 
+
+    <script>
+
+        async function requisicaoGet() {
+
+            let nome = document.getElementById("idNome").value
+            let cpf = document.getElementById("idCpf").value
+
+            let resposta = await fetch(`http://localhost:3001/usuario?nmNome=${nome}&nmCpf=${cpf}`)
+            console.log(await resposta.json()) 
+
+        }
+
+        async function requisicaoPost() {
+            let nome = document.getElementById("idNome").value
+            let cpf = document.getElementById("idCpf").value
+
+            var option = {
+                method : "POST", 
+                body: JSON.stringify({
+                    nmNome: nome,
+                    nmCpf: cpf
+                }),
+                headers: {"Content-Type":"application/json" }
+            }
+
+            let resposta = await fetch("http://localhost:3001/usuario", option)
+            console.log(await resposta.json());
+        }
+
+
+
+
+
+    </script>
+
+</body>
+</html>

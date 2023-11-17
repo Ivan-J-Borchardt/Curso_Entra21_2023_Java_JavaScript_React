@@ -23,8 +23,10 @@ Instalando o pacote Express:
 =============================================== 
 >npm install express@4.16.3 --save-exact
 
+
 //(versão = @4.16.3)
 
+>npm i nodemon -g 
 
 Baixar todas as dependencias do projeto
 ===============================================
