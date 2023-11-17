@@ -568,6 +568,8 @@ de 24/08/2023.
 
 ### Aula 49 - 2023.11.20 MON - 196h  
 - ~~TypeScript~~ 
+
+- JavaScript - Desestruturação de Arrays e Objetos (Destructuring) 
 - Node - Trabalhando com arquivos estáticos 
 - Node - Cors 
 - Node - Middlewares 
