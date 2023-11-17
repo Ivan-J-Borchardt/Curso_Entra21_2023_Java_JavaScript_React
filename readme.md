@@ -557,6 +557,10 @@ de 24/08/2023.
 - Node - Express: Respondendo arquivos HTML
 - Node - Path: __dirname, normalizando o path  
 
+- Node - Conceitos básicos de API REST 
+- Node - Métodos HTTP e suas responsabilidades 
+- Node - Status Codes 
+
 - Node - Express: Recebendo dados de Formulários por requisições GET
 - Node - Express: Recebendo dados de Formulários por requisições POST
 - JavaScript - Fazendo uma requisição POST com fetch() 
@@ -577,9 +581,7 @@ de 24/08/2023.
 ### Aula 50 - 2023.11.22 WED - 200h  
 - Node - Consistência em Arquivos 
 - Node - Tratamento de exceção 
-- Node - Conceitos básicos de API REST 
-- Node - Métodos HTTP e suas responsabilidades 
-- Node - Status Codes 
+
 - Node - Testes automatizados 
 - Node - Consumindo uma API no Backend (AXIOS)
 - Node - CommonJS Modules vs. ES6 Modules
