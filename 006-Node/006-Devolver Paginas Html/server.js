@@ -17,5 +17,5 @@ app.get("/", function(req, resp){
     console.log("dirname: " + path.dirname(__dirname));
     console.log("extname: " + path.extname("index.html"));
 
-    resp.sendFile(path.normalize(__dirname + "/paginas/index.html"))
+    resp.sendFile(path.join(__dirname + "/paginas/index.html"))
 })
