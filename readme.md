@@ -440,14 +440,14 @@ de 24/08/2023.
 ### Aula CF - 2023.10.19 THU 
 - Prof. Oscar
 
-### Aula 37 - 2023.10.20 FRI - 148h 
+### Aula 36 - 2023.10.20 FRI - 144h 
 - ~~Complexidade de Tempo e Espaço~~
 - Acessando Variaveis CSS pelo JavaScript *Correção do bug da última aula 
 - Correção L8E1
 - JavaScript - Um pouco mais sobre o comportamento das variáveis (var x let x const)
 
 
-### Aula 38 - 2023.10.23 MON - 152h
+### Aula 37 - 2023.10.23 MON - 148h
 
 - Correção L7E5 (ordenação de vetores)
 - JavaScript - Métodos de Array
@@ -456,7 +456,7 @@ de 24/08/2023.
 ### Aula ID - 2023.10.24 TUE
 - Prof. Mateus
 
-### Aula 39 - 2023.10.25 WED - 156h
+### Aula 38 - 2023.10.25 WED - 152h
 - JavaScript - Arrays multidimensionais
 - JavaScript - Métodos de Numbers
 - Precedência de operadores aritméticos
@@ -467,7 +467,7 @@ de 24/08/2023.
 ### Aula CF - 2023.10.26 THU 
 - Prof. Oscar
 
-### Aula 41 - 2023.10.27 FRI - 164h  
+### Aula 39 - 2023.10.27 FRI - 156h  
 - Preencher formulário Autoavaliação dossiê 2
     https://forms.gle/RwH7E4Uaerfn7sCcA
  
@@ -475,11 +475,8 @@ de 24/08/2023.
 
 - CSS - Bootstrap (O que é, como funciona, instalação, Layout, estilizando formulários)
 - Exercícios - Lista 8 
----
 
-
-
-### Aula 42 - 2023.10.30 MON - 168h 
+### Aula 40 - 2023.10.30 MON - 160h 
 - CSS - Bootstrap (Gerenciamento de Layout)
 
 - Correção Lista 8
@@ -489,40 +486,38 @@ de 24/08/2023.
 - JavaScript - JSON, XML, etc
 - Projeto: Desafio 4 - Conversor de Moedas
 
-
-
 ### Aula ID - 2023.10.31 TUE
 - Prof. Mateus
 
-### Aula 43 - 2023.11.01 WED - 172h 
-
+### Aula 41 - 2023.11.01 WED - 164h  
 - CSS - Bootstrap (Utilities)
-- JavaScript - Consumo de API com fetch() - async/await 
-- JavaScript - Estruturas de Dados XML - JSON - JS Obj
+- JavaScript - Processamento Assíncrono
+- JavaScript - Consumo de API com fetcdh e Async/Await
+
 
 ### Feriado - 2023.11.02 THU
 
 ### Emenda  - 2023.11.03 FRI
 
-### Aula 44 - 2023.11.06 MON - 176h
-
+### Aula 42 - 2023.11.06 MON - 168h 
 - JavaScript - Consumo de API com fetch() - async/await 
 - JavaScript - Estruturas de Dados XML - JSON - JS Obj
+- JavaScript - Exemplo Consumo API Moedas
 
 ### Aula ID - 2023.11.07 TUE
 - Prof. Mateus
 
-### Aula 45 - 2023.11.08 WED - 180h  
 
+### Aula 43 - 2023.11.08 WED - 172h 
 - JavaScript - Processamento Assíncrono - Promises
 - JavaScript - Processamento Assíncrono - Callbacks
 
-### Aula DH - 2023.11.09 TUE
-- Prof. Viviane
+### Aula DH - 2023.11.09 THU
+- Profa. Viviane
 
-### Aula 46 - 2023.11.10 FRI - 184h  
+### Aula 44 - 2023.11.10 FRI - 176h
 
-- Tempo para resolução de desafios
+ Tempo para resolução de desafios
 
 - **Node** 
 - Node - Instalação do Node
@@ -531,7 +526,8 @@ de 24/08/2023.
 - Node - Criando o primeiro servidor http
 - Node - Modulo http - Rotas
 
-### Aula 47 - 2023.11.13 MON - 188h 
+
+### Aula 45 - 2023.11.13 MON - 180h  -----
 
 - Node - NPM: Estrutura de um projeto Node
 - Node - NPM: Gerenciador de pacotes NPM e NPX
@@ -548,10 +544,11 @@ de 24/08/2023.
 
 ### Feriado - 2023.11.15 WED
 
-### Aula DH - 2023.11.16 TUE
-- Prof. Viviane
+### Aula DH - 2023.11.16 THU
+- Profa. Viviane
 
-### Aula 48 - 2023.11.17 FRI - 192h  
+### Aula 46 - 2023.11.17 FRI - 184h  
+
 - Git  - ignorando a pasta node_modules
 - Node - package.json - script - start/dev
 - Node - Express: Respondendo arquivos HTML
@@ -560,37 +557,55 @@ de 24/08/2023.
 
 - Node - Express: Recebendo dados de Formulários por requisições GET
 - Node - Express: Recebendo dados de Formulários por requisições POST
+- Node - Body-Parser: convertendo o corpo da requisição para JSON
 - JavaScript - Fazendo uma requisição POST com fetch() 
+
+
+### Aula 47 - 2023.11.20 MON - 188h 
+- ~~TypeScript~~ 
+
+- Node - Express: express.json() (equivalente ao Body-Parser)
+- JavaScript - Desestruturação de Arrays e Objetos (Destructuring) 
+
+- Node - Trabalhando com arquivos estáticos 
+- Node - Cors 
+- Node - Middlewares 
 
 - Node - Conceitos básicos de API REST 
 - Node - Métodos HTTP e suas responsabilidades 
 - Node - Status Codes 
 
-### Aula 49 - 2023.11.20 MON - 196h  
-- ~~TypeScript~~ 
-
-- JavaScript - Desestruturação de Arrays e Objetos (Destructuring) 
-- Node - Trabalhando com arquivos estáticos 
-- Node - Cors 
-- Node - Middlewares 
-- Node - Autenticação com JWT 
-
-
+- Node - Consistência em Arquivos 
 
 ### Aula ID - 2023.11.21 TUE
 - Prof. Mateus
 
-### Aula 50 - 2023.11.22 WED - 200h  
-- Node - Consistência em Arquivos 
+
+### Aula 48 - 2023.11.22 WED - 192h  
+
+- Node - Modulo fs (Consistência em arquivos)
 - Node - Tratamento de exceção 
 
-- Node - Testes automatizados 
+- Node - Construindo um CRUD
+
+- Node - Desafio Urna Eletrônica
+
+
+### Aula 49 - 2023.11.23 THU - 196h  
 - Node - Consumindo uma API no Backend (AXIOS)
+- Node - Autenticação com JWT 
+- Node - Testes automatizados 
 - Node - CommonJS Modules vs. ES6 Modules
 
+### Aula DH - 2023.11.24 FRI
+- Profa. Viviane
 
-### Aula DH - 2023.11.23 TUE
-- Prof. Viviane
+### Aula 50 - 2023.11.27 MON - 200h  
+
+
+
+### Aula ID - 2023.11.28 TUE
+- Prof. Mateus
 
 ### Aula 51 - 2023.11.24 FRI - 204h 
 - **TypeScript**
