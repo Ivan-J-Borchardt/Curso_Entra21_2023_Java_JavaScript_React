@@ -567,7 +567,6 @@ de 24/08/2023.
 - Node - Express: express.json() (equivalente ao Body-Parser)
 - JavaScript - Desestruturação de Arrays e Objetos (Destructuring) 
 
-- Node - Trabalhando com arquivos estáticos 
 - Node - Cors 
 - Node - Middlewares 
 
@@ -575,7 +574,6 @@ de 24/08/2023.
 - Node - Métodos HTTP e suas responsabilidades 
 - Node - Status Codes 
 
-- Node - Consistência em Arquivos 
 
 ### Aula ID - 2023.11.21 TUE
 - Prof. Mateus
@@ -583,6 +581,7 @@ de 24/08/2023.
 
 ### Aula 48 - 2023.11.22 WED - 192h  
 
+- Node - Trabalhando com arquivos estáticos 
 - Node - Modulo fs (Consistência em arquivos)
 - Node - Tratamento de exceção 
 

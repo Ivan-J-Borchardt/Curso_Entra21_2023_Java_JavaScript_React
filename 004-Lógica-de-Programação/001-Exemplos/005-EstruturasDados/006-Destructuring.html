@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+       const alfabeto = ["A", "B", "C", "D", "E", "F"]
+       const numbers = [1, 2, 3, 4, 5, 6] 
+       /*
+       var a = alfabeto[0]
+       var b = alfabeto[1]
+       */
+
+       //"Quebrando" o array em variaveis 
+       var [a,, c, ...resto] = alfabeto 
+       
+       console.log(a, c, resto);
+
+       //Concatenando dois arrays 
+       //var novoArray = alfabeto.concat(numbers)
+       var novoArray = [...alfabeto, ...numbers]
+
+       console.log(novoArray);
+
+       //Desconstruindo com valores "Default" 
+       function calculos(a, b) {
+            return [a+b, a*b, a/b]
+       }
+
+       var [som, mul, div = "indefinido"] = calculos(2, 5)
+
+       console.log(som, mul, div);
+
+       //Destructuring de Objetos 
+       const usuario = {
+            nome : "Alan Turing", 
+            cargo: "Matemático",
+            endereco: {
+                cidade: "london",
+                pais: "Inglaterra"
+            }, 
+            idade: 26
+        }
+
+        const usuario2 = {
+            idade: 31, 
+            filmePredileto: "A bela adormecida"
+        }
+
+
+        const {nome: nomeUso, cargo = "Programador", idade, ...restante} = usuario
+
+        const {endereco: {cidade}} = usuario
+
+
+        console.log(nomeUso, cargo, idade, restante);
+
+        console.log(cidade);
+
+         //"Juntando" dois objetos
+         const usuario3 = {...usuario, ...usuario2}
+        console.log(usuario3);
+
+        //Usando destructuring na chamada da função
+        function imprimirUsuario({nome, idade, filmePredileto = "Não Tem"}) {
+            console.log(`Nome: ${nome}. Idade: ${idade}. Filme Predileto: ${filmePredileto}`);
+        }
+
+        imprimirUsuario(usuario)
+        imprimirUsuario(usuario3)
+
+
+
+    </script>
+
+</body>
+</html>

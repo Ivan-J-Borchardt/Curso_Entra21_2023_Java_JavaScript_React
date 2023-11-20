@@ -22,7 +22,7 @@
             let nome = document.getElementById("idNome").value
             let cpf = document.getElementById("idCpf").value
 
-            let resposta = await fetch(`http://localhost:3001/usuario?nmNome=${nome}&nmCpf=${cpf}`)
+            let resposta = await fetch(`http://localhost:3000/usuario?nmNome=${nome}&nmCpf=${cpf}`)
             console.log(await resposta.json()) 
 
         }
@@ -40,7 +40,7 @@
                 headers: {"Content-Type":"application/json" }
             }
 
-            let resposta = await fetch("http://localhost:3001/usuario", option)
+            let resposta = await fetch("http://localhost:3000/usuario", option)
             console.log(await resposta.json());
         }
 

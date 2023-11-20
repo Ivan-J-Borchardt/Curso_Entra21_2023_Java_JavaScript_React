@@ -7,7 +7,7 @@
 
 - O Modelo REST foi a base para o protocolo HTTP. 
 
-## Conceitos:
+## Conceitos: RESTFull
 
 - Recursos:
     -  Aluno 
@@ -16,16 +16,16 @@
     -  Disciplinas
 
 - Identificador de Recursos (URI): 
-    -  Aluno(/alunos) 
-    -  Topico(/topicos) 
-    -  Curso(/cursos) 
-    -  Disciplinas(/disciplina)  
+    -  Aluno(/aluno) 
+    -  Topico(/topico) 
+    -  Curso(/curso) 
+    -  Disciplina(/disciplina)  
 
 - Manipulação de Recursos (Verbos HTTP):
 ~~~
        CRUD - Create, Read, Update, Delete
        ====== 
-       Consultas   GET/aluno
+       Consultas   GET/aluno     
                    GET/aluno/{id}
        Criar Novo  POST/aluno 
        Alterar     PUT/aluno
