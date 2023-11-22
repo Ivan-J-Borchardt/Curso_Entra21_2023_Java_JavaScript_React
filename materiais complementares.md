@@ -41,3 +41,6 @@
 
 ## Node
 - https://nodejs.org/dist/latest-v20.x/docs/api/
+- https://www.npmjs.com/package/express
+- https://www.npmjs.com/package/cors
+- https://developer.mozilla.org/en-US/docs/Web/HTTP

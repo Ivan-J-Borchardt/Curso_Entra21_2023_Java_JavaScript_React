@@ -1,0 +1,1 @@
+console.log("Encontrou o arquivo estático JS...");

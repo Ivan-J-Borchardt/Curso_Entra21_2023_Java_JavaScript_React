@@ -581,16 +581,18 @@ de 24/08/2023.
 
 ### Aula 48 - 2023.11.22 WED - 192h  
 
+- Postman 
+- Extenção do Chrome - Json Viewer
 - Node - Trabalhando com arquivos estáticos 
 - Node - Modulo fs (Consistência em arquivos)
-- Node - Tratamento de exceção 
 
-- Node - Construindo um CRUD
 
 - Node - Desafio Urna Eletrônica
 
 
 ### Aula 49 - 2023.11.23 THU - 196h  
+- Node - Tratamento de exceção 
+- Node - Construindo um CRUD
 - Node - Consumindo uma API no Backend (AXIOS)
 - Node - Autenticação com JWT 
 - Node - Testes automatizados 
