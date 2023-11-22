@@ -21,7 +21,7 @@ exemplo de conteúdo para o arquivo csv:
     a,12,alberto,img/foto2.jpg
 
 
-3. No backende criar um endpoint/rota ([get]/cargainicial) para fornecer os dados do arquivo config.csv.
+3. No backend criar um endpoint/rota ([get]/cargainicial) para fornecer os dados do arquivo config.csv.
    Esses dados devem ser fornecidos no corpo da resposta/response no formato array.  
 
 
@@ -30,8 +30,7 @@ exemplo de conteúdo para o arquivo csv:
    Chamar a função ao carregar a urna eletrônica (ao ligar a urna eletrônica) ---> isso vai retornar um array.
    Usar os dados recebidos para carregar/configurar a urna eletrônica:
      - se na posição [0,0] do array config contiver "a", então ocultar o campo RG da tela; 
-     - ler as posições 1, 2, 3 e carregar nas estruturas que serão exibidas na tela --> significa refatorar o 
-     frontend 
+     - quando o usuario digitar um numero de candidato, ler as posições 1, 2, 3 e carregar nos campos que serão exibidas na tela
 
 
 FN02. Registro de Votos 
@@ -43,7 +42,7 @@ FN02. Registro de Votos
    
    Exemplo de conteúdo para o arquivo csv: 
 
-       4072676,,202109022123219999
+       4072676,12,202109022123219999
        4072676,11,202109022123219999
 
        OBS. Em caso de votação anônima, deixar o RG vazio: 
@@ -89,16 +88,3 @@ FN03. Apuração dos votos
 2. Criar um novo Projeto Frontend para apresentar a apuração da votação.
    ** O layout/design desta página HTML pode ser definido livremente pelo desenvolvedor 
    
-
-FN04 Apuração dos votos em votações não anônimas 
-=========================================================================================================
-1. Criar um novo endpoint/rota ([get]/apuracao) para retornar a apuração dos votos. 
-   Ler o arquivo votacao.csv e contabilizar a quantidade de votos de cada candidato, votos brancos e votos nulos
-   Ao final da apuração retornar no response um array com o seguinte formato: 
-       
-       [[numeroDoCanditato,qtdVotos,nomeCandidato,urlFotoCandidato]]  
-
-       onde: numeroCandidato pode assumir o número do candidato, ou os termos ("Brancos" ou "Nulos")
-
-       Obs. O array deve estar ordenado em ordem decrescente pela quantidade de votos
-       
