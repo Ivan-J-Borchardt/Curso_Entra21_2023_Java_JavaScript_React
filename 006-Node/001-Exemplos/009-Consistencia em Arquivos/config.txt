@@ -1,0 +1,1 @@
+{"param1":"Parametro1","param2":1234,"param3":"Direita"}
