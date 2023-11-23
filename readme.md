@@ -581,27 +581,28 @@ de 24/08/2023.
 
 ### Aula 48 - 2023.11.22 WED - 192h  
 
-- Postman 
 - Extenção do Chrome - Json Viewer
 - Node - Trabalhando com arquivos estáticos 
 - Node - Modulo fs (Consistência em arquivos)
-
-
 - Node - Desafio Urna Eletrônica
 
 
 ### Aula 49 - 2023.11.23 THU - 196h  
+
+- Postman/Insomnia 
+- Node - Dicas/resolução Projeto Urna Eletrônica  
+
+
+### Aula DH - 2023.11.24 FRI
+- Profa. Viviane
+
+### Aula 50 - 2023.11.27 MON - 200h  
 - Node - Tratamento de exceção 
 - Node - Construindo um CRUD
 - Node - Consumindo uma API no Backend (AXIOS)
 - Node - Autenticação com JWT 
 - Node - Testes automatizados 
 - Node - CommonJS Modules vs. ES6 Modules
-
-### Aula DH - 2023.11.24 FRI
-- Profa. Viviane
-
-### Aula 50 - 2023.11.27 MON - 200h  
 
 
 
@@ -700,6 +701,10 @@ de 24/08/2023.
         https://www.postman.com/downloads/
 ~~~
 
+**Insomnia**
+~~~
+        https://insomnia.rest/download
+~~~
 
 **Lightshot**
 ~~~

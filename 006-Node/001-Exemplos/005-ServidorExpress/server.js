@@ -72,7 +72,9 @@ app.get("/livro", function(req, resp){
 })
 
 
+
 //Rota Get com passagem de parametros 
+//Retornando um Json 
 app.get("/usuario", function (req, resp) {
     
     
@@ -90,7 +92,25 @@ app.get("/usuario", function (req, resp) {
         })
 })
 
+
+//Rota Get com passagem de parametros 
+//Retornando um array
+app.get("/array", function (req, resp) {
+
+    let programadores = [
+        [ 'cbl1', 'Grace Hopper', 'Cobol', '1950' ],
+        [ 'js1', 'Brendan Eich', 'JavaScript', '1993' ],
+        [ 'jv1', 'Patrick Naughton', 'Java', '1991' ]
+      ]
+      
+
+    
+    resp.send(programadores)
+    //resp.json(programadores)
+})
+
 //Rota Post com passagem de parametros 
+//Retornando um Json
 app.post("/usuario", function(req, resp){
 
     //console.log(req);
