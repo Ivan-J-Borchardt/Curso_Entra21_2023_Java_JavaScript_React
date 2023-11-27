@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Urna Eletrônica</title>
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <script src="js/index.js" defer></script>
+    
+    <main>
+        <form method="">
+            <h1>Urna Eletrônica</h1>
+            
+            <div class="container">
+                <div class="candidato">
+                    <img src="img/politico.png" alt="imagem do candidato" id="idFoto">
+                    <p class="nomeCandidato" id="idNome">Candidato</p>
+                    <input type="number" name="numeroCandidato" id="inumeroCandidato" minlength="2" placeholder="Número do Candidato" value="00" required>
+                    <input type="text" name="nmCpf" id="idCpf" placeholder="Cpf do Votante">
+                </div>
+                
+                <div class="actionsUrna">
+                    <button type="button" class="confirma">Confirma</button>
+                    <button type="reset" class="corrige">Corrige</button>
+                    <button type="button" value="branco" class="branco">Branco</button>
+                </div>
+            </div>
+            
+        </form>
+    </main>
+    
+</body>
+</html>

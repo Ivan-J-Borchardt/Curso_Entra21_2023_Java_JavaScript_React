@@ -138,7 +138,7 @@ app.get("/ola/:nome/:cargo", function(req, resp){
 
 
 //Cria o Servidor com o express
-const porta = 3000
+const porta = process.env.PORTA || 3000
 app.listen(porta, function(){
     console.log(`Servidor Rodando na porta ${porta}`);
 })

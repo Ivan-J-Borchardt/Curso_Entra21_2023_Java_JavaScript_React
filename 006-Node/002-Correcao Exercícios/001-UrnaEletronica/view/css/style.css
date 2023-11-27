@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap'); /*Google Fonts*/
+
+*{                                                          /*Configurações Globais*/
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #e0e0e0;
+    height: 100vh;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+main{
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    background: #e0e0e0;
+    box-shadow:  20px 20px 60px #bebebe,
+                 -20px -20px 60px #ffffff;
+    width: 500px;
+    margin: auto;
+}
+
+h1{
+    text-align: center;
+    font-size: 2.5em;
+    color: #272727;
+    margin-bottom: 30px;
+}
+
+ .container{                    /* Container Input e Botões  */
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 300px;
+    font-size: 1.2em;
+}
+
+input{
+    color: black;
+    font-size: 1.3em;
+    padding: 5px;
+    border: none;
+    border-radius: 13px;
+    margin-bottom: 25px;
+    text-align: center;
+    max-width: 60%;
+}
+
+/* Section Candidato */
+
+.candidato{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.nomeCandidato{
+    margin-bottom: 20px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+img{
+    max-width: 170px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+/* Botões / Hover dos Botões */
+
+.actionsUrna{
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+button{
+    margin-top: 25px;
+    font-weight: bolder;
+    text-align: center;
+    color: #272727;
+    font-size: 1em;
+    padding: 13px;
+    border-radius: 8px;
+    min-width: 125px;
+    cursor: pointer;
+    text-transform: uppercase;
+    border: none;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.391);
+}
+
+button:hover{
+    transition: all .2s ease;
+}
+
+.confirma{
+    background-color: #7ac343;
+}
+
+.confirma:hover{
+    background-color: #5a9031;
+    color: #e0e0e0;
+}
+
+.corrige{
+    background-color: #f03139;
+    color: #e0e0e0;
+}
+
+.corrige:hover{
+    background-color: #932328;
+    color: white;
+}
+
+.branco:hover{
+    background-color: #bebebe;
+    color: white;
+}

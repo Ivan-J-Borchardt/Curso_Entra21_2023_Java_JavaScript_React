@@ -596,25 +596,32 @@ de 24/08/2023.
 ### Aula DH - 2023.11.24 FRI
 - Profa. Viviane
 
-### Aula 50 - 2023.11.27 MON - 200h  
-- Node - Tratamento de exceção 
-- Node - Construindo um CRUD
-- Node - Consumindo uma API no Backend (AXIOS)
-- Node - Autenticação com JWT 
-- Node - Testes automatizados 
-- Node - CommonJS Modules vs. ES6 Modules
+### Aula 50 - 2023.11.27 MON - 200h 
 
+- Node - Variáveis de ambiente / process.env.PORT
+- Node - Descobrir quais aplicações estão se comunicando por uma porta específica
+- Node - Projeto Urna Eletrônica
+- Node - Autenticação com JWT 
+- Node - CommonJS Modules vs. ES6 Modules
 
 
 ### Aula ID - 2023.11.28 TUE
 - Prof. Mateus
 
-### Aula 51 - 2023.11.24 FRI - 204h 
-- **TypeScript**
+### Aula 51 - 2023.11.29 WED - 204h 
+- Node - Construindo um CRUD
+- Node - Tratamento de exceção 
 
-### Aula 52 -  - 208h  
+### Aula DH - 2023.11.30 THU
+- Profa. Viviane
+
+### Aula 52 - 2023.12.01 FRI - 208h  
+- Node - Testes automatizados 
+- Node - Consumindo uma API no Backend (AXIOS)
+
 ### Aula 53 -  - 212h  
 ### Aula 54 -  - 216h  
+- **TypeScript**
 - POO
 ### Aula 55 -  - 220h  
 ### Aula 56 -  - 224h  

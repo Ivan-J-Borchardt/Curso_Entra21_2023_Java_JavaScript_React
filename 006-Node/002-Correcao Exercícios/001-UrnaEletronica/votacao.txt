@@ -1,0 +1,6 @@
+{"cpf":"992.232.233-98","numeroCandidato":10,"timestampVoto":"202311272022159999"}
+{"cpf":"992.232.233-98","numeroCandidato":10,"timestampVoto":"202311272022159999"}
+{"cpf":"992.232.233-98","numeroCandidato":10,"timestampVoto":"202311272022159999"}
+{"cpf":"992.232.233-98","numeroCandidato":10,"timestampVoto":"202311272022159999"}
+{"cpf":"992.232.233-98","numeroCandidato":10,"timestampVoto":"202311272022159999"}
+{"cpf":"992.232.233-98","numeroCandidato":10,"timestampVoto":"202311272022159999"}
