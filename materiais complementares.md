@@ -47,3 +47,6 @@
 
 ## Descobrir quais aplicações estão se comunicando por uma porta específica 
 - https://taskcenter.mega.com.br/hc/pt-br/articles/231463968-Como-descobrir-quais-aplica%C3%A7%C3%B5es-est%C3%A3o-se-comunicando-por-uma-porta-especifica-do-Windows
+
+## JWT - JSON Web Token
+- https://jwt.io/

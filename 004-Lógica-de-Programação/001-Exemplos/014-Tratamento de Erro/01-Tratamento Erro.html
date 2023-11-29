@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+
+        /*
+        try {
+            //vai a lógia a ser executada 
+        } catch (error) {
+            //Tratamento de eventuais erros 
+        } finally {
+           //Sempre será executado independe de dar erro ou não     
+        }
+      
+
+        //Erro de referencia (Reference error)
+        function erroReferencia() {
+            try {
+                let x = 3
+                x = y - 4
+                
+            } catch (error) {
+                alert("Error: " + error)
+                console.log(error.name);
+                console.log(error.message);
+                console.log(error.stack);
+    
+            }finally{
+                console.log("Linha abaixo do erro");
+            }
+            
+        }
+
+        function teste() {
+            erroReferencia()
+        }
+
+
+        teste()
+
+        //Erro de limite (Range Error)
+        let z = 3
+
+        try {
+            z.toPrecision(500)
+        } catch (error) {
+            console.log(error.name);
+            console.log(error.message);
+            console.log(error.stack);
+        }
+
+        //Erro de Sintaxe (Sintax Error)
+        try {
+            eval("console.log('dssdsdsds)")
+        } catch (error) {
+            console.log(error.name);
+            console.log(error.message);
+            console.log(error.stack);
+        }
+
+        //Erro de Tipagem (Type Error)
+        let y = 2
+        try {
+            y.toUpperCase()
+        } catch (error) {
+            console.log(error.name);
+            console.log(error.message);
+            console.log(error.stack);
+        }
+        
+        */
+
+        //Erros Personalizados 
+        try {
+
+            let isTrue = false
+            if (!isTrue) {
+                throw "deu erro no campo xyz..."
+            }
+
+
+        } catch (error) {
+            console.log(error);
+        }
+
+
+        //Criando objetos de erro personalizados
+        function UserException(msn) {
+            this.message = msn
+            this.name = "UserException"
+        }
+        
+
+        try {
+
+            let isTrue = false
+            if (!isTrue) {
+                throw new UserException("O campo Nome não pode ficar em branco!")
+            }
+
+        } catch (error) {
+            alert(error.name + "\n"+ error.message)
+            console.log(error);
+
+        }
+
+        //Usando o objeto Error
+
+        try {
+
+            let isTrue = false
+            if (!isTrue) {
+                throw new Error("Erro Personalizado")
+            }
+            
+        } catch (error) { //Error Handling 
+            console.log(error);
+            console.log(error.name);
+            console.log(error.message);
+            console.log(error.stack);
+        }
+
+
+        //Error Handling complexo... 
+        try {
+
+            let nome = ""
+            if (nome == "" || nome == " ") {
+                throw new Error("CampoNomeEmBranco")
+            }
+
+            let cpf = ""
+            if (cpf == "" || cpf == " ") {
+                throw new Error("CampoCpfEmBranco")
+            }
+            
+        } catch (error) {
+            
+            if (error.message == "CampoNomeEmBranco") {
+                alert("Informe seu nome")
+                //setar o foco no campo nome...
+                console.log(error.stack);
+            }
+
+            if (error.message == "CampoCpfEmBranco") {
+                alert("Informe seu CPF")
+                //setar o foco no campo cpf...
+                console.log(error.stack);
+            }
+
+
+        }
+
+
+
+
+
+    </script>
+    
+</body>
+</html>

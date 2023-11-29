@@ -27,7 +27,7 @@ Carga Horária:
 -   Empreendedorismo e Inovação : 8h/a 
 -   Contabilidade e Finanças    : 12h/a
 Aula Magna: 2023.08.28 
-Ciclo de Palestras: 2023.11.21 
+Ciclo de Palestras: 2023.12.05 
 Feriados e Emendas: 2023.09.07 e 2023.09.08
                     2023.10.12 e 2023.10.13
                     2023.11.02 e 2023.11.03 e 2023.11.15
@@ -567,7 +567,7 @@ de 24/08/2023.
 - Node - Express: express.json() (equivalente ao Body-Parser)
 - JavaScript - Desestruturação de Arrays e Objetos (Destructuring) 
 
-- Node - Cors 
+- Node - Segurança em aplicaçoes WEB - CORS 
 - Node - Middlewares 
 
 - Node - Conceitos básicos de API REST 
@@ -601,7 +601,6 @@ de 24/08/2023.
 - Node - Variáveis de ambiente / process.env.PORT
 - Node - Descobrir quais aplicações estão se comunicando por uma porta específica
 - Node - Projeto Urna Eletrônica
-- Node - Autenticação com JWT 
 - Node - CommonJS Modules vs. ES6 Modules
 
 
@@ -609,8 +608,12 @@ de 24/08/2023.
 - Prof. Mateus
 
 ### Aula 51 - 2023.11.29 WED - 204h 
+
+- Node - CommonJS Modules vs. ES6 Modules
+- Node - Tratamento de exceção/erros  
+- Node - Retornando Status Codes nas respostas HTTP
+- Node - Segurança em aplicaçoes WEB - Autenticação com JWT 
 - Node - Construindo um CRUD
-- Node - Tratamento de exceção 
 
 ### Aula DH - 2023.11.30 THU
 - Profa. Viviane
@@ -619,7 +622,11 @@ de 24/08/2023.
 - Node - Testes automatizados 
 - Node - Consumindo uma API no Backend (AXIOS)
 
-### Aula 53 -  - 212h  
+### Aula 53 -  - 212h
+
+- Node - Segurança em aplicaçoes WEB - HTTPS
+- Node - Segurança em aplicaçoes WEB - Autorização 
+
 ### Aula 54 -  - 216h  
 - **TypeScript**
 - POO

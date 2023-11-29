@@ -26,7 +26,7 @@ app.use(function(req, resp, next){
 
 
 //Rotas da aplicação
-app.get("/", function (req, resp) {
+app.status(200).get("/", function (req, resp) {
 
     //req.??? --> arquivo 
     resp.send(
@@ -46,7 +46,7 @@ app.get("/", function (req, resp) {
 
 app.get("/livros", function(req, resp){
 
-    resp.send(
+    resp.status(200).send(
         `<html>
             <head>
                 <meta charset="utf-8">
@@ -67,7 +67,7 @@ app.get("/livro", function(req, resp){
         "autor" : "Thomas Harris" 
     }
 
-    resp.json(livro)
+    resp.status(200).json(livro)
 
 })
 
@@ -86,7 +86,7 @@ app.get("/usuario", function (req, resp) {
 
     console.log("Chegou na rota usuario",  nome, cpf);
 
-    resp.json({
+    resp.status(200).json({
         "nomeUsu": nome, 
         "cpfUsu:": cpf
         })
@@ -105,7 +105,7 @@ app.get("/array", function (req, resp) {
       
 
     
-    resp.send(programadores)
+    resp.status(200).send(programadores)
     //resp.json(programadores)
 })
 
@@ -121,7 +121,7 @@ app.post("/usuario", function(req, resp){
     let {nmNome, nmCpf: cpf} = req.body
 
 
-    resp.json({
+    resp.status(200).json({
         "nomeUsu": nmNome, 
         "cpfUsu:": cpf
         })
@@ -133,7 +133,7 @@ app.get("/ola/:nome/:cargo", function(req, resp){
     console.log(req.params.nome);
     console.log(req.params.cargo);
 
-    resp.send("<h1> Ola " + req.params.nome + "</h1>")
+    resp.status(200).send("<h1> Ola " + req.params.nome + "</h1>")
 } )
 
 

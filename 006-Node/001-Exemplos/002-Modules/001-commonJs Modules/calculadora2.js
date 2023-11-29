@@ -13,3 +13,4 @@ console.log(mate.mult(2, 4));
 
 console.log(div(6, 3))
 console.log(mult(2, 4));
+

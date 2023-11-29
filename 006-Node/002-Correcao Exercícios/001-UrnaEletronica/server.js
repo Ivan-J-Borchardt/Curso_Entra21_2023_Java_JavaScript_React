@@ -51,12 +51,22 @@ app.post("/voto", async (req, res)=>{
     //2. Converter dados para formato .csv
 
     //3. Salvar os dados no arquivo votacao.csv
-    await fs.appendFile("votacao.txt", dado + "\n")
+    try {
+        await fs.appendFile("votacao.txt", dado + "\n")
 
-    res.json({
-        "Status" : "200",
-        "mensagem" : "Voto Registrado Com sucesso"
-       })
+        res.status(201).json({
+            "Status" : "200",
+            "mensagem" : "Voto Registrado Com sucesso"
+           })
+
+    } catch (error) {
+        console.log(error);
+        res.status(500).json({
+            "Status" : "500",
+            "mensagem" : "Erro ao registrar voto, contate o administrador do sistema"
+        })
+    }
+
 })
 
 
