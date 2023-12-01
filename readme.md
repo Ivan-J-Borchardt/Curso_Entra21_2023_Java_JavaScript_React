@@ -613,17 +613,20 @@ de 24/08/2023.
 - Node - Tratamento de exceção/erros  
 - Node - Retornando Status Codes nas respostas HTTP
 - Node - Segurança em aplicaçoes WEB - Autenticação com JWT 
-- Node - Construindo um CRUD
 
 ### Aula DH - 2023.11.30 THU
 - Profa. Viviane
 
 ### Aula 52 - 2023.12.01 FRI - 208h  
-- Node - Testes automatizados 
-- Node - Consumindo uma API no Backend (AXIOS)
+
+- Node - Segurança em aplicaçoes WEB - Autenticação com JWT (função de Logout)
+- JavaScript - LocalStorage e SessionStorage
+- JavaScript - Login/Logout no Frontend 
+- Node - Construindo um CRUD
 
 ### Aula 53 -  - 212h
-
+- Node - Testes automatizados 
+- Node - Consumindo uma API no Backend (AXIOS)
 - Node - Segurança em aplicaçoes WEB - HTTPS
 - Node - Segurança em aplicaçoes WEB - Autorização 
 

@@ -88,3 +88,47 @@ FN03. Apuração dos votos
 2. Criar um novo Projeto Frontend para apresentar a apuração da votação.
    ** O layout/design desta página HTML pode ser definido livremente pelo desenvolvedor 
    
+  
+FN04. Autenticação de eleitor
+=======================================================================================================
+1. Criar um arquivo eleitores.csv no backende/servidor com o seguinte formato: 
+(cpf,senha,nome)
+
+2. Criar um novo endpoint/rota ([post]/login) para efetuar a autenticação do eleitor. 
+- No corpo da requisição receber cpf e senha: 
+{
+   cpf: "004.768.212-12",
+   senha: "SohEuSei"
+}  
+
+- Verificar se a senha e cpf correspondem a algum registro do arquivo eleitores.csv.
+
+- Utilizar JWT para gerar um token de autenticação.
+
+- Caso o eleitor seja autenticado com sucesso, responder com o seguinte json: 
+
+{
+   "auth": true,
+   "nome": "Nome do Eleitor", 
+   token
+}
+
+
+3. Criar um novo endpoint/rota ([post]/logout) para efetuar o logout do eleitor. 
+- Registrar o token do eleitor em uma blacklist.
+- Verificar a blacklist nos procedimentos de login.
+
+FN05. Tela de Autenticação
+=======================================================================================================
+1. Criar uma tela de autenticação de eleitores. Esta tela deverá ser apresentada antes da tela da 
+Urna Eletrônica. A tela deverá ser composta pelos campos CPF e Senha e um botao login. 
+
+- A tela de autenticação deverá ser criada no mesmo projeto/html da urna eletrônica. Usar containeres e 
+manipulação do DOM para ocultar a tela da urna enquanto a tela de login estiver parecendo. 
+
+- Ao clique do botão Login, efetuar uma requisição na rota ([post]/login) passando o cpf e senha 
+no corpo da requisição. Esta requisição devolverá um token de autenticação que deverá ser guardado em uma
+váriavel de sessão (SessionStorage). 
+
+- Refatorar a rota ([POST]/voto), protegendo-a e permitindo que apenas eleitores autenticados possam registrar 
+votos. 
