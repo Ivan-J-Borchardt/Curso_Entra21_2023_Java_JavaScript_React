@@ -20,22 +20,22 @@
 
         //Criando um novo registro
         localStorage.setItem("inventor", inventorJSON)
-
         //Lendo um registro 
         const engenheiro = localStorage.getItem("inventor")
         const JSONToInventor = JSON.parse(engenheiro)
-
+        
         console.log(JSONToInventor);
-
+        
         JSONToInventor.inventos.push("14-Bis")
-
+        
         //Atualizando um registro 
         localStorage.setItem("inventor", JSONToInventor)
-
+        
         //Excluindo um registro
-        //localStorage.removeItem("inventor")
-
-
+        localStorage.removeItem("inventor")
+        
+        /*
+*/
 
 
     </script>

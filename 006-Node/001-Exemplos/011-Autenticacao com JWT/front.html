@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="text" id="idUser" placeholder="userId"><br>
+    <input type="text" id="idPass" placeholder="password"><br><br>
+    <input type="button" value="login" onclick="login()">
+    <input type="button" value="logout" onclick="logout()">
+    <input type="button" value="teste" onclick="user()">
+
+
+    <script>
+       
+
+        async function login() {
+            let user = document.getElementById("idUser").value
+            let senha = document.getElementById("idPass").value
+
+            const options = {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({
+                    "user": user,
+                    "password": senha
+                })
+            };
+
+            let res = await fetch('http://localhost:3000/login', options)
+            let autenticacao = await res.json()
+
+            sessionStorage.setItem("auth", autenticacao.token)
+
+            console.log(autenticacao);
+
+        }
+
+        async function logout() {
+            const options = {
+                method: 'POST',
+                headers: {
+                    'x-access-token': sessionStorage.getItem("auth")
+                }
+            };
+
+           sessionStorage.removeItem("auth")
+           let res =  await fetch('http://localhost:3000/logout', options)
+           console.log(res.status);
+        }
+
+
+
+        async function user() {
+
+            const options = {
+                method: 'GET',
+                headers: {
+                    'x-access-token': sessionStorage.getItem("auth")
+                }
+            };
+
+            let res = await fetch('http://localhost:3000/user', options)
+            console.log(res.status);
+        }
+
+
+
+    </script>
+
+</body>
+
+</html>
