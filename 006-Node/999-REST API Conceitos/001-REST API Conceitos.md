@@ -10,7 +10,7 @@
 ## Conceitos: RESTFull
 
 - Recursos:
-    -  Aluno 
+    -  Aluno  --> Entidade/Modelo 
     -  Topico 
     -  Curso 
     -  Disciplinas

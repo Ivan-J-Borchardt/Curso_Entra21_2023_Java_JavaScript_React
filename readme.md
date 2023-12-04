@@ -622,34 +622,87 @@ de 24/08/2023.
 - Node - Segurança em aplicaçoes WEB - Autenticação com JWT (função de Logout)
 - JavaScript - LocalStorage e SessionStorage
 - JavaScript - Login/Logout no Frontend 
-- Node - Construindo um CRUD
+- Node - Exercícios - Procedimentos de Login na Urna Eletrônica
 
-### Aula 53 -  - 212h
+### Aula 53 - 2023.12.04 MON - 212h
+- Node - Construindo um CRUD Parte 1/2
+- Node - Arquitetura MVC Parte 1
+
+### Aula ID - 2023.12.05 TUE
+- Prof. Mateus
+
+### Aula 54 - 2023.12.06 WED - 216h  
+- Node - Construindo um CRUD Parte 3/4
+- Node - Arquitetura MVC Parte 2
+
+### Aula DH - 2023.12.07 THU
+- Profa. Viviane
+
+### Aula 55 - 2023.12.08 FRI - 220h  
 - Node - Testes automatizados 
 - Node - Consumindo uma API no Backend (AXIOS)
+
+### Aula 56 - 2023.12.11 MON - 224h
 - Node - Segurança em aplicaçoes WEB - HTTPS
+- Node - Segurança em aplicaçoes WEB - HTTP/2 (extra)
 - Node - Segurança em aplicaçoes WEB - Autorização 
 
-### Aula 54 -  - 216h  
-- **TypeScript**
-- POO
-### Aula 55 -  - 220h  
-### Aula 56 -  - 224h  
-### Aula 57 -  - 228h  
-### Aula 58 -  - 232h  
-### Aula 59 -  - 236h  
-### Aula 60 -  - 240h  
-### Aula 61 -  - 244h  
-- DB
-### Aula 62 -  - 248h 
+### Aula ID - 2023.12.12 TUE
+- Prof. Mateus
+
+### Aula 57 - 2023.12.13 WED - 228h  
+- DB - Introdução 
+- BD - O que é um banco de dados
+- DB - Tipos de banco de dados
+- DB - Conceito de SGBD
+- DB - Sistema de Banco de dados 
+- DB - Abstração de dados
+- DB - Conceitos de Bancos de Dados Relacionais 
+- DB - Modelagem conceitual do banco de dados
+
+### Aula 58 - 2023.12.14 THU - 232h 
+
+- DB - MER 
+- DB - Normalização e Desnormalização 
+- DB - DDL
+
+### Aula DH - 2023.12.15 FRI
+- Profa. Viviane
+
+### Aula 59 - 2023.12.18 MON - 236h  
+- DB - DML 
+- DB - DQL 
+- DB - DTL 
+
+### Aula ID - 2023.12.19 TUE
+- Prof. Mateus
+
+### Aula 60 - 2023.12.20 WED - 240h  
+- DB - Exercícios 
+
+### Aula DH - 2023.12.21 THU
+- Profa. Viviane
+
+### Aula 61 - 2023.12.22 FRI - 244h  
+- Node - Persistência de dados em Banco de dados
+
+### 2023.12.23 - 2024.01.14
+- Recesso de Final de Ano
+
+### Aula 62 - 2024.01.15 MON - 248h
+- Volta às Aulas!!!
+
+
 ### Aula 63 -  - 252h 
 ### Aula 64 -  - 256h 
 ### Aula 65 -  - 260h 
 ### Aula 66 -  - 264h 
+- **TypeScript**
+- POO
 ### Aula 67 -  - 268h 
 ### Aula 68 -  - 272h 
 ### Aula 69 -  - 276h 
-- React
+- Reacton
 ### Aula 70 -  - 280h 
 ### Aula 71 -  - 284h 
 ### Aula 72 -  - 288h 
