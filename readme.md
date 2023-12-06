@@ -635,22 +635,16 @@ de 24/08/2023.
 - Node - Construindo um CRUD Parte 3/4
 - Node - Arquitetura MVC Parte 2
 
-### Aula DH - 2023.12.07 THU
-- Profa. Viviane
-
-### Aula 55 - 2023.12.08 FRI - 220h  
+### Aula 55 - 2023.12.07 THU - 220h  
 - Node - Testes automatizados 
 - Node - Consumindo uma API no Backend (AXIOS)
 
-### Aula 56 - 2023.12.11 MON - 224h
+### Aula 56 - 2023.12.08 FRI - 224h
 - Node - Segurança em aplicaçoes WEB - HTTPS
 - Node - Segurança em aplicaçoes WEB - HTTP/2 (extra)
 - Node - Segurança em aplicaçoes WEB - Autorização 
 
-### Aula ID - 2023.12.12 TUE
-- Prof. Mateus
-
-### Aula 57 - 2023.12.13 WED - 228h  
+### Aula 57 - 2023.12.11 MON - 228h  
 - DB - Introdução 
 - BD - O que é um banco de dados
 - DB - Tipos de banco de dados
@@ -660,11 +654,16 @@ de 24/08/2023.
 - DB - Conceitos de Bancos de Dados Relacionais 
 - DB - Modelagem conceitual do banco de dados
 
-### Aula 58 - 2023.12.14 THU - 232h 
+### Aula ID - 2023.12.12 TUE
+- Prof. Mateus
 
+### Aula 58 - 2023.12.13 WED - 232h 
 - DB - MER 
 - DB - Normalização e Desnormalização 
 - DB - DDL
+
+### Aula DH - 2023.12.14 THU
+- Profa. Viviane
 
 ### Aula DH - 2023.12.15 FRI
 - Profa. Viviane
