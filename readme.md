@@ -636,12 +636,13 @@ de 24/08/2023.
 - Node - Arquitetura MVC Parte 2
 
 ### Aula 55 - 2023.12.07 THU - 220h  
-- Node - Testes automatizados 
 - Node - Consumindo uma API no Backend (AXIOS)
-
-### Aula 56 - 2023.12.08 FRI - 224h
 - Node - Segurança em aplicaçoes WEB - HTTPS
 - Node - Segurança em aplicaçoes WEB - HTTP/2 (extra)
+- Node - Testes automatizados 
+
+### Aula 56 - 2023.12.08 FRI - 224h
+- Node - Testes automatizados 
 - Node - Segurança em aplicaçoes WEB - Autorização 
 
 ### Aula 57 - 2023.12.11 MON - 228h  

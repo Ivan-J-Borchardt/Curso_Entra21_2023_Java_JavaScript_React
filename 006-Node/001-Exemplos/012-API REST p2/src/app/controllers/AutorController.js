@@ -56,3 +56,6 @@ class AutorController{
 //padrao Singleton (Design Patterns)
 export default new AutorController
 
+
+
+

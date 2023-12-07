@@ -50,3 +50,6 @@
 
 ## JWT - JSON Web Token
 - https://jwt.io/
+
+## Testes Automatizados com JEST
+- https://jestjs.io/pt-BR/docs/api
