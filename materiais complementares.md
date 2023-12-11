@@ -53,3 +53,10 @@
 
 ## Testes Automatizados com JEST
 - https://jestjs.io/pt-BR/docs/api
+
+
+## Banco de dados
+-   https://www.tutorialsteacher.com/postgresql
+-   https://www.postgresqltutorial.com/postgresql-getting-started/ 
+-   https://www.tutorialspoint.com/postgresql/postgresql_update_query.htm
+-   https://www.w3schools.com/sql/default.asp
