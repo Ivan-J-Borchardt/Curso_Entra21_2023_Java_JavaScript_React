@@ -15,7 +15,7 @@ $ npm install --save-dev jest
 {
     "testEnvironment" : "node",
     "testMatch" : ["**/__tests__/**/*.js?(x)", "**/?(*.)+(spec|test).js?(x)"]
-      "transform": {}
+    "transform": {} 
 }
 ~~~
 ----OU----- 

@@ -645,7 +645,10 @@ de 24/08/2023.
 - Node - Testes automatizados 
 - Node - Segurança em aplicaçoes WEB - Autorização 
 
-### Aula 57 - 2023.12.11 MON - 228h  
+### Aula 57 - 2023.12.11 MON - 228h 
+- Criação Equipes
+- Desafio Despertador
+
 - DB - Introdução 
 - BD - O que é um banco de dados
 - DB - Tipos de banco de dados
@@ -659,6 +662,7 @@ de 24/08/2023.
 - Prof. Mateus
 
 ### Aula 58 - 2023.12.13 WED - 232h 
+- Metodologia Scrum/Git e GitHub/ Trello 
 - DB - MER 
 - DB - Normalização e Desnormalização 
 - DB - DDL

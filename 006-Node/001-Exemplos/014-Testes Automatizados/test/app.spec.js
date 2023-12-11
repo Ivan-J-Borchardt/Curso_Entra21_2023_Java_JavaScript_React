@@ -6,6 +6,8 @@ const request = supertest(app)
 describe("app.js", ()=>{
     test("Deveria retornar Ola e Status 200", async ()=>{
         let res = await request.get("/user")
+
+        
         expect(res.statusCode).toEqual(200)
         expect(res.body).toHaveProperty("msn")
         expect(res.body.msn).toEqual("Ola")
