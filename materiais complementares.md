@@ -60,3 +60,12 @@
 -   https://www.postgresqltutorial.com/postgresql-getting-started/ 
 -   https://www.tutorialspoint.com/postgresql/postgresql_update_query.htm
 -   https://www.w3schools.com/sql/default.asp
+
+### Ferramentas Online para Modelagem de Bases de dados / Diagramas / Fluxogramas
+- https://erdplus.com/
+- www.draw.io
+- www.lucidchart.com
+- www.canva.com
+
+### Simulador de Banco Online para estudos
+- https://sqliteonline.com/
