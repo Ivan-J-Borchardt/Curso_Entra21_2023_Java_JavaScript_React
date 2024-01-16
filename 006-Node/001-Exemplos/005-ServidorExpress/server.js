@@ -10,7 +10,6 @@ const app = express() //A função express cria uma instância de todo o framewo
 app.use(express.urlencoded({extended: false})) 
 app.use(express.json())
 
-
 //app.use(cors())
 app.use(function(req, resp, next){
     resp.setHeader("Access-Control-Allow-Origin", "*")

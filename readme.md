@@ -706,7 +706,7 @@ de 24/08/2023.
 ### Aula 67 -  - 268h 
 ### Aula 68 -  - 272h 
 ### Aula 69 -  - 276h 
-- Reacton
+- React
 ### Aula 70 -  - 280h 
 ### Aula 71 -  - 284h 
 ### Aula 72 -  - 288h 

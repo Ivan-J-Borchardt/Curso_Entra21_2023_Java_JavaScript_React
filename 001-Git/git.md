@@ -14,11 +14,11 @@
 3. Criar uma nova branch
 4. Dar Checkout na nova branch 
 3. Trabalhar/Desenvolver o projeto 
-4. Git add 
+4. Git add <file-name>
 5. Git commit 
 6. Git push origin <nomeDaBranch>
 7. Criar pull request (No GitHub)
-8. Validar a qualidade do código 
+8. Tratar eventuais Conflitos
 9. Dar Merge da Branch trabalhada na Branch Master (No)
 10. Deletar a Branch trabalhada 
 

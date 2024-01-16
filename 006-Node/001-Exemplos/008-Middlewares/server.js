@@ -11,12 +11,11 @@ app.use(function (req, resp, next) {
         next()
     } 
     resp.status(401).end() 
-
-
-   
+    
     next()
 
 })
+
 app.get("/", function (req, resp) {
     resp.json({msn: "Chegou na rota raiz"})
 })
