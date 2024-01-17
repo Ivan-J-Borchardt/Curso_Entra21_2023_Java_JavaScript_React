@@ -66,6 +66,7 @@
 - www.draw.io
 - www.lucidchart.com
 - www.canva.com
+- https://dbdiagram.io/home
 
 ### Simulador de Banco Online para estudos
 - https://sqliteonline.com/
