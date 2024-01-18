@@ -790,6 +790,11 @@ de 24/08/2023.
         https://keepass.info/download.html
 ~~~
 
+**PostgreSQL**
+~~~
+    https://www.enterprisedb.com/downloads/postgres-postgresql-downloads
+~~~
+
 ---
 ## Links úteis 
     
