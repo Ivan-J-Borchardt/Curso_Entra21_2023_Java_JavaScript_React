@@ -856,7 +856,7 @@ Ivan J. Borchardt
 
 ## Coordenadores
 
-### Coodenadora da turma & Monitoramento 
+### Coodenadora da turma
 
 Rebeca Braatz 
 
@@ -864,6 +864,12 @@ Rebeca Braatz
 
 
 E-mail: rebeca.silva@proway.com.br
+
+### Contato monitoramento 
+Anny Karolinyp
+
+[![WhatsApp](https://img.shields.io/badge/(47)9235_1168-WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://wa.me/qr/DRQRLT3OIOMQJ1) 
+
 
 ### License
 This project is under the MIT license.
