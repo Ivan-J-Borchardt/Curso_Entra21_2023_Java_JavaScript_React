@@ -663,9 +663,7 @@ de 24/08/2023.
 
 ### Aula 58 - 2023.12.13 WED - 232h 
 - Metodologia Scrum/Git e GitHub/ Trello 
-- DB - MER 
-- DB - Normalização e Desnormalização 
-- DB - DDL
+
 
 ### Aula DH - 2023.12.14 THU
 - Profa. Viviane
@@ -693,24 +691,61 @@ de 24/08/2023.
 ### 2023.12.23 - 2024.01.14
 - Recesso de Final de Ano
 
-### Aula 62 - 2024.01.15 MON - 248h
+
+### Aula ID - 2024.01.15 MON
+- Prof. Mateus
 - Volta às Aulas!!!
 
+### Aula 62 - 2024.01.16 TUE - 248h
+- DB - Modelagem 
 
-### Aula 63 -  - 252h 
-### Aula 64 -  - 256h 
-### Aula 65 -  - 260h 
-### Aula 66 -  - 264h 
+### Aula 63 - 2024.01.17 WED - 252h - 252h
+- DB - Modelagem 
+- DER
+
+### Aula 64 - 2024.01.18 THU - 256h 
+- DB - MER 
+- DB - Normalização e Desnormalização 
+
+### Aula 65 - 2024.01.19 FRI - 260h 
+- DB - DDL
+
+### Aula 66 - 2024.01.22 MON - 264h 
+- DB - DML
+
+### Aula ID - 2024.01.23 TUE
+- Prof. Mateus
+
+### Aula 67 - 2024.01.24 WED - 268h 
+- DB - DQL 
+- Avaliações e Pendencias (Questionário Multipla escolha/Trabalho desertador) 
+
+### Aula 68 - 2024.01.25 THU - 272h 
+- DB - Integrando SQL no NODE
+
+### Aula EI - 2024.01.26 FRI
+- Prof. Oscar 
+
+### Aula 69 - 2024.01.29 MON - 276h 
+- Apresentação Trabalho Despertador (15min. p/Equipe) 
+
+- **Trabalho de Conclusão** 
+    - Organização das equipes 
+    - Primeiras Etapas 
+
 - **TypeScript**
-- POO
-### Aula 67 -  - 268h 
-### Aula 68 -  - 272h 
-### Aula 69 -  - 276h 
-- React
+- TypeScript - O que é e para que server TypeScript 
+- TypeScript - Instalação 
+- TypeScript - Compilação/Transpilação 
+- TypeScript - Tipagem de variáveis
+- TypeScript - Tipagem de Funções 
 ### Aula 70 -  - 280h 
+- TypeScript - Criação de Tipos (Objetos e Interfaces)
 ### Aula 71 -  - 284h 
+- **POO**
 ### Aula 72 -  - 288h 
 ### Aula 73 -  - 292h 
+- **React**
 ### Aula 74 -  - 296h 
 ### Aula 75 -  - 300h 
 ### Aula 76 -  - 304h 
@@ -722,7 +757,6 @@ de 24/08/2023.
 ### Aula 82 -  - 328h 
 ### Aula 83 -  - 332h 
 ### Aula 84 -  - 336h 
-- Agile
 ### Aula 85 -  - 340h 
 - Trabalho de Conclusão 
 ### Aula 86 -  - 344h 
