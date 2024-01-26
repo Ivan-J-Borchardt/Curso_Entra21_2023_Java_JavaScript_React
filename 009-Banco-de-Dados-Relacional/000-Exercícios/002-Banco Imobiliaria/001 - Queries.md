@@ -2,7 +2,10 @@
 
 2. Selecione o nome do corretor, licença do corretor e todos os dados dos alugues negociados pelos seus respectivos corretores. 
 
+
 3. Busque a descricao do Imovel, valor do aluguel, e situação do imovel (se est=a alugado ou não) e o nome e telefone dos respectivos proprietarios. 
+
+
 
 4. Busque os Alugueis(codAlu, dataAlu e valorAluguel), com os respectivos nomes dos inquilinos e nome do corretor. 
 

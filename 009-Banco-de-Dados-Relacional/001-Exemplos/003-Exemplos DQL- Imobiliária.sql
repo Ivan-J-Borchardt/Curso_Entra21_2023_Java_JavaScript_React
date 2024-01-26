@@ -64,6 +64,20 @@ select imovel.descricao,
  where proprietario.codprop = imovel.codprop
    and imovel.codimo = aluguel.codimo;
 	   
+-- Alias de Tabela...     
+select c.nome as "Nome Corr",
+       c.licenca, 
+	   a.codalu, 
+	   a.codinq,
+	   a.codimo,
+	   a.codcorr,
+	   a.dataalug, 
+	   a.datavenc,
+	   a.valorauguel
+  from corretor c, aluguel a 
+  where c.codcorr = a.codcorr
+   order by codcorr, dataalug;
+ 
 	   
    
 

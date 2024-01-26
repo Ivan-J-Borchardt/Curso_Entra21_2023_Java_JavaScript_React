@@ -1,0 +1,15 @@
+{
+  "name": "015-integrando-banco-de-dados",
+  "version": "1.0.0",
+  "description": "Exemplo didatico SQL",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ivan Borchardt",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.4.1",
+    "pg": "^8.11.3"
+  }
+}
