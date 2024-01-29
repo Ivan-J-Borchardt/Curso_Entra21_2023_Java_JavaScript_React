@@ -1,12 +1,12 @@
-const path = require("path")
+import { join } from "path"
 
-const {Pool, Client} = require("pg")
+import { Pool, Client } from "pg"
 
-const env = require("dotenv")
+import { config } from "dotenv"
 
-env.config({
+config({
     overide: true,
-    path: path.join(__dirname, "conexao.env")
+    path: join(__dirname, "conexao.env")
 })
 
 const dadosConexao = {
@@ -25,11 +25,11 @@ async function salvarCorretor(id, nome, licenca, telefone){
 
     try {
 
-        const text = `insert into corretor values($1, $2, $3, $4) returning *`
+        const sql = `insert into corretor values($1, $2, $3, $4) returning *`
         const values = [id, nome, licenca, telefone]
-        const rows = await client.query(text, values)
+        const resp = await client.query(sql, values)
 
-        console.log(rows.rows)
+        console.log(resp.rows)
         
     } catch (error) {
        console.log(error)
