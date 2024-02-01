@@ -723,30 +723,50 @@ de 24/08/2023.
 ### Aula 68 - 2024.01.25 THU - 272h 
 - DB - Integrando SQL no NODE
 
-### Aula EI - 2024.01.26 FRI
-- Prof. Oscar 
-
-### Aula 69 - 2024.01.29 MON - 276h 
+### Aula 69 - 2024.01.26 FRI - 276h 
 - Apresentação Trabalho Despertador (15min. p/Equipe) 
 
 - **Trabalho de Conclusão** 
     - Organização das equipes 
     - Primeiras Etapas 
 
+
+### Aula 70 - 2024.01.29 MON  - 280h 
+- NODE - Revisão API REST, Arquitetura MVC 
+- NODE - Integrando o Banco de dados na API REST e arquitetura MVC
 - **TypeScript**
 - TypeScript - O que é e para que server TypeScript 
+
+### Aula ID - 2024.01.30 TUE
+- Prof. Mateus
+
+### Aula 71 - 2024.01.31 WED - 284h 
 - TypeScript - Instalação 
 - TypeScript - Compilação/Transpilação 
 - TypeScript - Tipagem de variáveis
-- TypeScript - Tipagem de Funções 
-### Aula 70 -  - 280h 
+- TypeScript - Criação de Interfaces
+- TypeScript - Object Literals
+- TypeScript - Arrays e Tuplas  
+
+### Aula 72 - 2024.02.01 THU - 288h 
+- TypeScript - Tipagem de Funções (parametros, retorno e parametros opcionais)
 - TypeScript - Criação de Tipos (Objetos e Interfaces)
-### Aula 71 -  - 284h 
-- **POO**
-### Aula 72 -  - 288h 
-### Aula 73 -  - 292h 
-- **React**
+- TypeScript - Generics 
+- POO - Classes vs. Objetos 
+- POO - Atributos, Métodos, Construtor 
+
+### Aula 73 - 2024.02.02 THU - 292h 
+- POO - Herança
+- POO - Composição 
+- POO - Interfaces 
+- POO - Encapsulamento 
+    - modificadores de acesso
+    - Getters e Setters
+    - Metodos Worker, etc
+
+
 ### Aula 74 -  - 296h 
+- **React**
 ### Aula 75 -  - 300h 
 ### Aula 76 -  - 304h 
 ### Aula 77 -  - 308h 
