@@ -204,3 +204,48 @@ var x4 = [{ax1: "saasd", ax2:3434}, {ax1: "saasd", ax2:3434}, {ax1: "saasd", ax2
 
 exibirItensArray(x2); 
 exibirItensArray(x4);
+
+
+
+//classe vs. objeto 
+class Pessoa {
+    //Atributos 
+    nome: string;
+    idade?: number; 
+    cpf?: string; 
+
+    //Métodos (Funções)
+    //Método Construtor 
+    constructor(nome: string, idade?: number, cpf?: string){
+        this.nome = nome; 
+        this.idade = idade;
+        this.cpf = cpf; 
+    }
+
+
+    //Métodos Getter e Setter
+
+    //Métodos Worker 
+    mostrarNomeUsuario(tipoUser: string):void{
+        console.log(`O Nome do Usuário é ${this.nome} tipo: ${tipoUser}`);
+    }
+
+
+}
+
+
+let pessoa = new Pessoa("Joao", 23, "0004.0009.333-23")
+let pessoa2 = new Pessoa("Evandro", 21)
+
+console.log(pessoa.nome);
+
+pessoa.nome = "Joana"
+
+console.log(pessoa.nome);
+
+console.log(pessoa);
+
+console.log(pessoa2.mostrarNomeUsuario("DBA"));
+
+
+
