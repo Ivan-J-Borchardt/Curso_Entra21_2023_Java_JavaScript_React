@@ -1,6 +1,5 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.ContaCorrente = void 0;
 class ContaCorrente {
     constructor(numCC, senha, saldo, limite) {
         this.saldo = 0;
@@ -63,7 +62,7 @@ class ContaCorrente {
         }
     }
 }
-exports.ContaCorrente = ContaCorrente;
+exports.default = ContaCorrente;
 //Program principal
 /*
 let contaCorrente = new ContaCorrente("1")

@@ -1,0 +1,156 @@
+<!--
+/********* Web Technology Development Training **************************************************
+ * Instructor  : Ivan J. Borchardt - linkedin.com/in/ivan-borchardt/
+ *                                 - github.com/Ivan-J-Borchardt
+ * Description : Introduction to Object Oriented Programming - Encapsulation
+ * Date        : 01.2021 
+ ************************************************************************************************/
+--->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        
+    </body>
+    <!-- Referencia as classes Cliente e Conta no projeto-->
+    <script src="./Cliente.js"></script> 
+    <script src="./Conta.js"></script>
+    <script src="./Banco.js"></script>
+    <script>
+        let num = 0; 
+
+        let banco  = new Banco("Banco Blumenau", "000.000.000/0001-00", 1246);
+        cadastrarCliente(); 
+        num++
+        cadastrarCliente();
+        num++
+        cadastrarCliente();
+
+        //chamada da função depositar
+        let status =  depositar(1, 122.00); 
+        console.log(status);
+
+        let cliente0 = banco.getCliente(0); 
+        console.log("Cliente 0 " + cliente0.conta.saldo); 
+        console.log("Cliente 1 " + banco.getCliente(1).conta.saldo); 
+        console.log("Cliente 2 " + banco.getCliente(2).conta.saldo); 
+
+        //Chamada da função sacar
+        sacar(2, 250.00); 
+        
+        console.log("Cliente 0 " + consultarSaldo(0)); 
+        console.log("Cliente 1 " + consultarSaldo(1)); 
+        console.log("Cliente 2 " + consultarSaldo(2)); 
+
+
+
+        function cadastrarCliente(){
+            
+            let nome     = "Joao Pedrosa";
+            let cpf      = "000.000.000-0" + num;
+            let rg       = "0.000.000 ssp/Sc";
+            let endereco = "Rua das palmeiras";
+            
+            let numConta = "1234-2" + num; 
+            let saldoIni = 1000.00;
+            let limite   = 500.00;
+            let tipo     = 1; 
+            let senha    = "Trocar123"; 
+            
+            let conta = new Conta(numConta, saldoIni, limite, senha, tipo);
+            
+            let cliente = new Cliente(nome, conta, cpf, rg, endereco);
+            banco.adicionaCliente(cliente); 
+
+        }
+
+        function depositar(codCliente, valorDeposito){
+            //depositando valor na conta do cliente x
+            return banco.getCliente(codCliente).conta.depositar(valorDeposito); 
+            
+        }
+
+        function sacar(codCliente, valorSaque){
+            let status = banco.getCliente(codCliente).conta.sacar(valorSaque); 
+            return status;
+        }
+
+        function consultarSaldo(codCliente){
+            return banco.getCliente(codCliente).conta.saldo; 
+        }
+
+
+
+
+
+
+
+
+
+        /*
+        //Cria o objeto cliente através da chamada do construtor Cliente(nome, conta)
+        let conta1 = criarConta("1234-0", 500.00, 200.00, "Trocar123"); 
+        
+        let cliente = new Cliente("Joao", conta1); //Neste exemplo, o nome está sendo passado por valor (Já que é um tipo primitivo)
+                                                   //já a conta, por ser ujm objeto, está sendo passado por referencia (seu endereço está
+                                                   //sendo passado para o objeto cliente)
+
+        conta1.depositar(123); //Observe que estamos depositando diretamente na conta1 (não estamos passando pelo cliente) 
+        console.log("Saldo do cliente :" + cliente.conta.saldo); //ao verificar o saldo veremos que o depósito anteriror ocorreu para 
+                                                                 //a conta do cliente... 
+
+
+        let cliente2 = new Cliente("José", criarConta("1234-2", 500.00, 200.00, "Trocar123"));
+       
+        let cliente3 = new Cliente("Alberto", criarConta("1234-3", 500.00, 200.00, "Trocar123"));
+
+        console.log("---->" + cliente.conta); //Mostra o objeto "conta" que está associado ao cliente 
+
+
+        console.log("Qtd Clientes: " + Cliente.contadorCliente); //Exibe a qtd de objetos da classe Cliente que foram 
+                                                                 //criados em memória
+
+
+        console.log(cliente.conta.numConta); 
+
+        //Alterando o nome do cliente através do método "set nome"
+        cliente.nome = "Joao"; 
+
+        //acessa o método depositar da conta que está contida no objeto cliente  
+        cliente.conta.depositar(1000); 
+
+        console.log(cliente);
+
+
+
+
+        //acessa o método sacar da conta que está contida no objeto cliente  
+        //e recebe o retorno do método na variável statusOp
+        let statusOp = cliente.conta.sacar(1600.00); 
+        if (statusOp) {
+            console.log("Saque realizado com sucesso");
+        } else {
+            console.log("Saldo insuficiente para realizar saque"); 
+        }
+
+
+      
+        function criarConta(numConta, saldoInicial, limite, senhaInicial){
+            //Cria o objeto conta1...
+            let conta1 = new Conta(numConta, saldoInicial, limite, senhaInicial);
+
+            return conta1; //Retorna a referência ao objeto conta1, ou seja, o endereço 
+                           //do objeto na memória
+        }
+        */
+
+
+    </script>
+
+
+</html>

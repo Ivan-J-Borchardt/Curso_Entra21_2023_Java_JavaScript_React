@@ -1,4 +1,4 @@
-import { ContaCorrente } from "./ContaCorrente"
+import  ContaCorrente  from "./ContaCorrente"
 
 export class Cliente{
 

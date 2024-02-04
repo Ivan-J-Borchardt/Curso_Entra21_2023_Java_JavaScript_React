@@ -2,6 +2,7 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.Cliente = void 0;
 class Cliente {
+    //private endereco: Endereco
     constructor(nome, cpf, conta) {
         this.nome = nome;
         this.cpf = cpf;

@@ -1,4 +1,4 @@
-export class ContaCorrente{
+class ContaCorrente{
     //Modificadores de Acesso: public, private, protected, readonly 
     private  numCC: string
     private  saldo: number = 0 
@@ -73,6 +73,8 @@ export class ContaCorrente{
     }
 
 } 
+
+export default ContaCorrente
 
 //Program principal
 /*
