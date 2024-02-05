@@ -15,6 +15,7 @@ export abstract class Veiculo{
     }
 }
 
+
 //Classe Concreta
 export class Carro extends Veiculo{
 
@@ -46,6 +47,8 @@ export class Carro extends Veiculo{
         //Se checkup Ok - Retornar True, senão Retornar False
         return true 
     }
+
+
 
 }
 

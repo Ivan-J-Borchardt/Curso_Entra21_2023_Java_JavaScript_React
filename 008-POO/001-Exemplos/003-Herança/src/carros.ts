@@ -38,6 +38,7 @@ export class Suv extends Carro {
 
     //Getters e Setters 
     public getVolumePortaMalas(): number{
+   
         return this.volumePortaMalas
     }
     
@@ -57,6 +58,8 @@ export class Suv extends Carro {
 var ecoSport = new Suv(23, 'Ford', '2.0')
 
 console.log(`Carro Ligado: ${ecoSport.ligarMotor()}`);
+
+
 console.log(`Marca: ${ecoSport.getMarca()}`);
 //console.log(`Marca: ${ecoSport.marca}`);
 

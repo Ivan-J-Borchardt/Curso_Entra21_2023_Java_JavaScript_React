@@ -17,7 +17,7 @@ export class Calculadora {
     }
 
     /**
-     * 
+     * Calcula a area do circulo a partir do raio
      * @param raio 
      * @returns areaCirculo
      */
@@ -26,6 +26,12 @@ export class Calculadora {
         return areaCirculo
     }
 
+    /**
+     * 
+     * @param baseRet 
+     * @param alturaRet 
+     * @returns areaRetangulo (number)
+     */
     static areaRetangulo(baseRet: number, alturaRet:number):number{
         let areaRetangulo:number = baseRet * alturaRet
         return areaRetangulo

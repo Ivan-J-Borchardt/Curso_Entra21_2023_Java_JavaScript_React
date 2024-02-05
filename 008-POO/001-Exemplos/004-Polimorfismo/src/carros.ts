@@ -78,7 +78,6 @@ export class Suv extends Carro {
     }
 
 
-
     private ligarLuzes(): boolean{
         if (this.modoLuzCarro === "auto") {
             this.isLuzLigada = true 
@@ -86,6 +85,14 @@ export class Suv extends Carro {
             this.isLuzLigada = false
         }
         return this.isLuzLigada
+    }
+
+    public exibirItensArray<T>(vetor: T[]){
+
+        vetor.forEach(element => {
+            console.log(element);
+        });
+    
     }
 
 }
