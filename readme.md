@@ -755,35 +755,52 @@ de 24/08/2023.
 - POO - Classes vs. Objetos 
 - POO - Atributos, Métodos, Construtor 
 
-### Aula 73 - 2024.02.02 THU - 292h 
-- POO - Herança
-- POO - Composição 
-- POO - Interfaces 
+### Aula 73 - 2024.02.02 FRI - 292h 
 - POO - Encapsulamento 
     - modificadores de acesso
     - Getters e Setters
     - Metodos Worker, etc
+- POO - Composição 
 
+### Aula 74 - 2024.02.05 MON - 296h 
+- POO - Herança
+- POO - Abstração 
+- POO - Polimorfismo 
+- POO - Interfaces 
+- POO - Agregação, Especialização, Generalização, Acoplamento  
 
-### Aula 74 -  - 296h 
-- **React**
-### Aula 75 -  - 300h 
-### Aula 76 -  - 304h 
-### Aula 77 -  - 308h 
-### Aula 78 -  - 312h 
-### Aula 79 -  - 316h 
-### Aula 80 -  - 320h 
-### Aula 81 -  - 324h 
-### Aula 82 -  - 328h 
-### Aula 83 -  - 332h 
-### Aula 84 -  - 336h 
-### Aula 85 -  - 340h 
+### Aula ID - 2024.02.06 TUE
+- Prof. Mateus
+
+### Aula 75 - 2024.02.07 WED - 300h 
+- React - Introdução
+- React - Instalação 
+- React - JSX
+- React - Componentes
+- React - PROPS 
+- React - CSS   
+
+### Aula 76 - 2024.02.08 THU - 304h 
+- React - Fragments
+- React - Tipos de Props 
+- React - ...
+
+### Aula 77 - 2024.02.09 FRI - 308h 
+### Aula 78 - 2024.02.13 TUE - 312h <--------
+### Aula 79 - 2024.02.14 WED - 316h 
+### Aula 80 - 2024.02.15 THU - 320h 
+### Aula 81 - 2024.02.16 FRI - 324h 
+### Aula 82 - 2024.02.19 MON - 328h 
+### Aula 83 - 2024.02.20 TUE - 332h 
+### Aula 84 - 2024.02.21 WED - 336h 
+### Aula 85 - 2024.02.22 THU - 340h 
 - Trabalho de Conclusão 
-### Aula 86 -  - 344h 
-### Aula 87 -  - 348h 
-### Aula 88 -  - 352h
-### Aula 89 -  - 356h
-### Aula 90 -  - 360h   
+### Aula 86 - 2024.02.23 FRI - 344h 
+### Aula 87 - 2024.02.26 MON - 348h 
+### Aula 88 - 2024.02.27 TUE - 352h
+### Aula 89 - 2024.02.28 WED - 356h
+### Aula 90 - 2024.02.29 THU - 360h <--------  Hi 
+
 
 ### off-topics
 - Off-Topic - Publicando uma página no Github Pages
