@@ -2,9 +2,10 @@
 function Mensagem(props){
 
     return(
-        <div>
+        <>
             <p>Função do Usuário: {props.funcao}</p>
-        </div>
+            <p>Função do Usuário: {props.funcao}</p>
+        </>
     )
 
 }

@@ -778,12 +778,16 @@ de 24/08/2023.
 - React - JSX
 - React - Componentes
 - React - PROPS 
-- React - CSS   
 
 ### Aula 76 - 2024.02.08 THU - 304h 
+- React - CSS   
 - React - Fragments
 - React - Tipos de Props 
-- React - ...
+- React - Props Default
+- React - Eventos
+- React - useState
+- React - Passando Eventos por Props
+- React - Renderização condicional
 
 ### Aula 77 - 2024.02.09 FRI - 308h 
 ### Aula 78 - 2024.02.13 TUE - 312h <--------

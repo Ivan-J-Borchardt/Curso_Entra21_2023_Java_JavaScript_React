@@ -1,7 +1,9 @@
+import styles from './Pessoa.module.css'
+
 function Pessoa({nome, idade, cpf, foto}) {
     
     return(
-        <div>
+        <div className={styles.azul}>
             <img src={foto} alt={nome}/>
             <h2>Nome: {nome}</h2>
             <p>Idade: {idade}</p>

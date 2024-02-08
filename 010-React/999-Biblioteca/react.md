@@ -198,4 +198,11 @@ Então, para cada ação teremos um evento (clique, teclas, formulários e etc.)
 
 O evento de submit dispara um método, ou seja, uma função, e nela podemos executar um código baseado na lógica da nossa aplicação. 
 
+## Hooks - useState
+
+## Passar Eventos por Props 
+
+- Pode-se passar uma referência à um método pelas Props de forma que é possível um componente filho ativar o método do seu ancestral; 
+- Esses métodos são acessados por meio de um Evento;
+- A sintaxe é a mesma de uma props de dados: props.meuEvento.
 
