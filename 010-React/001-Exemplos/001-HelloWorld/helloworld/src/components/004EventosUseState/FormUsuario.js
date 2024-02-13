@@ -4,11 +4,11 @@ function FormUsuario() {
         console.log("Salvando...:", document.getElementById("idNome").value);
     }
 
-    return(
+    return (
         <>
-            <div>
-                <label htmlFor="idNome">Nome:</label>
-                <input type="text" id="idNome"/>
+            <div className="mb-3">
+                <label htmlFor="idNome" className="form-label">Nome:</label>
+                <input type="text" id="idNome" className="form-control" />
             </div>
             <button onClick={salvar} >Salvar</button>
         </>

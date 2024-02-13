@@ -787,11 +787,25 @@ de 24/08/2023.
 - React - Eventos
 - React - useState
 - React - Passando Eventos por Props
-- React - Renderização condicional
 
 ### Aula 77 - 2024.02.09 FRI - 308h 
-### Aula 78 - 2024.02.13 TUE - 312h <--------
+- Aula dedicada ao trabalho Final
+
+### Aula EI - 2024.02.12 MON
+- Prof. Oscar
+
+### Aula 78 - 2024.02.13 TUE - 312h 
+- React - Renderização condicional
+- React - Renderização de listas 
+- React - Elevando o State
+- React - React Icons
+- React - Adicionando Bootstrap ao projeto
+- React - Router
+
 ### Aula 79 - 2024.02.14 WED - 316h 
+- React - Consumindo uma API REST
+
+
 ### Aula 80 - 2024.02.15 THU - 320h 
 ### Aula 81 - 2024.02.16 FRI - 324h 
 ### Aula 82 - 2024.02.19 MON - 328h 

@@ -1,0 +1,16 @@
+.socialMedia {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+.socialMedia li{
+    margin: 0 1em;
+}
+
+.socialMedia svg{
+    font-size: 2em;
+    color:blue;
+    cursor: pointer;
+}

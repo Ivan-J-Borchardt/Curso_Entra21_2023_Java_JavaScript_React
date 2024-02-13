@@ -206,3 +206,34 @@ O evento de submit dispara um método, ou seja, uma função, e nela podemos exe
 - Esses métodos são acessados por meio de um Evento;
 - A sintaxe é a mesma de uma props de dados: props.meuEvento.
 
+## Renderização condicional
+
+## Renderização de listas 
+
+## Elevando o State
+
+## Router 
+
+~~~
+>> npm install react-router-dom
+~~~
+
+## React Icons
+
+https://react-icons.github.io/react-icons/
+
+~~~
+>> npm install react-icons --save
+~~~
+
+## Adicionar Bootstrap ao React
+
+1. Instalar o bootstrap como uma dependencia externa 
+~~~
+>> npm install bootstrap
+~~~
+
+2. Importar o bootstrap no index.js
+
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.bundle';
