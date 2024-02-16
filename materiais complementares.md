@@ -65,6 +65,7 @@
 - https://erdplus.com/
 - www.draw.io
 - www.lucidchart.com
+- www.lucid.app
 - www.canva.com
 - https://dbdiagram.io/home
 
@@ -78,5 +79,6 @@
 ## React 
 - https://pt-br.legacy.reactjs.org/docs/getting-started.html 
 - https://pt-br.react.dev/ 
+- https://axios-http.com/docs/instance
 
 

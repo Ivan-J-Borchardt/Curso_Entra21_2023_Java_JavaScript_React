@@ -803,21 +803,45 @@ de 24/08/2023.
 - React - Router
 
 ### Aula 79 - 2024.02.14 WED - 316h 
-- React - Consumindo uma API REST
-
+- Aula destinada ao Trabalho de Conclusão de Curso 
 
 ### Aula 80 - 2024.02.15 THU - 320h 
+- Aula destinada ao Trabalho de Conclusão de Curso 
+
 ### Aula 81 - 2024.02.16 FRI - 324h 
+- React - Consumo de API com Axios 
+- React - Hook useEffect
+- React - Consumo de API com Fetch 
+
 ### Aula 82 - 2024.02.19 MON - 328h 
-### Aula 83 - 2024.02.20 TUE - 332h 
+- Aula destinada ao Trabalho de Conclusão de Curso 
+
+### Aula 83 - 2024.02.20 TUE - 332h
+- React - Context API 
+- React - Function Mode vs. Class Mode 
+- React - Testes Automatizados 
+
 ### Aula 84 - 2024.02.21 WED - 336h 
+- React - Animações e Transições 
+- React - Outras formas de criar projetos React
+
 ### Aula 85 - 2024.02.22 THU - 340h 
-- Trabalho de Conclusão 
 ### Aula 86 - 2024.02.23 FRI - 344h 
 ### Aula 87 - 2024.02.26 MON - 348h 
+- Aula destinada ao Trabalho de Conclusão de Curso
+ 
 ### Aula 88 - 2024.02.27 TUE - 352h
+- Aula destinada ao Trabalho de Conclusão de Curso 
+- Preparação para a Mostra 
+- Apresentação dos trabalhos para a turma
+
 ### Aula 89 - 2024.02.28 WED - 356h
-### Aula 90 - 2024.02.29 THU - 360h <--------  Hi 
+Formatura e Mostra de Talentos 
+### Aula 90 - 2024.02.29 THU - 360h
+Formatura e Mostra de Talentos 
+
+### Aula 91 - 2024.03.01 THU - 364h
+Último dia de aula 
 
 
 ### off-topics
