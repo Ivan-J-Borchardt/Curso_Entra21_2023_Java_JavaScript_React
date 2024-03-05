@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+        /**
+         * 
+        */
+        const car = {marca: "Volkswagen", modelo: "Tiguan"}
+        console.log(Object.keys(car)); //[marca, modelo]
+
+        /**
+         * 
+        */
+        console.log(Object.values(car)); //["Volkswagen", "Tiguan"]
+        
+        /**
+         * 
+        */
+        console.log(Object.entries(car)); //[['marca', 'Volkswagen'],['modelo', 'Tiguan']]
+
+        /**
+         * 
+        */
+        const detalhes = {cor: "vermelho"}
+        const carroComDetalhes = Object.assign(car, detalhes)
+        console.log(carroComDetalhes); //{marca: 'Volkswagen', modelo: 'Tiguan', cor: 'vermelho'}
+
+        /**
+         * 
+        */
+        Object.freeze(car) //Não permite que novos atributos sejam adicionados 
+        car.ano = 2015 
+        console.log(car);
+    
+
+        /**
+         * Precisa de mais testes
+        */
+        const car2 = {marca: "Volkswagen", modelo: "Tiguan", cor: 'vermelho'}
+
+        console.log(car);
+        console.log(car2);
+        console.log(Object.is(car, car2)); 
+
+        /**
+         * 
+        */
+        Object.defineProperty(car2, 'ano', {value: 2023, writable: false})
+        car2.ano = 2020
+        console.log(car2);
+
+        /**
+         * 
+        */
+       console.log(car2.hasOwnProperty("ano"));
+
+    </script>
+
+</body>
+</html>
