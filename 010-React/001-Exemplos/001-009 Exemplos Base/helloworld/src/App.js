@@ -15,6 +15,7 @@ import RenderListas2 from './components/006RenderizacaoListas/RenderListas2';
 import RenderListas3 from './components/006RenderizacaoListas/RenderListas3';
 import ComponentePai from './components/007ElevandoState/ComponentePai';
 import Icons from './components/008Icons/Icons';
+import HookUseEffect from './components/009UseEffect/HookUseEffect';
 
 
 function App() {
@@ -65,6 +66,7 @@ function App() {
 
         <Icons/>
           
+        <HookUseEffect/>  
         <br/>
         <br/>
         <br/>

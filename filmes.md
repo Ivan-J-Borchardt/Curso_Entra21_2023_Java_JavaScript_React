@@ -82,6 +82,11 @@ https://www.youtube.com/watch?v=rhxqPi0uGxI
 
 ## Estrelas além do tempo 
 
+## Como funciona uma computador
+
+https://www.youtube.com/watch?v=BbnDmeNojFA
+
+
 ## Explicação simples sobre como funciona a internet: 
 
 https://www.youtube.com/watch?v=dJfa-btLRAs

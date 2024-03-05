@@ -69,6 +69,8 @@
 - www.canva.com
 - https://dbdiagram.io/home
 
+- https://excalidraw.com/
+
 ### Simulador de Banco Online para estudos
 - https://sqliteonline.com/
 
@@ -81,4 +83,4 @@
 - https://pt-br.react.dev/ 
 - https://axios-http.com/docs/instance
 
-
+ 
